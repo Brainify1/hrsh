@@ -9,13 +9,29 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-  	<div class="container-fluid">
-  		<div class="row">
-  			<div class="col-md-4">
-  				<p>華人生活網</p>
+  	<div class="container-fluid bodyDiv">
+  		<div class="row mb10">
+  			<div class="col-md-4 logoCenter">
+  				<h1 class="logoCenter">华人生活网</h1>
   			</div>
   			<div class="col-md-8">
-  				<p>all the states all the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the states</p>
+  				<a href="" class="states">紐約</a>
+  				<a href="" class="states">洛杉矶</a>
+  				<a href="" class="states">西雅图</a>
+  				<a href="" class="states">芝加哥</a>
+  				<a href="" class="states">休斯敦</a>
+  				<a href="" class="states">波士顿</a>
+  				<a href="" class="states">华盛顿</a>
+  				<a href="" class="states">圣地亚哥</a>
+  				<a href="" class="states">费城</a>
+  				<a href="" class="states">夏威夷</a>
+  				<a href="" class="states">达拉斯</a>
+  				<a href="" class="states">佛罗里达</a>
+  				<a href="" class="states">温哥华</a>
+  				<a href="" class="states">拉斯維加斯</a>
+  				<a href="" class="states">旧金山</a>
+  				<a href="" class="states">悉尼</a>
+  				<a href="" class="states">亚特兰大</a>
   			</div>
   		</div>
   		<div class="sub">
@@ -145,7 +161,6 @@
   				</div>
   			</div>
   		</div>
-  		
   	</div>
 
     <!-- jQuery JS-->
