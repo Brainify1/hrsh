@@ -2,10 +2,87 @@
 <html>
   <head>
     <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- customized CSS -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-md-4">
+  				<p>華人生活網</p>
+  			</div>
+  			<div class="col-md-8">
+  				<p>all the states all the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the statesall the states</p>
+  			</div>
+  		</div>
+  		<div class="sub">
+  			<a href="">租屋</a>
+  			<a href="">经纪</a>
+  			<a href="">出租</a>
+  			<a href="">房屋买卖</a>
+  			<a href="">招聘销售</a>
+  			<a href="">招聘餐馆</a>
+  			<a href="">其他请人</a>
+  			<a href="">发廊请人</a>
+  			<a href="">按摩请人</a>
+  			<a href="">求职商用</a>
+  			<a href="">租让生意</a>
+  			<a href="">转让快递</a>
+  			<a href="">货运</a>
+  			<a href="">贷款经纪</a>
+  			<a href="">二手买卖</a>
+  			<a href="">汽车买卖</a>
+  			<a href="">手机买卖</a>
+  			<a href="">电脑买卖</a>
+  			<a href="">货品买卖</a>
+  			<a href="">电脑·网络</a>
+  			<a href="">防盗报警</a>
+  			<a href="">美容•Spa</a>
+  			<a href="">推拿按摩理疗</a>
+  			<a href="">交友征婚</a>
+  			<a href="">翻译服务</a>
+  			<a href="">招生培训</a>
+  			<a href="">课后补习</a>
+  			<a href="">幼儿园·托儿</a>
+  			<a href="">大小搬家</a>
+  			<a href="">电招车</a>
+  			<a href="">考牌练车</a>
+  			<a href="">家庭旅馆</a>
+  			<a href="">旅行社</a>
+  			<a href="">其他各类</a>
+  			<a href="">各类保险</a>
+  			<a href="">留学•签证</a>
+  			<a href="">入籍·福利</a>
+  			<a href="">各类律师</a>
+  			<a href="">会计·报税</a>
+  			<a href="">印刷·招牌</a>
+  			<a href="">装修服务</a>
+  			<a href="">冷暖水电</a>
+  		</div>
+  		<div class="container-fluid">
+  			<div class="row">
+  				<div class="col-md-2">
+  					<p>ads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads right</p>
+  				</div>
+  				<div class="col-md-8">
+  					<p>Main content</p>
+  				</div>
+  				<div class="col-md-2">
+  					<p>ads leftads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads right</p>
+  				</div>
+  			</div>
+  		</div>
+  		
+  	</div>
+
+    <!-- jQuery JS-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- cusomized JS -->
+    <script type="text/javascript" src="/javascript/main.js"></script>
   </body>
 </html>
