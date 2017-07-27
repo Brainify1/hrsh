@@ -9,6 +9,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+<<<<<<< HEAD
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-4">
@@ -84,5 +85,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- cusomized JS -->
     <script type="text/javascript" src="/javascript/main.js"></script>
+=======
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    <p> Yahello! </p>
+>>>>>>> ffeed8c1d4f3b136bcb04ba82e218da1fae6c0c6
   </body>
 </html>
