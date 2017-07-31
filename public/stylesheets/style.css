@@ -1,8 +1,28 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: rgb(250, 250, 252);
 }
 
 a {
-  color: #00B7FF;
+  color: #1D1DA3;
+}
+
+.states {
+	font-size: 20px;
+}
+
+.logoCenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+.item {
+	height: 250px;
+	width: 250px;
+}
+
+.bodyDiv {
+	margin: 5% 10%;
 }
