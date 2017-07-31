@@ -7,6 +7,6 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
-    <p> Yahello! </p>
+    <a href = "/login">login</a>
   </body>
 </html>

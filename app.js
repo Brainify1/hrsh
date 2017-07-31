@@ -5,8 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var session = require("express-session");
+var passport = require("passport");
+
+var db = require("./db");
+require("./passport");
+
 var index = require('./routes/index');
 var users = require('./routes/users');
+var authRoutes = require("./routes/auth");
+var userPage = require("./routes/userpage");
+
 
 var app = express();
 
@@ -21,9 +30,24 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ secret: "i love dogs", resave: false, saveUninitialized: false}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(authRoutes);
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/userpage', userPage);
+	
+
+app.get("/userpage", (req, res, next) =>{
+  res.send({ 
+    session: req.session,
+    user: req.user,
+    authenticated: req.isAuthenticated(),
+
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -31,6 +55,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -44,3 +69,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
