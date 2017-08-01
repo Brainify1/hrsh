@@ -4,6 +4,7 @@ body {
 
 a {
   color: #1D1DA3;
+  margin: 0 10px;
 }
 
 .states {
@@ -15,6 +16,13 @@ a {
 	margin: 0 auto;
 }
 
+.category {
+	margin: 0 5px;
+}
+
+.sub {
+	margin: 0 3%;	
+}
 .mb10 {
 	margin-bottom: 10px;
 }

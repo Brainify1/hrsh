@@ -35,48 +35,48 @@
   			</div>
   		</div>
   		<div class="sub">
-  			<a href="">租屋</a>
-  			<a href="">经纪</a>
-  			<a href="">出租</a>
-  			<a href="">房屋买卖</a>
-  			<a href="">招聘销售</a>
-  			<a href="">招聘餐馆</a>
-  			<a href="">其他请人</a>
-  			<a href="">发廊请人</a>
-  			<a href="">按摩请人</a>
-  			<a href="">求职商用</a>
-  			<a href="">租让生意</a>
-  			<a href="">转让快递</a>
-  			<a href="">货运</a>
-  			<a href="">贷款经纪</a>
-  			<a href="">二手买卖</a>
-  			<a href="">汽车买卖</a>
-  			<a href="">手机买卖</a>
-  			<a href="">电脑买卖</a>
-  			<a href="">货品买卖</a>
-  			<a href="">电脑·网络</a>
-  			<a href="">防盗报警</a>
-  			<a href="">美容•Spa</a>
-  			<a href="">推拿按摩理疗</a>
-  			<a href="">交友征婚</a>
-  			<a href="">翻译服务</a>
-  			<a href="">招生培训</a>
-  			<a href="">课后补习</a>
-  			<a href="">幼儿园·托儿</a>
-  			<a href="">大小搬家</a>
-  			<a href="">电招车</a>
-  			<a href="">考牌练车</a>
-  			<a href="">家庭旅馆</a>
-  			<a href="">旅行社</a>
-  			<a href="">其他各类</a>
-  			<a href="">各类保险</a>
-  			<a href="">留学•签证</a>
-  			<a href="">入籍·福利</a>
-  			<a href="">各类律师</a>
-  			<a href="">会计·报税</a>
-  			<a href="">印刷·招牌</a>
-  			<a href="">装修服务</a>
-  			<a href="">冷暖水电</a>
+  			<a href="" class="category">租屋</a>
+  			<a href="" class="category">经纪</a>
+  			<a href="" class="category">出租</a>
+  			<a href="" class="category">房屋买卖</a>
+  			<a href="" class="category">招聘销售</a>
+  			<a href="" class="category">招聘餐馆</a>
+  			<a href="" class="category">其他请人</a>
+  			<a href="" class="category">发廊请人</a>
+  			<a href="" class="category">按摩请人</a>
+  			<a href="" class="category">求职商用</a>
+  			<a href="" class="category">租让生意</a>
+  			<a href="" class="category">转让快递</a>
+  			<a href="" class="category">货运</a>
+  			<a href="" class="category">贷款经纪</a>
+  			<a href="" class="category">二手买卖</a>
+  			<a href="" class="category">汽车买卖</a>
+  			<a href="" class="category">手机买卖</a>
+  			<a href="" class="category">电脑买卖</a>
+  			<a href="" class="category">货品买卖</a>
+  			<a href="" class="category">电脑·网络</a>
+  			<a href="" class="category">防盗报警</a>
+  			<a href="" class="category">美容•Spa</a>
+  			<a href="" class="category">推拿按摩理疗</a>
+  			<a href="" class="category">交友征婚</a>
+  			<a href="" class="category">翻译服务</a>
+  			<a href="" class="category">招生培训</a>
+  			<a href="" class="category">课后补习</a>
+  			<a href="" class="category">幼儿园·托儿</a>
+  			<a href="" class="category">大小搬家</a>
+  			<a href="" class="category">电招车</a>
+  			<a href="" class="category">考牌练车</a>
+  			<a href="" class="category">家庭旅馆</a>
+  			<a href="" class="category">旅行社</a>
+  			<a href="" class="category">其他各类</a>
+  			<a href="" class="category">各类保险</a>
+  			<a href="" class="category">留学•签证</a>
+  			<a href="" class="category">入籍·福利</a>
+  			<a href="" class="category">各类律师</a>
+  			<a href="" class="category">会计·报税</a>
+  			<a href="" class="category">印刷·招牌</a>
+  			<a href="" class="category">装修服务</a>
+  			<a href="" class="category">冷暖水电</a>
   		</div>
   		<div class="container-fluid">
   			<div class="row">
