@@ -5,20 +5,21 @@ const bcrypt = require("bcrypt-nodejs");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
-passport.use(new LocalStrategy(authenticate));
+passport.use(new LocalStrategy({passReqToCallback: true}, authenticate));
 passport.use("local-register", new LocalStrategy({passReqToCallback: true}, register));
 
-function authenticate(email, password, done){
+function authenticate(req, email, password, done){
+	process.nextTick(function(){
 	usersCollection
 		.findOne({email: email}, function(err, user) {
 			if(!user || !bcrypt.compareSync(password, user.password)) {
 				console.log('not found')
-				return done(null, false, {message: "Invalid user and password combination"});
+				return done(null, false, req.flash('loginMessage','Invalid username or password'));
 			}
 			console.log('found');
 			done(null, user);
 		},done)
-		
+		})
 }
 
 function register(req, email, password, done){
@@ -26,11 +27,11 @@ function register(req, email, password, done){
 		.findOne({email: email}, function(err, user) {
 			if(user){
 				console.log(email)
-				return done(null, false, {message: "User already exists"});
+				return done(null, false, req.flash('signupMessage','User already exists'));
 			}
 			if(password !== req.body.password2){
 				console.log(password)
-				return done(null, false, {alert: "Passwords do not match"});
+				return done(null, false, req.flash('signupMessage','Passwords do not match'));
 			}
 
 			const newUser = {

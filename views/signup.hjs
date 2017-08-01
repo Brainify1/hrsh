@@ -1,5 +1,9 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
 <body>
+	<div class="errorMessage">{{message}}</div>
 	<form action = "/signup" method= "post">
 	<div>
 		<label> First Name: </label>

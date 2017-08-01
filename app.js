@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var flash = require("connect-flash");
 
 var session = require("express-session");
 var passport = require("passport");
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ secret: "i love dogs", resave: false, saveUninitialized: false}));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(flash())
 app.use(authRoutes);
 
 app.use('/', index);
