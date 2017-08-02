@@ -10,7 +10,6 @@
   </head>
   <body>
    {{>header}}
-
   	<div class="container-fluid bodyDiv">
   		<div class="row mb10">
   			<div class="col-md-4 logoCenter">
