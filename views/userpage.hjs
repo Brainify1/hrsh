@@ -12,7 +12,7 @@
     <form action = "/sendMessage" method= "post">
 	<div>
 		<label> Message: </label>
-		<input type = "text" name = "message" style="height:150px;width:300px"/>
+		<textarea type = "text" name = "message" class="messageBox"></textarea>
 	</div>
 	<div>
 		<input type="submit" value="Send Message"/>
