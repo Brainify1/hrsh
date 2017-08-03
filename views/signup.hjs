@@ -29,5 +29,12 @@
 		<input type="submit" value="Sign Up"/>
 	</div>
 	</form>
+	<span>Have an account already?</span>
+	<form action = "/login" method = "post">
+	<div>
+		<input type="submit" value="Log In"/>
+	</div>
+	</form>
+	<a href="/">Return to home page</a>
 </body>
 </html>
