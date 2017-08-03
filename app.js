@@ -49,7 +49,6 @@ app.get("/userpage", (req, res, next) =>{
     session: req.session,
     user: req.user,
     authenticated: req.isAuthenticated(),
-
   })
 })
 

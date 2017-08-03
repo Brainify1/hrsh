@@ -10,7 +10,14 @@ function loginRequired(req,res,next){
 
 /* GET home page. */
 router.get('/', loginRequired, function(req, res, next){
-  res.render('userpage', { title: 'Yahello!' });
+  res.render('userpage', { 
+  	title: 'Yahello!', 
+  	userFirstName: req.session.passport.user.first_name,
+  	userLastName: req.session.passport.user.last_name
+  });
+  console.log(req.session)
 });
+
+
 
 module.exports = router;
