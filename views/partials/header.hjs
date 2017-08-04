@@ -11,15 +11,9 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row mt20">
-        <div class="col-md-7 col-sm-6 col-xs-6 logoCenter">
-          <h1 class="logoCenter">华人生活网</h1>
-
-        </div>
-        <div class="login col-md-5 col-sm-6 col-xs-6">
-          <a href = "/login" class="login2"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
-		      <a href = "/signup" class="login2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
-        </div> 
+    <div class="index_login">
+      <div class="floatRight">
+        <a href = "/login" id="loginMargin"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+        <a href = "/signup" id="loginMargin2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
       </div>
-    </div>
+    </div> 

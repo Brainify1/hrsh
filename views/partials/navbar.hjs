@@ -2,7 +2,7 @@
 	<div>
 		<ul>
 			<li><a class="navList" href='/'><i class="fa fa-home" aria-hidden="true"></i> 首页</a></li>
-			<li><a class="navList" href='#'>房产服务</a></li>
+			<li><a class="navList" href='/'>房产服务</a></li>
 			<li><a class="navList" href='#'>二手市场</a></li>
 			<li><a class="navList" href='#'>旅游酒店</a></li>
 			<li><a class="navList" href='#'>法律经济</a></li>
