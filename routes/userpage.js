@@ -16,7 +16,7 @@ router.get('/', loginRequired, function(req, res, next){
   	userLastName: req.session.passport.user.last_name
   });
   console.log(req.session)
-});
+}); 
 
 
 
