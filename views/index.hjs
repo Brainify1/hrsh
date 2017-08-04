@@ -1,79 +1,52 @@
-   {{> header}}
+   {{> index_header}}
   	<div class="container-fluid bodyDiv">
   		<div class="row mb10">
   			<div class="col-md-4 logoCenter">
   				<h1 class="logoCenter">华人生活网</h1>
   			</div>
-  			<div class="col-md-8">
-  				<a href="" class="states">紐約</a>
-  				<a href="" class="states">洛杉矶</a>
-  				<a href="" class="states">西雅图</a>
-  				<a href="" class="states">芝加哥</a>
-  				<a href="" class="states">休斯敦</a>
-  				<a href="" class="states">波士顿</a>
-  				<a href="" class="states">华盛顿</a>
-  				<a href="" class="states">圣地亚哥</a>
-  				<a href="" class="states">费城</a>
-  				<a href="" class="states">夏威夷</a>
-  				<a href="" class="states">达拉斯</a>
-  				<a href="" class="states">佛罗里达</a>
-  				<a href="" class="states">温哥华</a>
-  				<a href="" class="states">拉斯維加斯</a>
-  				<a href="" class="states">旧金山</a>
-  				<a href="" class="states">悉尼</a>
-  				<a href="" class="states">亚特兰大</a>
+  			<div class="col-md-8 stateFlex">
+          <div class="groupStates">
+  		  		<a href="" class="states">紐約</a><br>
+  		      <a href="" class="states">洛杉矶</a>
+          </div>
+          <div class="groupStates">
+  				  <a href="" class="states">西雅图</a><br>
+  				  <a href="" class="states">芝加哥</a>
+          </div>
+          <div class="groupStates">
+    				<a href="" class="states">休斯敦</a><br>
+    				<a href="" class="states">波士顿</a>
+          </div>
+          <div class="groupStates">
+    				<a href="" class="states">华盛顿</a><br>
+      			<a href="" class="states">圣地亚哥</a>
+          </div>
+          <div class="groupStates">
+  				  <a href="" class="states">费城</a><br>
+            <a href="" class="states">夏威夷</a>
+          </div>
+          <div class="groupStates">
+  				  <a href="" class="states">达拉斯</a><br>
+  				  <a href="" class="states">佛罗里达</a>
+          </div>
+          <div class="groupStates">
+  				  <a href="" class="states">温哥华</a><br>
+  				  <a href="" class="states">拉斯維加斯</a>
+          </div>
+          <div class="groupStates">
+  				  <a href="" class="states">旧金山</a>
+  				  <a href="" class="states">悉尼</a><br>
+  				  <a href="" class="states">亚特兰大</a>
+          </div>
   			</div>
   		</div>
-  		<div class="sub">
-  			<a href="" class="category">租屋</a>
-  			<a href="" class="category">经纪</a>
-  			<a href="" class="category">出租</a>
-  			<a href="" class="category">房屋买卖</a>
-  			<a href="" class="category">招聘销售</a>
-  			<a href="" class="category">招聘餐馆</a>
-  			<a href="" class="category">其他请人</a>
-  			<a href="" class="category">发廊请人</a>
-  			<a href="" class="category">按摩请人</a>
-  			<a href="" class="category">求职商用</a>
-  			<a href="" class="category">租让生意</a>
-  			<a href="" class="category">转让快递</a>
-  			<a href="" class="category">货运</a>
-  			<a href="" class="category">贷款经纪</a>
-  			<a href="" class="category">二手买卖</a>
-  			<a href="" class="category">汽车买卖</a>
-  			<a href="" class="category">手机买卖</a>
-  			<a href="" class="category">电脑买卖</a>
-  			<a href="" class="category">货品买卖</a>
-  			<a href="" class="category">电脑·网络</a>
-  			<a href="" class="category">防盗报警</a>
-  			<a href="" class="category">美容•Spa</a>
-  			<a href="" class="category">推拿按摩理疗</a>
-  			<a href="" class="category">交友征婚</a>
-  			<a href="" class="category">翻译服务</a>
-  			<a href="" class="category">招生培训</a>
-  			<a href="" class="category">课后补习</a>
-  			<a href="" class="category">幼儿园·托儿</a>
-  			<a href="" class="category">大小搬家</a>
-  			<a href="" class="category">电招车</a>
-  			<a href="" class="category">考牌练车</a>
-  			<a href="" class="category">家庭旅馆</a>
-  			<a href="" class="category">旅行社</a>
-  			<a href="" class="category">其他各类</a>
-  			<a href="" class="category">各类保险</a>
-  			<a href="" class="category">留学•签证</a>
-  			<a href="" class="category">入籍·福利</a>
-  			<a href="" class="category">各类律师</a>
-  			<a href="" class="category">会计·报税</a>
-  			<a href="" class="category">印刷·招牌</a>
-  			<a href="" class="category">装修服务</a>
-  			<a href="" class="category">冷暖水电</a>
-  		</div>
+      {{> navbar}}
   		<div class="container-fluid">
   			<div class="row">
-  				<div class="col-md-2">
-  					<p>ads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads right</p>
+  				<div class="col-md-2 col-sm-2 bg-temp">
+  					
   				</div>
-  				<div class="col-md-8">
+  				<div class="col-md-8 col-sm-8">
   					<div class="container-fluid">
   						<div class="row">
   							<div class="col-md-6">
@@ -146,8 +119,7 @@
   						</div>
   					</div>
   				</div>
-  				<div class="col-md-2">
-  					<p>ads leftads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads rightads right</p>
+  				<div class="col-md-2 col-sm-2 bg-temp">
   				</div>
   			</div>
   		</div>

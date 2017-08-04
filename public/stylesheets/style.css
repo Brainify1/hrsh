@@ -1,6 +1,10 @@
 body {
 	background-color: rgb(250, 250, 252);
 }
+
+.bodyDiv {
+	margin: 5% 10%;
+}
 /*main container*/
 .mainContainer {
 	padding: 0 18%;
@@ -29,7 +33,9 @@ body {
         padding: 0;
     }
 }
+
 /*end of main container*/
+
 /*navbar CSS*/
 ul {
 	width: 100%;
@@ -41,7 +47,7 @@ ul {
     display: -webkit-inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
+    border-radius: 10px;
 }
 
 li {
@@ -84,26 +90,64 @@ li a:hover {
 /*End of navbarCss*/
 
 /*login{header} css*/
+.index_login {
+	z-index: 999;
+	padding: 5px 0;
+	background-color: rgb(250, 250, 252);
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	float: right;
+	border-bottom: 1px solid rgb(226,226,230);
+}
+
 .login {
 	padding: 20px;
 	float: right;
 }
 
-a {
+.login2{
 	text-align: right;
 	margin: 0 auto;
 	padding: 10px 30px;
 	text-decoration: none;
 }
 
+.floatRight {
+	float: right;
+	overflow: visible;
+}
+
 .mt20 {
 	margin-top: 20px;
 }
+
+a#loginMargin, a#loginMargin2 {
+	padding: 0;
+	margin: 0 15px;
+}
+
 /*End of login{header} css*/
 
+/*states*/
 .states {
-	font-size: 20px;
+	flex-grow: 1;
+	color: rgb(29,29,163);
 }
+
+.stateFlex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.groupStates{
+	flex-grow: 1;
+}
+
+/*end of states*/
 
 .logoCenter {
 	text-align: center;
@@ -111,6 +155,14 @@ a {
 	margin: 0 auto;
 }
 
+/*navbar listing*/
+.navList {
+	letter-spacing: 1px;
+}
+
+/*navbar listing end*/
+
+/*main page*/
 .category {
 	margin: 0 5px;
 }
@@ -126,10 +178,13 @@ a {
 	width: 250px;
 }
 
-.bodyDiv {
-	margin: 5% 10%;
+.bg-temp {
+	height: 50vh;
+	background-color: rgb(226,226,230);
 }
+/*main page end*/
 
+/*error messages*/
 .errorMessage{
 	width:15%;
 	background-color: #ffdce0; 
@@ -142,3 +197,4 @@ a {
 	width:300px;
 	resize: none;
 }
+/*end of error messages*/
