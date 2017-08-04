@@ -90,9 +90,14 @@ li a:hover {
 }
 
 a {
+	text-align: right;
 	margin: 0 auto;
 	padding: 10px 30px;
 	text-decoration: none;
+}
+
+.mt20 {
+	margin-top: 20px;
 }
 /*End of login{header} css*/
 
