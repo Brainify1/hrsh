@@ -1,0 +1,17 @@
+<nav>
+	<div>
+		<ul>
+			<li><a href='#'>首页</a></li>
+			<li><a class="foodNav" href='#'>美食</a></li>
+			<li><a class="compNav" href='#'>商家</a></li>
+			<li><a class="vidNav" href='#'>视频</a></li>
+			<li><a class="discountNav" href='#'>优惠特价</a></li>
+			<li><a class="travelNav" href='#'>旅遊</a></li>
+			<li><a class="educationNav" href='#'>教育</a></li>
+			<li><a class="realEstateNav" href='#'>房产</a></li>
+			<li><a class="carNav" href='#'>汽车</a></li>
+			<li><a class="workNav" href='#'>工作</a></li>
+			<li><a class="toolNav" href='#'>工具</a></li>
+		</ul>
+	</div>
+</nav>
