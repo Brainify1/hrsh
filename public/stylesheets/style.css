@@ -214,7 +214,68 @@ a#loginMargin, a#loginMargin2 {
 }
 
 .newsPicBox {
-	height: 250px;
+	height: 300px;
+}
+
+.caroselImgDiv {
+	height: 300px;
+}
+
+.childImg1, .childImg2, .childImg3, .childImg4, .childImg5 {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.childImg1 {
+	background-image: url("https://www.what-dog.net/Images/faces2/scroll000.jpg");
+}
+
+.childImg2 {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNhxIS87bhGe5_neXTpZZq-_OVYU6sTgHTitExrOCKA-JrGDX");
+}
+
+.childImg3 {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7AMyhvDshnqj1lVSF3lsUVBkxiIjZZqfW2dNHeHF-PDERNV8kA");
+}
+
+.childImg4 {
+	background-image: url("https://www.what-dog.net/Images/faces2/scroll000.jpg");
+}
+
+.childImg5 {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7AMyhvDshnqj1lVSF3lsUVBkxiIjZZqfW2dNHeHF-PDERNV8kA");
+}
+
+.captionBox {
+	max-height: 55px;
+	overflow: hidden;
+}
+
+.captionBox a {
+	color: white;
+}
+
+.carouselRightUl {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.carouselRightLi {
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.carouselRightLi h4 {
+	margin: 0;
+	line-height: 23px;
 }
 
 @media (min-width: 992px) { 
@@ -223,7 +284,7 @@ a#loginMargin, a#loginMargin2 {
 }
 
 @media (max-width: 991px) { 
-	.carousel-caption p,
+	/*.carousel-caption p,*/
 	#myCarousel .list-group {display:none;} 
 }
 
