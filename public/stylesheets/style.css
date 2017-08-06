@@ -116,6 +116,10 @@ li a:hover {
 	float: right;
 	overflow: visible;
 }
+.floatLeft{
+	float: left;
+	overflow: visible;
+}
 
 .mt20 {
 	margin-top: 20px;
