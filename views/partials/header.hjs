@@ -13,7 +13,7 @@
   <body>
     <div class="index_login">
       <div class="floatRight">
-        <a href = "/login" id="loginMargin"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
-        <a href = "/signup" id="loginMargin2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a href = "/login" class='loginText' id="loginMargin"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+        <a href = "/signup" class='loginText' id="loginMargin2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
       </div>
     </div> 

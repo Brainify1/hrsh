@@ -34,12 +34,12 @@ body {
 /*end of main container*/
 
 /*navbar CSS*/
-ul {
+.navUl {
 	width: 100%;
 	list-style-type: none;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(45,17,82);
+    background-color: rgb(64,0,144);
     display: inline-flex;
     display: -webkit-inline-flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ ul {
     border-radius: 10px;
 }
 
-li {
+.navLi {
 	display: flex;
 	display: -webkit-inline-flex;
 	align-items: center;
@@ -57,20 +57,20 @@ li {
 	border-bottom: 1px solid rgb(226,226,230);
 }
 
-li:not(:first-child):before {
+.navLi:not(:first-child):before {
 	content: '|';
 	color: rgb(214,214,214);
 }
 
-li:first-child {
+.navLi:first-child {
 	border-left: 1px solid rgb(226,226,230);
 }
 
-li:last-child {
+.navLi:last-child {
 	border-right: 1px solid rgb(226,226,230);
 }
 
-li a {
+.navLi a {
 	margin: 0 auto;
 	text-align: center;
 	display: inline;
@@ -80,7 +80,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navLi a:hover {
 	color:white;
 	text-decoration-style: none;
 }
@@ -91,13 +91,17 @@ li a:hover {
 .index_login {
 	z-index: 999;
 	padding: 5px 50px 5px 0;
-	background-color: rgb(250, 250, 252);
+	background-color: rgb(45,17,82);
 	width: 100%;
 	position: fixed;
 	top: 0px;
 	right: 0px;
 	float: right;
 	border-bottom: 1px solid rgb(226,226,230);
+}
+
+.loginText {
+	color: white;
 }
 
 .login {
@@ -175,16 +179,55 @@ a#loginMargin, a#loginMargin2 {
 .mb10 {
 	margin-bottom: 10px;
 }
-.item {
-	height: 250px;
-	width: 250px;
-}
+
 
 .bg-temp {
 	height: 50vh;
 	background-color: rgb(226,226,230);
 }
 /*main page end*/
+
+/*carousel & news*/
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+ 
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+
+#myCarousel .list-group .active {
+	background-color:#eee;	
+}
+
+.newsPicBox {
+	height: 250px;
+}
+
+@media (min-width: 992px) { 
+/*	#myCarousel {padding-right:33.3333%;}*/
+	#myCarousel .carousel-controls {display:none;} 	
+}
+
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
+}
+
+/*carousel & news end*/
 
 /*error messages*/
 .errorMessage{
