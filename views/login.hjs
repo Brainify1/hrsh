@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
-	<div class="errorMessage">{{message}}</div>
+	<!--<div class="errorMessage">{{message}}</div>
 	<form action = "/login" method= "post">
 	<div>
 		<label> Email: </label>
@@ -28,8 +28,8 @@
 	</div>
 	</form>
 	<a href="/">Return to front page</a>
-
-	<div class="container">
+	-->
+	<div>
   <!-- Trigger the modal with a button -->
   	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
 
@@ -40,7 +40,7 @@
      		<div class="modal-content">
         		<div class="modal-header">
           			<button type="button" class="close" data-dismiss="modal">&times;</button>
-          				<div class="errorMessage">{{message}}</div>
+          				<div class="errorMessage" style="width: 95%">{{message}}</div>
 		  					<form action = "/login" method= "post">
 	      						<div>
 		  							<label> Email: </label>
@@ -61,6 +61,7 @@
 		  					</div>
         		</div>
         			<div class="modal-footer">
+        				<a href="/" style="float: left">Return to front page</a>
           				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         			</div>
     		</div>
