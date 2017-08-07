@@ -32,7 +32,8 @@
     								</li>
     							</ul>
     						</nav>
-    						<input type="text" class="search" placeholder="搜索关键字" />
+    						<div class="sbarDiv"><input type="text" class="search sbar" placeholder="搜索关键字" /></div>
+    						
 	    					<ul class="list mg0">
 								<li class="bigListing">
 									<div class="titleLi">
@@ -140,7 +141,7 @@
 								</li>
 								<li class="bigListing">
 									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
+										<a href="#">$31300 gg 近哥大 上西92街 新装修1室1厅公寓出租</a>
 									</div>
 									<div class="userLi">
     									<div><p class="fs12">屋新天</p></div>
@@ -153,7 +154,7 @@
 								</li>
 							    <li class="bigListing">
 									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
+										<a href="#">$31300 5555 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
 									</div>
 									<div class="userLi">
     									<div><p class="fs12">屋新天</p></div>
@@ -166,7 +167,7 @@
 								</li>
 								<li class="bigListing">
 									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
+										<a href="#">$I need money or I die.</a>
 									</div>
 									<div class="userLi">
     									<div><p class="fs12">屋新天</p></div>
@@ -174,7 +175,7 @@
 									</div>
 									<div class="readLi">
 										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
+    									<div><p class="fs10">5555</p></div>
 									</div>
 								</li>
 								<li class="bigListing">
