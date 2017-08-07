@@ -81,7 +81,7 @@ body {
 }
 
 .navLi a:hover {
-	color:white;
+	color:rgb(220,220,220);
 	text-decoration-style: none;
 }
 
@@ -188,6 +188,11 @@ a#loginMargin, a#loginMargin2 {
 /*main page end*/
 
 /*carousel & news*/
+.carouselPicDiv {
+	margin: 0;
+	padding: 0;
+}
+
 #myCarousel .carousel-caption {
     left:0;
 	right:0;
@@ -290,8 +295,103 @@ a#loginMargin, a#loginMargin2 {
 
 /*carousel & news end*/
 
+/*listing block*/
+.mt{
+	margin-top: 20px;
+}
+
+.newList {
+	display: initial;
+}
+
+.hotList {
+	display: none;
+}
+
+.topListNav {
+	background-color: white;
+}
+
+.topListUl {
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(64,0,144);
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 2px;
+    list-style-type: none;
+}
+
+li.focus {
+	background-color: rgb(115,0,255);
+}
+
+
+.topListLi {
+	padding: 5px;
+	display: flex;
+	display: -webkit-inline-flex;
+	align-items: center;
+  	justify-content: center;
+	flex-grow: 1;
+	color: white;
+}
+
+.topListLi:hover {
+	background-color: rgb(115,0,255);
+	cursor: pointer;
+}
+
+.topListLi a {
+	margin: 0 auto;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.topListLi a:active {
+	background: rgb(115,0,255);
+}
+
+.bottomListDiv {
+	background-color: white;
+}
+
+.bottomListUl {
+	list-style-type: none;
+	padding: 0;
+}
+
+.bottomListLi {
+	padding: 0 10px;
+	border-left: 1px solid rgb(242,242,245);
+	border-right: 1px solid rgb(242,242,245);
+	border-bottom: 1px solid rgb(242,242,245);
+}
+
+.bottomListLi a {
+	display: block;
+	max-height: 18px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.bottomListLi h6 {
+	display: block;
+	padding: 0 15px;
+}
+
+/*listing block end*/
+
 /*error messages*/
-.errorMessage{
+.errorMessage {
 	width:15%;
 	background-color: #ffdce0; 
 	color:#86181d;

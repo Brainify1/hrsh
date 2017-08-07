@@ -1,3 +1,4 @@
+// carousel
 var boxheight = $('.carousel-inner').height();
 	var itemlength = $('.item').length;
 	var triggerheight = Math.round(boxheight/itemlength+1);
@@ -22,3 +23,18 @@ var boxheight = $('.carousel-inner').height();
 		}
 		clickEvent = false;
 	});
+// carousel ended
+
+$('li#tlHot').click(function(){
+	$('li#tlNew').removeClass('focus');
+	$('li#tlHot').addClass('focus');
+	$('div.newList').css('display', 'none');
+	$('div.hotList').css('display', 'initial');
+});
+
+$('li#tlNew').click(function(){
+	$('li#tlHot').removeClass('focus');
+	$('li#tlNew').addClass('focus');
+	$('div.hotList').css('display', 'none');
+	$('div.newList').css('display', 'initial');
+});
