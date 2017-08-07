@@ -17,42 +17,62 @@
 								        	<div class="item newsPicBox active">
 								          		<div class="childImg1"></div>
 									           	<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></a>
+									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>纽约检察官吁移民局停止法院抓人</p></a>
 									       		</div>
 									        </div><!-- End Item -->
 									       	<div class="item newsPicBox">
 									      		<div class="childImg2"></div>
 									           	<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></a>
+									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>地铁男子赤裸上身拍女子屁股遭通缉</p></a>
 									       		</div>
 									        </div><!-- End Item -->
 									        <div class="item newsPicBox">
 									      		<div class="childImg3"></div>
 									       		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></a>
+									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p></a>
 									       		</div>
 								        	</div><!-- End Item -->
 								        	<div class="item newsPicBox">
 								          		<div class="childImg4"></div>
 								           		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></a>
+									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>大解放？全球首个女性自慰店登录纽约</p></a>
 									       		</div>
 								        	</div><!-- End Item -->
 								        	<div class="item newsPicBox">
 								          		<div class="childImg5"></div>
 								           		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p></a>
+									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p></a>
 									       		</div>
 									       	</div><!-- End Item -->
 										</div><!-- End Carousel Inner -->
 									</div>
 									<div class="col-md-5">
 								    	<ul class="list-group carouselRightUl">
-								      		<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active carouselRightLi"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
-								      		<li data-target="#myCarousel" data-slide-to="1" class="list-group-item carouselRightLi"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
-								      		<li data-target="#myCarousel" data-slide-to="2" class="list-group-item carouselRightLi"><h4>tempor invidunt ut labore et dolore</h4></li>
-								      		<li data-target="#myCarousel" data-slide-to="3" class="list-group-item carouselRightLi"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
-								      		<li data-target="#myCarousel" data-slide-to="4" class="list-group-item carouselRightLi"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
+								      		<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active carouselRightLi">
+								      			<a href="#">
+								      				<h4 class="newsTitle">纽约检察官吁移民局停止法院抓人</h4>
+								      			</a>
+								      		</li>
+								      		<li data-target="#myCarousel" data-slide-to="1" class="list-group-item carouselRightLi">
+								      			<a href="#">
+								      				<h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
+								      			</a>
+								      		</li>
+								      		<li data-target="#myCarousel" data-slide-to="2" class="list-group-item carouselRightLi">
+								      			<a href="#">
+								      				<h4 class="newsTitle">美国过半三文鱼标签上做过手脚！这么多年吃的都是?</h4>
+								      			</a>
+								      		</li>
+								      		<li data-target="#myCarousel" data-slide-to="3" class="list-group-item carouselRightLi">
+								      			<a href="#">
+								      				<h4 class="newsTitle">大解放？全球首个女性自慰店登录纽约</h4>
+								      			</a>
+								      		</li>
+								      		<li data-target="#myCarousel" data-slide-to="4" class="list-group-item carouselRightLi">
+								      			<a href="#">
+								      				<h4 class="newsTitle">地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</h4>
+								      			</a>
+								      		</li>
 								    	</ul>
 
 									</div>

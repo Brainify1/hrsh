@@ -295,6 +295,10 @@ a#loginMargin, a#loginMargin2 {
 	#myCarousel .list-group {display:none;} 
 }
 
+.newsTitle {
+	color: rgb(50,79,225);
+	letter-spacing: 1px;
+}
 /*carousel & news end*/
 
 /*youtube videos*/
@@ -326,11 +330,14 @@ a#loginMargin, a#loginMargin2 {
 .whiteText {
 	color:white;
 	transition: 0.2s;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .whiteText:hover {
 	font-size: 14.5px;
 	color:rgb(220,220,220);
+	text-decoration: none;
 }
 
 iframe {

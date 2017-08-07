@@ -38,3 +38,5 @@ $('li#tlNew').click(function(){
 	$('div.hotList').css('display', 'none');
 	$('div.newList').css('display', 'initial');
 });
+
+// text
