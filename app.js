@@ -18,6 +18,7 @@ var users = require('./routes/users');
 var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
 var listing = require("./routes/listings");
+var realEstate = require("./routes/realEstate");
 
 
 var app = express();
@@ -44,6 +45,8 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/userpage', userPage);
 app.use('/category', listing);
+
+app.use('/re', realEstate);
 	
 
 app.get("/userpage", (req, res, next) =>{

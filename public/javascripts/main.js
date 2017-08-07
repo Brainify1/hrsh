@@ -25,6 +25,7 @@ var boxheight = $('.carousel-inner').height();
 	});
 // carousel ended
 
+// news block
 $('li#tlHot').click(function(){
 	$('li#tlNew').removeClass('focus');
 	$('li#tlHot').addClass('focus');
@@ -38,5 +39,6 @@ $('li#tlNew').click(function(){
 	$('div.hotList').css('display', 'none');
 	$('div.newList').css('display', 'initial');
 });
+// news block end
 
-// text
+
