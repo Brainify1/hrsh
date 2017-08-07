@@ -78,11 +78,13 @@ body {
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    transition: 0.2s
 }
 
 .navLi a:hover {
 	color:rgb(220,220,220);
 	text-decoration-style: none;
+	font-size: 14.5px;
 }
 
 /*End of navbarCss*/
@@ -294,6 +296,54 @@ a#loginMargin, a#loginMargin2 {
 }
 
 /*carousel & news end*/
+
+/*youtube videos*/
+.titleBlock {
+	margin-top: 20px;
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(64,0,144);
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 2px;
+    list-style-type: none;
+}
+
+.hotVid {
+	padding: 5px;
+	display: flex;
+	display: -webkit-inline-flex;
+	align-items: center;
+  	justify-content: center;
+	flex-grow: 1;
+	color: white;
+}
+
+.whiteText {
+	color:white;
+	transition: 0.2s;
+}
+
+.whiteText:hover {
+	font-size: 14.5px;
+	color:rgb(220,220,220);
+}
+
+iframe {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.bg-white {
+	background-color: white;
+	border: 1px solid rgb(242,242,245);
+}
+/*youtube videos end*/
 
 /*listing block*/
 .mt{

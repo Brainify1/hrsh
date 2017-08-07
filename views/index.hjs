@@ -68,6 +68,37 @@
 							</div>  	
 						</div>
 						<!-- End Carousel -->
+						<!-- youtube videos -->
+						<div class="youtubeDiv">
+							<div class="titleBlock">
+								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="#">更多>></a></div>
+								
+							</div>
+							<div class="container-fluid bg-white">
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- youtube videos end -->
+						<!-- listings -->
 						<div class="mt20">
 							<nav class="topListNav">
 								<ul class="topListUl">
@@ -137,13 +168,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="youtubeDiv">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-4"></div>
-								</div>
-							</div>
-						</div>
+						<!-- listings end -->
 	  				</div>
 	  				<div class="col-md-2 col-sm-2 bg-temp">
 
