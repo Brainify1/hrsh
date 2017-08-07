@@ -1,5 +1,5 @@
 var pageList = new List('test-list', {
 	valueNames: ['titleLi','userLi', 'readLi'],
-	page: 7,
+	page: 10,
 	pagination: true
 });

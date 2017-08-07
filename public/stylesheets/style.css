@@ -481,6 +481,17 @@ li.focus {
 	display: block;
 }
 
+.postList {
+	padding: 5px;
+	background-color: rgb(51,122,183);
+	border-radius: 5px;
+
+}
+
+.postList a {
+	color: white;
+}
+
 .bigListing {
 	padding: 0;
 	margin: 0;
