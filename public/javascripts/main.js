@@ -41,4 +41,15 @@ $('li#tlNew').click(function(){
 });
 // news block end
 
+$("#triggerSignup").click(function(){
+  $('#myModal').modal('hide');
+  $('#myModal2').modal('show');
+});
+
+$("#triggerLogin").click(function(){
+  $('#myModal2').modal('hide');
+  $('#myModal').modal('show');
+});
+
+
 

@@ -57,6 +57,27 @@ app.get("/userpage", (req, res, next) =>{
   })
 })
 
+//user authentication
+app.get("/", (req, res, next) =>{
+    res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
+})
+app.post("/login", passport.authenticate("local", {
+    successRedirect: "/userpage",
+    failureRedirect: "/", 
+}))
+app.get("/logout", (req, res, next) =>{
+    req.session.destroy((err) =>{
+      res.redirect("/")
+    })
+})
+app.get("/", (req, res, next) =>{
+    res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('signupMessage')});
+})
+app.post("/signup", passport.authenticate("local-register", {
+    successRedirect: "/userpage",
+    failureRedirect: "/",
+}))
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

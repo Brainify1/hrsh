@@ -9,11 +9,90 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <!-- font awesome CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "/public/javascripts/main.js"></script>
+    <script>$("#join-trigger").click(function(){
+  $('#myModal').modal('hide');
+  $('#myModal2').modal('show');
+});</script>
   </head>
   <body>
     <div class="index_login">
       <div class="floatRight">
-        <a href = "/login" class='loginText' id="loginMargin"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
-        <a href = "/signup" class='loginText' id="loginMargin2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a class='loginText modal-backdrop.in' id="loginMargin" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+        <a class='loginText' id="loginMargin2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+          <div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal">&times;</a>
+                      <div class="errorMessage" style="width: 95%">{{message}}</div>
+                        <form action = "/login" method= "post">
+                          <div>
+                            <label> Email: </label>
+                            <input type = "text" name = "username" />
+                          </div>
+                          <div>
+                            <label> Password: </label>
+                            <input type = "password" name = "password" />
+                            </div>
+                          <div>
+                          <input type="submit" value="Log In"/>
+                          </div>
+                        </form>
+                  </div>
+                    <div class="modal-footer">
+                      <a id="triggerSignup" style="float: left">Have an account already?</a>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog" data-backdrop="static" data-keyboard="true">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="close" data-dismiss="modal">&times;</a>
+                      <div class="errorMessage">{{message}}</div>
+                        <form action = "/signup" method= "post">
+                          <div>
+                            <label> First Name: </label>
+                            <input type = "text" name = "first_name" />
+                          </div>
+                          <div>
+                            <label> Last Name: </label>
+                            <input type = "text" name = "last_name" />
+                          </div>
+                          <div>
+                            <label> Email: </label>
+                            <input type = "text" name = "username" />
+                          </div>
+                          <div>
+                            <label> Password: </label>
+                            <input type = "password" name = "password" />
+                          </div>
+                            <div>
+                              <label> Password (Repeat): </label>
+                              <input type = "password" name = "password2" />
+                            </div>
+                            <div>
+                              <input type="submit" value="Sign Up"/>
+                            </div>
+                        </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a id="triggerLogin" style="float: left">Don't have an account?</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
       </div>
     </div> 

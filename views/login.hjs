@@ -5,6 +5,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <script src="/javascripts/main.js"></script>
 </head>
 <body>
 	<!--<div class="errorMessage">{{message}}</div>
@@ -34,12 +35,12 @@
   	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
 
   <!-- Modal -->
-  	<div class="modal fade" id="myModal" role="dialog">
+  	<div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true">
     	<div class="modal-dialog">
       <!-- Modal content-->
      		<div class="modal-content">
         		<div class="modal-header">
-          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<a class="close" data-dismiss="modal">&times;</a>
           				<div class="errorMessage" style="width: 95%">{{message}}</div>
 		  					<form action = "/login" method= "post">
 	      						<div>
@@ -66,8 +67,7 @@
         			</div>
     		</div>
         </div>
-    </div>
-  
+    </div> 
 </div>
 </body>
 </html>

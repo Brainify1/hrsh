@@ -568,3 +568,5 @@ li.focus {
 	resize: none;
 }
 /*end of error messages*/
+
+.modal-backdrop.in { z-index: auto;}
