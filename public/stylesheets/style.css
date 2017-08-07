@@ -463,7 +463,36 @@ li.focus {
     background-color: rgb(226,226,230);
 }
 
-.listingUl {
+.mg0 {
+	margin: 0;
+	padding: 0;
+}
+
+.sbarDiv {
+	display: block;
+	background-color: white;
+    height: 30px;
+    border: 1px solid rgb(240,240,240);
+    float: right;
+}
+}
+
+.sbar {
+	display: block;
+}
+
+.postList {
+	padding: 5px;
+	background-color: rgb(51,122,183);
+	border-radius: 5px;
+
+}
+
+.postList a {
+	color: white;
+}
+
+.bigListing {
 	padding: 0;
 	margin: 0;
 	min-width: 100%;
@@ -473,12 +502,10 @@ li.focus {
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: white;
-    border-bottom: 1px solid rgb(226,226,230);
-    border-left: 1px solid rgb(226,226,230);
-    border-right: 1px solid rgb(226,226,230);
+    border: 1px solid rgb(226,226,230);
 }
 
-.listingUl:hover {
+.bigListing:hover {
 	background-color: rgb(240,240,245);
 }
 
@@ -487,6 +514,12 @@ li.focus {
 	align-items: center;
   	justify-content: center;
 	flex-basis: 76%;
+}
+
+.titleLi a {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
 }
 
 .titleLi h5 {
