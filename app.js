@@ -19,6 +19,7 @@ var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
 var listing = require("./routes/listings");
 var realEstate = require("./routes/realEstate");
+var moreVideo = require("./routes/moreVideo");
 
 
 var app = express();
@@ -45,7 +46,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/userpage', userPage);
 app.use('/category', listing);
-
+app.use('/videos', moreVideo);
 app.use('/re', realEstate);
 	
 

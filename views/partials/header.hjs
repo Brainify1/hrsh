@@ -18,34 +18,35 @@
   <body>
     <div class="index_login">
       <div class="floatRight">
-        <a class='loginText modal-backdrop.in' id="loginMargin" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
-        <a class='loginText' id="loginMargin2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a class='loginText modal-backdrop.in whiteText' id="loginMargin" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+        <a class='loginText whiteText' id="loginMargin2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
           <div>
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-sm">
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times;</a>
                       <div class="errorMessage" style="width: 95%">{{message}}</div>
-                        <form action = "/login" method= "post">
+                        <form action = "/login" method= "post" class = "formStructure">
+                          <label>Sign in to 华人生活网</label>
                           <div>
-                            <label> Email: </label>
-                            <input type = "text" name = "username" />
+                            <p></p> 
+                            <input type = "text" name = "username" class = "formBox" placeholder="Email" />
                           </div>
                           <div>
-                            <label> Password: </label>
-                            <input type = "password" name = "password" />
+                            <p></p>
+                            <input type = "password" name = "password" class="formBox" placeholder="Password" />
                             </div>
                           <div>
-                          <input type="submit" value="Log In"/>
+                          <p></p>
+                          <input type="submit" value="Sign In" class="formButton"/>
                           </div>
                         </form>
                   </div>
-                    <div class="modal-footer">
-                      <a id="triggerSignup" style="float: left">Have an account already?</a>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer" style="text-align: center">
+                      <a id="triggerSignup" style="cursor: pointer">Have an account already?</a>
                     </div>
                 </div>
               </div>
@@ -54,41 +55,41 @@
           <div>
             <!-- Modal -->
             <div class="modal fade" id="myModal2" role="dialog" data-backdrop="static" data-keyboard="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-sm">
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times;</a>
                       <div class="errorMessage">{{message}}</div>
-                        <form action = "/signup" method= "post">
+                        <form action = "/signup" method= "post" class = "formStructure">
+                          <label>Sign Up for 华人生活网</label>
                           <div>
-                            <label> First Name: </label>
-                            <input type = "text" name = "first_name" />
+                            <p></p>
+                            <input type = "text" name = "first_name" class = "formBox" placeholder="First Name" />
                           </div>
                           <div>
-                            <label> Last Name: </label>
-                            <input type = "text" name = "last_name" />
+                            <p></p>
+                            <input type = "text" name = "last_name" class = "formBox" placeholder="Last Name"/>
                           </div>
                           <div>
-                            <label> Email: </label>
-                            <input type = "text" name = "username" />
+                            <p></p>
+                            <input type = "text" name = "username" class = "formBox" placeholder="Email"/>
                           </div>
                           <div>
-                            <label> Password: </label>
-                            <input type = "password" name = "password" />
+                            <p></p>
+                            <input type = "password" name = "password" class = "formBox" placeholder="Password"/>
                           </div>
                             <div>
-                              <label> Password (Repeat): </label>
-                              <input type = "password" name = "password2" />
+                              <p></p>
+                              <input type = "password" name = "password2" class = "formBox" placeholder="Password (Enter Again)"/>
                             </div>
-                            <div>
-                              <input type="submit" value="Sign Up"/>
+                            <div><p></p>
+                              <input type="submit" value="Sign Up" class="formButton"/>
                             </div>
                         </form>
                   </div>
-                  <div class="modal-footer">
-                    <a id="triggerLogin" style="float: left">Don't have an account?</a>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <div class="modal-footer" style="text-align: center">
+                    <a id="triggerLogin" style="cursor: pointer">Don't have an account?</a>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,218 @@
+ {{> header}}
+	  	<div class="container-fluid bodyDiv">
+	  		{{> states}}
+	      	{{> navbar}}
+	  		<div class="container-fluid">
+	  			<div class="row">
+	  				<div class="col-md-2 col-sm-2">
+	  					<div class="bg-temp">
+	  						 
+	  					</div>
+	  				</div>
+	  				<div class="col-md-8 col-sm-8">
+						<!-- youtube videos -->
+						<div class="youtubeDiv">
+							<div class="titleBlock">
+								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/">更少<<</a></div>
+							</div>
+							<div class="container-fluid bg-white">
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Game of Thrones Spoilers</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/Ce8p0VcTbuA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Chopin - Ballade No. 1 in G minor, Op. 23</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/Ce8p0VcTbuA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Chopin - Ballade No. 1 in G minor, Op. 23</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/Ce8p0VcTbuA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Chopin - Ballade No. 1 in G minor, Op. 23</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/oqSulR9Fymg" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Beethoven - Moonlight Sonata Movement 3</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/oqSulR9Fymg" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Beethoven - Moonlight Sonata Movement 3</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/oqSulR9Fymg" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Beethoven - Moonlight Sonata Movement 3</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/34Na4j8AVgA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Starboy</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/34Na4j8AVgA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Starboy</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/34Na4j8AVgA" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Starboy</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Inappropriate Material</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Inappropriate Material</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Inappropriate Material</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/QhL_lRzobYs" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Pride</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/QhL_lRzobYs" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Pride</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/QhL_lRzobYs" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Pride</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/O8VadpIgvbw" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Cure</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/O8VadpIgvbw" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Cure</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/O8VadpIgvbw" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Cure</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/YnwsMEabmSo" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Marshmello</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/YnwsMEabmSo" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Marshmello</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/YnwsMEabmSo" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>Marshmello</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XxOoPEhy9T8" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Legend</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XxOoPEhy9T8" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Legend</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/XxOoPEhy9T8" frameborder="0" allowfullscreen></iframe>
+										<div>
+											<p>The Legend</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- youtube videos end -->
+	  				</div>
+	  				<div class="col-md-2 col-sm-2">
+	  					<div class="bg-temp">
+	  						 
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	    <!-- jQuery JS-->
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <!-- bootstrap JS -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <!-- cusomized JS -->
+	    <script type="text/javascript" src="/javascripts/main.js"></script>
+  	</body>
+</html>
