@@ -20,6 +20,7 @@ var userPage = require("./routes/userpage");
 var listing = require("./routes/listings");
 var realEstate = require("./routes/realEstate");
 var moreVideo = require("./routes/moreVideo");
+var moreNews = require("./routes/moreNews");
 
 
 var app = express();
@@ -48,16 +49,17 @@ app.use('/userpage', userPage);
 app.use('/category', listing);
 app.use('/videos', moreVideo);
 app.use('/re', realEstate);
+app.use('/news', moreNews);
 	
 
-app.get("/userpage", (req, res, next) =>{
+/*app.get("/userpage", (req, res, next) =>{
   res.send({ 
     session: req.session,
     user: req.user,
     authenticated: req.isAuthenticated(),
   })
 })
-
+*/
 //user authentication
 app.get("/", (req, res, next) =>{
     res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});

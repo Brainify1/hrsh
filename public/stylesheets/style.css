@@ -565,6 +565,11 @@ li.focus {
 	background-image: url(http://nickvanceart.com/wp-content/uploads/2009/02/eazypizza.jpg);
 }
 
+.blizzardAd {
+	height: 130px;
+	background-image: url(https://res.cloudinary.com/pvplive/image/upload/w_750,f_auto/article_headers/HS-20170727-Frozen.jpg);
+}
+
 .bottomNavUl {
 	margin: 0;
 	min-width: 100%;
