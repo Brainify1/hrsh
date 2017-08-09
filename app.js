@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var flash = require("connect-flash");
 
 var session = require("express-session");
+var RedisStore = require('connect-redis')(session);
 var passport = require("passport");
 
 var db = require("./db");
@@ -36,7 +37,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({ secret: "i love dogs", resave: false, saveUninitialized: false}));
+app.use(session({ 
+  store: new RedisStore(),
+  secret: "i love dogs", 
+  resave: false, 
+  saveUninitialized: false
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash())
@@ -58,10 +64,10 @@ app.use('/news', moreNews);
     user: req.user,
     authenticated: req.isAuthenticated(),
   })
-})
+})  
 */
 //user authentication
-app.get("/", (req, res, next) =>{
+app.get("/login", (req, res, next) =>{
     res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
 })
 app.post("/login", passport.authenticate("local", {
@@ -73,7 +79,7 @@ app.get("/logout", (req, res, next) =>{
       res.redirect("/")
     })
 })
-app.get("/", (req, res, next) =>{
+app.get("/signup", (req, res, next) =>{
     res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('signupMessage')});
 })
 app.post("/signup", passport.authenticate("local-register", {

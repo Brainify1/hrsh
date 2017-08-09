@@ -33,11 +33,11 @@
                           <label>Sign in to 华人生活网</label>
                           <div>
                             <p></p> 
-                            <input type = "text" name = "username" class = "formBox" placeholder="Email" />
+                            <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Email" />
                           </div>
                           <div>
                             <p></p>
-                            <input type = "password" name = "password" class="formBox" placeholder="Password" />
+                            <input type = "password" name = "password" class="formBox" placeholder="Password" required="Need Password" />
                             </div>
                           <div>
                           <p></p>
@@ -65,23 +65,23 @@
                           <label>Sign Up for 华人生活网</label>
                           <div>
                             <p></p>
-                            <input type = "text" name = "first_name" class = "formBox" placeholder="First Name" />
+                            <input type = "text" name = "first_name" class = "formBox" placeholder="First Name" required="Need First Name" />
                           </div>
                           <div>
                             <p></p>
-                            <input type = "text" name = "last_name" class = "formBox" placeholder="Last Name"/>
+                            <input type = "text" name = "last_name" class = "formBox" placeholder="Last Name" required="Need Last Name" />
                           </div>
                           <div>
                             <p></p>
-                            <input type = "text" name = "username" class = "formBox" placeholder="Email"/>
+                            <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Email"/>
                           </div>
                           <div>
                             <p></p>
-                            <input type = "password" name = "password" class = "formBox" placeholder="Password"/>
+                            <input type = "password" name = "password" class = "formBox" placeholder="Password" required="Need Password"/>
                           </div>
                             <div>
                               <p></p>
-                              <input type = "password" name = "password2" class = "formBox" placeholder="Password (Enter Again)"/>
+                              <input type = "password" name = "password2" class = "formBox" placeholder="Password (Enter Again)" required="Need Password"/>
                             </div>
                             <div><p></p>
                               <input type="submit" value="Sign Up" class="formButton"/>
