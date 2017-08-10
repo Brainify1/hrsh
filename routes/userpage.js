@@ -12,6 +12,8 @@ function loginRequired(req,res,next){
 router.get('/', loginRequired, function(req, res, next){
   res.render('userpage', { 
   	title: '华人生活网', 
+    firstName: req.session.passport.user.first_name,
+    lastName: req.session.passport.user.last_name,
     isLoggedIn: req.isAuthenticated(),
     partials: {
       navbar: '../views/partials/navbar',

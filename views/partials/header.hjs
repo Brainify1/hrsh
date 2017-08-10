@@ -24,7 +24,7 @@
         <input type="text" value="{{isLoggedIn}}" hidden id="authStatus">
           <div>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true">
+            <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true" >
               <div class="modal-dialog modal-sm">
                 <!-- Modal content-->
                 <div class="modal-content">

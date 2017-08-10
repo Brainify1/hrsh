@@ -51,8 +51,6 @@ $("#triggerLogin").click(function(){
   $('#myModal').modal('show');
 });
 
-console.log($('#authStatus').val())
-
 if ($('#authStatus').val() == "true"){
 	$('#loginStatus').hide();
 	$('#loginStatus2').hide();

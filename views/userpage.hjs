@@ -214,7 +214,7 @@
 	  		</div>
 	  	</div>
 	  	<div style="text-align: center">
-	  		<h1>Yahello!</h1>
+	  		<h1>Yahello! {{firstName}} {{lastName}}</h1>
     			<form action = "/sendMessage" method= "post">
     				<div>
 						<label> Email: </label>

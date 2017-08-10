@@ -20,7 +20,7 @@
     					</div>
 	  					<div id="test-list">
 	  						<div class="sbarDiv">
-	  							<span class="postList"><a href="#">免费发帖</a></span>
+	  							<span class="postList"><a href="/postList">免费发帖</a></span>
 	  							<input type="text" class="search sbar" placeholder="搜索关键字" />
 	  						</div>
 	  						<nav class="divNav">

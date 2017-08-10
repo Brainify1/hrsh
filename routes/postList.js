@@ -1,8 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
+function loginRequired(req,res,next){
+	if(!req.isAuthenticated()){
+		return res.redirect("#myModal");
+	}
+	next()
+}
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', loginRequired, function(req, res, next) {
   res.render('postList', { 
   	title: '华人生活网',
   	isLoggedIn: req.isAuthenticated(),
