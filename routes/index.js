@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 		header: '../views/partials/header',
 		navbar: '../views/partials/navbar',
 		states: '../views/partials/states',
+		footer: '../views/partials/footer'
 	}
 	})
   console.log(req.session)

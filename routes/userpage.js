@@ -18,7 +18,15 @@ router.get('/', loginRequired, function(req, res, next){
     partials: {
       navbar: '../views/partials/navbar',
       states: '../views/partials/states',
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       header: '../views/partials/header'
+=======
+      footer: '../views/partials/footer'
+>>>>>>> Stashed changes
+=======
+      footer: '../views/partials/footer'
+>>>>>>> Stashed changes
   }
   });
   console.log(req.session)

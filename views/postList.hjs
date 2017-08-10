@@ -74,17 +74,5 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	    <!-- jQuery JS-->
-	    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-	    <!-- lodash -->
-	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
-	    <!-- bootstrap JS -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	    <!-- cusomized JS -->
-	    <script type="text/javascript" src="/javascripts/main.js"></script>
-	    <script src="/javascripts/ckeditor_config.js"></script>
-	    <script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
-	    <script type="text/javascript" src="/javascripts/dropZone.js"></script>
-  	</body>
-</html>
+	    {{> footer}}
 
