@@ -10,9 +10,64 @@
 	  					</div>
 	  				</div>
 	  				<div class="col-md-8 col-sm-8">
-	  					<textarea name="editor1"></textarea>
-	  					<form action="/" method="post" class="dropzone" id="my-awesome-dropzone">
-	  					</form>
+		  				<div class="postListContainer">
+		  					<div class="fabuDiv">
+		  						<h5>发布新帖</h5>
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postFirstLine">
+		  									<h6>主题</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<input type="text" class="titleInputBox" placeholder="">
+		  								<h6 class="inputBoxCaption">为了方便阅读，主题应能够反映帖子的内容，长度尽量在8到15个字之间。</h6>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div>
+		  						
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postSecondLine">
+		  									<h6>帖子内容</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<div class="titleBoxNoBorder">
+		  									<textarea name="editor1"></textarea>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postSecondLine">
+		  									<h6>图片/文件</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<div class="titleBoxNoBorder">
+		  									<form action="/" method="post" class="dropzone" id="my-awesome-dropzone"></form>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="postButtonDiv">
+		  						<a class="postButton" href="#">
+		  							<div class="fabiaoDiv">
+		  								<img class="postImg" src="/images/post.png">
+		  								<span>发表</span>
+		  							</div>
+		  							
+		  						</a>
+		  					</div>
+		  				</div>	  					
 					</div>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">

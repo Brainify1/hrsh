@@ -592,6 +592,93 @@ li.focus {
 }
 /*real Estate page end*/
 
+/*postList*/
+.postListContainer {
+	background-color: white;
+	padding: 0 0 20px 0;
+}
+
+.fabuDiv {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(226,226,230);
+}
+
+.fabuDiv h5 {
+	display: block;
+	padding: 8px 0 0 0;
+	color: rgb(29,29,163);
+	text-align: center;
+}
+
+.postFirstLine {
+	display: inline-block;
+	width: 100%;
+}
+
+.postFirstLine h6 {
+	margin: 15.5px 0;
+	float: left;
+	color: rgb(29,29,163);
+}
+
+.postSecondLine h6 {
+	margin: 10px 0;
+	color: rgb(29,29,163);
+}
+
+.titleInputBox {
+	margin-top: 10px;
+	border: 1px solid rgb(190,190,190);
+	width: 80%;
+}
+
+.inputBoxCaption {
+	margin-top: 5px;
+	display: block;
+	color: rgb(111,113,110);
+}
+
+.titleBoxNoBorder {
+	margin: 10px 0;
+}
+
+.postButtonDiv {
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fabiaoDiv {
+	padding: 3% 0 3% 30%;
+}
+
+.postButton {
+	border-radius: 3px;
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-color: rgb(51,122,183);
+	align-items: center;
+	text-decoration: none;
+}
+
+.postButton span {
+	letter-spacing: 1px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.postImg {
+	height: 20px;
+	display: block;
+	float: left;
+	width: auto;
+	display: block;
+}
+/*postList end*/
 
 /*error messages*/
 .errorMessage {
