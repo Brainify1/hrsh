@@ -1,0 +1,5 @@
+{{>header}}
+
+{{>states}}
+{{>navbar}}
+{{>footer}}

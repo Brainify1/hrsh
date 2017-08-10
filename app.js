@@ -26,7 +26,7 @@ var realEstate = require("./routes/realEstate");
 var moreVideo = require("./routes/moreVideo");
 var moreNews = require("./routes/moreNews");
 var postList = require('./routes/postList');
-
+var admin = require('./routes/admin');
 
 var app = express();
 
@@ -61,7 +61,7 @@ app.use('/videos', moreVideo);
 app.use('/re', realEstate);
 app.use('/news', moreNews);
 app.use('/postList', postList);
-	
+app.use('/admin', admin);
 
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 
