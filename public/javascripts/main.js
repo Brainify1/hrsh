@@ -51,5 +51,27 @@ $("#triggerLogin").click(function(){
   $('#myModal').modal('show');
 });
 
+document.getElementById("text").innerHTML = $('#loginStatus').value;
+if ($('#loginStatus').value = "true"){
+	$('#loginStatus').hide();
+}
+
+if ($('#loginStatus').value = "false"){
+	$('#loginStatus').show();
+}
+
+if ($('#loginStatus2').value == "true"){
+	$('#loginStatus2').hide();
+}
+if ($('#loginStatus2').value == "false"){
+	$('#loginStatus2').show();
+}
+
+if ($('#loginStatus3').value = "true"){
+ 	$('#loginStatus3').show();
+}
+if ($('#loginStatus3').value = "false"){
+ 	$('#loginStatus3').hide();
+}
 
 

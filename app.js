@@ -12,6 +12,9 @@ var passport = require("passport");
 
 var db = require("./db");
 require("./passport");
+var mongojs = require('mongojs');
+var db2 = mongojs('mongodb://localhost:27017/test', ['listings']);
+var listingsCollection = db2.collection('listings');
 
 var index = require('./routes/index');
 //var page_a = require('./routes/page_a')
@@ -70,8 +73,18 @@ app.use('/postList', postList);
 */
 //user authentication
 app.get("/login", (req, res, next) =>{
-    res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
+   // res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
+   res.render("index", {
+    message: req.flash('loginMessage'),
+    title: '华人生活网',
+    partials: {
+    header: '../views/partials/header',
+    navbar: '../views/partials/navbar',
+    states: '../views/partials/states'
+  }
+  })
 })
+
 app.post("/login", passport.authenticate("local", {
     successRedirect: "/userpage",
     failureRedirect: "/", 
@@ -82,19 +95,45 @@ app.get("/logout", (req, res, next) =>{
     })
 })
 app.get("/signup", (req, res, next) =>{
-    res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('signupMessage')});
+   // res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('signupMessage')});
+   res.render("index", {message: req.flash('loginMessage')});
 })
 app.post("/signup", passport.authenticate("local-register", {
     successRedirect: "/userpage",
     failureRedirect: "/",
 }))
 
+app.get("/sendMessage", (req, res, email, message, next) =>{
+  const newMessage = {
+        email: email,
+        message: req.body.message
+      }
+      listingsCollection
+        .insert(newMessage, function(ids){
+          newMessage.id = ids
+          done(null, newMessage)
+        })
+})
+
+app.post("/sendMessage", (req, res, email, message, next) =>{
+  const newMessage = {
+        email: email,
+        message: req.body.message
+      }
+      listingsCollection
+        .insert(newMessage, function(ids){
+          newMessage.id = ids
+          done(null, newMessage)
+        })
+      res.redirect("/userpage");
+
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
+});  
 
 
 // error handler

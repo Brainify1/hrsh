@@ -134,7 +134,7 @@ body {
 	margin-top: 20px;
 }
 
-a#loginMargin, a#loginMargin2 {
+a.loginMargin, a.loginMargin2 {
 	padding: 0;
 	margin: 0 15px;
 }

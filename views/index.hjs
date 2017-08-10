@@ -93,7 +93,7 @@
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
 							<div class="titleBlock">
-								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/videos">更多>></a></div>
+								<div class="hotVid"><span class="moreVid1">	 <p id="text"></p>热门影片 | <span><a class="whiteText" href="/videos">更多>></a></div>
 								
 							</div>
 							<div class="container-fluid bg-white">
@@ -194,7 +194,7 @@
 	  				</div>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">
-	  						 
+
 	  					</div>
 	  				</div>
 	  			</div>

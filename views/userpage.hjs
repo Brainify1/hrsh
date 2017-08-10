@@ -15,7 +15,7 @@
 		<div class="floatLeft">
 			<span style="color:white">Welcome, {{userFirstName}} {{userLastName}}!</span>
 		</div>
-    	<div class="floatRight">
+    	<div class="floatRight" id="loggedInNavbar">
         	<a href = "/logout" id="loginMargin" class="whiteText"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
       	</div>
     </div> 
@@ -225,11 +225,11 @@
     			<form action = "/sendMessage" method= "post">
     				<div>
 						<label> Email: </label>
-						<input type = "text" name = "username" />
+						<input type = "text" name = "email" />
 					</div>
 					<div>
 						<label> Message: </label>
-						<textarea type = "text" name = "message" class="messageBox"></textarea>
+						<input type = "text" name = "message" class="messageBox"></inputZZZ>
 					</div>
 					<div>
 						<input type="submit" value="Send Message"/>
