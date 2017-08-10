@@ -10,9 +10,64 @@
 	  					</div>
 	  				</div>
 	  				<div class="col-md-8 col-sm-8">
-	  					<form method="post">
-    						<textarea id="mytextarea">Hello, World!</textarea>
-						</form>
+		  				<div class="postListContainer">
+		  					<div class="fabuDiv">
+		  						<h5>发布新帖</h5>
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postFirstLine">
+		  									<h6>主题</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<input type="text" class="titleInputBox" placeholder="">
+		  								<h6 class="inputBoxCaption">为了方便阅读，主题应能够反映帖子的内容，长度尽量在8到15个字之间。</h6>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div>
+		  						
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postSecondLine">
+		  									<h6>帖子内容</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<div class="titleBoxNoBorder">
+		  									<textarea name="editor1"></textarea>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="container-fluid">
+		  						<div class="row">
+		  							<div class="col-md-2 col-sm-2">
+		  								<div class="postSecondLine">
+		  									<h6>图片/文件</h6>
+		  								</div>
+		  							</div>
+		  							<div class="col-md-10 col-sm-10">
+		  								<div class="titleBoxNoBorder">
+		  									<form action="/" method="post" class="dropzone" id="my-awesome-dropzone"></form>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<div class="postButtonDiv">
+		  						<a class="postButton" href="#">
+		  							<div class="fabiaoDiv">
+		  								<img class="postImg" src="/images/post.png">
+		  								<span>发表</span>
+		  							</div>
+		  							
+		  						</a>
+		  					</div>
+		  				</div>	  					
 					</div>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">
@@ -28,13 +83,11 @@
 	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 	    <!-- bootstrap JS -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	    <!-- list Js -->
-	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-	    <!-- list js pagination -->
-	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
 	    <!-- cusomized JS -->
 	    <script type="text/javascript" src="/javascripts/main.js"></script>
-	    <script type="text/javascript" src="/javascripts/customListJs.js"></script>
+	    <script src="/javascripts/ckeditor_config.js"></script>
+	    <script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
+	    <script type="text/javascript" src="/javascripts/dropZone.js"></script>
   	</body>
 </html>
 
