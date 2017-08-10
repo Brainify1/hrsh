@@ -5,6 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('postList', { 
   	title: '华人生活网',
+  	isLoggedIn: req.isAuthenticated(),
 	partials: {
 		header: '../views/partials/header',
 		navbar: '../views/partials/navbar',

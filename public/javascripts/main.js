@@ -51,27 +51,18 @@ $("#triggerLogin").click(function(){
   $('#myModal').modal('show');
 });
 
-document.getElementById("text").innerHTML = $('#loginStatus').value;
-if ($('#loginStatus').value = "true"){
+console.log($('#authStatus').val())
+
+if ($('#authStatus').val() == "true"){
 	$('#loginStatus').hide();
-}
-
-if ($('#loginStatus').value = "false"){
-	$('#loginStatus').show();
-}
-
-if ($('#loginStatus2').value == "true"){
 	$('#loginStatus2').hide();
+	$('#loginStatus3').show();
 }
-if ($('#loginStatus2').value == "false"){
+if ($('#authStatus').val() == "false"){
+	$('#loginStatus').show();
 	$('#loginStatus2').show();
-}
+	$('#loginStatus3').hide();
 
-if ($('#loginStatus3').value = "true"){
- 	$('#loginStatus3').show();
-}
-if ($('#loginStatus3').value = "false"){
- 	$('#loginStatus3').hide();
 }
 
 

@@ -621,8 +621,7 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	    <!-- jQuery JS-->
-	    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    
 	    <!-- lodash -->
 	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 	    <!-- bootstrap JS -->

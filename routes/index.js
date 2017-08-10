@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 		states: '../views/partials/states',
 	}
 	})
+  console.log(req.session)
 });
 
 module.exports = router;
