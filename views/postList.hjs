@@ -59,12 +59,9 @@
 		  						</div>
 		  					</div>
 		  					<div class="postButtonDiv">
-		  						<a class="postButton" href="#">
-		  							<div class="fabiaoDiv">
-		  								<img class="postImg" src="/images/post.png">
-		  								<span>发表</span>
-		  							</div>
-		  							
+		  						<a class="postButton hvr-grow-shadow" href="#">
+		  							<img class="postImg" src="/images/post.png">
+		  							<span>发表</span>
 		  						</a>
 		  					</div>
 		  				</div>	  					

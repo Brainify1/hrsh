@@ -71,6 +71,9 @@ body {
 }
 
 .navLi a {
+	display: block;
+	max-height: 52px;
+	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	display: inline;
@@ -84,7 +87,7 @@ body {
 .navLi a:hover {
 	color:rgb(220,220,220);
 	text-decoration-style: none;
-	font-size: 14.5px;
+	font-size: 15px;
 }
 
 /*End of navbarCss*/
@@ -649,18 +652,40 @@ li.focus {
 	margin-right: auto;
 }
 
-.fabiaoDiv {
-	padding: 3% 0 3% 30%;
+.hvr-grow-shadow {
+	padding: 5px 0 0 30%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
+
+[class^="hvr-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 
 .postButton {
 	border-radius: 3px;
 	display: block;
 	width: 150px;
 	height: 30px;
-	background-color: rgb(51,122,183);
+	background-color: rgb(64,0,144);
 	align-items: center;
-	text-decoration: none;
 }
 
 .postButton span {
