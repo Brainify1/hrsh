@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>{{ title }} {{isLoggedIn}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,16 +10,13 @@
     <!-- font awesome CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src = "/public/javascripts/main.js"></script>
-    <script>$("#join-trigger").click(function(){
-  $('#myModal').modal('hide');
-  $('#myModal2').modal('show');
-});</script>
   </head>
   <body>
     <div class="index_login">
       <div class="floatRight">
-        <a class='loginText modal-backdrop.in whiteText' id="loginMargin" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
-        <a class='loginText whiteText' id="loginMargin2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a class='loginText modal-backdrop.in whiteText loginMargin' id="loginStatus" data-toggle="modal" data-target="#myModal" value="{{isLoggedIn}}"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a>
+        <a class='loginText whiteText loginMargin2' id="loginStatus2" data-toggle="modal" data-target="#myModal2" value="{{isLoggedIn}}"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a href = "/logout" id="loginStatus3" class="whiteText loginMargin" value="{{isLoggedIn}}"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
           <div>
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="true">
@@ -97,3 +94,10 @@
           </div>
       </div>
     </div> 
+<!-- 
+    <input type="text" id="authStatus" value="{{}}">
+    <script type="text/javascript">
+      if ($('#authStatus').val()){
+  
+      }
+    </script> -->
