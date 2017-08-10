@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
 	partials: {
 		header: '../views/partials/header',
 		navbar: '../views/partials/navbar',
-		states: '../views/partials/states'
+		states: '../views/partials/states',
+		footer: '../views/partials/footer'
 	}
 	})
 });
