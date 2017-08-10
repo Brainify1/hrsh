@@ -1,0 +1,40 @@
+{{> header}}
+	  	<div class="container-fluid bodyDiv">
+	  		{{> states}}
+	      	{{> navbar}}
+	  		<div class="container-fluid">
+	  			<div class="row">
+	  				<div class="col-md-2 col-sm-2">
+	  					<div class="bg-temp">
+	  						 
+	  					</div>
+	  				</div>
+	  				<div class="col-md-8 col-sm-8">
+	  					<form method="post">
+    						<textarea id="mytextarea">Hello, World!</textarea>
+						</form>
+					</div>
+	  				<div class="col-md-2 col-sm-2">
+	  					<div class="bg-temp">
+	  						 
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	    <!-- jQuery JS-->
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <!-- lodash -->
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+	    <!-- bootstrap JS -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <!-- list Js -->
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	    <!-- list js pagination -->
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
+	    <!-- cusomized JS -->
+	    <script type="text/javascript" src="/javascripts/main.js"></script>
+	    <script type="text/javascript" src="/javascripts/customListJs.js"></script>
+  	</body>
+</html>
+
