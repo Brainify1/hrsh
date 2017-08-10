@@ -72,62 +72,8 @@ app.use('/postList', postList);
 })  
 */
 //user authentication
-app.get("/login", (req, res, next) =>{
-   // res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
-   res.render("index", {
-    message: req.flash('loginMessage'),
-    title: '华人生活网',
-    partials: {
-    header: '../views/partials/header',
-    navbar: '../views/partials/navbar',
-    states: '../views/partials/states'
-  }
-  })
-})
 
-app.post("/login", passport.authenticate("local", {
-    successRedirect: "/userpage",
-    failureRedirect: "/", 
-}))
-app.get("/logout", (req, res, next) =>{
-    req.session.destroy((err) =>{
-      res.redirect("/")
-    })
-})
-app.get("/signup", (req, res, next) =>{
-   // res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('signupMessage')});
-   res.render("index", {message: req.flash('loginMessage')});
-})
-app.post("/signup", passport.authenticate("local-register", {
-    successRedirect: "/userpage",
-    failureRedirect: "/",
-}))
 
-app.get("/sendMessage", (req, res, email, message, next) =>{
-  const newMessage = {
-        email: email,
-        message: req.body.message
-      }
-      listingsCollection
-        .insert(newMessage, function(ids){
-          newMessage.id = ids
-          done(null, newMessage)
-        })
-})
-
-app.post("/sendMessage", (req, res, email, message, next) =>{
-  const newMessage = {
-        email: email,
-        message: req.body.message
-      }
-      listingsCollection
-        .insert(newMessage, function(ids){
-          newMessage.id = ids
-          done(null, newMessage)
-        })
-      res.redirect("/userpage");
-
-})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
