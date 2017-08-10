@@ -213,20 +213,4 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	  	<div style="text-align: center">
-	  		<h1>Yahello! {{firstName}} {{lastName}}</h1>
-    			<form action = "/sendMessage" method= "post">
-    				<div>
-						<label> Email: </label>
-						<input type = "text" name = "email" />
-					</div>
-					<div>
-						<label> Message: </label>
-						<input type = "text" name = "message" class="messageBox"></inputZZZ>
-					</div>
-					<div>
-						<input type="submit" value="Send Message"/>
-					</div>
-				</form>
-		</div>
 	    {{> footer}}
