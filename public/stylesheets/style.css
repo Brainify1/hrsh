@@ -70,24 +70,57 @@ body {
 	border-right: 1px solid rgb(226,226,230);
 }
 
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+[class^="hvr-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffffff;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
 .navLi a {
 	display: block;
-	max-height: 52px;
 	max-width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	display: inline;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 5px 0;
+    margin: 11px auto;
     text-decoration: none;
     transition: 0.2s
-}
-
-.navLi a:hover {
-	color:rgb(220,220,220);
-	text-decoration-style: none;
-	font-size: 15px;
 }
 
 /*End of navbarCss*/
@@ -142,21 +175,7 @@ a.loginMargin, a.loginMargin2 {
 /*End of login{header} css*/
 
 /*states*/
-.states {
-	flex-grow: 1;
-	color: rgb(29,29,163);
-}
 
-.stateFlex {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-.groupStates{
-	flex-grow: 1;
-}
 
 /*end of states*/
 
@@ -216,6 +235,7 @@ a.loginMargin, a.loginMargin2 {
 }
 
 #myCarousel .list-group-item {
+	width: 100%;
 	border-radius:0px;
 	cursor:pointer;
 }
@@ -339,8 +359,7 @@ a.loginMargin, a.loginMargin2 {
 }
 
 .whiteText:hover {
-	font-size: 14.5px;
-	color:rgb(220,220,220);
+	color: white;
 	text-decoration: none;
 }
 

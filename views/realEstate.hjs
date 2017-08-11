@@ -1,5 +1,4 @@
 	   {{> header}}
-	  	<div class="container-fluid bodyDiv">
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
@@ -204,15 +203,15 @@
 	  				</div>
 	  			</div>
 	  		</div>
-	  	</div>
-        <script type="text/javascript">
-            $('#postBtn').click(function() {
-                if ($('#authStatus').val() == 'false') {
-                     $('#myModal').modal('show');
-                } else {
-                    location.href = "/postList"
-                }
-            })
-        </script>
+	  	
+	        <script type="text/javascript">
+	            $('#postBtn').click(function() {
+	                if ($('#authStatus').val() == 'false') {
+	                     $('#myModal').modal('show');
+	                } else {
+	                    location.href = "/postList"
+	                }
+	            })
+	        </script>
 
-	    {{> footer}}
+	    	{{> footer}}
