@@ -5,6 +5,6 @@ MongoClient.connect("mongodb://localhost:27017/test", (err,connection) => {
 	
 	var db = connection;
 	
+	module.exports = db;
 })
 	
-module.exports = db;

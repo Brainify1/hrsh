@@ -5,16 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require("connect-flash");
-
+var multer = require("multer");
 var session = require("express-session");
 var RedisStore = require('connect-redis')(session);
 var passport = require("passport");
+var router = express.Router();
 
 var db = require("./db");
 require("./passport");
-var mongojs = require('mongojs');
-var db2 = mongojs('mongodb://localhost:27017/test', ['listings']);
-var listingsCollection = db2.collection('listings');
+
 
 var index = require('./routes/index');
 //var page_a = require('./routes/page_a')
@@ -71,8 +70,6 @@ app.use('/admin', admin);
   })
 })  
 */
-//user authentication
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
