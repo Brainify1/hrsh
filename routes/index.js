@@ -16,10 +16,11 @@ router.get('/:states', function(req, res, next) {
     title : states,
     partials : {
     	head: '../views/partials/head',
-      	header: '../views/partials/header',
-      	navbar: '../views/partials/navbar',
-      	states: '../views/partials/states',
-      	footer: '../views/partials/footer'
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
     }
   })
 });
@@ -34,10 +35,11 @@ router.get('/:states/:listings', function(req, res, next) {
     title : states,
     partials : {
     	head: '../views/partials/head',
-      	header: '../views/partials/header',
-      	navbar: '../views/partials/navbar',
-      	states: '../views/partials/states',
-      	footer: '../views/partials/footer'
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
     }
   })
 })
@@ -51,10 +53,11 @@ router.get('/:states/:listings/:action', function(req, res, next) {
     title : '华人生活网',
     partials : {
     	head: '../views/partials/head',
-      	header: '../views/partials/header',
-      	navbar: '../views/partials/navbar',
-      	states: '../views/partials/states',
-      	footer: '../views/partials/footer'
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
     }
   })
 })

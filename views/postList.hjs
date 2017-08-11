@@ -1,4 +1,6 @@
 			{{> head}}
+			<link rel="stylesheet" type="text/css" href="/stylesheets/dropzoneCss.css">
+			<script src="https://cdn.ckeditor.com/4.7.1/standard-all/ckeditor.js"></script>
 			{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
@@ -80,4 +82,5 @@
 	  		</div>
 	  	</div>
 	    {{> footer}}
+	    {{> scripts}}
 
