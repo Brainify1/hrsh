@@ -14,7 +14,7 @@
                   <div class="modal-header">
                     <a class="close" data-dismiss="modal">&times;</a>
                       <div class="errorMessage" style="width: 95%">{{message}}</div>
-                        <form action = "/login" method= "post" class = "formStructure">
+                        <form action = "/login" method= "post" class = "formStructure" id="loginForm">
                           <label>Sign in to 华人生活网</label>
                           <div>
                             <p></p> 
