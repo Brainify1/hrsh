@@ -1,4 +1,5 @@
-	   {{> header}}
+	   		{{> head}}
+	   		{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
