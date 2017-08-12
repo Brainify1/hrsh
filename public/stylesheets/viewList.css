@@ -1,26 +1,88 @@
 .navbarUl {
 	padding: 0;
-	margin: 0;
+	margin: 0 0 5px;
 	min-width: 100%;
 	list-style: none;
 	display: inline-flex;
     display: -webkit-inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: rgb(226,226,230);
+    background-color: #ebf2f8;
+}
+
+.rowDiv {
+	padding: 0;
+    margin: 0 0 15px;
+    min-width: 100%;
+    list-style: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    border: 1px solid #f0f4f7;
+}
+
+.postContentDiv, .userNameDiv{
+	padding: 10px;
+}
+
+.inline {
+	display: inline;
+}
+
+.userNameDiv {
+	padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f7;
+    max-width: 20%;
+    min-width: 20%;
+}
+
+.postContentDiv {
+	padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.userNameDiv h6 {
+	text-align: center;
+	width: 100%;
+	color: rgb(51,122,183);
+	word-break: break-all;
+}
+
+.userNameDiv div img {
+	display: block;
+	margin: 10px auto 0;
+	align-items: center;
+	height: 14px; 
+	width: auto;
 }
 
 .mt5 {
-	margin-top: 5px
-}
-
-.viewListPost {
-	width: 100%;
-	height: 30px;
+	margin-top: 5px;
 }
 
 .viewListPost2 {
     display: block;
     float: right;
-    margin: 5px 0 0;
+    margin: 5px 0 0 5px;
+}
+
+.viewTitle {
+	width: 100%;
+	margin-left: 50px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+	.userNameDiv h5 {
+		font-size: 10px;
+	}
 }
