@@ -56,7 +56,7 @@
 			  								<div class="titleBoxNoBorder">
 			  									<label for="images" class="br_dropzone">
 			  									<input type="file" name="images" id="file" onchange="this.form.fileName.value = this.files[0].name">
-			  									<input type="text" id="fileName" name="fileName" placeholder="Yahallo!" readonly>
+			  									<input type="text" id="fileName" name="fileName" placeholder="Drag and Drop" readonly>
   												</label>
 			  								</div>
 			  							</div>

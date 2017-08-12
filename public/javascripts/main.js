@@ -93,4 +93,17 @@ $(".br_dropzone")
 .on("dragleave", onDragLeave)
 .on("drop", onDrop);
 
+Dropzone.options.br_dropzone = {
+        acceptedFiles: 'image/*',
+        maxFiles: 1,
 
+        init: function () {
+            this.on("complete", function (data) {
+                var res = eval('(' + data.xhr.responseText + ')');
+                $('#newImage').text(res.Message);
+            });
+            this.on("maxfilesexceeded", function (data) {
+                this.removeFile(data);
+            });
+        }
+    };
