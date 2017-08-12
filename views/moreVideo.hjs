@@ -1,5 +1,5 @@
- {{> header}}
-	  	<div class="container-fluid bodyDiv">
+ 			{{> head}}
+ 			{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
@@ -69,3 +69,4 @@
 	  		</div>
 	  	</div>
 	    {{> footer}}
+	    {{> scripts}}

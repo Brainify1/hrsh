@@ -1,0 +1,15 @@
+		<!-- lodash -->
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+	   
+	    <!-- list Js -->
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	    <!-- list js pagination -->
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
+	    <!-- cusomized JS -->
+	    <script type="text/javascript" src="/javascripts/main.js"></script>
+	    <script type="text/javascript" src="/javascripts/customListJs.js"></script>
+	    <script src="/javascripts/ckeditor_config.js"></script>
+	    <script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
+	    <script type="text/javascript" src="/javascripts/dropZone.js"></script>
+  	</body>
+</html>

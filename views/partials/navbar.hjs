@@ -3,7 +3,7 @@
 		<ul class="navUl">
 			<li class="navLi"><a class="navList hvr-underline-from-left" href='/'><i class="fa fa-home" aria-hidden="true"></i>首页</a></li>
 			<li class="navLi"><a class="navList hvr-underline-from-left" href='/re'>房产服务</a></li>
-			<li class="navLi"><a class="navList hvr-underline-from-left" href='#'>二手市场</a></li>
+			<li class="navLi"><a class="navList hvr-underline-from-left" href='/:states/:listings'>二手市场</a></li>
 			<li class="navLi"><a class="navList hvr-underline-from-left" href='#'>旅游酒店</a></li>
 			<li class="navLi"><a class="navList hvr-underline-from-left" href='#'>法律经济</a></li>
 			<li class="navLi"><a class="navList hvr-underline-from-left" href='#'>教育培训</a></li>

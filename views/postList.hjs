@@ -1,5 +1,7 @@
-{{> header}}
-	  	<div class="container-fluid bodyDiv">
+			{{> head}}
+			<link rel="stylesheet" type="text/css" href="/stylesheets/dropzoneCss.css">
+			<script src="https://cdn.ckeditor.com/4.7.1/standard-all/ckeditor.js"></script>
+			{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
@@ -80,4 +82,5 @@
 	  		</div>
 	  	</div>
 	    {{> footer}}
+	    {{> scripts}}
 
