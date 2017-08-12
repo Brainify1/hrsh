@@ -94,7 +94,7 @@
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
 							<div class="titleBlock">
-								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/videos">更多>></a></div>
+								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/{{link}}/videos">更多>></a></div>
 								
 							</div>
 							<div class="container-fluid bg-white">
@@ -127,7 +127,7 @@
 								<ul class="topListUl">
 									<li class="topListLi focus" id="tlNew"><span>新帖</span></li>
 									<li class="topListLi" id="tlHot"><span>热帖</span></li>
-									<li class="topListLi"><a href="/news">更多>></a></li>
+									<li class="topListLi"><a href="/{{link}}/news">更多>></a></li>
 								</ul>
 							</nav>
 						</div>
