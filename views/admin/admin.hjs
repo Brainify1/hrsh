@@ -145,7 +145,7 @@
         </nav>
 
         <div class="tabs">
-            <div class="content dash-tab">
+                <div class="content dash-tab">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
@@ -439,7 +439,7 @@
                                         <div class="content">
                                             <div class="author">
                                                     <a href="#">
-                                                <img class="avatar border-gray" src="assets/img/faces/face-3.jpg" alt="..."/>
+                                                <img class="avatar border-gray" src="../../images/faces/face-3.jpg" alt="..."/>
             
                                                     <h4 class="title">Mike Andrew<br />
                                                         <small>michael24</small>
@@ -464,22 +464,43 @@
                         </div>
                     </div>
                     <div class="content news-tab">
+                        <div class="container-fluid createNews">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="header">
+                                            <h4 class="title">添加新闻</h4>
+                                            <p class="category">添加新的新闻</p>
+                                        </div>
+                                        <div class="content">
+                                            <form id="createNewsForm">
+                                                <div class="row form-group">
+                                                    <input type="text" class="form-control news-title" placeholder="新闻标题">
+                                                    <textarea name="news-content" id="news-content"></textarea>
+                                                    <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Striped Table with Hover</h4>
-                                            <p class="category">Here is a subtitle for this table</p>
+                                            <h4 class="title">新闻管理</h4>
+                                            <p class="category">修改，查询或删除相关新闻。</p>
                                         </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Salary</th>
-                                                    <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>标题</th>
+                                                    <th>发布日期</th>
+                                                    <th>点击量</th>
+                                                    <th>操作</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -502,27 +523,6 @@
                                                         <td>$56,142</td>
                                                         <td>Netherlands</td>
                                                         <td>Baileux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Philip Chaney</td>
-                                                        <td>$38,735</td>
-                                                        <td>Korea, South</td>
-                                                        <td>Overland Park</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Doris Greene</td>
-                                                        <td>$63,542</td>
-                                                        <td>Malawi</td>
-                                                        <td>Feldkirchen in Kärnten</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>Mason Porter</td>
-                                                        <td>$78,615</td>
-                                                        <td>Chile</td>
-                                                        <td>Gloucester</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -539,17 +539,18 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Striped Table with Hover</h4>
-                                            <p class="category">Here is a subtitle for this table</p>
+                                            <h4 class="title">分类广告管理</h4>
+                                            <p class="category">查询或删除分类广告</p>
                                         </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Salary</th>
-                                                    <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>标题</th>
+                                                    <th>发布日期</th>
+                                                    <th>点击量</th>
+                                                    <th>类型</th>
+                                                    <th>操作</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -558,45 +559,10 @@
                                                         <td>$36,738</td>
                                                         <td>Niger</td>
                                                         <td>Oud-Turnhout</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Minerva Hooper</td>
-                                                        <td>$23,789</td>
-                                                        <td>Curaçao</td>
-                                                        <td>Sinaai-Waas</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Sage Rodriguez</td>
-                                                        <td>$56,142</td>
-                                                        <td>Netherlands</td>
-                                                        <td>Baileux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Philip Chaney</td>
-                                                        <td>$38,735</td>
-                                                        <td>Korea, South</td>
-                                                        <td>Overland Park</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Doris Greene</td>
-                                                        <td>$63,542</td>
-                                                        <td>Malawi</td>
-                                                        <td>Feldkirchen in Kärnten</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>Mason Porter</td>
-                                                        <td>$78,615</td>
-                                                        <td>Chile</td>
-                                                        <td>Gloucester</td>
+                                                        <td>Oud-Turnhout</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-            
                                         </div>
                                     </div>
                                 </div>
@@ -609,17 +575,17 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Striped Table with Hover</h4>
-                                            <p class="category">Here is a subtitle for this table</p>
+                                            <h4 class="title">广告管理</h4>
+                                            <p class="category">各个广告牌图片管理</p>
                                         </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Salary</th>
-                                                    <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>公司</th>
+                                                    <th>位置</th>
+                                                    <th>剩余天数</th>
+                                                    <th>操作</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -679,17 +645,17 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Striped Table with Hover</h4>
-                                            <p class="category">Here is a subtitle for this table</p>
+                                            <h4 class="title">用户管理</h4>
+                                            <p class="category">管理，查询，或关闭用户账号</p>
                                         </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Salary</th>
-                                                    <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>用户名</th>
+                                                    <th>发帖数量</th>
+                                                    <th>创建日期</th>
+                                                    <th>操作</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -749,17 +715,17 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Striped Table with Hover</h4>
-                                            <p class="category">Here is a subtitle for this table</p>
+                                            <h4 class="title">视频管理</h4>
+                                            <p class="category">添加，删除或管理网站视频区内容</p>
                                         </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Salary</th>
-                                                    <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>标题</th>
+                                                    <th>观看人数</th>
+                                                    <th>创建日期</th>
+                                                    <th>操作</th>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
@@ -855,7 +821,7 @@
 
 
 </body>
-
+    <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
     <!--   Core JS Files   -->
     <script src="../../javascripts/admin.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

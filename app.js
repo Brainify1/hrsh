@@ -26,6 +26,7 @@ var moreVideo = require("./routes/moreVideo");
 var moreNews = require("./routes/moreNews");
 var postList = require('./routes/postList');
 var admin = require('./routes/admin');
+var viewList = require('./routes/viewList');
 
 var app = express();
 
@@ -61,6 +62,7 @@ app.use('/news', moreNews);
 app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/listings', listings);
+app.use('/viewList/d/d/d', viewList);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 
     session: req.session,
