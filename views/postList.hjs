@@ -11,7 +11,7 @@
 	  						 
 	  					</div>
 	  				</div>
-	  				<form name="newListing" action="/postList/" method="post" enctype="multipart/form-data" id="postForm">
+	  				<form name="newListing" action="/postList/" method="post" id="postForm">
 	  					<div class="col-md-8 col-sm-8">
 			  				<div class="postListContainer">
 			  					<div class="fabuDiv">
@@ -55,20 +55,17 @@
 			  								</div>
 			  							</div>
 			  							<div class="col-md-10 col-sm-10">
-			  								<div class="titleBoxNoBorder">
-			  									<label for="images" class="br_dropzone">
-			  									<input type="file" name="images" id="file" onchange="this.form.fileName.value = this.files[0].name">
-			  									<input type="text" id="fileName" name="fileName" placeholder="Drag and Drop" readonly>
-  												</label>
+			  								<div class="titleBoxNoBorder" style="height: 200px">
+													  <div id="dropzone" class="dropzone"></div>
 			  								</div>
 			  							</div>
 			  						</div>
 			  					</div>
 			  					<div class="postButtonDiv">
-			  						<button class="postButton hvr-grow-shadow" type="submit" id="pstButton">
+			  						<a class="postButton hvr-grow-shadow"  id="pstButton" onclick="myDropzone.processQueue();">
 			  							<img class="postImg" src="/images/post.png">
 			  							<span>发表</span>
-			  						</button>
+			  						</a>
 			  					</div>
 			  				</div>	  					
 						</div>

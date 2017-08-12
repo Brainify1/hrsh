@@ -63,47 +63,23 @@ if ($('#authStatus').val() == "false"){
 
 }
 
+var drop = $("input");
+drop.on('dragenter', function (e) {
+  $(".drop").css({
+    "border": "4px dashed #09f",
+    "background": "rgba(0, 153, 255, .05)"
+  });
+  $(".cont").css({
+    "color": "#09f"
+  });
+}).on('dragleave dragend mouseout drop', function (e) {
+  $(".drop").css({
+    "border": "3px dashed #DADFE3",
+    "background": "transparent"
+  });
+  $(".cont").css({
+    "color": "#8E99A5"
+  });
+});
 
-var onDragEnter = function (event) {
-    //event.preventDefault();
-    $(".br_dropzone").addClass("dragover");
-},
- 
-onDragOver = function (event) {
-    event.preventDefault();
-    if (!$(".br_dropzone").hasClass("dragover"))
-        $(".br_dropzone").addClass("dragover");
-},
- 
-onDragLeave = function (event) {
-    event.preventDefault();
-    $(".br_dropzone").removeClass("dragover");
-},
- 
-onDrop = function (event) {
-    //event.preventDefault();
-    $(".br_dropzone").removeClass("dragover");
-    $(".br_dropzone").addClass("dragdrop");
-    console.log(event.originalEvent.dataTransfer.files);
-};
- 
-$(".br_dropzone")
-.on("dragenter", onDragEnter)
-.on("dragover", onDragOver)
-.on("dragleave", onDragLeave)
-.on("drop", onDrop);
 
-Dropzone.options.br_dropzone = {
-        acceptedFiles: 'image/*',
-        maxFiles: 1,
-
-        init: function () {
-            this.on("complete", function (data) {
-                var res = eval('(' + data.xhr.responseText + ')');
-                $('#newImage').text(res.Message);
-            });
-            this.on("maxfilesexceeded", function (data) {
-                this.removeFile(data);
-            });
-        }
-    };

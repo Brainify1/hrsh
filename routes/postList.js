@@ -3,6 +3,9 @@ var router = express.Router();
 var mongojs = require('mongojs')
 var db = mongojs('mongodb://localhost:27017/test');
 var listingCollection = db.collection('listings');
+var imageCollection = db.collection('image')
+var randomstring = require("randomstring");
+var refString  = randomstring.generate(32);
 var ObjectId = require('mongodb').ObjectID;
 require("../app");
 var multer  = require('multer');
@@ -15,7 +18,7 @@ var storage = multer.diskStorage({
   }
 })
 
-var upload = multer({ storage })
+var upload = multer({ storage });
 
 
 /* GET home page. */
@@ -33,32 +36,49 @@ router.get('/', function(req, res, next) {
 	}
 	})
 });
-router.post('/', upload.single('images'), function(req, res, next) {
-	var listing = req.body;
-	listing.img = req.file;
-	if(req.isAuthenticated()){
-		var email = req.session.passport.user.email;
-		console.log(listing)
-		listingCollection.save(listing, function(err, newListing) {
-			listingCollection.update(
-				{'_id': newListing._id},
-				{$set: {'email': email}}
-			)
-			console.log(email)
-		if (err) {
-			return err
-		}
-		res.redirect("/userpage")
-	})
+router.post('/', function(req, res, next) {
+	var listing = {
+		refId : refString,
+		data: req.body
 	}
-
-	else{
-	listingCollection.save(listing, function(err, newListing) {
-		if (err) {
-			return err
+		if(req.isAuthenticated()){
+			var email = req.session.passport.user.email;
+			console.log(listing)
+			listingCollection.save(listing, function(err, newListing) {
+				listingCollection.update(
+					{'_id': newListing._id},
+					{$set: {'email': email}}
+				)
+				console.log(email)
+			if (err) {
+				return err
+			}
+			res.redirect("/userpage")
+			})
 		}
-		res.redirect("/postList")
+
+		else{
+			listingCollection.save(listing, function(err, newListing) {
+				if (err) {
+					return err
+				}
+				res.redirect("/postList")
+			})
+		}
+})
+router.post('/images', upload.any(),(req,res,next)=>{
+	var files = req.files
+	var imageJSON = {
+		refId : refString,
+		data: files
+	}
+	console.log(files)
+	imageCollection.save(imageJSON,(err,docs)=>{
+		if(err){
+			console.log(err);
+			return err;
+		}
+		res.sendStatus(200)
 	})
-}
 })
 module.exports = router;

@@ -14,6 +14,7 @@ router.get('/:states', function(req, res, next) {
   var states = req.params.states;
   res.render('index', {
     title : '华人生活网',
+    isLoggedIn: req.isAuthenticated(),
     partials : {
       header: '../views/partials/header',
       navbar: '../views/partials/navbar',
@@ -31,6 +32,7 @@ router.get('/:states/:listings', function(req, res, next) {
   // res.send('omg' + states + listings);
   res.render('realEstate', {
     title : '华人生活网',
+    isLoggedIn: req.isAuthenticated(),
     partials : {
       header: '../views/partials/header',
       navbar: '../views/partials/navbar',
@@ -47,6 +49,7 @@ router.get('/:states/:listings/:action', function(req, res, next) {
   // res.send('omg' + states + listings + action);
   res.render('postList', {
     title : '华人生活网',
+    isLoggedIn: req.isAuthenticated(),
     partials : {
       header: '../views/partials/header',
       navbar: '../views/partials/navbar',

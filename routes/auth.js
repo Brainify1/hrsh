@@ -6,6 +6,7 @@ router.get("/login", (req, res, next) =>{
 	// res.sendFile(path.join(__dirname + "/views/partials/header.hjs"), {message: req.flash('loginMessage')});
 	res.render("index", {
 	 message: req.flash('loginMessage'),
+	 isLoggedIn: req.isAuthenticated(),
 	 title: '华人生活网',
 	 partials: {
 	 header: '../views/partials/header',
