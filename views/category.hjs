@@ -216,4 +216,4 @@
             })
         </script> -->
 	    	{{> footer}}
-	    	{{> scirpts}}
+	    	{{> scripts}}

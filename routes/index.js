@@ -16,6 +16,19 @@ var allCategoryCN = ['']
 /* GET home page. */
 router.get('/:states', function(req, res, next) {
   var states = req.params.states;
+  res.render('index', {
+    title : states,
+    isLoggedIn: req.isAuthenticated(),
+    partials : {
+    	head: '../views/partials/head',
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
+    }
+  })
+
   if (allStates.indexOf(states) === -1) {
     res.send('Wrong path! Please go back to previus page.');
   } else {
@@ -38,6 +51,22 @@ router.get('/:states', function(req, res, next) {
 
 router.get('/:states/:category', function(req, res, next) {
   var states = req.params.states;
+  var listings = req.params.listings;
+  // res.send('omg' + states + listings);
+  res.render('realEstate', {
+    title : states,
+    isLoggedIn: req.isAuthenticated(),
+    partials : {
+    	head: '../views/partials/head',
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
+    }
+  })
+})
+
   var category = req.params.category;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
     res.send('Wrong path! Please go back to previus page.');
@@ -86,8 +115,40 @@ router.get('/:states/:category', function(req, res, next) {
   }
 });
 
+
 router.get('/:states/:category/:action', function(req, res, next) {
   var states = req.params.states;
+
+  var listings = req.params.listings;
+  var action = req.params.action;
+  // res.send('omg' + states + listings + action);
+  res.render('postList', {
+    title : '华人生活网',
+    isLoggedIn: req.isAuthenticated(),
+    partials : {
+    	head: '../views/partials/head',
+      header: '../views/partials/header',
+      navbar: '../views/partials/navbar',
+      states: '../views/partials/states',
+      footer: '../views/partials/footer',
+      scripts: '../views/partials/scripts'
+    }
+  })
+})
+// router.get('/', function(req, res, next) {
+//   res.render('index', { 
+//   	title: '华人生活网',
+//   	isLoggedIn: req.isAuthenticated(),
+// 	partials: {
+// 		header: '../views/partials/header',
+// 		navbar: '../views/partials/navbar',
+// 		states: '../views/partials/states',
+// 		footer: '../views/partials/footer'
+// 	}
+// 	})
+//   console.log(req.session)
+// });
+
   var category = req.params.category;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
     res.send('Wrong path! Please go back to previus page.');
@@ -107,6 +168,7 @@ router.get('/:states/:category/:action', function(req, res, next) {
     })
   }
 });
+
 
 
 
