@@ -53,7 +53,7 @@ router.post('/', function(req, res, next) {
 			if (err) {
 				return err
 			}
-			res.redirect("/userpage")
+			res.redirect("/ny/re")
 			})
 		}
 
@@ -62,7 +62,7 @@ router.post('/', function(req, res, next) {
 				if (err) {
 					return err
 				}
-				res.redirect("/postList")
+				res.redirect("/ny/re")
 			})
 		}
 })

@@ -17,7 +17,7 @@ router.get("/login", (req, res, next) =>{
  })
  
  router.post("/login", passport.authenticate("local", {
-	 successRedirect: "/userpage",
+	 successRedirect: "/ny",
 	 failureRedirect: "/", 
  }))
  router.get("/logout", (req, res, next) =>{
@@ -30,7 +30,7 @@ router.get("/login", (req, res, next) =>{
 	res.render("index", {message: req.flash('loginMessage')});
  })
  router.post("/signup", passport.authenticate("local-register", {
-	 successRedirect: "/userpage",
+	 successRedirect: "/ny",
 	 failureRedirect: "/",
  }))
 

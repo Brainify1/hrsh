@@ -22,6 +22,7 @@ router.get('/:states', function(req, res, next) {
     res.render('index', {
       title : '华人生活网',
       link : states,
+      isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
         header: '../views/partials/header',
@@ -46,6 +47,7 @@ router.get('/:states/:category', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ: category,
+      isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
         header: '../views/partials/header',
@@ -60,6 +62,7 @@ router.get('/:states/:category', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ: category,
+      isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
         header: '../views/partials/header',
@@ -74,6 +77,7 @@ router.get('/:states/:category', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ : category,
+      isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
         header: '../views/partials/header',
@@ -99,6 +103,7 @@ router.get('/:states/:category/:action', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ : category,
+      isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
         header: '../views/partials/header',
