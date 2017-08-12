@@ -395,3 +395,9 @@
     background-position: -7px -400px;
   }
 }
+
+.dropZoneBorder{
+  border: 2px dashed;
+  text-align: center;
+}
+

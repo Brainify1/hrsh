@@ -2,12 +2,13 @@ var myDropzone = new Dropzone("div#dropzone",{
   url: '/postList/images',
   uploadMultiple:true,
   parallelUploads:4,
-    maxFilesize: 5,
+  dictDefaultMessage: "点击/拖曳图片",
+    maxFilesize: 2,
     addRemoveLinks: true,
     dictResponseError: 'Server not Configured',
     acceptedFiles: ".png,.jpg,.gif,.bmp,.jpeg",
     autoProcessQueue: false,
-    maxFiles:4,
+    maxFiles:3,
     init:function(){
       var self = this;
       // config
@@ -41,5 +42,9 @@ var myDropzone = new Dropzone("div#dropzone",{
     }
   })
 function uploadInfo(){
-        document.getElementById('postForm').submit()  
+  var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
+      if( !messageLength ) {
+          document.getElementById('postForm').submit();
+          e.preventDefault();
+        }
 }

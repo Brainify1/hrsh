@@ -714,6 +714,7 @@ li.focus {
 	height: 30px;
 	background-color: rgb(64,0,144);
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .postButton span {

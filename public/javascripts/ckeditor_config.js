@@ -8,10 +8,10 @@ CKEDITOR.replace( 'editor', {
 $("#postForm").submit( function(e) {
 	var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
     	if( !messageLength ) {
-            alert( 'Please enter a message ;(' );
+            swal( 'Please enter a message ;(' );
                 e.preventDefault();
         }
         else{
-        alert("Thank you for submitting!");
+        swal("Thank you for submitting!");
     	}
 });
