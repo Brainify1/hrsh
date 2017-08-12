@@ -1,3 +1,16 @@
 .nav>li:hover {
     cursor: pointer;
 }
+.main-panel > .footer {
+    width: 100%;
+}
+.news-title {
+    margin-bottom: 20px;
+}
+
+.createNews .card {
+    padding: 30px;
+}
+.createNews button {
+    margin: 20px 0;
+}

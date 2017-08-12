@@ -1,5 +1,5 @@
-$('#dash-tab').show()
-$('#dash-tab').siblings().hide()
+$('.dash-tab').show()
+$('.dash-tab').siblings().hide()
 $('#dash-anchor').click(function(){
     if (!$(this).hasClass('active')) {
         $(this).toggleClass('active')
@@ -32,13 +32,13 @@ $('#news-anchor').click(function() {
     $('.news-tab').show()
     $('.news-tab').siblings().hide()
 })
-$('#listings-anchor').click(function() {
+$('#listing-anchor').click(function() {
     if (!$(this).hasClass('active')) {
         $(this).toggleClass('active')
     }
     $(this).siblings().removeClass('active')
-    $('.listings-tab').show()
-    $('.listings-tab').siblings().hide()
+    $('.listing-tab').show()
+    $('.listing-tab').siblings().hide()
 })
 $('#ads-anchor').click(function() {
     if (!$(this).hasClass('active')) {
@@ -64,3 +64,5 @@ $('#video-anchor').click(function() {
     $('.video-tab').show()
     $('.video-tab').siblings().hide()
 })
+
+CKEDITOR.replace( 'news-content' );
