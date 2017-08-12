@@ -1,7 +1,7 @@
-	   {{> header}}
-	  	
-	  		{{> states}}
-	      	{{> navbar}}
+	   	{{> head}}
+	   	{{> header}}	  	
+	  	{{> states}}
+	   	{{> navbar}}
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">
@@ -190,6 +190,7 @@
 								</ul>
 							</div>
 						</div>
+
 						<!-- listings end -->
 	  				</div>
 	  				<div class="col-md-2 col-sm-2">
@@ -201,3 +202,4 @@
 	  		</div>
 	  
 	    {{> footer}}
+	    {{> scripts}}

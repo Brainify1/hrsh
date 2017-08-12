@@ -1,5 +1,5 @@
-	   {{> header}}
-	  	<div class="container-fluid bodyDiv">
+	   		{{> head}}
+	   		{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
@@ -20,7 +20,7 @@
     					</div>
 	  					<div id="test-list">
 	  						<div class="sbarDiv">
-	  							<span class="postList"><a  id="postBtn">免费发帖</a></span>
+	  							<span class="postList"><a  id="postBtn" href="/postList">免费发帖</a></span>
 	  							<input type="text" class="search sbar" placeholder="搜索关键字" />
 	  						</div>
 	  						<nav class="divNav">
@@ -204,8 +204,9 @@
 	  				</div>
 	  			</div>
 	  		</div>
+
 	  	</div>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             $('#postBtn').click(function() {
                 if ($('#authStatus').val() == 'false') {
                      $('#myModal').modal('show');
@@ -213,6 +214,6 @@
                     location.href = "/postList"
                 }
             })
-        </script>
-
-	    {{> footer}}
+        </script> -->
+	    	{{> footer}}
+	    	{{> scirpts}}

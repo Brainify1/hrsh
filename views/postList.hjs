@@ -1,5 +1,7 @@
-{{> header}}
-	  	<div class="container-fluid bodyDiv">
+			{{> head}}
+			<link rel="stylesheet" type="text/css" href="/stylesheets/dropzoneCss.css">
+			<script src="https://cdn.ckeditor.com/4.7.1/standard-all/ckeditor.js"></script>
+			{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
 	  		<div class="container-fluid">
@@ -9,7 +11,7 @@
 	  						 
 	  					</div>
 	  				</div>
-	  				<form name="newListing" action="/postList/" method="post" enctype="multipart/form-data">
+	  				<form name="newListing" action="/postList/" method="post" enctype="multipart/form-data" id="postForm">
 	  					<div class="col-md-8 col-sm-8">
 			  				<div class="postListContainer">
 			  					<div class="fabuDiv">
@@ -23,7 +25,7 @@
 			  								</div>
 			  							</div>
 			  							<div class="col-md-10 col-sm-10">
-			  								<input type="text" class="titleInputBox" placeholder="" name="title">
+			  								<input type="text" class="titleInputBox" placeholder="" name="title" required="">
 			  								<h6 class="inputBoxCaption">为了方便阅读，主题应能够反映帖子的内容，长度尽量在8到15个字之间。</h6>
 			  							</div>
 			  						</div>
@@ -40,7 +42,7 @@
 			  							</div>
 			  							<div class="col-md-10 col-sm-10">
 			  								<div class="titleBoxNoBorder">
-			  									<textarea name="content"></textarea>
+			  									<textarea name="content" id="editor"></textarea>
 			  								</div>
 			  							</div>
 			  						</div>
@@ -54,23 +56,24 @@
 			  							</div>
 			  							<div class="col-md-10 col-sm-10">
 			  								<div class="titleBoxNoBorder">
-			  									<input type="file" name="images">
+			  									<label for="images" class="br_dropzone">
+			  									<input type="file" name="images" id="file" onchange="this.form.fileName.value = this.files[0].name">
+			  									<input type="text" id="fileName" name="fileName" placeholder="Drag and Drop" readonly>
+  												</label>
 			  								</div>
 			  							</div>
 			  						</div>
 			  					</div>
 			  					<div class="postButtonDiv">
-			  						<button class="postButton hvr-grow-shadow" href="#" type="submit">
+			  						<button class="postButton hvr-grow-shadow" type="submit" id="pstButton">
 			  							<img class="postImg" src="/images/post.png">
-			  							发表
+			  							<span>发表</span>
 			  						</button>
 			  					</div>
-			  					{{imgMessage}}
 			  				</div>	  					
 						</div>
 		  				<div class="col-md-2 col-sm-2">
-		  					<div class="bg-temp">
-		  						 
+		  					<div class="bg-temp">		  						 
 		  					</div>
 		  				</div>
 	  				</form>
@@ -79,4 +82,5 @@
 	  		</div>
 	  	</div>
 	    {{> footer}}
+	    {{> scripts}}
 

@@ -20,7 +20,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
-var listing = require("./routes/listings");
+var listings = require("./routes/listings");
 var realEstate = require("./routes/realEstate");
 var moreVideo = require("./routes/moreVideo");
 var moreNews = require("./routes/moreNews");
@@ -55,13 +55,12 @@ app.use('/', index);
 //app.use('/page_a', page_a);
 app.use('/users', users);
 app.use('/userpage', userPage);
-app.use('/category', listing);
 app.use('/videos', moreVideo);
 app.use('/re', realEstate);
 app.use('/news', moreNews);
 app.use('/postList', postList);
 app.use('/admin', admin);
-
+app.use('/listings', listings);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 
     session: req.session,
