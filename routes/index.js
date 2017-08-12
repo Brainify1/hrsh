@@ -12,6 +12,7 @@ var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'wa
 
 var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service']
 
+var allCategoryCN = ['']
 /* GET home page. */
 router.get('/:states', function(req, res, next) {
   var states = req.params.states;
