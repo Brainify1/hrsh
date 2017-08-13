@@ -43,9 +43,15 @@ var myDropzone = new Dropzone("div#dropzone",{
   })
 
 function uploadInfo(){
+  $("#postForm").submit( function(e) {
   var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
       if( !messageLength ) {
-          document.getElementById('postForm').submit();
-          e.preventDefault();
+            swal( 'Please enter a message ;(' );
+                e.preventDefault();
         }
+        else{
+        swal("Thank you for submitting!");
+      }
+})
 }
+
