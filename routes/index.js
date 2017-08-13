@@ -17,7 +17,7 @@ var allCategoryCN = ['']
 router.get('/:states', function(req, res, next) {
   var states = req.params.states;
   if (allStates.indexOf(states) === -1) {
-    res.send('Wrong path! Please go back to previus page.');
+    res.render('error');
   } else {
     res.render('index', {
       title : '华人生活网',
@@ -41,7 +41,7 @@ router.get('/:states/:category', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
-    res.send('Wrong path! Please go back to previus page.');
+    res.render('error');
   } else if (allCategory.indexOf(category) === 0) {
     res.render('news', {
       title : '华人生活网',
@@ -91,13 +91,12 @@ router.get('/:states/:category', function(req, res, next) {
 });
   
 
-
 router.get('/:states/:category/:action', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
   var action = req.params.action;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
-    res.send('Wrong path! Please go back to previus page.');
+    res.render('error');
   } else {
     res.render('postList', {
       title : '华人生活网',
