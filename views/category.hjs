@@ -20,13 +20,13 @@
     					</div>
 	  					<div id="test-list">
 	  						<div class="sbarDiv">
-	  							<span class="postList"><a  id="postBtn" href="/{{link}}/{{categ}}/post">免费发帖</a></span>
+	  							<span class="postList"><a  id="postBtn" href="/{{link}}/{{categ}}/postList">免费发帖</a></span>
 	  							<input type="text" class="search sbar" placeholder="搜索关键字" />
 	  						</div>
 	  						<nav class="divNav">
     							<ul class="navbarUl">
     								<li class="titleLi">
-    									<h5>主题</h5>
+    									<h5>标题</h5>
     								</li>
     								<li class="userLi">
     									<h5>作者</h5>
@@ -37,162 +37,21 @@
     							</ul>
     						</nav>
 	    					<ul class="list mg0">
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-							    <li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">9999 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-							    <li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 gg 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-							    <li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 5555 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$I need money or I die.</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">5555</p></div>
-									</div>
-								</li>
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="#">$31300 曼哈顿 近哥大 上西92街 新装修1室1厅公寓出租</a>
-									</div>
-									<div class="userLi">
-    									<div><p class="fs12">屋新天</p></div>
-    									<div><p class="fs10">2017-04-24</p></div>
-									</div>
-									<div class="readLi">
-										<div><p class="fs12">4</p></div>
-    									<div><p class="fs10">6666</p></div>
-									</div>
-								</li>
+								{{#listings}}
+									<li class="bigListing">
+										<div class="titleLi">
+											<a href="#">{{data.title}}</a>
+										</div>
+										<div class="userLi">
+											<div><p class="fs12">{{author}}</p></div>
+											<div><p class="fs10">{{created_at}}</p></div>
+										</div>
+										<div class="readLi">
+											<div><p class="fs12">{{commentNum}}</p></div>
+											<div><p class="fs10">{{views}}</p></div>
+										</div>
+									</li>
+								{{/listings}}
 						    </ul>
 					    	<ul class="pagination"></ul>
 						</div>

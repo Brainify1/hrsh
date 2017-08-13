@@ -21,52 +21,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage });
 
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('postList', { 
-  	title: '华人生活网',
-  	isLoggedIn: req.isAuthenticated(),
-	partials: {
-		head: '../views/partials/head',
-		header: '../views/partials/header',
-		navbar: '../views/partials/navbar',
-		states: '../views/partials/states',
-		footer: '../views/partials/footer',
-		scripts: '../views/partials/scripts'
-	}
-	})
-});
-router.post('/', function(req, res, next) {
-	var listing = {
-		refId : refString,
-		data: req.body,
-	}
-		console.log(req.params.states)
-		if(req.isAuthenticated()){
-			var email = req.session.passport.user.email;
-			console.log(listing)
-			listingCollection.save(listing, function(err, newListing) {
-				listingCollection.update(
-					{'_id': newListing._id},
-					{$set: {'email': email}}
-				)
-				console.log(email)
-			if (err) {
-				return err
-			}
-			res.redirect("/ny/re")
-			})
-		}
 
-		else{
-			listingCollection.save(listing, function(err, newListing) {
-				if (err) {
-					return err
-				}
-				res.redirect("/ny/re")
-			})
-		}
-})
 router.post('/images', upload.any(),(req,res,next)=>{
 	var files = req.files
 	var imageJSON = {

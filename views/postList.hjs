@@ -13,7 +13,9 @@
 	  						 
 	  					</div>
 	  				</div>
-	  				<form name="newListing" action="/postList/" method="post" id="postForm">
+					  <form name="newListing" action="/{{link}}/{{categ}}/postList/" method="post" id="postForm">
+						<input type="text" value="{{link}}" name="state">
+						<input type="text" value="{{categ}}" name="category">
 	  					<div class="col-md-8 col-sm-8">
 			  				<div class="postListContainer">
 			  					<div class="fabuDiv">
