@@ -21,7 +21,7 @@
                           <label>Sign in to 华人生活网</label>
                           <div>
                             <p></p> 
-                            <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Email" />
+                            <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Username" />
                           </div>
                           <div>
                             <p></p>
@@ -51,6 +51,10 @@
                       <div class="errorMessage">{{message}}</div>
                         <form action = "/signup" method= "post" class = "formStructure">
                           <label>Sign Up for 华人生活网</label>
+                          <div>
+                            <p></p> 
+                            <input type = "text" name = "nickname" class = "formBox" placeholder="Username" required="Need Email" />
+                          </div>
                           <div>
                             <p></p>
                             <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Email"/>

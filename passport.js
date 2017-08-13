@@ -34,6 +34,7 @@ function register(req, email, password, done){
 
 			const newUser = {
 				email: email,
+				username: req.body.nickname,
 				password: bcrypt.hashSync(req.body.password)
 			}
 			usersCollection

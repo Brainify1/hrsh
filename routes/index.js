@@ -115,7 +115,6 @@ router.post('/:states/:category/postList', function(req, res, next) {
   } else {
       author = 'Guest'
   }
-  console.log(req.session.passport.user.username)
   var today = new Date();
   var dd = today.getDate();
   var mm = today.getMonth()+1; //January is 0!
@@ -135,7 +134,7 @@ router.post('/:states/:category/postList', function(req, res, next) {
     data: req.body,
     created_at: today,
     views: 0,
-    author,
+    author
   }
 	listingsCollection.save(listing, function(err, newListing) {
     if (err) {
