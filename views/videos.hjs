@@ -21,7 +21,7 @@
 							<div class="container-fluid bg-white">
 								<div class="row">
 									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+										<iframe width="560" height="315" src="{{url1}}" frameborder="0" allowfullscreen></iframe>
 										<div>
 											<p>Game of Thrones Spoilers</p>
 										</div>
