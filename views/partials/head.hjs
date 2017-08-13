@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>{{ title }}</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/basic.min.css" integrity="sha256-RvDmZ4ZtPtrWmZdibCa80jCE32m21xuR5SuW6zfJaW4=" crossorigin="anonymous" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- jQuery JS-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>

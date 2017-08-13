@@ -3,6 +3,7 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var db = mongojs('mongodb://localhost:27017/test', ['listings']);
 var listingCollection = db.collection('listings');
+var videosCollection = db.collection('videos');
 
 router.get('/', function(req, res, next){
   res.redirect('/ny');
@@ -61,11 +62,17 @@ router.get('/:states/:category', function(req, res, next) {
         scripts: '../views/partials/scripts'
       }
     })
-    console.log(categoryCN)
   } else if (allCategory.indexOf(category) === 1) {
+
     // listingCollection.find({})
+
+    var video1 = videosCollection.find({'name' : 'video1'}, function(err, obj){
+      
+    })
+
     res.render('videos', {
       title : '华人生活网',
+      url1 : video1,
       link : states,
       categ: category,
       categCn: categoryCN,
@@ -79,6 +86,7 @@ router.get('/:states/:category', function(req, res, next) {
         scripts: '../views/partials/scripts'
       }
     })
+    console.log(video1);
   } else {
     res.render('category', {
       title : '华人生活网',

@@ -2,6 +2,7 @@
 			<link rel="stylesheet" type="text/css" href="/dist/sweetalert.css">
 			<link rel="stylesheet" type="text/css" href="/stylesheets/dropzoneCss.css">
 			<script src="https://cdn.ckeditor.com/4.7.1/standard-all/ckeditor.js"></script>
+			<script src="/javascripts/dropZone.min.js"></script>
 			{{> header}}
 	  		{{> states}}
 	      	{{> navbar}}
@@ -85,5 +86,7 @@
 	  	</div>
 	    {{> footer}}
 	    <script src="/dist/sweetalert.min.js"></script>
+	    <script src="/javascripts/ckeditor_config.js"></script>
+	   <script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
 	    {{> scripts}}
 
