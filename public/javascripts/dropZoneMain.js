@@ -41,6 +41,7 @@ var myDropzone = new Dropzone("div#dropzone",{
       });
     }
   })
+
 function uploadInfo(){
   var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
       if( !messageLength ) {

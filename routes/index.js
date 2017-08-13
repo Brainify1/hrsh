@@ -63,6 +63,7 @@ router.get('/:states/:category', function(req, res, next) {
     })
     console.log(categoryCN)
   } else if (allCategory.indexOf(category) === 1) {
+    // listingCollection.find({})
     res.render('videos', {
       title : '华人生活网',
       link : states,

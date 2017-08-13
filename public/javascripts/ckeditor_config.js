@@ -13,5 +13,6 @@ $("#postForm").submit( function(e) {
         }
         else{
         swal("Thank you for submitting!");
+        window.location.href = "http://www.google.com";
     	}
 });

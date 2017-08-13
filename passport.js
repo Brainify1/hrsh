@@ -7,7 +7,6 @@ const LocalStrategy = require("passport-local").Strategy;
 
 passport.use(new LocalStrategy({passReqToCallback: true}, authenticate));
 passport.use("local-register", new LocalStrategy({passReqToCallback: true}, register));
-
 function authenticate(req, email, password, done){
 	process.nextTick(function(){
 	usersCollection
@@ -16,8 +15,7 @@ function authenticate(req, email, password, done){
 				console.log('not found')
 				return done(null, false, req.flash('loginMessage','Invalid username or password'));
 			}
-			console.log('found');
-			done(null, user);
+			done(null, user, req.flash('loginMessage','Invalid username or password'));
 		},done)
 		})
 }
@@ -35,8 +33,6 @@ function register(req, email, password, done){
 			}
 
 			const newUser = {
-				first_name: req.body.first_name,
-				last_name: req.body.last_name,
 				email: email,
 				password: bcrypt.hashSync(req.body.password)
 			}
@@ -44,7 +40,6 @@ function register(req, email, password, done){
 				.insert(newUser, function(ids){
 					newUser.id = ids
 					done(null, newUser)
-
 				})
 		})
 }

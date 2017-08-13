@@ -39,8 +39,9 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
 	var listing = {
 		refId : refString,
-		data: req.body
+		data: req.body,
 	}
+		console.log(req.params.states)
 		if(req.isAuthenticated()){
 			var email = req.session.passport.user.email;
 			console.log(listing)

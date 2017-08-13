@@ -4,7 +4,9 @@
       <div class="floatRight">
         <a class='loginText modal-backdrop.in whiteText loginMargin' id="loginStatus" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a> 
         <a class='loginText whiteText loginMargin2' id="loginStatus2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
+        <a href = "/userpage/1/1/1" id="loginStatus4" class="whiteText loginMargin"><i class="fa fa-file-text-o" aria-hidden="true"></i> Your Posts</a>
         <a href = "/logout" id="loginStatus3" class="whiteText loginMargin"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+      </div>
         <input type="text" value="{{isLoggedIn}}" hidden id="authStatus">
           <div>
             <!-- Modal -->
@@ -49,14 +51,6 @@
                       <div class="errorMessage">{{message}}</div>
                         <form action = "/signup" method= "post" class = "formStructure">
                           <label>Sign Up for 华人生活网</label>
-                          <div>
-                            <p></p>
-                            <input type = "text" name = "first_name" class= "formBox" placeholder="First Name" required="Need First Name" />
-                          </div>
-                          <div>
-                            <p></p>
-                            <input type = "text" name = "last_name" class = "formBox" placeholder="Last Name" required="Need Last Name" />
-                          </div>
                           <div>
                             <p></p>
                             <input type = "text" name = "username" class = "formBox" placeholder="Email" required="Need Email"/>

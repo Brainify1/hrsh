@@ -55,31 +55,32 @@ if ($('#authStatus').val() == "true"){
 	$('#loginStatus').hide();
 	$('#loginStatus2').hide();
 	$('#loginStatus3').show();
+	$('#loginStatus4').show();
 }
 if ($('#authStatus').val() == "false"){
 	$('#loginStatus').show();
 	$('#loginStatus2').show();
 	$('#loginStatus3').hide();
-
+	$('#loginStatus4').hide();
 }
 
-var drop = $("input");
-drop.on('dragenter', function (e) {
-  $(".drop").css({
-    "border": "4px dashed #09f",
-    "background": "rgba(0, 153, 255, .05)"
-  });
-  $(".cont").css({
-    "color": "#09f"
-  });
-}).on('dragleave dragend mouseout drop', function (e) {
-  $(".drop").css({
-    "border": "3px dashed #DADFE3",
-    "background": "transparent"
-  });
-  $(".cont").css({
-    "color": "#8E99A5"
-  });
-});
+// var drop = $("input");
+// drop.on('dragenter', function (e) {
+//   $(".drop").css({
+//     "border": "4px dashed #09f",
+//     "background": "rgba(0, 153, 255, .05)"
+//   });
+//   $(".cont").css({
+//     "color": "#09f"
+//   });
+// }).on('dragleave dragend mouseout drop', function (e) {
+//   $(".drop").css({
+//     "border": "3px dashed #DADFE3",
+//     "background": "transparent"
+//   });
+//   $(".cont").css({
+//     "color": "#8E99A5"
+//   });
+// });
 
 
