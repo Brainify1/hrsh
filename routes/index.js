@@ -8,11 +8,12 @@ router.get('/', function(req, res, next){
   res.redirect('/ny');
 });
 
-var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'was', 'sdi', 'syd', 'phi', 'hwi', 'atl', 'dal', 'flo', ]
+var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'was', 'sdi', 'syd', 'phi', 'hwi', 'atl', 'dal', 'flo'];
 
-var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service', ]
+var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service'];
 
-var allCategoryCN = ['']
+var allCategoryCN = ['新闻', '影片', '房产服务', '二手市场', '旅游酒店', '法律经济', '教育培训', '招聘信息', '生活服务'];
+
 /* GET home page. */
 router.get('/:states', function(req, res, next) {
   var states = req.params.states;
@@ -40,6 +41,8 @@ router.get('/:states', function(req, res, next) {
 router.get('/:states/:category', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
+  var index_category = allCategory.indexOf(category);
+  var categoryCN = allCategoryCN[index_category];
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
     res.render('error');
   } else if (allCategory.indexOf(category) === 0) {
@@ -47,6 +50,7 @@ router.get('/:states/:category', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ: category,
+      categCn: categoryCN,
       isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
@@ -57,11 +61,13 @@ router.get('/:states/:category', function(req, res, next) {
         scripts: '../views/partials/scripts'
       }
     })
+    console.log(categoryCN)
   } else if (allCategory.indexOf(category) === 1) {
     res.render('videos', {
       title : '华人生活网',
       link : states,
       categ: category,
+      categCn: categoryCN,
       isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
@@ -77,6 +83,7 @@ router.get('/:states/:category', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ : category,
+      categCn: categoryCN,
       isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
@@ -91,10 +98,10 @@ router.get('/:states/:category', function(req, res, next) {
 });
   
 
-router.get('/:states/:category/:action', function(req, res, next) {
+router.get('/:states/:category/:id', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
-  var action = req.params.action;
+  var id = req.params.id;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
     res.render('error');
   } else {

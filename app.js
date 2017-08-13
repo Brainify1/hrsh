@@ -20,7 +20,6 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
-var listings = require("./routes/listings");
 var postList = require('./routes/postList');
 var admin = require('./routes/admin');
 var viewList = require('./routes/viewList');
@@ -55,7 +54,6 @@ app.use('/users', users);
 app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
-app.use('/listings', listings);
 app.use('/viewList/d/d/d', viewList);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 

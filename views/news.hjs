@@ -11,7 +11,7 @@
 	  				</div>
 	  				<div class="col-md-8 col-sm-8">
 	  					<div class="locationDiv">
-    						<h6><a href="/">首页</a> > <a href="/re">房产服务</a>
+    						<h6><a href="{{link}}">首页</a> > <a href="{{link}}/{{categ}}">{{categCn}}</a>
     					</div>
     					<div class="commercialBlock">
     						<div class="blizzardAd">
