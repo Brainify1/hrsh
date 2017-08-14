@@ -1,5 +1,5 @@
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://localhost:27017/test', ['users']);
+var db = mongojs('mongodb://Brainify1:hrsh123@ds163681.mlab.com:63681/hrshdatabase', ['users']);
 var usersCollection = db.collection('users');
 const bcrypt = require("bcrypt-nodejs");
 const passport = require("passport");
