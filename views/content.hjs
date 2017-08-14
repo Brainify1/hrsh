@@ -20,11 +20,7 @@
     						</div>
     					</div>
 		  					<div class="viewListPost2 postList">
-		  						<a id="reply" href="/a/">回复</a>
-		  					</div>
-
-		  					<div class="viewListPost2 postList">
-		  						<a id="postBtn" href="/a/postList">免费发帖</a>
+		  						<a id="postBtn" href="/a/{{link}}/{{categ}}/postList">免费发帖</a>
 		  					</div>
     					
 	  					<div class="navbarUl mt5">
@@ -48,12 +44,6 @@
 	  						</div>
 	  					</div>
 	  					{{/listings}}
-	  					<div class="replyBox">
-			  				<textarea name="content" id="editor"></textarea>
-	  					</div>
-	  					<div class="viewListPost2 postList">
-	  						<button type="submit" class="replyButton">确定回复</button>
-	  					</div>
 					</div>
 	  				<div class="col-md-2 col-sm-2 ">
 	  					<div class="bg-temp">

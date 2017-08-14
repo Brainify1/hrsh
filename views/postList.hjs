@@ -17,6 +17,9 @@
 						<input type="text" value="{{link}}" hidden name="state">
 						<input type="text" value="{{categ}}" hidden name="category">
 	  					<div class="col-md-8 col-sm-8">
+	  						<div class="locationDiv">
+    						<h6><a href="/a/{{link}}">首页</a> > <a href="/a/{{link}}/{{categ}}">{{ categCn }}</a>
+    					</div>
 			  				<div class="postListContainer">
 			  					<div class="fabuDiv">
 			  						<h5>发布新帖</h5>

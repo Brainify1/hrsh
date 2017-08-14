@@ -85,6 +85,8 @@ router.get('/a/:states/:category', function(req, res, next) {
 router.get('/a/:states/:category/postList', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
+  var index_category = allCategory.indexOf(category);
+  var categoryCN = allCategoryCN[index_category];
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
     res.render('error');
   } else {
@@ -92,6 +94,7 @@ router.get('/a/:states/:category/postList', function(req, res, next) {
       title : '华人生活网',
       link : states,
       categ : category,
+      categCn: categoryCN,
       isLoggedIn: req.isAuthenticated(),
       partials : {
         head: '../views/partials/head',
