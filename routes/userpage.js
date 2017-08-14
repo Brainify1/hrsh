@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://localhost:27017/test', ['listings']);
+var db = mongojs('mongodb://Brainify1:hrsh123@ds163681.mlab.com:63681/hrshdatabase', ['listings']);
 var listingsCollection = db.collection('listings');
 
 /* Make sure user is logged in before accessing user page. */
