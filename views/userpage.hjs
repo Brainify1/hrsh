@@ -1,7 +1,38 @@
 	   		{{> head}}
 	   		{{> header}}
 	  		{{> states}}
-	      	{{> navbar}}
+	      	<nav>
+				<div>
+					<ul class="navUl">
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny'>
+								<i class="fa fa-home" aria-hidden="true"></i>首页
+							</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/re'>房产服务</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/secondHand'>二手市场</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/travel'>旅游酒店</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/law'>法律经济</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/education'>教育培训</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/hire'>招聘信息</a>
+						</li>
+						<li class="navLi">
+							<a class="navList hvr-underline-from-left" href='/a/ny/service'>生活服务</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">
@@ -31,7 +62,7 @@
 							{{#listings}}
 								<li class="bigListing">
 									<div class="titleLi">
-										<a href="#">{{data.title}}</a>
+										<a href="/a/{{data.state}}/{{data.category}}/{{refId}}">{{data.title}}</a>
 									</div>
 									<div class="userLi">
 										<div><p class="fs12">{{author}}</p></div>
@@ -43,6 +74,7 @@
 									</div>
 								</li>
 								{{/listings}}
+						
 						</ul>
 					    	<ul class="pagination"></ul>
 						</div>

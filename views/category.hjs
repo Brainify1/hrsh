@@ -40,7 +40,7 @@
 								{{#listings}}
 									<li class="bigListing">
 										<div class="titleLi">
-											<a href="#">{{data.title}}</a>
+											<a href="/a/{{link}}/{{categ}}/{{refId}}">{{data.title}}</a>
 										</div>
 										<div class="userLi">
 											<div><p class="fs12">{{author}}</p></div>
