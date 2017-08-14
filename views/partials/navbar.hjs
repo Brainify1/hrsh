@@ -2,30 +2,30 @@
 	<div>
 		<ul class="navUl">
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}'>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}'>
 					<i class="fa fa-home" aria-hidden="true"></i>首页
 				</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/re'>房产服务</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/re'>房产服务</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/secondHand'>二手市场</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/secondHand'>二手市场</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/travel'>旅游酒店</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/travel'>旅游酒店</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/law'>法律经济</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/law'>法律经济</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/education'>教育培训</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/education'>教育培训</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/hire'>招聘信息</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/hire'>招聘信息</a>
 			</li>
 			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/{{link}}/service'>生活服务</a>
+				<a class="navList hvr-underline-from-left" href='/a/{{link}}/service'>生活服务</a>
 			</li>
 		</ul>
 	</div>

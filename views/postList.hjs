@@ -13,7 +13,7 @@
 	  						 
 	  					</div>
 	  				</div>
-					  <form name="newListing" action="/{{link}}/{{categ}}/postList/" method="post" id="postForm">
+					  <form name="newListing" action="/a/{{link}}/{{categ}}/postList/" method="post" id="postForm">
 						<input type="text" value="{{link}}" hidden name="state">
 						<input type="text" value="{{categ}}" hidden name="category">
 	  					<div class="col-md-8 col-sm-8">

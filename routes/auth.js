@@ -30,7 +30,7 @@ router.get("/login", (req, res, next) =>{
 	res.render("index", {message: req.flash('loginMessage')});
  })
  router.post("/signup", passport.authenticate("local-register", {
-	 successRedirect: "/ny",
+	 successRedirect: "/",
 	 failureRedirect: "/",
  }))
 

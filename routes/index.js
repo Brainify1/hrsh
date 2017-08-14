@@ -10,7 +10,7 @@ var refString  = randomstring.generate(32);
 
 
 router.get('/', function(req, res, next){
-  res.redirect('/ny');
+  res.redirect('/a/ny');
 });
 
 var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'was', 'sdi', 'syd', 'phi', 'hwi', 'atl', 'dal', 'flo'];
@@ -19,8 +19,41 @@ var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'educa
 
 var allCategoryCN = ['新闻', '影片', '房产服务', '二手市场', '旅游酒店', '法律经济', '教育培训', '招聘信息', '生活服务'];
 
-/* GET home page. */
-router.get('/:states', function(req, res, next) {
+/* Make sure user is logged in before viewing user page. */
+function loginRequired(req,res,next){
+  if(!req.isAuthenticated()){
+    return res.redirect("/")
+  }
+  next()
+}
+
+/* GET user page. */
+router.get('/a/:states/userpage', function(req, res, next) {
+  var states = req.params.states;
+  if (allStates.indexOf(states) === -1) {
+    res.render('error');
+  } else {
+    listingsCollection.find({author: req.session.passport.user.username}).sort({_id: -1}, function(err, listings) {
+      console.log(listings)
+    res.render('userpage', {
+      title : '华人生活网',
+      link : states,
+      listings,
+      isLoggedIn: req.isAuthenticated(),
+      partials : {
+        head: '../views/partials/head',
+        header: '../views/partials/header',
+        navbar: '../views/partials/navbar',
+        states: '../views/partials/states',
+        footer: '../views/partials/footer',
+        scripts: '../views/partials/scripts'
+      }
+    })
+  })
+  }
+});
+
+router.get('/a/:states', function(req, res, next) {
   var states = req.params.states;
   if (allStates.indexOf(states) === -1) {
     res.render('error');
@@ -41,9 +74,7 @@ router.get('/:states', function(req, res, next) {
   }
 });
 
-
-
-router.get('/:states/:category', function(req, res, next) {
+router.get('/a/:states/:category', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
   var index_category = allCategory.indexOf(category);
@@ -75,13 +106,11 @@ router.get('/:states/:category', function(req, res, next) {
         })
         // console.log(video1);
     })
-
-    
   }
 });
   
 
-router.get('/:states/:category/postList', function(req, res, next) {
+router.get('/a/:states/:category/postList', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
   if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
@@ -104,9 +133,7 @@ router.get('/:states/:category/postList', function(req, res, next) {
   }
 });
 
-
-
-router.post('/:states/:category/postList', function(req, res, next) {
+router.post('/a/:states/:category/postList', function(req, res, next) {
   var states = req.params.states;
   var category = req.params.category;
   var author;
@@ -140,7 +167,7 @@ router.post('/:states/:category/postList', function(req, res, next) {
     if (err) {
       return err
     }
-    res.redirect(`/${states}/${category}`)
+    res.redirect(`/a/${states}/${category}`)
   })
 })
 

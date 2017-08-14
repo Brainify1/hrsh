@@ -13,7 +13,7 @@
 	  				</div>
 	  				<div class="col-md-8 col-sm-8 mb50">
 	  					<div class="locationDiv">
-    						<h6><a href="/atl">首页</a> &gt; <a href="/atl/re">re </a>
+    						<h6><a href="/a/atl">首页</a> &gt; <a href="/a/atl/re">re </a>
     						</h6>
     					</div>
     					<div class="commercialBlock">
@@ -21,11 +21,11 @@
     						</div>
     					</div>
 		  					<div class="viewListPost2 postList">
-		  						<a id="reply" href="/">回复</a>
+		  						<a id="reply" href="/a/">回复</a>
 		  					</div>
 
 		  					<div class="viewListPost2 postList">
-		  						<a id="postBtn" href="/postList">免费发帖</a>
+		  						<a id="postBtn" href="/a/postList">免费发帖</a>
 		  					</div>
     					
 	  					<div class="navbarUl mt5">

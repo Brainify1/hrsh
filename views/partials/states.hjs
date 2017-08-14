@@ -7,33 +7,33 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/ny">紐約</a><br>
-            <a href="/la">洛杉矶</a><br>
-            <a href="/van">温哥华</a>
+            <a href="/a/ny">紐約</a><br>
+            <a href="/a/la">洛杉矶</a><br>
+            <a href="/a/van">温哥华</a>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/sea">西雅图</a><br>
-            <a href="/chi">芝加哥</a><br>
-            <a href="/lv">拉斯維加斯</a>
+            <a href="/a/sea">西雅图</a><br>
+            <a href="/a/chi">芝加哥</a><br>
+            <a href="/a/lv">拉斯維加斯</a>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/hou">休斯敦</a><br>
-            <a href="/bos">波士顿</a><br>
-            <a href="/sfr">旧金山</a>
+            <a href="/a/hou">休斯敦</a><br>
+            <a href="/a/bos">波士顿</a><br>
+            <a href="/a/sfr">旧金山</a>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/was">华盛顿</a><br>
-            <a href="/sdi">圣地亚哥</a><br>
-            <a href="/syd">悉尼</a>
+            <a href="/a/was">华盛顿</a><br>
+            <a href="/a/sdi">圣地亚哥</a><br>
+            <a href="/a/syd">悉尼</a>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/phi">费城</a><br>
-            <a href="/hwi">夏威夷</a><br>
-            <a href="/atl">亚特兰大</a>
+            <a href="/a/phi">费城</a><br>
+            <a href="/a/hwi">夏威夷</a><br>
+            <a href="/a/atl">亚特兰大</a>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/dal">达拉斯</a><br>
-            <a href="/flo">佛罗里达</a>
+            <a href="/a/dal">达拉斯</a><br>
+            <a href="/a/flo">佛罗里达</a>
           </div>
         </div>
       </div> 

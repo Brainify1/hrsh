@@ -52,7 +52,7 @@ app.use(authRoutes);
 app.use('/', index);
 //app.use('/page_a', page_a);
 app.use('/users', users);
-app.use('/userpage/1/1/1', userPage);
+app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
