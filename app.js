@@ -35,7 +35,7 @@ app.set('view engine', 'hjs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ 
@@ -56,6 +56,8 @@ app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
+app.use('/api', api);
+
 app.use('/content', content);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 

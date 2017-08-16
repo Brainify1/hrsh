@@ -475,8 +475,8 @@
                                         <div class="content">
                                             <form id="createNewsForm">
                                                 <div class="row form-group">
-                                                    <input type="text" class="form-control news-title" placeholder="新闻标题">
-                                                    <textarea name="news-content" id="news-content"></textarea>
+                                                    <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
+                                                    <textarea name="test" id="news-content"></textarea>
                                                     <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
                                                 </div>
                                             </form>
@@ -485,6 +485,28 @@
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            function CKupdate(){
+                                for ( instance in CKEDITOR.instances )
+                                    CKEDITOR.instances[instance].updateElement();
+                            }
+                            $('#createNewsForm').submit(function(e) {
+                                e.preventDefault();
+                                CKupdate()
+                                var self = $(this)
+                                $.ajax({
+                                    url: '/api/postNews',
+                                    data: self.serialize(),
+                                    method: 'post',
+                                    success: function(result) {
+                                        console.log(`${result.title} 发布成功！`)
+                                    },
+                                    error: function(err) {
+                                        console.log('发布失败')
+                                    }
+                                })
+                            })
+                        </script>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
