@@ -6,6 +6,7 @@ var listingCollection = db.collection('listings');
 var videosCollection = db.collection('videos');
 var newsCollection = db.collection('news');
 var usersCollection = db.collection('users');
+
 router.get('/:states/:category', function(req, res, next) {
 	console.log(123);
 
@@ -13,7 +14,7 @@ router.get('/:states/:category', function(req, res, next) {
 	}
 	console.log(doc);
 })
-router.post('/postNews', function(req, res, next) {
+router.post('/news/post', function(req, res, next) {
 	const news = {
 		title: req.body.title,
 		content: req.body.content,
@@ -24,15 +25,16 @@ router.post('/postNews', function(req, res, next) {
 		res.json(newsDoc)
 	})
 })
-router.get('/getNewsList', function(req, res, next) {
-	newsCollection.find({}, function(err, newsList) {
+router.get('/news/fetch', function (req, res, next) {
+	newsCollection.find(function(err, newsList) {
 		res.json(newsList)
 	})
 })
-router.get('/deleteNews', function(req, res, next) {
-	var newsId = req.body.id
+router.post('/news/delete', function(req, res, next) {
+    var newsId = req.body.id
 	newsCollection.remove({_id: mongojs.ObjectId(newsId)}, function(err, removedNews) {
-		res.json(removedNews)
+        res.json(removedNews)
+        console.log(removedNews)
 	})
 })
 //get all users in json

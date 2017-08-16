@@ -495,7 +495,7 @@
                                 CKupdate()
                                 var self = $(this)
                                 $.ajax({
-                                    url: '/api/postNews',
+                                    url: '/api/news/post',
                                     data: self.serialize(),
                                     method: 'post',
                                     success: function(data) {
@@ -518,9 +518,8 @@
                                 })
                             })
                             //get news list for management
-                            $.ajax({
-                                url: '/api/getNewsList',
-                                method: 'get',
+                            $.get({
+                                url: '/api/news/fetch',
                                 success: function(data) {
                                     for (var i = 0; i < data.length; i++) {
                                         $('.newsBody').append(`
@@ -530,7 +529,7 @@
                                                 <td>${data[i].created_at}</td>
                                                 <td>${data[i].views}</td>
                                                 <td>
-                                                    <a href="#" data-api="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews">删除</a>
+                                                    <a href="#" data-api="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}')">删除</a>
                                                 </td>
                                             </tr>
                                         `)
@@ -538,24 +537,21 @@
                                 }
                             })
                             //delete news button
-                            $('.title').on('click', (function(e) {
-                                console.log('delete')
-                                var self = $(this)
-                                var api = self.attr('data-api');
-                                var newsId = self.attr('data-id');
+                            function deleteNews(id) {
+                                console.log(id)
                                 $.ajax({
                                     method: 'post',
-                                    url: api,
-                                    data: {id: newsId},
-                                    success: function(data) {
-                                        alert(`新闻 ${data.title} 已删除`);
+                                    url: '/api/news/delete',
+                                    data: { id: id},
+                                    success: function (data) {
+                                        alert(`新闻已删除`);
                                         self.parent().parent().hide();
                                     },
-                                    error: function(data) {
+                                    error: function (data) {
                                         alert('删除失败')
                                     }
                                 })
-                            }))
+                            }
                         </script>
                         <div class="container-fluid">
                             <div class="row">
