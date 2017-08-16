@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -485,28 +485,6 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            function CKupdate(){
-                                for ( instance in CKEDITOR.instances )
-                                    CKEDITOR.instances[instance].updateElement();
-                            }
-                            $('#createNewsForm').submit(function(e) {
-                                e.preventDefault();
-                                CKupdate()
-                                var self = $(this)
-                                $.ajax({
-                                    url: '/api/postNews',
-                                    data: self.serialize(),
-                                    method: 'post',
-                                    success: function(result) {
-                                        console.log(`${result.title} 发布成功！`)
-                                    },
-                                    error: function(err) {
-                                        console.log('发布失败')
-                                    }
-                                })
-                            })
-                        </script>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
@@ -844,6 +822,7 @@
 
 </body>
     <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
+    <script src="/javascripts/manager.js"></script>
     <!--   Core JS Files   -->
     <script src="../../javascripts/admin.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

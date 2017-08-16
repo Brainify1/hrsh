@@ -16,3 +16,23 @@
         }
     })
 }
+function CKupdate() {
+    for (instance in CKEDITOR.instances)
+        CKEDITOR.instances[instance].updateElement();
+}
+$('#createNewsForm').submit(function (e) {
+    e.preventDefault();
+    CKupdate()
+    var self = $(this)
+    $.ajax({
+        url: '/api/postNews',
+        data: self.serialize(),
+        method: 'post',
+        success: function (result) {
+            console.log(`${result.title} 发布成功！`)
+        },
+        error: function (err) {
+            console.log('发布失败')
+        }
+    })
+}) 
