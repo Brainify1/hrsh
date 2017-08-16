@@ -5,6 +5,7 @@ var db = mongojs('mongodb://localhost:27017/test', ['listings']);
 var listingCollection = db.collection('listings');
 var videosCollection = db.collection('videos');
 var newsCollection = db.collection('news');
+var usersCollection = db.collection('users');
 router.get('/:states/:category', function(req, res, next) {
 	console.log(123);
 
@@ -33,6 +34,17 @@ router.get('/deleteNews', function(req, res, next) {
 	newsCollection.remove({_id: mongojs.ObjectId(newsId)}, function(err, removedNews) {
 		res.json(removedNews)
 	})
+})
+//get all users in json
+router.get('/allUsers', function(req, res, next) {
+	usersCollection.find({}, function(err, users) {
+		res.json(users)
+	})
+})
+//get the number of a specific user's posting
+router.get('/userPostsAmount/:id', function(req, res, next) {
+	var {userId} =  req.params;
+	
 })
 
 

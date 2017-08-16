@@ -15,7 +15,8 @@ function authenticate(req, email, password, done){
 				console.log('not found')
 				return done(null, false, req.flash('loginMessage','Invalid username or password'));
 			}
-			done(null, user, req.flash('loginMessage','Invalid username or password'));
+			done(null, user);
+			console.log('logged in')
 		},done)
 		})
 }
@@ -25,11 +26,11 @@ function register(req, email, password, done){
 		.findOne({email: email}, function(err, user) {
 			if(user){
 				console.log(email)
-				return done(null, false, req.flash('signupMessage','User already exists'));
+				return done(null, false);
 			}
 			if(password !== req.body.password2){
 				console.log(password)
-				return done(null, false, req.flash('signupMessage','Passwords do not match'));
+				return done(null, false);
 			}
 
 			const newUser = {
@@ -41,6 +42,7 @@ function register(req, email, password, done){
 				.insert(newUser, function(ids){
 					newUser.id = ids
 					done(null, newUser)
+					console.log('account created')
 				})
 		})
 }
