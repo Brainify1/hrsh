@@ -476,7 +476,7 @@
                                             <form id="createNewsForm">
                                                 <div class="row form-group">
                                                     <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
-                                                    <textarea name="test" id="news-content"></textarea>
+                                                    <textarea name="content" id="news-content"></textarea>
                                                     <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
                                                 </div>
                                             </form>
@@ -498,14 +498,64 @@
                                     url: '/api/postNews',
                                     data: self.serialize(),
                                     method: 'post',
-                                    success: function(result) {
-                                        console.log(`${result.title} 发布成功！`)
+                                    success: function(data) {
+                                        $('.newsBody').append(`
+                                            <tr>
+                                                <td>${data._id}</td>
+                                                <td>${data.title}</td>
+                                                <td>${data.created_at}</td>
+                                                <td>${data.views}</td>
+                                                <td>
+                                                    <a href="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews">删除</a>
+                                                </td>
+                                            </tr>
+                                        `)
+                                        alert(`新闻 ${data.title} 发布成功！`)
                                     },
                                     error: function(err) {
-                                        console.log('发布失败')
+                                        alert('发布失败')
                                     }
                                 })
                             })
+                            //get news list for management
+                            $.ajax({
+                                url: '/api/getNewsList',
+                                method: 'get',
+                                success: function(data) {
+                                    for (var i = 0; i < data.length; i++) {
+                                        $('.newsBody').append(`
+                                            <tr>
+                                                <td>${data[i]._id}</td>
+                                                <td>${data[i].title}</td>
+                                                <td>${data[i].created_at}</td>
+                                                <td>${data[i].views}</td>
+                                                <td>
+                                                    <a href="#" data-api="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews">删除</a>
+                                                </td>
+                                            </tr>
+                                        `)
+                                    }
+                                }
+                            })
+                            //delete news button
+                            $('.title').on('click', (function(e) {
+                                console.log('delete')
+                                var self = $(this)
+                                var api = self.attr('data-api');
+                                var newsId = self.attr('data-id');
+                                $.ajax({
+                                    method: 'post',
+                                    url: api,
+                                    data: {id: newsId},
+                                    success: function(data) {
+                                        alert(`新闻 ${data.title} 已删除`);
+                                        self.parent().parent().hide();
+                                    },
+                                    error: function(data) {
+                                        alert('删除失败')
+                                    }
+                                })
+                            }))
                         </script>
                         <div class="container-fluid">
                             <div class="row">
@@ -524,28 +574,7 @@
                                                     <th>点击量</th>
                                                     <th>操作</th>
                                                 </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Minerva Hooper</td>
-                                                        <td>$23,789</td>
-                                                        <td>Curaçao</td>
-                                                        <td>Sinaai-Waas</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Sage Rodriguez</td>
-                                                        <td>$56,142</td>
-                                                        <td>Netherlands</td>
-                                                        <td>Baileux</td>
-                                                    </tr>
+                                                <tbody class="newsBody">
                                                 </tbody>
                                             </table>
             

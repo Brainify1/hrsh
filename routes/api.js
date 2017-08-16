@@ -13,10 +13,25 @@ router.get('/:states/:category', function(req, res, next) {
 	console.log(doc);
 })
 router.post('/postNews', function(req, res, next) {
-	const news = req.body;
-	console.log(news)
+	const news = {
+		title: req.body.title,
+		content: req.body.content,
+		views: 0,
+		created_at: new Date()
+	}
 	newsCollection.save(news, function(err, newsDoc) {
 		res.json(newsDoc)
+	})
+})
+router.get('/getNewsList', function(req, res, next) {
+	newsCollection.find({}, function(err, newsList) {
+		res.json(newsList)
+	})
+})
+router.get('/deleteNews', function(req, res, next) {
+	var newsId = req.body.id
+	newsCollection.remove({_id: mongojs.ObjectId(newsId)}, function(err, removedNews) {
+		res.json(removedNews)
 	})
 })
 
