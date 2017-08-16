@@ -7,13 +7,7 @@ var videosCollection = db.collection('videos');
 var newsCollection = db.collection('news');
 var usersCollection = db.collection('users');
 
-router.get('/:states/:category', function(req, res, next) {
-	console.log(123);
 
-	videoCollection.find({ name : video1}), function(err, doc) {
-	}
-	console.log(doc);
-})
 router.post('/news/post', function(req, res, next) {
 	const news = {
 		title: req.body.title,

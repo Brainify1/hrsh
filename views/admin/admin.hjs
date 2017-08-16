@@ -506,7 +506,7 @@
                                                 <td>${data.created_at}</td>
                                                 <td>${data.views}</td>
                                                 <td>
-                                                    <a href="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews">删除</a>
+                                                    <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
                                                 </td>
                                             </tr>
                                         `)
@@ -529,7 +529,7 @@
                                                 <td>${data[i].created_at}</td>
                                                 <td>${data[i].views}</td>
                                                 <td>
-                                                    <a href="#" data-api="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}')">删除</a>
+                                                    <a href="#" data-api="/api/deleteNews" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}', this)">删除</a>
                                                 </td>
                                             </tr>
                                         `)
@@ -537,15 +537,14 @@
                                 }
                             })
                             //delete news button
-                            function deleteNews(id) {
-                                console.log(id)
+                            function deleteNews(id, el) {
                                 $.ajax({
                                     method: 'post',
                                     url: '/api/news/delete',
                                     data: { id: id},
                                     success: function (data) {
                                         alert(`新闻已删除`);
-                                        self.parent().parent().hide();
+                                        $(el).parents('tr').remove();
                                     },
                                     error: function (data) {
                                         alert('删除失败')
