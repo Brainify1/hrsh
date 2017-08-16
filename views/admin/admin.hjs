@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -485,6 +485,7 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <script>
                             function CKupdate(){
                                 for ( instance in CKEDITOR.instances )
@@ -557,6 +558,8 @@
                                 })
                             }))
                         </script>
+=======
+>>>>>>> bfb177ba266439377bc42159db0db4174cf82b10
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
@@ -873,6 +876,7 @@
 
 </body>
     <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
+    <script src="/javascripts/manager.js"></script>
     <!--   Core JS Files   -->
     <script src="../../javascripts/admin.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
