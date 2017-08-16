@@ -56,7 +56,6 @@ app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
-app.use('/api', api);
 
 app.use('/content', content);
 /*app.get("/userpage", (req, res, next) =>{
