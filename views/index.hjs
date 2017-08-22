@@ -132,10 +132,6 @@
 											<a href="">更多>></a>
 										</div>
 										<div class="newsList">
-											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
-											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
-											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
-											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
 										</div>
 									</div>
 								</div>
@@ -145,13 +141,17 @@
 											<p>社会</p>
 											<a href="">更多>></a>
 										</div>		
+										<div class="newsList">
+										</div>
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="junshiNews newsBlock">
+									<div class="yuleNews newsBlock">
 										<div class="newsTitle">
-											<p>军事</p>
+											<p>娱乐</p>
 											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
 										</div>
 									</div>
 								</div>
@@ -161,6 +161,8 @@
 											<p>政治</p>
 											<a href="">更多>></a>
 										</div>
+										<div class="newsList">
+										</div>
 									</div>
 								</div>
 								<div class="col-md-4">
@@ -168,6 +170,8 @@
 										<div class="newsTitle">
 											<p>体育</p>
 											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
 										</div>
 									</div>
 								</div>
@@ -177,10 +181,99 @@
 											<p>养生</p>
 											<a href="">更多>></a>
 										</div>
+										<div class="newsList">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- //fetch news api -->
+						<script>
+							$.get('/api/fetchNews/kj', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.kejiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/sh', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.shehuiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/yl', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.yuleNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/zz', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.zhengzhiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/ty', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.tiyuNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/ys', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.yangshengNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+						</script>
 						<!-- listings -->
 						<div class="mt20">
 							<nav class="topListNav">
@@ -253,7 +346,28 @@
 						</div>
 
 						<!-- listings end -->
-	  				</div>
+						<div class="popularLinks">
+							<div class="linksHeader">
+								<p>常用链接</p>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="linkBox">
+										<a href="">公民考试模拟试题</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					  </div>
+					  <script>
+						  $.get('/api/fetchNews/sy', (data) => {
+							  for(var i = 0; i < data.length ; i++) {
+								  $('.linkBox').append(`
+								  <a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+							  }
+						  })
+					  </script>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">
 

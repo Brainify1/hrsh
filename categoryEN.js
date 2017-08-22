@@ -1,0 +1,1 @@
+module.exports = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service'];

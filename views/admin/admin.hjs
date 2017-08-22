@@ -476,13 +476,15 @@
                                             <form id="createNewsForm">
                                                 <div class="row form-group">
                                                     <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
-                                                    <select class="news-type">
+                                                    <select class="news-type" name="type">
                                                         <option selected value="xw">新闻分类</option>
+                                                        <option value="kj">科技分类</option>
                                                         <option value="sh">社会分类</option>
-                                                        <option value="js">军事分类</option>
+                                                        <option value="yl">娱乐分类</option>
                                                         <option value="zz">政治分类</option>
                                                         <option value="ty">体育分类</option>
                                                         <option value="ys">养身分类</option>
+                                                        <option value="sy">实用链接</option>
                                                     </select>
                                                     <textarea name="content" id="news-content"></textarea>
                                                     <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
@@ -596,6 +598,15 @@
                                             <h4 class="title">分类广告管理</h4>
                                             <p class="category">查询或删除分类广告</p>
                                         </div>
+                                        <div class="filterBlock">
+                                            <select class="listing-state">
+                                                <option selected value="xw">地区</option>
+                                            </select>
+                                            <select class="listing-category">
+                                                <option selected value="xw">分类</option>
+                                            </select>
+                                            <button class="btn btn-large btn-info" id="searchListing">搜索</button>
+                                        </div>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
@@ -606,18 +617,81 @@
                                                     <th>类型</th>
                                                     <th>操作</th>
                                                 </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr>
+                                                <tbody class="listingBody">
                                                 </tbody>
                                             </table>
                                         </div>
+                                         <!-- //显示所有分类 -->
+                                        <script>
+                                            $.get('/api/states/en/fetch', function(statesEN) {
+                                                $.get('/api/states/cn/fetch', function(statesCN) {
+                                                    for(var i = 0; i < statesEN.length; i ++) {
+                                                        $('.listing-state').append(`
+                                                            <option value="${statesEN[i]}">${statesCN[i]}</option>
+                                                        `)
+                                                    }
+                                                })
+                                            })
+                                            $.get('/api/category/en/fetch', function(en) {
+                                                $.get('/api/category/cn/fetch', function(cn) {
+                                                    for(var i = 0; i < en.length; i ++) {
+                                                        $('.listing-category').append(`
+                                                            <option value="${en[i]}">${cn[i]}</option>
+                                                        `)
+                                                    }
+                                                })
+                                            })
+                                            $('#searchListing').click(function() {
+                                                var state = $('.listing-state').val()
+                                                var category = $('.listing-category').val()
+                                                $('.listingBody').empty();
+                                                $.get(`/api/listing/${state}/${category}/fetch`, (data) => {
+                                                    for (var i = 0; i < data.length; i ++) {
+                                                        $('.listingBody').append(`
+                                                            <tr>
+                                                                <td>${data[i]._id}</td>
+                                                                <td>${data[i].data.title}</td>
+                                                                <td>${data[i].created_at}</td>
+                                                                <td>${data[i].views}</td>
+                                                                <td>${data[i].data.type}</td>
+                                                                <td><a href="#" onclick="deleteListing(${data[i]._id})">删除</a></td>
+                                                            </tr>
+                                                        `)
+                                                    }
+                                                })
+                                            })
+                                            //get all listing
+                                            $.get(`/api/listings/fetch`, (data) => {
+                                                    for (var i = 0; i < data.length; i ++) {
+                                                        $('.listingBody').append(`
+                                                            <tr>
+                                                                <td>${data[i]._id}</td>
+                                                                <td>${data[i].data.title}</td>
+                                                                <td>${data[i].created_at}</td>
+                                                                <td>${data[i].views}</td>
+                                                                <td>${data[i].data.category}</td>
+                                                                <td><a onclick="deleteListing('${data[i]._id}', this)" href="#">删除</a></td>
+                                                            </tr>
+                                                        `)
+                                                    }
+                                                })
+                                            
+                                            //delete listing button
+                                            function deleteListing(id, el) {
+                                                $.ajax({
+                                                    method: 'get',
+                                                    url: '/api/listing/delete/' + id,
+                                                    success: function (data) {
+                                                        console.log($(el))
+                                                        $(el).parent().parent().remove();
+                                                        alert(`信息已删除`);
+                                                    },
+                                                    error: function (data) {
+                                                        alert('删除失败')
+                                                    }
+                                                })
+                                            }
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -649,41 +723,6 @@
                                                         <td>Niger</td>
                                                         <td>Oud-Turnhout</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Minerva Hooper</td>
-                                                        <td>$23,789</td>
-                                                        <td>Curaçao</td>
-                                                        <td>Sinaai-Waas</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Sage Rodriguez</td>
-                                                        <td>$56,142</td>
-                                                        <td>Netherlands</td>
-                                                        <td>Baileux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Philip Chaney</td>
-                                                        <td>$38,735</td>
-                                                        <td>Korea, South</td>
-                                                        <td>Overland Park</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Doris Greene</td>
-                                                        <td>$63,542</td>
-                                                        <td>Malawi</td>
-                                                        <td>Feldkirchen in Kärnten</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>Mason Porter</td>
-                                                        <td>$78,615</td>
-                                                        <td>Chile</td>
-                                                        <td>Gloucester</td>
-                                                    </tr>
                                                 </tbody>
                                             </table>
             
@@ -707,18 +746,10 @@
                                                 <thead>
                                                     <th>ID</th>
                                                     <th>用户名</th>
-                                                    <th>发帖数量</th>
                                                     <th>创建日期</th>
                                                     <th>操作</th>
                                                 </thead>
                                                 <tbody class="usersBody">
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr>
                                                 </tbody>
                                             </table>
                                             <script>
@@ -731,10 +762,9 @@
                                                                     <tr>
                                                                         <td>${data[i]._id}</td>
                                                                         <td>${data[i].username}</td>
-                                                                        <td>${1}</td>
-                                                                        <td>Niger</td>
-                                                                        <td>Oud-Turnhout</td>
-                                                                </tr>
+                                                                        <td>${data[i].created_at}</td>
+                                                                        <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
+                                                                    </tr>
                                                                 `)
                                                             }
                                                         },
@@ -742,6 +772,20 @@
                                                             console.log(error)
                                                         }
                                                     })
+                                                    //delete listing button
+                                                    function deleteUser(id, el) {
+                                                        $.ajax({
+                                                            method: 'get',
+                                                            url: '/api/users/delete/' + id,
+                                                            success: function (data) {
+                                                                $(el).parent().parent().remove();
+                                                                alert(`用户已删除`);
+                                                            },
+                                                            error: function (data) {
+                                                                alert('删除失败')
+                                                            }
+                                                        })
+                                                    }
                                             </script>
                                         </div>
                                     </div>

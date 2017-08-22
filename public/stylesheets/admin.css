@@ -26,3 +26,13 @@
     display: inline-block;
     height: 40px;
 }
+.filterBlock select {
+    padding: 20px;
+    background-color: #fff;
+    width: 45%;
+    display: inline-block;
+    height: 40px;
+}
+.listing-tab .card {
+    padding: 20px 30px;
+}
