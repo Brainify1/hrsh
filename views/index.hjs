@@ -2,7 +2,7 @@
 	   	{{> header}}	  	
 	  	{{> states}}
 		   {{> navbar}}
-		   
+		   <link rel="stylesheet" href="/stylesheets/index.css">
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">
@@ -95,32 +95,92 @@
 						<div class="youtubeDiv">
 							<div class="titleBlock">
 								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/a/{{link}}/videos">更多>></a></div>
-								
 							</div>
-							<div class="container-fluid bg-white">
-								<div class="row">
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+							<div class="titleBlock">
+								<div class="VidLinks"><a href="#">美国中文电视</a><a href="#">新唐人电视台</a><a href="#">CCTV4</a><a href="#">天下卫视</a><a href="#">Youtube</a><a href="#">爱奇艺</a><a href="#">PPTV</a><a href="#">爱奇艺</a><a href="#">PPTV</a></div>
+								<div class="container-fluid bg-white">
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- youtube videos end -->
+						<div class="newsListings">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="kejiNews newsBlock">
+										<div class="newsTitle">
+											<p>科技</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
+											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
+											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
+											<a href="">地铁男子赤裸上身拍女子屁股遭通缉</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="shehuiNews newsBlock">
+										<div class="newsTitle">
+											<p>社会</p>
+											<a href="">更多>></a>
+										</div>		
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="junshiNews newsBlock">
+										<div class="newsTitle">
+											<p>军事</p>
+											<a href="">更多>></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="zhengzhiNews newsBlock">
+										<div class="newsTitle">
+											<p>政治</p>
+											<a href="">更多>></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="tiyuNews newsBlock">
+										<div class="newsTitle">
+											<p>体育</p>
+											<a href="">更多>></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="yangshengNews newsBlock">
+										<div class="newsTitle">
+											<p>养生</p>
+											<a href="">更多>></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<!-- listings -->
 						<div class="mt20">
 							<nav class="topListNav">

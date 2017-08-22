@@ -1,0 +1,55 @@
+.VidLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px;
+}
+.VidLinks a {
+    margin-right: 10px;
+    color: white;
+}
+.newsListings {
+    min-height: 500px;
+    padding: 20px 0;
+}
+.newsListings .newsBlock {
+    min-height: 250px;
+    border: 1px solid #333;
+    margin: 10px 0;
+}
+.newsListings .newsTitle p {
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+    display: inline;
+}
+.newsListings .newsTitle a {
+    text-align: right;
+    float: right;
+    color: white;
+    margin-right: 10px;
+}
+.newsTitle a:hover {
+    cursor: pointer;
+}
+.newsListings .newsTitle {
+    padding: 5px 0;
+    background-color: rgb(64,0,144);
+}
+.newsList {
+    padding: 10px;
+}
+.newsList a {
+    display: block;
+    font-size: 17px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 30px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #444;
+}

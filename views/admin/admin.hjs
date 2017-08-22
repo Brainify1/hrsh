@@ -476,6 +476,14 @@
                                             <form id="createNewsForm">
                                                 <div class="row form-group">
                                                     <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
+                                                    <select class="news-type">
+                                                        <option selected value="xw">新闻分类</option>
+                                                        <option value="sh">社会分类</option>
+                                                        <option value="js">军事分类</option>
+                                                        <option value="zz">政治分类</option>
+                                                        <option value="ty">体育分类</option>
+                                                        <option value="ys">养身分类</option>
+                                                    </select>
                                                     <textarea name="content" id="news-content"></textarea>
                                                     <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
                                                 </div>
