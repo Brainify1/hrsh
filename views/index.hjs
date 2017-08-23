@@ -286,61 +286,40 @@
 						</div>
 						<div class="newList">
 							<div class="bottomListDiv">
-								<ul class="bottomListUl">
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
+								<ul class="bottomListUl" id="newLists">
+									
+									<script>
+										//get all new listings
+										$.get('/api/listings/new/fetch', (data) => {
+											for (var i = 0; i < data.length; i ++) {
+												$('#newLists').append(`
+												<li class="bottomListLi">
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/sticker.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<h6>${data[i].data.content}</h6>
+												</li>
+												`)
+											}
+										})
+									</script>
 								</ul>
 							</div>
 						</div>
 						<div class="hotList">
 							<div class="bottomListDiv">
-								<ul class="bottomListUl">
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
+								<ul class="bottomListUl" id="hotLists">
+									<script>
+										//get all hot listings
+										$.get('/api/listings/hot/fetch', (data) => {
+											for (var i = 0; i < data.length; i ++) {
+												$('#hotLists').append(`
+												<li class="bottomListLi">
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/fire.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<h6>${data[i].data.content}</h6>
+												</li>
+												`)
+											}
+										})
+									</script>
 								</ul>
 							</div>
 						</div>

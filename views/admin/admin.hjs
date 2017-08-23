@@ -645,7 +645,7 @@
                                                 var state = $('.listing-state').val()
                                                 var category = $('.listing-category').val()
                                                 $('.listingBody').empty();
-                                                $.get(`/api/listing/${state}/${category}/fetch`, (data) => {
+                                                $.get(`/api/listings/fetchAll/${state}/${category}`, (data) => {
                                                     for (var i = 0; i < data.length; i ++) {
                                                         $('.listingBody').append(`
                                                             <tr>
