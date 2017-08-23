@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var flash = require("connect-flash");
 var multer = require("multer");
 var session = require("express-session");
-var RedisStore = require('connect-redis')(session);
 var passport = require("passport");
 var router = express.Router();
 
@@ -39,7 +38,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ 
-  store: new RedisStore(),
   secret: "i love dogs", 
   resave: false, 
   saveUninitialized: false
