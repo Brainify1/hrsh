@@ -61,7 +61,7 @@
 .popularLinks a {
     display: inline-block;
     margin: 10px 0;
-    width: 30%;
+    width: 100%;
     text-align: center;
 }
 .popularLinks .linksHeader {

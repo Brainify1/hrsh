@@ -1,7 +1,9 @@
 body {
 	background-color: rgb(250, 250, 252);
 }
-
+.logoBlock {
+	height: 7vh;
+}
 /*main container*/
 .bodyDiv {
 	margin: 5% 10% 0;
@@ -28,7 +30,10 @@ body {
 @media only screen and (max-width: 850px) {
     .bodyDiv {
         margin: 8% 2%;
-    }
+	}
+	.bg-temp {
+		display: none;
+	}
 }
 
 /*end of main container*/
