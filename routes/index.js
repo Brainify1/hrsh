@@ -150,7 +150,8 @@ router.get('/a/:states/:category/postList', function(req, res, next) {
     }
 });
 
-/*POST into MongoDB*/
+/*POST into Database*/
+
 router.post('/a/:states/:category/postList', function(req, res, next) {
         var refString = randomstring.generate(32);
         var states = req.params.states;
@@ -188,6 +189,8 @@ router.post('/a/:states/:category/postList', function(req, res, next) {
             res.redirect(`/a/${states}/${category}`)
         })
     })
+
+
     /*GET content page*/
 router.get('/a/:states/:category/:id', function(req, res, next) {
     var states = req.params.states;

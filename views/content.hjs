@@ -44,7 +44,7 @@
 	  						</div>
 	  					</div>
 	  					{{/listings}}
-	  					<div class="navbarUl mt5">
+	  				<!-- 	<div class="navbarUl mt5">
 	  						<h5 class="viewTitle">回复文章</h5>
 	  					</div>
 	  					<div class="replyBox">
@@ -52,7 +52,7 @@
 	  					</div>
 	  					<div class="viewListPost2 postList">
 	  						<button type="submit" class="replyButton">确定回复</button>
-	  					</div>
+	  					</div> -->
 					</div>
 	  				<div class="col-md-2 col-sm-2 ">
 	  					<div class="bg-temp">
