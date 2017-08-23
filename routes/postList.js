@@ -20,8 +20,6 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage });
 
-
-
 router.post('/images', upload.any(), (req, res, next) => {
     var files = req.files
     var imageJSON = {

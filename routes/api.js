@@ -67,7 +67,7 @@ router.get('/category/cn/fetch', (req, res) => {
 })
 
 //get filtered listings
-router.get('/listing/:state/:category/fetch', (req, res) => {
+router.get('/listings/fetchAll/:state/:category', (req, res) => {
     var { state } = req.params;
     var { category } = req.params;
     listingCollection.find({ "data.state": state, "data.category": category }, function(err, doc) {
@@ -89,6 +89,28 @@ router.get('/users/delete/:id', (req, res) => {
     var { id } = req.params;
     usersCollection.remove({ _id: mongojs.ObjectId(id) }, (err, doc) => {
         res.json(doc)
+    })
+})
+////fetch all new listings sorted by date
+router.get('/listings/new/fetch', (req, res) => {
+    listingCollection.find().limit(10).sort({_id: -1}, (err, doc) => {
+        res.json(doc)
+    })
+})
+//fetch all hot listings sorted by view count
+router.get('/listings/hot/fetch', (req, res) => {
+    listingCollection.find().limit(10).sort({views: -1}, (err, doc) => {
+        res.json(doc)
+    })
+})
+router.get('/listing/fetchOne/:id', (req, res) => {
+    var { id } = req.params;
+    var stringId = id.toString()
+    listingCollection.findOne({ refId: id}, function(err, listing) {
+        if (err) {
+            console.log(err)
+        } 
+        res.json(listing)
     })
 })
 module.exports = router;

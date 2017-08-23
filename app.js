@@ -17,7 +17,6 @@ require("./passport");
 
 var index = require('./routes/index');
 //var page_a = require('./routes/page_a')
-var users = require('./routes/users');
 var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
 var postList = require('./routes/postList');
@@ -52,7 +51,6 @@ app.use(authRoutes);
 
 app.use('/', index);
 //app.use('/page_a', page_a);
-app.use('/users', users);
 app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
