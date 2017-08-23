@@ -703,6 +703,42 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="header">
+                                            <h4 class="title">添加广告</h4>
+                                            <p class="category">添加新的广告</p>    
+                                        </div>
+                                        <form id="ad_form1">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label style="margin-left: 10vw;color: black;">形式1/两侧广告(建议長300px,宽100px)</label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input style="display: inline;" type="file" name="adImg1" >
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="submit">添加</button>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </form>
+                                        <form id="ad_form2">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label style="margin-left: 10vw; color: black;">形式2/大形广告</label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input style="display: inline;" type="file" name="adImg2" >
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="submit">添加</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card">
+                                        <div class="header">
                                             <h4 class="title">广告管理</h4>
                                             <p class="category">各个广告牌图片管理</p>
                                         </div>
