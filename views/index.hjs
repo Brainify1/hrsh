@@ -333,11 +333,53 @@
 							<div class="linksHeader">
 								<p>常用链接</p>
 							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="linkBox">
-										<a href="">公民考试模拟试题</a>
-									</div>
+							<div class="row linkBox">
+								
+							</div>
+							<div class="linksHeader">
+								<p>各地医院集合</p>
+							</div>
+							<div class="row hospitalsBox">
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">纽约医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">西雅图医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
+								</div>
+							</div>
+							<div class="linksHeader">
+								<p>各地大学集合</p>
+							</div>
+							<div class="row schoolBox">
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">纽约医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">西雅图医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
 								</div>
 							</div>
 						</div>
@@ -346,8 +388,10 @@
 						  $.get('/api/fetchNews/sy', (data) => {
 							  for(var i = 0; i < data.length ; i++) {
 								  $('.linkBox').append(`
-								  <a href="/news/${data[i]._id}">${data[i].title}</a>
-									`)
+								  	<div class="col-md-4">
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									</div>
+								  `)
 							  }
 						  })
 					  </script>
