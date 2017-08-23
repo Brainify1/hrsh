@@ -2,12 +2,14 @@
 	   	{{> header}}	  	
 	  	{{> states}}
 		   {{> navbar}}
-		   
+		   <link rel="stylesheet" href="/stylesheets/index.css">
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">
-	  					<div class="bg-temp">
-	  						 
+	  					<div>
+	  						 <div class="imgContainer">
+	  						 	<img src="/images/ex_ads.gif">
+	  						 </div>
 	  					</div>
 	  				</div>
 	  				<div class="col-md-8 col-sm-8">
@@ -95,32 +97,185 @@
 						<div class="youtubeDiv">
 							<div class="titleBlock">
 								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/a/{{link}}/videos">更多>></a></div>
-								
 							</div>
-							<div class="container-fluid bg-white">
-								<div class="row">
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+							<div class="titleBlock">
+								<div class="VidLinks"><a href="#">美国中文电视</a><a href="#">新唐人电视台</a><a href="#">CCTV4</a><a href="#">天下卫视</a><a href="#">Youtube</a><a href="#">爱奇艺</a><a href="#">PPTV</a><a href="#">爱奇艺</a><a href="#">PPTV</a></div>
+								<div class="container-fluid bg-white">
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-4 col-sm-4">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-										<div>
-											<p>Game of Thrones Spoilers</p>
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>Game of Thrones Spoilers</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- youtube videos end -->
+						<div class="newsListings">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="kejiNews newsBlock">
+										<div class="newsTitle">
+											<p>科技</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="shehuiNews newsBlock">
+										<div class="newsTitle">
+											<p>社会</p>
+											<a href="">更多>></a>
+										</div>		
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="yuleNews newsBlock">
+										<div class="newsTitle">
+											<p>娱乐</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="zhengzhiNews newsBlock">
+										<div class="newsTitle">
+											<p>政治</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="tiyuNews newsBlock">
+										<div class="newsTitle">
+											<p>体育</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="yangshengNews newsBlock">
+										<div class="newsTitle">
+											<p>养生</p>
+											<a href="">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //fetch news api -->
+						<script>
+							$.get('/api/fetchNews/kj', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.kejiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/sh', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.shehuiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/yl', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.yuleNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/zz', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.zhengzhiNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/ty', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.tiyuNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/ys', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.yangshengNews .newsList').append(`
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+						</script>
 						<!-- listings -->
 						<div class="mt20">
 							<nav class="topListNav">
@@ -133,67 +288,111 @@
 						</div>
 						<div class="newList">
 							<div class="bottomListDiv">
-								<ul class="bottomListUl">
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/sticker.png" height="13px" width="auto"> 今晚开始降雨 明日还有阵雨雷暴周末夜间转凉降温</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
+								<ul class="bottomListUl" id="newLists">
+									
+									<script>
+										//get all new listings
+										$.get('/api/listings/new/fetch', (data) => {
+											for (var i = 0; i < data.length; i ++) {
+												$('#newLists').append(`
+												<li class="bottomListLi">
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/sticker.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<h6>${data[i].data.content}</h6>
+												</li>
+												`)
+											}
+										})
+									</script>
 								</ul>
 							</div>
 						</div>
 						<div class="hotList">
 							<div class="bottomListDiv">
-								<ul class="bottomListUl">
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
-									<li class="bottomListLi">
-										<a><img src="/images/fire.png" height="13px" width="auto"> 8月07日 曼哈顿,法拉盛,森林小丘,新鲜草原,可乐娜,Sunnyside，最新买房卖房信息快报 屋新天推荐 微信：n...</a>
-										<h6>（中央社記者姜遠珍首爾3日專電）南韓演員宋一國的妻子法官鄭升妍，將前往法國進行為期一年的海外研修。宋家3胞胎兄弟大韓、民國、萬歲也將跟隨母親在法國居住一年</h6>
-									</li>
+								<ul class="bottomListUl" id="hotLists">
+									<script>
+										//get all hot listings
+										$.get('/api/listings/hot/fetch', (data) => {
+											for (var i = 0; i < data.length; i ++) {
+												$('#hotLists').append(`
+												<li class="bottomListLi">
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/fire.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<h6>${data[i].data.content}</h6>
+												</li>
+												`)
+											}
+										})
+									</script>
 								</ul>
 							</div>
 						</div>
 
 						<!-- listings end -->
-	  				</div>
+						<div class="popularLinks">
+							<div class="linksHeader">
+								<p>常用链接</p>
+							</div>
+							<div class="row linkBox">
+								
+							</div>
+							<div class="linksHeader">
+								<p>各地医院集合</p>
+							</div>
+							<div class="row hospitalsBox">
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">纽约医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">西雅图医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
+								</div>
+							</div>
+							<div class="linksHeader">
+								<p>各地大学集合</p>
+							</div>
+							<div class="row schoolBox">
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">纽约医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">西雅图医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+					  <script>
+						  $.get('/api/fetchNews/sy', (data) => {
+							  for(var i = 0; i < data.length ; i++) {
+								  $('.linkBox').append(`
+								  	<div class="col-md-4">
+										<a href="/news/${data[i]._id}">${data[i].title}</a>
+									</div>
+								  `)
+							  }
+						  })
+					  </script>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">
 

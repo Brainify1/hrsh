@@ -16,14 +16,13 @@ require("./passport");
 
 var index = require('./routes/index');
 //var page_a = require('./routes/page_a')
-var users = require('./routes/users');
 var authRoutes = require("./routes/auth");
 var userPage = require("./routes/userpage");
 var postList = require('./routes/postList');
 var admin = require('./routes/admin');
 var viewList = require('./routes/viewList');
-var api = require('./routes/api');
 var content = require('./routes/index');
+var api  = require('./routes/api')
 
 var app = express();
 
@@ -35,7 +34,7 @@ app.set('view engine', 'hjs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ 
@@ -50,12 +49,12 @@ app.use(authRoutes);
 
 app.use('/', index);
 //app.use('/page_a', page_a);
-app.use('/users', users);
 app.use('/userpage', userPage);
 app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
-app.use('/', api);
+app.use('/api',api)
+
 app.use('/content', content);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 
