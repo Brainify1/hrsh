@@ -33,6 +33,12 @@ function register(req, email, password, done) {
                 console.log(password)
                 return done(null, false);
             }
+     usersCollection
+        .findOne({ username: req.body.nickname }, function(err, user) {
+            if (user) {
+                console.log(req.body.nickname)
+                return done(null, false);
+            }
 
             const newUser = {
                 email: email,
@@ -46,7 +52,8 @@ function register(req, email, password, done) {
                     console.log('account created')
                 })
         })
-}
+})
+    }
 
 passport.serializeUser(function(user, done) {
     done(null, user);
