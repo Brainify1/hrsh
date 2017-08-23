@@ -157,8 +157,8 @@ router.post('/a/:states/:category/postList', function(req, res, next) {
         var category = req.params.category;
         var author;
         if (req.isAuthenticated()) {
-            author = req.session.passport.user
-            console.log('user is logged in')
+            author = req.session.passport.user.username
+            console.log(req.session.passport.user.username)
         } else {
             author = 'Guest'
         }

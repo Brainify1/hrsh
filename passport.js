@@ -1,5 +1,5 @@
 var mongojs = require('mongojs');
-var db = mongojs(require('./db'), ['users']);
+var db = mongojs(require('./db'));
 var usersCollection = db.collection('users');
 const bcrypt = require("bcrypt-nodejs");
 const passport = require("passport");
