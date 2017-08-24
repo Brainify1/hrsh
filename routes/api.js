@@ -116,4 +116,6 @@ router.get('/listing/fetchOne/:id', (req, res) => {
 })
 
 
+
 module.exports = router;
+
