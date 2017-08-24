@@ -23,7 +23,7 @@ var admin = require('./routes/admin');
 var viewList = require('./routes/viewList');
 var content = require('./routes/index');
 var api  = require('./routes/api');
-var news = require('./routes/api');
+var news = require('./routes/index');
 
 var app = express();
 
