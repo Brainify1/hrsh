@@ -9,7 +9,8 @@ var usersCollection = db.collection('users');
 var statesEN = require('../statesEN');
 var statesCN = require('../statesCN')
 var categoryEN = require('../categoryEN');
-var categoryCN = require('../categoryCN')
+var categoryCN = require('../categoryCN');
+
 router.post('/news/post', function(req, res, next) {
     const news = {
         title: req.body.title,
@@ -113,4 +114,6 @@ router.get('/listing/fetchOne/:id', (req, res) => {
         res.json(listing)
     })
 })
+
+
 module.exports = router;

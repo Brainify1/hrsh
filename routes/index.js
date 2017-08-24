@@ -4,6 +4,7 @@ var mongojs = require('mongojs');
 var db = mongojs(require('../db'));
 var listingsCollection = db.collection('listings');
 var videosCollection = db.collection('videos');
+var imagesCollection = db.collection('image');
 var randomstring = require("randomstring");
 
 
@@ -151,47 +152,7 @@ router.get('/a/:states/:category/postList', function(req, res, next) {
 });
 
 /*POST into Database*/
-
-router.post('/a/:states/:category/postList', function(req, res, next) {
-        var refString = randomstring.generate(32);
-        var states = req.params.states;
-        var category = req.params.category;
-        var author;
-        if (req.isAuthenticated()) {
-            author = req.session.passport.user.username
-            console.log(req.session.passport.user.username)
-        } else {
-            author = 'Guest'
-        }
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1; //January is 0!
-        var yyyy = today.getFullYear();
-        if (dd < 10) {
-            dd = '0' + dd;
-        }
-        if (mm < 10) {
-            mm = '0' + mm;
-        }
-        var today = mm + '/' + dd + '/' + yyyy;
-
-        var listing = {
-            refId: refString,
-            data: req.body,
-            created_at: today,
-            views: 0,
-            author
-        }
-        listingsCollection.save(listing, function(err, newListing) {
-            if (err) {
-                return err
-            }
-            res.redirect(`/a/${states}/${category}`)
-        })
-    })
-
-
-    /*GET content page*/
+/*GET content page*/
 router.get('/a/:states/:category/:id', function(req, res, next) {
     var states = req.params.states;
     var category = req.params.category;
@@ -221,5 +182,6 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
         })
     }
 })
+
 
 module.exports = router;
