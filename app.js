@@ -22,7 +22,8 @@ var postList = require('./routes/postList');
 var admin = require('./routes/admin');
 var viewList = require('./routes/viewList');
 var content = require('./routes/index');
-var api  = require('./routes/api')
+var api  = require('./routes/api');
+var news = require('./routes/index');
 
 var app = express();
 
@@ -54,7 +55,7 @@ app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
 app.use('/api',api)
-
+app.use('/news', news)
 app.use('/content', content);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 

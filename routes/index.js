@@ -5,8 +5,9 @@ var db = mongojs(require('../db'));
 var listingsCollection = db.collection('listings');
 var videosCollection = db.collection('videos');
 var imagesCollection = db.collection('image');
+var newsCollection = db.collection('news');
 var randomstring = require("randomstring");
-
+var newsType = require('../newsType');
 
 /*Redirect*/
 router.get('/', function(req, res, next) {
@@ -50,6 +51,70 @@ router.get('/a/:states', function(req, res, next) {
         })
     }
 });
+/*Get more news page*/
+router.get('/a/:states/:type/news', function(req, res, next) {
+        var states = req.params.states;
+        var type = req.params.type;
+        var index_states = allStates.indexOf(states);
+        var statesCN = allStatesCN[index_states]
+        if (allStates.indexOf(states) === -1 || newsType.indexOf(type) === -1) {
+            res.render('error');
+        } else {
+            newsCollection.find({ type }).sort({ _id: -1 }, function(err, news) {
+                res.render('news', {
+                    title: '华人生活网',
+                    link: states,
+                    type,
+                    news,
+                    statesCn: statesCN,
+                    isLoggedIn: req.isAuthenticated(),
+                    partials: {
+                        head: '../views/partials/head',
+                        header: '../views/partials/header',
+                        navbar: '../views/partials/navbar',
+                        states: '../views/partials/states',
+                        footer: '../views/partials/footer',
+                        scripts: '../views/partials/scripts'
+                    }
+                })
+            })
+        }
+})
+/*Get specific news article*/
+router.get('/a/:states/:type/news/:id', function(req, res, next) {
+        var id = req.params.id;
+        var states = req.params.states;
+        var type = req.params.type;
+        var index_states = allStates.indexOf(states);
+        var statesCN = allStatesCN[index_states]
+        if (allStates.indexOf(states) === -1) {
+            res.render('error');
+        } else {
+            newsCollection.find({ _id : id }).sort({ _id: -1 }, function(err, news) {
+                console.log(news)
+                console.log(newsCollection.find({ _id : id }))
+                console.log(id)
+
+                res.render('viewList', {
+                    title: '华人生活网',
+                    link: states,
+                    news,
+                    type,
+                    statesCn: statesCN,
+                    isLoggedIn: req.isAuthenticated(),
+                    partials: {
+                        head: '../views/partials/head',
+                        header: '../views/partials/header',
+                        navbar: '../views/partials/navbar',
+                        states: '../views/partials/states',
+                        footer: '../views/partials/footer',
+                        scripts: '../views/partials/scripts'
+                    }
+                })
+            })
+        }
+})
+
 /* GET category */
 router.get('/a/:states/:category', function(req, res, next) {
     var states = req.params.states;
@@ -182,5 +247,6 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
         })
     }
 })
+
 
 module.exports = router;
