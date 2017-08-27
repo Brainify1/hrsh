@@ -1,11 +1,74 @@
 	   	{{> head}}
-	   	{{> header}}	  	
+	   	<link rel="stylesheet" href="/stylesheets/index.css">
+	   	{{> header}}
+	   	<div style="background-color: white">
+	   		<div class="container-fluid ">
+	   			<div class="row">
+	   				<div class="col-md-5 col-sm-6 col-xs-6 subHeight">
+	   					<div class="imgContainer">
+	   						<img src="/images/hrshLogo.svg">
+	   					</div>
+	   				</div>
+	   				<div class="col-md-4 col-sm-4 col-xs-4 subHeight">
+	   					<div>
+	  						<a href="/ny">
+	  							<div class="imgContainer">
+	  								<img src="/images/ex_ads.gif">
+	  							</div>
+	  							
+	  						</a>	
+	  					</div>
+	   				</div>
+	   				<div class="col-md-3 col-sm-2 col-xs-2 subHeight">
+	   					<a href="/">
+	   						<div class="bg-yellow">
+	   							<p>黄页</p>
+	   						</div>
+	   					</a>
+	   					<a href="/">
+	   						<div class="bg-red">
+	   							<p>在线翻译</p>
+	   						</div>
+	   					</a>
+	   				</div>
+	   			</div>
+	   		</div>
+	   	</div> 	
 	  	{{> states}}
-		   {{> navbar}}
-		   <link rel="stylesheet" href="/stylesheets/index.css">
+		{{> navbar}}
 	  		<div class="container-fluid">
 	  			<div class="row">
-	  				<div class="col-md-2 col-sm-2">
+	  				<div class="col-md-3 col-sm-3 col-xs-3 pd5">
+	  					<a href="/ny">
+	  						<div class="imgContainer">
+	  							<img src="/images/ex_ads.gif">
+	  						</div>			
+	  					</a>
+	  				</div>
+	  				<div class="col-md-3 col-sm-3 col-xs-3 pd5">
+	  					<a href="/ny">
+	  						<div class="imgContainer">
+	  							<img src="/images/ex_ads.gif">
+	  						</div>			
+	  					</a>
+	  				</div>
+	  				<div class="col-md-3 col-sm-3 col-xs-3 pd5">
+	  					<a href="/ny">
+	  						<div class="imgContainer">
+	  							<img src="/images/ex_ads.gif">
+	  						</div>			
+	  					</a>
+	  				</div>
+	  				<div class="col-md-3 col-sm-3 col-xs-3 pd5">
+	  					<a href="/ny">
+	  						<div class="imgContainer">
+	  							<img src="/images/ex_ads.gif">
+	  						</div>			
+	  					</a>
+	  				</div>
+
+
+	  				<div class="col-md-3 col-sm-3 col-xs-2 pd5">
 	  					<div>
 	  						<a href="/ny">
 	  							<div class="imgContainer">
@@ -15,7 +78,7 @@
 	  						</a>	
 	  					</div>
 	  				</div>
-	  				<div class="col-md-8 col-sm-8">
+	  				<div class="col-md-6 col-sm-6 col-xs-8 pd5">
     					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							<!-- Wrapper for slides -->
 							<div class="container-fluid">
@@ -98,11 +161,11 @@
 						<!-- End Carousel -->
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
+							<div class="VidLinks"><a href="#">美国中文电视</a><a href="#">新唐人电视台</a><a href="#">CCTV4</a><a href="#">天下卫视</a><a href="#">Youtube</a><a href="#">爱奇艺</a><a href="#">PPTV</a><a href="#">爱奇艺</a><a href="#">PPTV</a></div>
 							<div class="titleBlock">
 								<div class="hotVid"><span class="moreVid1">热门影片 | <span><a class="whiteText" href="/a/{{link}}/videos">更多>></a></div>
 							</div>
 							<div class="titleBlock">
-								<div class="VidLinks"><a href="#">美国中文电视</a><a href="#">新唐人电视台</a><a href="#">CCTV4</a><a href="#">天下卫视</a><a href="#">Youtube</a><a href="#">爱奇艺</a><a href="#">PPTV</a><a href="#">爱奇艺</a><a href="#">PPTV</a></div>
 								<div class="container-fluid bg-white">
 									<div class="row">
 										<div class="col-md-4 col-sm-4">
@@ -133,7 +196,7 @@
 								<div class="col-md-4">
 									<div class="kejiNews newsBlock">
 										<div class="newsTitle">
-											<p>科技</p>
+											<p>政治｜军事</p>
 											<a href='/a/{{link}}/kj/news'>更多>></a>
 										</div>
 										<div class="newsList">
@@ -396,10 +459,12 @@
 							  }
 						  })
 					  </script>
-	  				<div class="col-md-2 col-sm-2">
-	  					<div class="bg-temp">
-
-	  					</div>
+	  				<div class="col-md-3 col-sm-3 col-xs-2 pd5">
+	  					<a href="/ny">
+	  						<div class="imgContainer">
+	  							<img src="/images/ex_ads.gif">
+	  						</div>			
+	  					</a>
 	  				</div>
 	  			</div>
 	  		</div>

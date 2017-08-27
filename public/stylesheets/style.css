@@ -36,6 +36,9 @@ body {
 	}
 }
 
+.pd5 {
+	padding: 0 5px;
+}
 /*end of main container*/
 
 /*navbar CSS*/
@@ -134,7 +137,7 @@ body {
 .index_login {
 	z-index: 999;
 	padding: 5px 50px 5px 0;
-	background-color: rgb(45,17,82);
+	background-color: #d8d8d8;
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -162,10 +165,18 @@ body {
 .floatRight {
 	float: right;
 	overflow: visible;
+	padding-top: 5px;
 }
 .floatLeft{
 	float: left;
-	overflow: visible;
+	color: black;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.floatLeft p {
+	padding-left: 15px;
+	color: #818181;
 }
 
 .mt20 {
@@ -175,14 +186,102 @@ body {
 a.loginMargin, a.loginMargin2 {
 	padding: 0;
 	margin: 0 15px;
+	color: #818181;
 }
 
 /*End of login{header} css*/
 
 /*states*/
+.firstState {
+	display: inline-block;
+	margin: 0;
+}
 
+.orange {
+	background-color: #f5a623;
+}
+
+.pd20 {
+	padding: 0 20px;
+}
+
+.statesText {
+	font-size: 20px;
+	padding: 10px 10px 0;
+	color: white;
+}
 
 /*end of states*/
+
+/*new nav*/
+.navMainDiv {
+	padding: 0 6px 3px;
+	height: 80px;
+}
+.navbarA {
+	border-top: 3px solid #d0021b;
+	border-bottom: 3px solid #d0021b;
+}
+
+.navFirstDiv {
+	background-color: #d0021b;
+    color: white;
+    height: 100%;
+}
+
+.navP {
+	font-size: 20px;
+	text-align: center;
+	padding: 23px;
+	letter-spacing: 1.5px;
+}
+
+div.navbarA a {
+	padding: 0 2px;
+	font-size: 17px;
+}
+
+/*end of new nav*/
+
+/*logo part*/
+.fixH100 {
+	height: 100px;
+}
+
+.subHeight{
+	height: 100%;
+}
+
+.bg-yellow {
+	background-color: yellow;
+    color: rgb(92,89,61);
+    height: 50%;
+    margin-bottom: 3%;
+}
+
+.bg-yellow p, .bg-red p{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.bg-yellow p {
+	font-size: 30px;
+}
+
+.bg-red p {
+	font-size: 25px;
+}
+
+.bg-red {
+	background-color: #d0021b;
+    color: white;
+    height: 30%;
+    margin-bottom: 5%;
+}
+
+/*logo end*/
+
+
 
 .logoCenter {
 	text-align: center;

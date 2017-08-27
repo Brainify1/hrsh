@@ -1,32 +1,62 @@
-<nav>
-	<div>
-		<ul class="navUl">
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}'>
-					<i class="fa fa-home" aria-hidden="true"></i>首页
-				</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/re'>房产服务</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/secondHand'>二手市场</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/travel'>旅游酒店</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/law'>法律经济</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/education'>教育培训</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/hire'>招聘信息</a>
-			</li>
-			<li class="navLi">
-				<a class="navList hvr-underline-from-left" href='/a/{{link}}/service'>生活服务</a>
-			</li>
-		</ul>
+<div class="container-fluid mb10">
+	<div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
+			<a href="/">
+				<div class="navFirstDiv">
+					<p class="navP">
+						免费分类广告
+					</p>
+				</div>
+			</a>
+
+		</div>
+		<div class="col-md-9 col-sm-9 col-xs-12 navbarA">	  
+			<a href="/c/forums/list.page" style="COLOR: red">租房:</a>
+			<a href="/c/forums/show//53.page" target="_blank">皇后区</a>
+			<a href="/c/forums/show//26.page" target="_blank">法拉盛</a>
+			<a href="/c/forums/show//48.page" target="_blank">艾姆赫斯特</a>
+			<a href="/c/forums/show//46.page" target="_blank">布碌仑</a>
+			<a href="/c/forums/show//47.page" target="_blank">曼哈顿</a>
+			<a href="/c/forums/show//89.page" target="_blank">长岛·新泽西·其它区</a>
+			<a href="/c/forums/show//87.page" target="_blank">中介·经纪·出租</a>
+			<a href="/c/forums/show//36.page" target="_blank" style="COLOR: red">房屋买卖</a>
+			<a href="/c/forums/show//29.page" target="_blank">招聘</a>
+			<a href="/c/forums/show//55.page" target="_blank" style="COLOR: red">销售招聘</a>
+			<a href="/c/forums/show//57.page" target="_blank">餐馆请人</a>
+			<a href="/c/forums/show//56.page" target="_blank">甲店发廊请人</a>
+			<a href="/c/forums/show//52.page" target="_blank">按摩请人</a>
+			<a href="/c/forums/show//90.page" target="_blank" style="COLOR: red">求职</a>
+			<a href="/c/forums/show//27.page" target="_blank">商用租让</a>
+			<a href="/c/forums/show//27.page" target="_blank">生意转让</a>
+			<a href="/c/forums/show//65.page" target="_blank">快递·货运</a>
+			<a href="/c/forums/show//83.page" target="_blank" style="COLOR: red">贷款经纪</a>
+			<a href="/c/forums/show//23.page" target="_blank" style="COLOR: green">二手买卖</a>
+			<a href="/c/forums/show//82.page" target="_blank" style="COLOR: red">汽车买卖</a>
+			<a href="/c/forums/show//76.page" target="_blank">手机买卖</a>
+			<a href="/c/forums/show//77.page" target="_blank">电脑买卖</a>
+			<a href="/c/forums/show//54.page" target="_blank">货品买卖</a>
+			<a href="/c/forums/show//61.page" target="_blank" style="COLOR: red">电脑·网络</a>
+			<a href="/c/forums/show//68.page" target="_blank">防盗报警</a>
+			<a href="/c/forums/show//70.page" target="_blank">美容•Spa</a>
+			<a href="/c/forums/show//78.page" target="_blank">推拿按摩理疗</a>
+			<a href="/c/forums/show//31.page" target="_blank">交友征婚</a>
+			<a href="/c/forums/show//62.page" target="_blank">翻译服务</a>
+			<a href="/c/forums/show//45.page" target="_blank">招生培训</a>
+			<a href="/c/forums/show//72.page" target="_blank" style="COLOR:red">课后补习</a>
+			<a href="/c/forums/show//75.page" target="_blank">幼儿园·托儿</a>
+			<a href="/c/forums/show//81.page" target="_blank" style="COLOR:red">大小搬家</a>
+			<a href="/c/forums/show//43.page" target="_blank">电招车</a>
+			<a href="/c/forums/show//60.page" target="_blank">考牌练车</a>
+			<a href="/c/forums/show//30.page" target="_blank">家庭旅馆.旅行社</a>
+			<a href="/c/forums/show//31.page" target="_blank" style="COLOR: red"><span id="clmenutoggle">其他各类&gt;&gt;</span></a>
+			<a href="/c/forums/show//71.page" target="_blank">各类保险</a>
+			<a href="/c/forums/show//66.page" target="_blank">留学•签证</a>
+			<a href="/c/forums/show//73.page" target="_blank">入籍·福利</a>
+			<a href="/c/forums/show//74.page" target="_blank">各类律师</a>
+			<a href="/c/forums/show//59.page" target="_blank">会计·报税</a>
+			<a href="/c/forums/show//63.page" target="_blank">印刷·招牌</a>
+			<a href="/c/forums/show//44.page" target="_blank" style="COLOR: red">装修服务</a>
+			<a href="/c/forums/show//51.page" target="_blank">冷暖水电</a>
+		</div>		
 	</div>
-</nav>
+</div>

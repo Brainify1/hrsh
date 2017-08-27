@@ -1,41 +1,34 @@
-<div class="container-fluid bodyDiv">
-  <div class="row mb10">
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <img src="../../images/hrshLogo.svg" alt="" class="logoBlock">
-    </div>
-    <div class="col-md-8 col-sm-8 col-xs-12">
+  <div class="mb10 orange pd20">
+    <!-- <div class="col-md-8 col-sm-8 col-xs-12">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/ny">紐約</a><br>
-            <a href="/a/la">洛杉矶</a><br>
-            <a href="/a/van">温哥华</a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/sea">西雅图</a><br>
-            <a href="/a/chi">芝加哥</a><br>
-            <a href="/a/lv">拉斯維加斯</a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/hou">休斯敦</a><br>
-            <a href="/a/bos">波士顿</a><br>
-            <a href="/a/sfr">旧金山</a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/was">华盛顿</a><br>
-            <a href="/a/sdi">圣地亚哥</a><br>
-            <a href="/a/syd">悉尼</a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/phi">费城</a><br>
-            <a href="/a/hwi">夏威夷</a><br>
-            <a href="/a/atl">亚特兰大</a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-2">
-            <a href="/a/dal">达拉斯</a><br>
-            <a href="/a/flo">佛罗里达</a>
-          </div>
-        </div>
+        <div class="row"> -->
+            <p class="statesText firstState">地区: </p>
+            <a class="statesText" href="/a/ny">紐約</a>
+            <a class="statesText" href="/a/la">洛杉矶</a>
+            <a class="statesText" href="/a/van">温哥华</a>
+         
+          
+            <a class="statesText" href="/a/sea">西雅图</a>
+            <a class="statesText" href="/a/chi">芝加哥</a>
+            <a class="statesText" href="/a/lv">拉斯維加斯</a>
+         
+          
+            <a class="statesText" href="/a/hou">休斯敦</a>
+            <a class="statesText" href="/a/bos">波士顿</a>
+            <a class="statesText" href="/a/sfr">旧金山</a>
+          
+            <a class="statesText" href="/a/was">华盛顿</a>
+            <a class="statesText" href="/a/sdi">圣地亚哥</a>
+            <a class="statesText" href="/a/syd">悉尼</a>
+          
+            <a class="statesText" href="/a/phi">费城</a>
+            <a class="statesText" href="/a/hwi">夏威夷</a>
+            <a class="statesText" href="/a/atl">亚特兰大</a>
+          
+            <a class="statesText" href="/a/dal">达拉斯</a>
+            <a class="statesText" href="/a/flo">佛罗里达</a>
+          
+        <!-- </div>
       </div> 
-    </div>
+    </div> -->
   </div>
