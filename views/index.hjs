@@ -134,7 +134,7 @@
 									<div class="kejiNews newsBlock">
 										<div class="newsTitle">
 											<p>科技</p>
-											<a href="">更多>></a>
+											<a href='/a/{{link}}/kj/news'>更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -144,7 +144,7 @@
 									<div class="shehuiNews newsBlock">
 										<div class="newsTitle">
 											<p>社会</p>
-											<a href="">更多>></a>
+											<a href="/a/{{link}}/sh/news">更多>></a>
 										</div>		
 										<div class="newsList">
 										</div>
@@ -154,7 +154,7 @@
 									<div class="yuleNews newsBlock">
 										<div class="newsTitle">
 											<p>娱乐</p>
-											<a href="">更多>></a>
+											<a href="/a/{{link}}/yl/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -164,7 +164,7 @@
 									<div class="zhengzhiNews newsBlock">
 										<div class="newsTitle">
 											<p>政治</p>
-											<a href="">更多>></a>
+											<a href="/a/{{link}}/zz/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -174,7 +174,7 @@
 									<div class="tiyuNews newsBlock">
 										<div class="newsTitle">
 											<p>体育</p>
-											<a href="">更多>></a>
+											<a href="/a/{{link}}/ty/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -184,7 +184,7 @@
 									<div class="yangshengNews newsBlock">
 										<div class="newsTitle">
 											<p>养生</p>
-											<a href="">更多>></a>
+											<a href="/a/{{link}}/ys/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -203,7 +203,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.kejiNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -217,7 +217,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.shehuiNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -231,7 +231,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.yuleNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -245,7 +245,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.zhengzhiNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -259,7 +259,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.tiyuNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -273,7 +273,7 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.yangshengNews .newsList').append(`
-										<a href="/news/${data[i]._id}">${data[i].title}</a>
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
@@ -299,7 +299,7 @@
 											for (var i = 0; i < data.length; i ++) {
 												$('#newLists').append(`
 												<li class="bottomListLi">
-													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/sticker.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i].refId}'><img src="/images/sticker.png" height="13px" width="auto"> ${data[i].data.title}</a>
 													<h6>${data[i].data.content}</h6>
 												</li>
 												`)
@@ -318,7 +318,7 @@
 											for (var i = 0; i < data.length; i ++) {
 												$('#hotLists').append(`
 												<li class="bottomListLi">
-													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i]._id}}'><img src="/images/fire.png" height="13px" width="auto"> ${data[i].data.title}</a>
+													<a href='/a/${data[i].data.state}/${data[i].data.category}/${data[i].refId}'><img src="/images/fire.png" height="13px" width="auto"> ${data[i].data.title}</a>
 													<h6>${data[i].data.content}</h6>
 												</li>
 												`)

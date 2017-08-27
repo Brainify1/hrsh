@@ -31,8 +31,8 @@ var myDropzone = new Dropzone("div#dropzone",{
       });
 
       self.on("queuecomplete", function (progress) {
-        uploadInfo()
         $('.meter').delay(999).slideUp(999);
+        setTimeout(uploadInfo,1000)
       });
       
       // On removing file
@@ -43,15 +43,16 @@ var myDropzone = new Dropzone("div#dropzone",{
   })
 
 function uploadInfo(){
-  $("#postForm").submit( function(e) {
-  var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
-      if( !messageLength ) {
-            swal( 'Please enter a message ;(' );
-                e.preventDefault();
-        }
-        else{
-        swal("Thank you for submitting!");
-      }
-})
+    $("#postForm").submit();
 }
 
+//  $("#postForm").submit(function(e) {
+//   var messageLength = CKEDITOR.instances['editor'].getData().replace(/<[^>]*>/gi,'').length;
+//       if( !messageLength ) {
+//             swal( 'Please enter a message ;(' );
+//                 e.preventDefault();
+//         }
+//         else{
+//         swal("Thank you for submitting!");
+//       }
+// })

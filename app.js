@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var flash = require("connect-flash");
 var multer = require("multer");
 var session = require("express-session");
-var RedisStore = require('connect-redis')(session);
 var passport = require("passport");
 var router = express.Router();
 
@@ -23,7 +22,8 @@ var postList = require('./routes/postList');
 var admin = require('./routes/admin');
 var viewList = require('./routes/viewList');
 var content = require('./routes/index');
-var api  = require('./routes/api')
+var api  = require('./routes/api');
+var news = require('./routes/index');
 
 var app = express();
 
@@ -39,7 +39,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ 
-  store: new RedisStore(),
   secret: "i love dogs", 
   resave: false, 
   saveUninitialized: false
@@ -56,7 +55,7 @@ app.use('/postList', postList);
 app.use('/admin', admin);
 app.use('/viewList/d/d/d', viewList);
 app.use('/api',api)
-
+app.use('/news', news)
 app.use('/content', content);
 /*app.get("/userpage", (req, res, next) =>{
   res.send({ 

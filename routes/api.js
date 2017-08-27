@@ -10,7 +10,8 @@ var adsCollection = db.collection('ads');
 var statesEN = require('../statesEN');
 var statesCN = require('../statesCN');
 var categoryEN = require('../categoryEN');
-var categoryCN = require('../categoryCN')
+var categoryCN = require('../categoryCN');
+
 router.post('/news/post', function(req, res, next) {
     const news = {
         title: req.body.title,
@@ -115,6 +116,7 @@ router.get('/listing/fetchOne/:id', (req, res) => {
     })
 })
 
+
 // *********************** ADS ****************************//
 
 router.post('/ads/postAd1', function(req, res, next) {
@@ -144,5 +146,9 @@ router.post('/ads/delete1', function(req, res, next) {
             console.log(removedAds)
         })
     })
+
+module.exports = router;
+=======
+
 
 module.exports = router;
