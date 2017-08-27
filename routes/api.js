@@ -6,10 +6,12 @@ var listingCollection = db.collection('listings');
 var videosCollection = db.collection('videos');
 var newsCollection = db.collection('news');
 var usersCollection = db.collection('users');
+var adsCollection = db.collection('ads');
 var statesEN = require('../statesEN');
-var statesCN = require('../statesCN')
+var statesCN = require('../statesCN');
 var categoryEN = require('../categoryEN');
-var categoryCN = require('../categoryCN')
+var categoryCN = require('../categoryCN');
+
 router.post('/news/post', function(req, res, next) {
     const news = {
         title: req.body.title,
@@ -113,4 +115,38 @@ router.get('/listing/fetchOne/:id', (req, res) => {
         res.json(listing)
     })
 })
+
+
+// *********************** ADS ****************************//
+
+router.post('/ads/postAd1', function(req, res, next) {
+    console.log(req.body)
+    var ads1 = {
+        comapany1: req.body.company1,
+        url1: req.body.url1,
+        created_at: new Date()
+    }
+    
+    adsCollection.save(ads1, function(err, adsDoc) {
+        if(err) {
+            return err
+        }
+    })
+})
+// router.get('/ads/postAd1', function(req, res, next) {
+//     adsCollection.find(function(err, adsList) {
+//         res.json(adsList)
+//     })
+// })
+
+router.post('/ads/delete1', function(req, res, next) {
+        var adsId = req.body.id
+        adsCollection.remove({ _id: mongojs.ObjectId(adsId) }, function(err, removedAds) {
+            res.json(removedAds)
+            console.log(removedAds)
+        })
+    })
+
+
+
 module.exports = router;

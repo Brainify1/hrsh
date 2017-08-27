@@ -5,9 +5,7 @@ var db = mongojs(require('../db'));
 var listingCollection = db.collection('listings');
 var imageCollection = db.collection('image')
 var randomstring = require("randomstring");
-var refString = randomstring.generate(32);
-var ObjectId = require('mongodb').ObjectID;
-require("../app");
+var ObjectId = mongojs.ObjectID;
 var multer = require('multer');
 var storage = multer.diskStorage({
     destination: function(req, file, cb) {
@@ -17,10 +15,21 @@ var storage = multer.diskStorage({
         cb(null, file.fieldname + '-' + Date.now() + '.jpg')
     }
 })
+// function makeid() {
+//   var text = "";
+//   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
+//   for (var i = 0; i < 5; i++)
+//     text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+//   return text;
+// }
+var refString;
 var upload = multer({ storage });
 
-router.post('/images', upload.any(), (req, res, next) => {
+router.post('/images', upload.any(),(req, res, next) => {
+    refString = randomstring.generate();
+    console.log(refString)
     var files = req.files
     var imageJSON = {
         refId: refString,
@@ -35,4 +44,42 @@ router.post('/images', upload.any(), (req, res, next) => {
         res.sendStatus(200)
     })
 })
+router.post('/a/:states/:category/postList', function(req, res, next) {
+        console.log(refString)
+        var states = req.params.states;
+        var category = req.params.category;
+        var author;
+        if (req.isAuthenticated()) {
+            author = req.session.passport.user.username
+            console.log(req.session.passport.user.username)
+        } else {
+            author = 'Guest'
+        }
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var today = mm + '/' + dd + '/' + yyyy;
+
+        var listing = {
+            refId: refString,
+            data: req.body,
+            created_at: today,
+            views: 0,
+            author
+        }
+        listingCollection.save(listing, function(err, newListing) {
+            if (err) {
+                return err
+            }
+            res.redirect(`/a/${states}/${category}`)
+        })
+
+    })
 module.exports = router;

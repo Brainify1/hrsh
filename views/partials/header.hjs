@@ -1,7 +1,11 @@
   </head>
   <body>
     <div class="index_login">
+      <div class="floatLeft">
+        <p>美国网络集团 | United Network Group</p>
+      </div>
       <div class="floatRight">
+        <a href="#" class="loginMargin">个人主页</a>
         <a class='loginText modal-backdrop.in whiteText loginMargin' id="loginStatus" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a> 
         <a class='loginText whiteText loginMargin2' id="loginStatus2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
         <a href = "/userpage" id="loginStatus4" class="whiteText loginMargin"><i class="fa fa-file-text-o" aria-hidden="true"></i> Your Posts</a>
@@ -81,6 +85,7 @@
           </div>
       </div>
     </div> 
+    <div class="container-fluid bodyDiv">
 <!--     <script type="text/javascript">
       console.log($('#authStatus').val())
     </script>  -->
