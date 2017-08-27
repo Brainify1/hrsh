@@ -1,13 +1,12 @@
-.VidLinks {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    width: 100%;
+.otherCh {
+    display: block;
     padding: 5px;
+    margin: 0 0 5px 0;
+    background-color: #f5a623;
+    align-items: center;
 }
-.VidLinks a {
+.otherCh a {
+    font-size: 16px;
     margin-right: 10px;
     color: white;
 }
@@ -37,7 +36,7 @@
 }
 .newsListings .newsTitle {
     padding: 5px 0;
-    background-color: rgb(64,0,144);
+    background-color: #0076ff;
 }
 .newsList {
     padding: 10px;
@@ -68,12 +67,13 @@
     width: 100%;
     padding: 5px;
     padding-left: 10px;
-    background-color: rgb(64, 0, 144);
+    background-color: #0076ff;
     color: white;
     vertical-align: middle;
 }
 .popularLinks .linksHeader p {
     margin: 0;
+    text-align: center;
 }
 
 
