@@ -380,6 +380,37 @@
 									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
 								</div>
 							</div>
+							<div class="linksHeader">
+								<p>婚恋交友</p>
+							</div>
+							<div class="row matchBox">
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">世纪佳缘</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">珍爱网</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">未名交友</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">一颗红豆</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">中外交友网</a>
+								</div>
+								<div class="col-md-4">
+									<a href="/news/${data[i]._id}">东西交友</a>
+								</div>
+							</div>
+							<div class="ads">
+								<div class="row">
+									<div class="col-md-4 adsBox1-4"></div>
+									<div class="col-md-4 adsBox1-4"></div>
+									<div class="col-md-4 adsBox1-4"></div>
+									<div class="col-md-4 adsBox1-4"></div>
+								</div>
+							</div>
 						</div>
 					  </div>
 					  <script>
