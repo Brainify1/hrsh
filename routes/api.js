@@ -147,8 +147,6 @@ router.post('/ads/delete1', function(req, res, next) {
         })
     })
 
-module.exports = router;
-=======
 
 
 module.exports = router;

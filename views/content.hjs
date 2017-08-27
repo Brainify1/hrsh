@@ -38,12 +38,22 @@
 	  						<div class="postContentDiv">
 	  							<div class="loadContent">
  									<h5>
-	 									{{data.content}}
+	 									{{data.content}}<p></p>
+	 									{{#docs}}
+	 									<p id="imgss"></p>
+	 									<img src="/upload/listings/{{docs}}" width=200px height="200px"> 
+	 									{{/docs}}
 	  								</h5>
 	  							</div>
 	  						</div>
 	  					</div>
 	  					{{/listings}}
+	  				<!-- 	<script>
+	  						for(var x = 0; x < {{docs.length}}; x++){
+	  							$('.imgss').append('<img src="/upload/listings/{{docs}}" width=200px height="200px>')
+	  						}
+
+	  					</script> -->
 	  				<!-- 	<div class="navbarUl mt5">
 	  						<h5 class="viewTitle">回复文章</h5>
 	  					</div>
