@@ -85,7 +85,4 @@
           </div>
       </div>
     </div> 
-    <div class="container-fluid bodyDiv">
-<!--     <script type="text/javascript">
-      console.log($('#authStatus').val())
-    </script>  -->
+   
