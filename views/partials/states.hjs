@@ -1,43 +1,89 @@
-<<<<<<< HEAD
-<div class="container-fluid bodyDiv">
-  <div class="row mb10">
-    <div class="col-md-4 col-sm-4 col-xs-12">
-      <img src="../../images/hrshLogo.png" alt="" class="logoBlock">
-    </div>
-    <div class="col-md-8 col-sm-8 col-xs-12">
-=======
-  <div class="mb10 orange pd20">
-    <!-- <div class="col-md-8 col-sm-8 col-xs-12">
->>>>>>> ff64cf32bd0b990725b4f23107bb4de563d344e6
-      <div class="container-fluid">
-        <div class="row"> -->
-            <p class="statesText firstState">地区: </p>
-            <a class="statesText" href="/a/ny">紐約</a>
-            <a class="statesText" href="/a/la">洛杉矶</a>
-            <a class="statesText" href="/a/van">温哥华</a>
-         
-          
-            <a class="statesText" href="/a/sea">西雅图</a>
-            <a class="statesText" href="/a/chi">芝加哥</a>
-            <a class="statesText" href="/a/lv">拉斯維加斯</a>
-         
-          
-            <a class="statesText" href="/a/hou">休斯敦</a>
-            <a class="statesText" href="/a/bos">波士顿</a>
-            <a class="statesText" href="/a/sfr">旧金山</a>
-          
-            <a class="statesText" href="/a/was">华盛顿</a>
-            <a class="statesText" href="/a/sdi">圣地亚哥</a>
-            <a class="statesText" href="/a/syd">悉尼</a>
-          
-            <a class="statesText" href="/a/phi">费城</a>
-            <a class="statesText" href="/a/hwi">夏威夷</a>
-            <a class="statesText" href="/a/atl">亚特兰大</a>
-          
-            <a class="statesText" href="/a/dal">达拉斯</a>
-            <a class="statesText" href="/a/flo">佛罗里达</a>
-          
-        <!-- </div>
-      </div> 
-    </div> -->
-  </div>
+<div class="container-fluid bodyDiv content-div">
+    <div>
+        <div class="container-fluid ">
+            <div class="row">
+              <div class="col-md-5 col-sm-6 col-xs-6 subHeight">
+                <div class="imgContainer">
+                  <img src="/images/hrshLogo.png">
+                </div>
+                <div class="searchBar hide-on-small">
+                    <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                        <input name="sitesearch" type="hidden">
+                        <input autocomplete="on" class="form-controls search" name="q" placeholder="Google 搜索" required="required"  type="text">
+                        <button class="button" type="submit">搜索</button>
+                    </form>
+                    <ul class="emailLinks">
+						<li>
+							<a href="https://gmail.com">Gmail</a>
+						</li>
+						<li>
+							<a href="https://hotmail.com">Hotmail</a>
+						</li>
+						<li>
+							<a href="https://mail.yahoo.com">Yahoo</a>
+						</li>
+						<li>
+							<a href="https://mail.qq.com">QQ邮箱</a>
+						</li>
+						<li>
+							<a href="https://163.com">网易邮箱</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="/images/qrCode.png" alt="">
+							</a>
+						</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 subHeight hide-on-small">
+                <div>
+                <a href="/ny">
+                  <div class="topAdsContainer">
+                    <img src="/images/ex_ads.gif">
+                  </div>
+                </a>	
+              </div>
+              </div>
+              <div class="col-md-3 col-sm-2 col-xs-2 subHeight hide-on-small">
+                <a href="/">
+                  <div class="bg-yellow">
+                    <p>黄页</p>
+                  </div>
+                </a>
+                <a href="/">
+                  <div class="bg-red">
+                    <p>在线翻译</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div> 	
+<div class="container-fluid bodyDiv pageContent">
+      <div class="mb10 orange pd20 states">
+                <a class="statesText" href="/a/ny">紐約</a>
+                <a class="statesText" href="/a/la">洛杉矶</a>
+                <a class="statesText" href="/a/van">温哥华</a>
+            
+              
+                <a class="statesText" href="/a/sea">西雅图</a>
+                <a class="statesText" href="/a/chi">芝加哥</a>
+                <a class="statesText" href="/a/lv">拉斯維加斯</a>
+            
+              
+                <a class="statesText" href="/a/hou">休斯敦</a>
+                <a class="statesText" href="/a/bos">波士顿</a>
+                <a class="statesText" href="/a/sfr">旧金山</a>
+              
+                <a class="statesText" href="/a/was">华盛顿</a>
+                <a class="statesText" href="/a/sdi">圣地亚哥</a>
+                <a class="statesText" href="/a/syd">悉尼</a>
+              
+                <a class="statesText" href="/a/phi">费城</a>
+                <a class="statesText" href="/a/hwi">夏威夷</a>
+                <a class="statesText" href="/a/atl">亚特兰大</a>
+              
+                <a class="statesText" href="/a/dal">达拉斯</a>
+                <a class="statesText" href="/a/flo">佛罗里达</a>
+      </div>

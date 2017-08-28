@@ -4,36 +4,25 @@ body {
 .logoBlock {
 	height: 7vh;
 }
-/*main container*/
-.bodyDiv {
-	margin: 5% 8% 0;
+
+.content-div {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: #fff;
 }
 
-@media only screen and (max-width: 1150px) {
-    .bodyDiv {
-        margin: 5% 8%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .bodyDiv {
-        margin: 6% 6%;
-    }
-}
-
-@media only screen and (max-width: 905px) {
-    .bodyDiv {
-        margin: 7% 4%;
-    }
+@media only screen and (max-width: 1030px) {
+	.adsContent.hide-on-small {
+		display: none;
+	}
+	.hide-on-small {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 850px) {
-    .bodyDiv {
-        margin: 8% 2%;
-	}
-	.bg-temp {
-		display: none;
-	}
 }
 
 .pd5 {
@@ -226,7 +215,7 @@ a.loginMargin, a.loginMargin2 {
 .navFirstDiv {
 	background-color: #d0021b;
     color: white;
-    height: 100%;
+    height: 120px;
 }
 
 .navP {
@@ -234,6 +223,7 @@ a.loginMargin, a.loginMargin2 {
 	text-align: center;
 	padding: 23px;
 	letter-spacing: 1.5px;
+	font-weight: 900;
 }
 
 div.navbarA a {
@@ -248,15 +238,11 @@ div.navbarA a {
 	height: 100px;
 }
 
-.subHeight{
-	height: 100%;
-}
 
 .bg-yellow {
 	background-color: yellow;
     color: rgb(92,89,61);
     height: 50%;
-    margin-bottom: 3%;
 }
 
 .bg-yellow p, .bg-red p{
@@ -275,8 +261,33 @@ div.navbarA a {
 .bg-red {
 	background-color: #d0021b;
     color: white;
-    height: 30%;
-    margin-bottom: 5%;
+    height: 50%;
+}
+.pageContent {
+	margin-top: 20px;
+}
+.searchBar {
+	margin-top: 10px;
+}
+.searchBar button {
+	background-color: #4A90E2;
+	color:white;
+	border: none;
+	padding: 7px 20px; 			
+	box-sizing: border-box;	
+	width: 20%;
+	vertical-align: top;
+	direction: inline-block;
+	outline: none;
+}
+.searchBar input {
+	padding: 5px;
+	text-align: center;	
+	box-sizing: border-box;
+	width: 78%;
+	vertical-align: top;
+	direction: inline-block;
+	outline: none;
 }
 
 /*logo end*/
@@ -881,14 +892,25 @@ li.focus {
 /*End of Login/Signup Form*/
 
 /*ads*/
-.imgContainer {
-	min-width: 100px;
-	margin-bottom: 10px;
-}
+
 
 .imgContainer img {
 	width: 100%;
-	height: 100%;
+	height: 80px;
+	max-width: 100%;
+	max-height: 120px;
+}
+.topAdsContainer {
+	height: 150px;
+	width: 100%;
+}
+.topAdsContainer img {
+	height: 150px;
+	width: 100%;
+}
+.subHeight {
+	height: 150px;
+	box-sizing: border-box
 }
 /*end of ads*/
 
@@ -910,4 +932,29 @@ footer {
 	padding: 20px 20px;
 	height: 150px;
 	background-color: #d8d8d8;
+}
+.emailLinks {
+	margin-top: 5px;
+	padding: 0;
+}
+.emailLinks li {
+	display: inline;
+	margin: 0 5px;
+}
+.emailLinks li a {
+	color: purple;
+}
+.emailLinks li:first-of-type {
+	margin-left: 0;
+}
+.states.orange.pd20 {
+	padding: 5px 20px;
+	
+}
+.states a {
+	font-size: 16px;
+	padding: 0;
+	margin: 0 8px;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
 }
