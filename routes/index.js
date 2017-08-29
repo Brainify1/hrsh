@@ -229,12 +229,10 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
          
         imagesCollection.find({ refId: id},(function(err, doc){
             listingsCollection.find({ refId: id }).sort({ _id: -1 }, function(err, listings) {
-                console.log(doc)
-                // var docs=[];
-                // for(var x = 0; x < Object.keys(doc[0]).length; x++){
-                //     docs[x] = doc[0].data[x].filename
-                // }
-                var docs = doc[0].data[0].filename
+                var docs=[];
+                    for(var x = 0; x < Object.keys(doc[0].data).length; x++){
+                        docs[x] = doc[0].data[x].filename
+                }
                 console.log(docs)
                 res.render('content', {
                     title: '华人生活网',

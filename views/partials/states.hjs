@@ -1,5 +1,5 @@
 
-
+<!-- 
 <div class="container-fluid bodyDiv">
   <div class="row mb10">
     <div class="col-md-4 col-sm-4 col-xs-12">
@@ -11,7 +11,7 @@
     <!-- <div class="col-md-8 col-sm-8 col-xs-12">
       <div class="container-fluid">
         <div class="row"> -->
-            <p class="statesText firstState">地区: </p>
+          <!--   <p class="statesText firstState">地区: </p>
             <a class="statesText" href="/a/ny">紐約</a>
             <a class="statesText" href="/a/la">洛杉矶</a>
             <a class="statesText" href="/a/van">温哥华</a>
@@ -39,8 +39,8 @@
           
         <!-- </div>
       </div> 
-    </div> -->
-  </div>
+    </div>
+  </div> -->
 <div class="container-fluid bodyDiv content-div">
     <div>
         <div class="container-fluid ">

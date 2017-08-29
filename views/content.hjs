@@ -39,21 +39,20 @@
 	  							<div class="loadContent">
  									<h5>
 	 									{{data.content}}<p></p>
-	 									{{#docs}}
-	 									<p id="imgss"></p>
-	 									<img src="/upload/listings/{{docs}}" width=200px height="200px"> 
-	 									{{/docs}}
+	 									<p id = "imgss"></p>
+	 									<input type="text" hidden value="{{docs}}" id="imgDisplay">
+	 									<input type="number" hidden value="{{docs.length}}" id="imgsLength">	
 	  								</h5>
 	  							</div>
 	  						</div>
 	  					</div>
 	  					{{/listings}}
-	  				<!-- 	<script>
-	  						for(var x = 0; x < {{docs.length}}; x++){
-	  							$('.imgss').append('<img src="/upload/listings/{{docs}}" width=200px height="200px>')
+						<script>
+							var individualImage = ($('#imgDisplay').val()).split(",");
+	  						for(var x=0; x < $('#imgsLength').val(); x++){
+	  							document.getElementById('imgss').insertAdjacentHTML('beforeend','<img src="/upload/listings/'+individualImage[x]+'" style="height:300px; width:85%">')
 	  						}
-
-	  					</script> -->
+	  					</script>  
 	  				<!-- 	<div class="navbarUl mt5">
 	  						<h5 class="viewTitle">回复文章</h5>
 	  					</div>
