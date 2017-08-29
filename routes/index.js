@@ -8,6 +8,8 @@ var imagesCollection = db.collection('image');
 var newsCollection = db.collection('news');
 var randomstring = require("randomstring");
 var newsType = require('../newsType');
+var allCategoryCN = require('../categoryCN');
+var allCategory = require('../categoryEN');
 
 /*Redirect*/
 router.get('/', function(req, res, next) {
@@ -25,9 +27,9 @@ var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'wa
 
 var allStatesCN = ['紐約', '洛杉矶', '温哥华', '西雅图', '芝加哥', '拉斯維加斯', '休斯敦', '波士顿', '旧金山', '华盛顿', '圣地亚哥', '悉尼', '费城', '夏威夷', '亚特兰大', '达拉斯', '佛罗里达']
 
-var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service'];
 
-var allCategoryCN = ['新闻', '影片', '房产服务', '二手市场', '旅游酒店', '法律经济', '教育培训', '招聘信息', '生活服务'];
+
+
 
 
 /* GET states */
