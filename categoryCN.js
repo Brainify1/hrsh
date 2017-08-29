@@ -42,4 +42,3 @@ module.exports = [	'新闻',
 					'装修服务',
 					'冷暖水电'
 				]
->>>>>>> 1ff44fd5fb1fab1a094b78639444dbcca5b79cbc
