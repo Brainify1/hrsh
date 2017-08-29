@@ -9,6 +9,7 @@ var newsCollection = db.collection('news');
 var randomstring = require("randomstring");
 var newsType = require('../newsType');
 
+
 /*Redirect*/
 router.get('/', function(req, res, next) {
     res.redirect('/a/ny');
@@ -27,7 +28,7 @@ var allStatesCN = ['紐約', '洛杉矶', '温哥华', '西雅图', '芝加哥',
 
 var allCategory = require('../categoryEN')
 
-var allCategoryCN = require('../categoryCn')
+var allCategoryCN = require('../categoryCN')
 
 
 /* GET states */
