@@ -4,38 +4,30 @@ body {
 .logoBlock {
 	height: 7vh;
 }
-/*main container*/
-.bodyDiv {
-	margin: 5% 8% 0;
+
+.content-div {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: #fff;
 }
 
-@media only screen and (max-width: 1150px) {
-    .bodyDiv {
-        margin: 5% 8%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .bodyDiv {
-        margin: 6% 6%;
-    }
-}
-
-@media only screen and (max-width: 905px) {
-    .bodyDiv {
-        margin: 7% 4%;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .bodyDiv {
-        margin: 8% 2%;
+@media only screen and (max-width: 1030px) {
+	.adsContent.hide-on-small {
+		display: none;
 	}
-	.bg-temp {
+	.hide-on-small {
 		display: none;
 	}
 }
 
+@media only screen and (max-width: 850px) {
+}
+
+.pd5 {
+	padding: 0 5px;
+}
 /*end of main container*/
 
 /*navbar CSS*/
@@ -134,7 +126,7 @@ body {
 .index_login {
 	z-index: 999;
 	padding: 5px 50px 5px 0;
-	background-color: rgb(45,17,82);
+	background-color: #d8d8d8;
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -162,10 +154,18 @@ body {
 .floatRight {
 	float: right;
 	overflow: visible;
+	padding-top: 5px;
 }
 .floatLeft{
 	float: left;
-	overflow: visible;
+	color: black;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.floatLeft p {
+	padding-left: 15px;
+	color: #818181;
 }
 
 .mt20 {
@@ -175,14 +175,124 @@ body {
 a.loginMargin, a.loginMargin2 {
 	padding: 0;
 	margin: 0 15px;
+	color: #818181;
 }
 
 /*End of login{header} css*/
 
 /*states*/
+.firstState {
+	display: inline-block;
+	margin: 0;
+}
 
+.orange {
+	background-color: #f5a623;
+}
+
+.pd20 {
+	padding: 0 20px;
+}
+
+.statesText {
+	font-size: 20px;
+	padding: 10px 10px 0;
+	color: white;
+}
 
 /*end of states*/
+
+/*new nav*/
+.navMainDiv {
+	padding: 0 6px 3px;
+	height: 80px;
+}
+.navbarA {
+	border-top: 3px solid #d0021b;
+	border-bottom: 3px solid #d0021b;
+}
+
+.navFirstDiv {
+	background-color: #d0021b;
+    color: white;
+    height: 120px;
+}
+
+.navP {
+	font-size: 20px;
+	text-align: center;
+	padding: 23px;
+	letter-spacing: 1.5px;
+	font-weight: 900;
+}
+
+div.navbarA a {
+	padding: 0 2px;
+	font-size: 17px;
+}
+
+/*end of new nav*/
+
+/*logo part*/
+.fixH100 {
+	height: 100px;
+}
+
+
+.bg-yellow {
+	background-color: yellow;
+    color: rgb(92,89,61);
+    height: 50%;
+}
+
+.bg-yellow p, .bg-red p{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.bg-yellow p {
+	font-size: 30px;
+}
+
+.bg-red p {
+	font-size: 25px;
+}
+
+.bg-red {
+	background-color: #d0021b;
+    color: white;
+    height: 50%;
+}
+.pageContent {
+	margin-top: 20px;
+}
+.searchBar {
+	margin-top: 10px;
+}
+.searchBar button {
+	background-color: #4A90E2;
+	color:white;
+	border: none;
+	padding: 7px 20px; 			
+	box-sizing: border-box;	
+	width: 20%;
+	vertical-align: top;
+	direction: inline-block;
+	outline: none;
+}
+.searchBar input {
+	padding: 5px;
+	text-align: center;	
+	box-sizing: border-box;
+	width: 78%;
+	vertical-align: top;
+	direction: inline-block;
+	outline: none;
+}
+
+/*logo end*/
+
+
 
 .logoCenter {
 	text-align: center;
@@ -336,7 +446,7 @@ a.loginMargin, a.loginMargin2 {
 	padding: 0;
 	list-style-type: none;
     overflow: hidden;
-    background-color: rgb(64,0,144);
+    background-color: #0076ff;
     display: inline-flex;
     display: -webkit-inline-flex;
     flex-direction: row;
@@ -782,21 +892,32 @@ li.focus {
 /*End of Login/Signup Form*/
 
 /*ads*/
-.imgContainer {
-	min-width: 100px;
-	margin-bottom: 10px;
-}
+
 
 .imgContainer img {
 	width: 100%;
-	height: 100%;
+	height: 80px;
+	max-width: 100%;
+	max-height: 120px;
+}
+.topAdsContainer {
+	height: 150px;
+	width: 100%;
+}
+.topAdsContainer img {
+	height: 150px;
+	width: 100%;
+}
+.subHeight {
+	height: 150px;
+	box-sizing: border-box
 }
 /*end of ads*/
 
 /*footer*/
 footer {
 	margin: 3% 0 0 0;
-	padding: 2% 15%;
+	padding: 0 15%;
 	background-color: rgb(45,17,82);
 }
 
@@ -804,4 +925,36 @@ footer {
 	margin-bottom: 20px;
 }
 
+
 /*end of footer*/
+
+.grey-ads {
+	padding: 20px 20px;
+	height: 150px;
+	background-color: #d8d8d8;
+}
+.emailLinks {
+	margin-top: 5px;
+	padding: 0;
+}
+.emailLinks li {
+	display: inline;
+	margin: 0 5px;
+}
+.emailLinks li a {
+	color: purple;
+}
+.emailLinks li:first-of-type {
+	margin-left: 0;
+}
+.states.orange.pd20 {
+	padding: 5px 20px;
+	
+}
+.states a {
+	font-size: 16px;
+	padding: 0;
+	margin: 0 8px;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}

@@ -713,15 +713,15 @@
                                                         形式1/两侧广告
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <span>公司: </span>
-                                                        <input style="width: 70%" type="text" name="company1">
+                                                        <label>公司: </label>
+                                                        <input style="width: 70%" type="text" name="company1" >
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <!-- <div class="col-md-3">
                                                         <input type="file" name="adImg1" >
-                                                    </div>
+                                                    </div> -->
                                                     <div class="col-md-4">
                                                         <label style="color: black; font-size: 13px">连结点</label>
-                                                        <input type="text" style="width: 70%" name="adUrl1">
+                                                        <input type="text" style="width: 70%" name="url1">
                                                     </div>
                                                     <div class="col-md-2">
                                                         <button id="adSubmit1" type="submit">添加</button>
@@ -729,7 +729,23 @@
                                                 </div>    
                                             </div>
                                         </form>
-                                        <form id="ad_form2">
+                                        <script type="text/javascript">
+                                            $('#ad_form1').submit(function(e) {
+                                                e.preventDefault();
+                                                $.ajax({
+                                                    url: '/api/ads/postAd1',
+                                                    type: 'POST',
+                                                    data: $('#ad_form1').serialize(),
+                                                    success: function(data){
+                                                        alert('success!')
+                                                    }
+                                                    error : function(){
+                                                        alert('fail')
+                                                    }
+                                                })
+                                            })
+                                        </script>
+                                        <!-- <form id="ad_form2">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-md-12" style="font-size: 18px; padding: 0">
@@ -751,7 +767,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </form> -->
                                     </div>
                                     <div class="card">
                                         <div class="header">
@@ -801,33 +817,67 @@
                                             </table>
                                         </div>
                                         <script type="text/javascript">
-                                            $('#createNewsForm').submit(function(e) {
-                                                e.preventDefault();
-                                                CKupdate()
-                                                var self = $(this)
-                                                $.ajax({
-                                                    url: '/api/news/post',
-                                                    data: self.serialize(),
-                                                    method: 'post',
-                                                    success: function(data) {
-                                                        $('.newsBody').append(`
-                                                            <tr>
-                                                                <td>${data._id}</td>
-                                                                <td>${data.title}</td>
-                                                                <td>${data.created_at}</td>
-                                                                <td>${data.views}</td>
-                                                                <td>
-                                                                    <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
-                                                                </td>
-                                                            </tr>
-                                                        `)
-                                                        alert(`新闻 ${data.title} 发布成功！`)
-                                                    },
-                                                    error: function(err) {
-                                                        alert('发布失败')
-                                                    }
-                                                })
-                                            })
+                                            // $('#adSubmit1').click(function(e) {
+                                            //     e.preventDefault();
+                                                // $.ajax({
+                                                //     url: '/api/ads/postAd1',
+                                                //     data: $('#ad_form1').serialize(),
+                                                //     method: 'POST',
+                                                //     success: function() {
+                                                //         // return(data);
+                                                //         // alert('success')
+                                                //         // $('.adTbody1').append(`
+                                                //         //     <tr>
+                                                //         //         <td>${data._id}</td>
+                                                //         //         <td>${data.company1}</td>
+                                                //         //         <td>${data.adUrl1}</td>
+                                                //         //         <td>${data.created_at}</td>
+                                                //         //         <td>
+                                                //         //             <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
+                                                //         //         </td>
+                                                //         //     </tr>
+                                                //         // `)
+                                                //         alert('广告发布成功！')
+                                                //     },
+                                                //     error: function(err) {
+                                                //         alert('发布失败')
+                                                //     }
+                                                // })
+                                            // })
+
+                                            // $.get({
+                                            //     url: '/../api/postAd1/post1',
+                                            //     success: function(data) {
+                                            //         for (var i = 0; i < data.length; i++) {
+                                            //             $('.adTbody1').append(`
+                                            //                 <tr>
+                                            //                     <td>${data._id}</td>
+                                            //                     <td>${data.company1}</td>
+                                            //                     <td>${data.adUrl1}</td>
+                                            //                     <td>${data.created_at}</td>
+                                            //                     <td>
+                                            //                         <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
+                                            //                     </td>
+                                            //                 </tr>
+                                            //             `)
+                                            //         }
+                                            //     }
+                                            // })
+                                            //delete ads button
+                                            // function deleteNews(id, el) {
+                                            //     $.ajax({
+                                            //         method: 'post',
+                                            //         url: '/api/ads/delete1',
+                                            //         data: { id: id},
+                                            //         success: function (data) {
+                                            //             alert(`广告已删除`);
+                                            //             $(el).parents('tr').remove();
+                                            //         },
+                                            //         error: function (data) {
+                                            //             alert('删除失败')
+                                            //         }
+                                            //     })
+                                            // }
                                         </script>
 
                                     </div>

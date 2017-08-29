@@ -1,4 +1,4 @@
-		</div>
+
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
@@ -11,9 +11,6 @@
 						<p class="whiteText2">邮箱：</p>
 						<p class="whiteText2">电话：</p>
 					</div>
-					<!-- <div class="col-md-4 col-sm-4">
-						
-					</div> -->
 				</div>
 			</div>
 		</footer>

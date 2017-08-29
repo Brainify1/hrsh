@@ -1,38 +1,62 @@
 	   		{{> head}}
 	   		{{> header}}
 	  		{{> states}}
-	      	<nav>
-				<div>
-					<ul class="navUl">
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny'>
-								<i class="fa fa-home" aria-hidden="true"></i>首页
-							</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/re'>房产服务</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/secondHand'>二手市场</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/travel'>旅游酒店</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/law'>法律经济</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/education'>教育培训</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/hire'>招聘信息</a>
-						</li>
-						<li class="navLi">
-							<a class="navList hvr-underline-from-left" href='/a/ny/service'>生活服务</a>
-						</li>
-					</ul>
+	      	<div class="container-fluid mb10">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
+						<a href="/">
+							<div class="navFirstDiv">
+								<p class="navP">
+									免费分类广告
+								</p>
+							</div>
+						</a>
+
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12 navbarA">	  
+						<a href="/a/ny/secondHand" style="COLOR: red">租房:</a>
+						<a href="/a/ny/secondHand">中介·经纪·出租</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">房屋买卖</a>
+						<a href="/a/ny/secondHand">招聘</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">销售招聘</a>
+						<a href="/a/ny/secondHand">餐馆请人</a>
+						<a href="/a/ny/secondHand">甲店发廊请人</a>
+						<a href="/a/ny/secondHand">按摩请人</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">求职</a>
+						<a href="/a/ny/secondHand">商用租让</a>
+						<a href="/a/ny/secondHand">生意转让</a>
+						<a href="/a/ny/secondHand">快递·货运</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">贷款经纪</a>
+						<a href="/a/ny/secondHand" style="COLOR: green">二手买卖</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">汽车买卖</a>
+						<a href="/a/ny/secondHand">手机买卖</a>
+						<a href="/a/ny/secondHand">电脑买卖</a>
+						<a href="/a/ny/secondHand">货品买卖</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">电脑·网络</a>
+						<a href="/a/ny/secondHand">防盗报警</a>
+						<a href="/a/ny/secondHand">美容•Spa</a>
+						<a href="/a/ny/secondHand">推拿按摩理疗</a>
+						<a href="/a/ny/secondHand">交友征婚</a>
+						<a href="/a/ny/secondHand">翻译服务</a>
+						<a href="/a/ny/secondHand">招生培训</a>
+						<a href="/a/ny/secondHand" style="COLOR:red">课后补习</a>
+						<a href="/a/ny/secondHand">幼儿园·托儿</a>
+						<a href="/a/ny/secondHand" style="COLOR:red">大小搬家</a>
+						<a href="/a/ny/secondHand">电招车</a>
+						<a href="/a/ny/secondHand">考牌练车</a>
+						<a href="/a/ny/secondHand">家庭旅馆.旅行社</a>
+						<a href=/a/ny/secondHand" style="COLOR: red"><span id="clmenutoggle">其他各类&gt;&gt;</span></a>
+						<a href="/a/ny/secondHand">各类保险</a>
+						<a href="/a/ny/secondHand">留学•签证</a>
+						<a href="/a/ny/secondHand">入籍·福利</a>
+						<a href="/a/ny/secondHand">各类律师</a>
+						<a href="/a/ny/secondHand">会计·报税</a>
+						<a href="/a/ny/secondHand">印刷·招牌</a>
+						<a href="/a/ny/secondHand" style="COLOR: red">装修服务</a>
+						<a href="/a/ny/secondHand">冷暖水电</a>
+					</div>		
 				</div>
-			</nav>
+			</div>
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">

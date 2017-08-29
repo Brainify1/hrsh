@@ -25,9 +25,9 @@ var allStates = ['ny', 'la', 'van', 'sea', 'chi', 'lv', 'hou', 'bos', 'sfr', 'wa
 
 var allStatesCN = ['紐約', '洛杉矶', '温哥华', '西雅图', '芝加哥', '拉斯維加斯', '休斯敦', '波士顿', '旧金山', '华盛顿', '圣地亚哥', '悉尼', '费城', '夏威夷', '亚特兰大', '达拉斯', '佛罗里达']
 
-var allCategory = ['news', 'videos', 're', 'secondHand', 'travel', 'law', 'education', 'hire', 'service'];
+var allCategory = require('../categoryEN')
 
-var allCategoryCN = ['新闻', '影片', '房产服务', '二手市场', '旅游酒店', '法律经济', '教育培训', '招聘信息', '生活服务'];
+var allCategoryCN = require('../categoryCn')
 
 
 /* GET states */
@@ -56,7 +56,7 @@ router.get('/a/:states/:type/news', function(req, res, next) {
         var states = req.params.states;
         var type = req.params.type;
         var index_states = allStates.indexOf(states);
-        var statesCN = allStatesCN[index_states]
+        var statesCN = allStatesCN[index_states];
         if (allStates.indexOf(states) === -1 || newsType.indexOf(type) === -1) {
             res.render('error');
         } else {
@@ -90,11 +90,10 @@ router.get('/a/:states/:type/news/:id', function(req, res, next) {
         if (allStates.indexOf(states) === -1) {
             res.render('error');
         } else {
-            newsCollection.find({ _id : id }).sort({ _id: -1 }, function(err, news) {
+            newsCollection.find({ _id: id }).sort({ _id: -1 }, function(err, news) {
                 console.log(news)
                 console.log(newsCollection.find({ _id : id }))
                 console.log(id)
-
                 res.render('viewList', {
                     title: '华人生活网',
                     link: states,
@@ -227,24 +226,34 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
     if (allStates.indexOf(states) === -1 | allCategory.indexOf(category) === -1) {
         res.render('error');
     } else {
-        listingsCollection.find({ refId: id }).sort({ _id: -1 }, function(err, listings) {
-            res.render('content', {
-                title: '华人生活网',
-                link: states,
-                categ: category,
-                categCN: categoryCN,
-                listings,
-                isLoggedIn: req.isAuthenticated(),
-                partials: {
-                    head: '../views/partials/head',
-                    header: '../views/partials/header',
-                    navbar: '../views/partials/navbar',
-                    states: '../views/partials/states',
-                    footer: '../views/partials/footer',
-                    scripts: '../views/partials/scripts'
+         
+        imagesCollection.find({ refId: id},(function(err, doc){
+            listingsCollection.find({ refId: id }).sort({ _id: -1 }, function(err, listings) {
+                var docs=[];
+                    for(var x = 0; x < Object.keys(doc[0].data).length; x++){
+                        docs[x] = doc[0].data[x].filename
                 }
+                console.log(docs)
+                res.render('content', {
+                    title: '华人生活网',
+                    link: states,
+                    categ: category,
+                    categCN: categoryCN,
+                    listings,
+                    docs,
+                    isLoggedIn: req.isAuthenticated(),
+                    partials: {
+                        head: '../views/partials/head',
+                        header: '../views/partials/header',
+                        navbar: '../views/partials/navbar',
+                        states: '../views/partials/states',
+                        footer: '../views/partials/footer',
+                        scripts: '../views/partials/scripts'
+                    }
+                })
             })
         })
+        )
     }
 })
 

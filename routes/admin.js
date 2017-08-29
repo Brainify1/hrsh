@@ -13,7 +13,8 @@ router.get('/', function(req, res, next) {
 		footer: '../views/partials/footer'
 	}
 	})
-  console.log(req.session)
+  // console.log(req.session)
+  // console.log(req.body)
 });
 
 module.exports = router;
