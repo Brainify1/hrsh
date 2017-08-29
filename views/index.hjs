@@ -180,19 +180,19 @@
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
 							<div class="otherCh">
-								<a href="#">ABC</a>
-								<a href="#">ESPN</a>
-								<a href="#">CNN</a>
-								<a href="#">CCTV4</a>
-								<a href="#">PPTV</a>
-								<a href="#">Youtube</a>
-								<a href="#">美国中文电视</a>
-								<a href="#">新唐人电视台</a>
-								<a href="#">天下卫视</a>
-								<a href="#">爱奇艺</a>
-								<a href="#">腾讯视频</a>
-								<a href="#">多瑙影院</a>
-								<a href="">BiliBili</a>
+								<a href="http://abcnews.go.com/">ABC</a>
+								<a href="http://www.espn.com/">ESPN</a>
+								<a href="http://www.cnn.com/">CNN</a>
+								<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
+								<a href="http://www.pptv.com/">PPTV</a>
+								<a href="http://youtube.com/">Youtube</a>
+								<a href="www.sinovision.net/live.php">美国中文电视</a>
+								<a href="www.ntdtv.com/">新唐人电视台</a>
+								<a href="www.skylinktv.us/">天下卫视</a>
+								<a href="www.iqiyi.com/">爱奇艺</a>
+								<a href="https://v.qq.com/">腾讯视频</a>
+								<a href="https://www.dnvod.tv/">多瑙影院</a>
+								<a href="https://www.bilibili.com/">BiliBili</a>
 							</div>
 							<div class="titleBlock">
 								<div class="hotVid">
