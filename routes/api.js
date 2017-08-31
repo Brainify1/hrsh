@@ -11,6 +11,7 @@ var statesEN = require('../statesEN');
 var statesCN = require('../statesCN');
 var categoryEN = require('../categoryEN');
 var categoryCN = require('../categoryCN');
+var newsTypes = require('../newsTypes');
 
 router.post('/news/post', function(req, res, next) {
     const news = {
@@ -146,7 +147,38 @@ router.post('/ads/delete1', function(req, res, next) {
             console.log(removedAds)
         })
     })
-
+router.get('/news/fetch/types/en', (req, res) => {
+    res.json(newsTypes)
+})
+router.get('/news/fetch/ratio', (req, res) => {
+    var ratio = []
+    newsCollection.find((err, allNews) => {
+        var allNewsRatio = allNews.length
+        newsCollection.find({type: 'kj'}, (err, kjNews) => {
+            ratio.push(Math.floor(kjNews.length / allNewsRatio * 100))
+            newsCollection.find({type: 'sh'}, (err, shNews) => {
+                ratio.push(Math.floor(shNews.length / allNewsRatio * 100))
+                newsCollection.find({type: 'yl'}, (err, ylNews) => {
+                    ratio.push(Math.floor(ylNews.length / allNewsRatio * 100))
+                    newsCollection.find({type: 'yl'}, (err, zz) => {
+                        ratio.push(Math.floor(zz.length / allNewsRatio * 100))
+                        newsCollection.find({type: 'yl'}, (err, ty) => {
+                            ratio.push(Math.floor(ty.length / allNewsRatio * 100))
+                            newsCollection.find({type: 'yl'}, (err, ys) => {
+                                ratio.push(Math.floor(ys.length / allNewsRatio * 100))
+                                newsCollection.find({type: 'yl'}, (err, sy) => {
+                                    ratio.push(Math.floor(sy.length / allNewsRatio * 100))
+                                    res.send(ratio)
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+    
+})
 
 
 module.exports = router;

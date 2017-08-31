@@ -36,3 +36,12 @@
 .listing-tab .card {
     padding: 20px 30px;
 }
+.text-custom-purple {
+    color: purple;
+}
+.text-custom-blue {
+    color: blue
+}
+.text-custom-gray {
+    color: #555
+}
