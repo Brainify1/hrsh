@@ -104,10 +104,15 @@ demo = {
     
         Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
         
-        Chartist.Pie('#chartPreferences', {
-          labels: ['62%','32%','6%'],
-          series: [62, 32, 6]
-        });   
+        $.get('/api/news/fetch/ratio', function(ratio) {
+          $.get('/api/news/fetch/types/en', function(types) {
+            Chartist.Pie('#chartPreferences', {
+              labels: types,
+              series: ratio
+            });  
+          })
+        })
+        
     },
     
    
