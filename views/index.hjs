@@ -404,7 +404,7 @@
 																</div>
 													        </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
 														    		<a title="" href="http://www.century21.com/">Century 21</a>
@@ -418,7 +418,7 @@
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
 														    		<a title="" href="https://www.coldwellbanker.com/">Coldwell Banker</a>
@@ -448,7 +448,7 @@
 																</div>
 												            </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
 														    		<a title="" href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/">周台黄</a>
@@ -462,7 +462,7 @@
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-sm hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4">
 															<div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
 														    		<a title="" href="http://ashleechen920.kwrealty.com/about/">陈欣妤</a>
@@ -488,59 +488,53 @@
 								        </div>
 								</div>
 							</div>
-							<a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
-								                    <span class="glyphicon glyphicon-chevron-left"></span>
-								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
-								                    <span class="glyphicon glyphicon-chevron-right"></span>
-								                </a>
 							<div class="linksHeader">
 								<p>旅遊</p>
 							</div>
 							<div class="">
 								<div class="carousel-reviews broun-block">
 								        <div class="row">
-								            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+								            <div id="carousel-reviews2" class="carousel slide" data-ride="carousel">
 								            
 								                <div class="carousel-inner">
 								                    <div class="item active">
 								                	    <div class="col-md-4 col-sm-4 col-xs-4">
 								        				    <div class="block-text rel zmin">
 								        				    	<div class="carouselTitleBlock">
-								        				    		<a title="" href="www.remax.com">RE/MAX</a>
+								        				    		<a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">尼亚加拉瀑布</a>
 								        				    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a title="" href="www.remax.com">
-																		<img src="/images/remaxLogo.jpg">
+																	<a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">
+																		<img src="/images/niagara.jpg">
 																	</a>
 																	
 																</div>
 													        </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.century21.com/">Century 21</a>
+														    		<a title="" href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">黄石公园</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.century21.com/">
-																		<img src="/images/century21.jpeg">
+																	<a href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">
+																		<img src="/images/yellowStone.jpg">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.coldwellbanker.com/">Coldwell Banker</a>
+														    		<a title="" href="http://www.lltours.com/washington-dc-departure-vacation-package.html">华盛顿</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="https://www.coldwellbanker.com/">
-																		<img src="/images/coldwell.jpg">
+																	<a href="http://www.lltours.com/washington-dc-departure-vacation-package.html">
+																		<img src="/images/washington.jpg">
 																	</a>
 																	
 																</div>
@@ -551,40 +545,40 @@
 								                        <div class="col-md-4 col-sm-4 col-xs-4">
 								        				    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">Shirley Yang</a>
+														    		<a title="" href="http://www.lltours.com/">纵横旅游</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">
-																		<img src="/images/broker-shirley.jpg">
+																	<a href="http://www.lltours.com/">
+																		<img src="/images/travel-agency1.gif">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/">周台黄</a>
+														    		<a title="" href="https://www.eworldtours.com/zh-hant/">天馬旅遊</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/1">
-																		<img src="/images/broker2.jpg">
+																	<a href="https://www.eworldtours.com/zh-hant/">
+																		<img src="/images/travel-agency2.png">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-sm hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4 ">
 															<div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://ashleechen920.kwrealty.com/about/">陈欣妤</a>
+														    		<a title="" href="http://www.americaasia.com/Default.aspx?locale=zh-TW">美国亚洲旅行社</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://ashleechen920.kwrealty.com/about/">
-																		<img src="/images/broker3.jpg">
+																	<a href="http://www.americaasia.com/Default.aspx?locale=zh-TW">
+																		<img src="/images/travel-agency3.png">
 																	</a>
 																	
 																</div>
@@ -592,10 +586,10 @@
 														</div>
 								                    </div>                   
 								                </div>
-								                <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+								                <a class="left carousel-control" href="#carousel-reviews2" role="button" data-slide="prev">
 								                    <span class="glyphicon glyphicon-chevron-left"></span>
 								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+								                <a class="right carousel-control" href="#carousel-reviews2" role="button" data-slide="next">
 								                    <span class="glyphicon glyphicon-chevron-right"></span>
 								                </a>
 								            </div>
@@ -608,47 +602,47 @@
 							<div class="">
 								<div class="carousel-reviews broun-block">
 								        <div class="row">
-								            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+								            <div id="carousel-reviews3" class="carousel slide" data-ride="carousel">
 								            
 								                <div class="carousel-inner">
 								                    <div class="item active">
 								                	    <div class="col-md-4 col-sm-4 col-xs-4">
 								        				    <div class="block-text rel zmin">
 								        				    	<div class="carouselTitleBlock">
-								        				    		<a title="" href="www.remax.com">RE/MAX</a>
+								        				    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">皮埃尔酒店</a>
 								        				    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a title="" href="www.remax.com">
-																		<img src="/images/remaxLogo.jpg">
+																	<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">
+																		<img src="/images/pierreHotel.jpg">
 																	</a>
 																	
 																</div>
 													        </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.century21.com/">Century 21</a>
+														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">白金汉酒店</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.century21.com/">
-																		<img src="/images/century21.jpeg">
+																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">
+																		<img src="/images/bkHotel.jpg">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.coldwellbanker.com/">Coldwell Banker</a>
+														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">纽约中央公园总督酒店</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="https://www.coldwellbanker.com/">
-																		<img src="/images/coldwell.jpg">
+																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">
+																		<img src="/images/viceroyHotel.jpg">
 																	</a>
 																	
 																</div>
@@ -659,40 +653,40 @@
 								                        <div class="col-md-4 col-sm-4 col-xs-4">
 								        				    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">Shirley Yang</a>
+														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">纽约第五大道朗豪酒店</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">
-																		<img src="/images/broker-shirley.jpg">
+																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">
+																		<img src="/images/4thHotel.jpg">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
 														    <div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/">周台黄</a>
+														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">纽约圣瑞吉斯酒店</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/1">
-																		<img src="/images/broker2.jpg">
+																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">
+																		<img src="/images/stRegis.jpg">
 																	</a>
 																	
 																</div>
 												            </div>
 														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 hidden-sm hidden-xs">
+														<div class="col-md-4 col-sm-4 col-xs-4 ">
 															<div class="block-text rel zmin">
 														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://ashleechen920.kwrealty.com/about/">陈欣妤</a>
+														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">纽约文华东方酒店</a>
 														    	</div>
 														        
 																<div class="carouselImgContainer">
-																	<a href="http://ashleechen920.kwrealty.com/about/">
-																		<img src="/images/broker3.jpg">
+																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">
+																		<img src="/images/6thHotel.jpg">
 																	</a>
 																	
 																</div>
@@ -700,14 +694,67 @@
 														</div>
 								                    </div>                   
 								                </div>
-								                <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+								                <a class="left carousel-control" href="#carousel-reviews3" role="button" data-slide="prev">
 								                    <span class="glyphicon glyphicon-chevron-left"></span>
 								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+								                <a class="right carousel-control" href="#carousel-reviews3" role="button" data-slide="next">
 								                    <span class="glyphicon glyphicon-chevron-right"></span>
 								                </a>
 								            </div>
 								        </div>
+								</div>
+							</div>
+							<div class="linksHeader">
+								<p>律师</p>
+							</div>
+							<div class="row hospitalsBox">
+								<div class="col-md-4">
+									<a href="http://law-gz.com/lawgz_c/?page_id=45">耿婷律师</a>
+									<div class="carouselImgContainer">
+										<a href="http://law-gz.com/lawgz_c/?page_id=45">
+											<img src="/images/lawyer1.jpg">
+										</a>						
+									</div>
+								</div>
+								<div class="col-md-4">
+									<a href="https://www.cimwong.com/mww">黄唯律师</a>
+									<div class="carouselImgContainer">
+										<a href="https://www.cimwong.com/mww">
+											<img src="/images/lawyer2.jpg">
+										</a>						
+									</div>
+								</div>
+								<div class="col-md-4">
+									<a href="https://gaolawyers.com/intro.php">高术仁律师</a>
+									<div class="carouselImgContainer">
+										<a href="https://gaolawyers.com/intro.php">
+											<img src="/images/lawyer3.jpg">
+										</a>						
+									</div>
+								</div>
+								<div class="col-md-4">
+									<a href="http://www.changliulaw.com/">刘畅律师事务所</a>
+									<div class="carouselImgContainer">
+										<a href="http://www.changliulaw.com/">
+											<img src="/images/lawyer4.jpg">
+										</a>						
+									</div>
+								</div>
+								<div class="col-md-4">
+									<a href="http://www.cmalawgroup.com/cn/attorneys.html">齐柯∙马莉琳律师</a>
+									<div class="carouselImgContainer">
+										<a href="http://www.cmalawgroup.com/cn/attorneys.html">
+											<img src="/images/lawyer5.jpg">
+										</a>						
+									</div>
+								</div>
+								<div class="col-md-4">
+									<a href="http://www.samuelandstein.com/michael-samuel/">麦克山缪</a>
+									<div class="carouselImgContainer">
+										<a href="http://www.samuelandstein.com/michael-samuel/">
+											<img src="/images/lawyer6.jpg">
+										</a>						
+									</div>
 								</div>
 							</div>
 							<div class="linksHeader">

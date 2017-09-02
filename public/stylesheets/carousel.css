@@ -25,12 +25,16 @@
 .carouselTitleBlock {
     height: 60px;
 }
-
+.carouselTitleBlock a {
+    font-size: 16px;
+}
 .carouselImgContainer img {
     height: 80px;
     max-width: 100%;
     max-height: 120px;
 }
+
+
 
 .block {
     display: block;
