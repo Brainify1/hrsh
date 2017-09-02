@@ -90,9 +90,10 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	    {{> footer}}
-	    <script src="/dist/sweetalert.min.js"></script>
-	    <script src="/javascripts/ckeditor_config.js"></script>
-	   <script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
-	    {{> scripts}}
+	</div>
+	{{> footer}}
+    <script src="/dist/sweetalert.min.js"></script>
+	<script src="/javascripts/ckeditor_config.js"></script>
+	<script type="text/javascript" src="/javascripts/dropZoneMain.js"></script>
+	{{> scripts}}
 

@@ -959,13 +959,29 @@
                                             <h4 class="title">视频管理</h4>
                                             <p class="category">添加，删除或管理网站视频区内容</p>
                                         </div>
+                                        <div>
+                                            <form id="videoUpload" action="/" method="post">
+                                                <label>视频名</label>
+                                                <input type="text" name="videoName">
+                                                <label>URL</label>
+                                                <input type="text" name="Url連結">
+                                                <button type="submit" id="videoSubmit">發布</button>
+                                            </form>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $('#videoUpload').submit(function(e){
+                                                    e.preventDefault();
+                                                    
+
+                                                })
+                                        </script>
                                         <div class="content table-responsive table-full-width">
                                             <table class="table table-hover table-striped">
                                                 <thead>
                                                     <th>ID</th>
-                                                    <th>标题</th>
-                                                    <th>观看人数</th>
-                                                    <th>创建日期</th>
+                                                    <th>视频名</th>
+                                                    <th>URL</th>
+                                                    <th>發布日期</th>
                                                     <th>操作</th>
                                                 </thead>
                                                 <tbody>
@@ -975,41 +991,6 @@
                                                         <td>$36,738</td>
                                                         <td>Niger</td>
                                                         <td>Oud-Turnhout</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Minerva Hooper</td>
-                                                        <td>$23,789</td>
-                                                        <td>Curaçao</td>
-                                                        <td>Sinaai-Waas</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Sage Rodriguez</td>
-                                                        <td>$56,142</td>
-                                                        <td>Netherlands</td>
-                                                        <td>Baileux</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Philip Chaney</td>
-                                                        <td>$38,735</td>
-                                                        <td>Korea, South</td>
-                                                        <td>Overland Park</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Doris Greene</td>
-                                                        <td>$63,542</td>
-                                                        <td>Malawi</td>
-                                                        <td>Feldkirchen in Kärnten</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>6</td>
-                                                        <td>Mason Porter</td>
-                                                        <td>$78,615</td>
-                                                        <td>Chile</td>
-                                                        <td>Gloucester</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

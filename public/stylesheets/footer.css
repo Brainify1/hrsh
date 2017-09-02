@@ -1,0 +1,23 @@
+footer {
+	background-color: rgb(216,216,216);
+}
+
+.footerLogoImg {
+	padding: 10px 0 10px 10px;
+	height: 80px;
+	width: auto;
+}
+
+.footerElements {
+	display: block;
+    margin: 0 auto;
+    height: 80px;
+    padding: 30px;
+
+}
+
+.footerElements p {
+	display: inline;
+	color: #818181;
+	margin: 2%;
+}
