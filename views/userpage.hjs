@@ -77,8 +77,10 @@
     								<li class="userLi">
     									<h5>作者</h5>
     								</li>
+    								<li class="userLi">
+    									<h5>阅读</h5>
+    								</li>
     								<li class="readLi">
-    									<!-- <h5>回复/阅读</h5> -->
     									<h5>操作</h5>
     								</li>
     							</ul>
@@ -93,14 +95,14 @@
 										<div><p class="fs12">{{author}}</p></div>
 										<div><p class="fs10">{{created_at}}</p></div>
 									</div>
+									<div class="userLi" style="line-height: 40px;padding-left: 10px">
+										{{views}}
+									</div>
 									<div class="readLi" style="line-height: 40px">
-										<!-- <div><p class="fs12">{{commentNum}}</p></div>
-										<div><p class="fs10">{{views}}</p></div> -->
 										<a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
 									</div>
 								</li>
 								{{/listings}}
-						
 						</ul>
 					    	<ul class="pagination"></ul>
 						</div>
@@ -130,5 +132,20 @@
                 })
             }
         </script>
-	    	{{> footer}}
+	    <footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-5">
+						<img class="footerLogoImg" src="/images/hrshLogo.png">
+					</div>
+					<div class="col-md-8 col-sm-7 footerElements">
+						<a href="/a/ny/aboutUs"><p class="footerP">关于我们</p></a>
+						<a href="/a/ny/disclaimer"><p class="footerP">免责声明</p></a>
+						<a href="/a/ny/contactUs"><p class="footerP">联系我们</p></a>
+						<a href="/a/ny/advertisement"><p class="footerP">刊登广告</p></a>
+						<a href="/a/ny/cooperation"><p class="footerP">招商合作</p></a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	    	{{> scripts}}
