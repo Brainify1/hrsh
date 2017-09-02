@@ -93,10 +93,10 @@
 										<div><p class="fs12">{{author}}</p></div>
 										<div><p class="fs10">{{created_at}}</p></div>
 									</div>
-									<div class="readLi">
+									<div class="readLi" style="line-height: 40px">
 										<!-- <div><p class="fs12">{{commentNum}}</p></div>
 										<div><p class="fs10">{{views}}</p></div> -->
-										 <a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
+										<a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
 									</div>
 								</li>
 								{{/listings}}
