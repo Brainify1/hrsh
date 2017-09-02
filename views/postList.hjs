@@ -73,6 +73,8 @@
 			  							</div>
 			  						</div>
 			  					</div>
+			  					<div style="text-align: center"><br><br><strong>友情提示：用户要填写真实、正确的内容</strong><br><br></div>
+			  					
 			  					<div class="postButtonDiv">
 			  						<a class="postButton hvr-grow-shadow"  id="pstButton" onclick="myDropzone.processQueue();">
 			  							<img class="postImg" src="/images/post.png">

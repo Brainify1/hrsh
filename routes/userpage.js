@@ -32,6 +32,16 @@ router.get('/', loginRequired, function(req, res, next) {
     })
 });
 
+router.post('/delete', function(req, res, next) {
+        var newsId = req.body.refId
+        console.log(newsId)
+        listingsCollection.remove({ refId: newsId }, function(err, removedPost) {
+            res.json(removedPost)
+            console.log(removedPost)
+        })
+})
+
+
 
 
 module.exports = router;
