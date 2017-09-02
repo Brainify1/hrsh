@@ -30,7 +30,6 @@ var allCategory = require('../categoryEN')
 
 var allCategoryCN = require('../categoryCN')
 
-
 /* GET states */
 router.get('/a/:states', function(req, res, next) {
     var states = req.params.states;
@@ -52,6 +51,110 @@ router.get('/a/:states', function(req, res, next) {
         })
     }
 });
+
+/*GET footer LINKS*/
+router.get('/a/:states/aboutUs', function(req, res, next) {
+       var states = req.params.states;
+    if (allStates.indexOf(states) === -1) {
+        res.render('error');
+    } else {
+        res.render('aboutus', {
+            title: '华人生活网',
+            link: states,
+            isLoggedIn: req.isAuthenticated(),
+            partials: {
+                head: '../views/partials/head',
+                header: '../views/partials/header',
+                navbar: '../views/partials/navbar',
+                states: '../views/partials/states',
+                footer: '../views/partials/footer',
+                scripts: '../views/partials/scripts'
+            }
+        })
+    }
+});
+router.get('/a/:states/disclaimer', function(req, res, next) {
+       var states = req.params.states;
+    if (allStates.indexOf(states) === -1) {
+        res.render('error');
+    } else {
+        res.render('disclaimer', {
+            title: '华人生活网',
+            link: states,
+            isLoggedIn: req.isAuthenticated(),
+            partials: {
+                head: '../views/partials/head',
+                header: '../views/partials/header',
+                navbar: '../views/partials/navbar',
+                states: '../views/partials/states',
+                footer: '../views/partials/footer',
+                scripts: '../views/partials/scripts'
+            }
+        })
+    }
+});
+router.get('/a/:states/contactUs', function(req, res, next) {
+        var states = req.params.states;
+    if (allStates.indexOf(states) === -1) {
+        res.render('error');
+    } else {
+        res.render('contactUs', {
+            title: '华人生活网',
+            link: states,
+            isLoggedIn: req.isAuthenticated(),
+            partials: {
+                head: '../views/partials/head',
+                header: '../views/partials/header',
+                navbar: '../views/partials/navbar',
+                states: '../views/partials/states',
+                footer: '../views/partials/footer',
+                scripts: '../views/partials/scripts'
+            }
+        })
+    }
+});
+router.get('/a/:states/advertisement', function(req, res, next) {
+        var states = req.params.states;
+    if (allStates.indexOf(states) === -1) {
+        res.render('error');
+    } else {
+        res.render('advertisement', {
+            title: '华人生活网',
+            link: states,
+            isLoggedIn: req.isAuthenticated(),
+            partials: {
+                head: '../views/partials/head',
+                header: '../views/partials/header',
+                navbar: '../views/partials/navbar',
+                states: '../views/partials/states',
+                footer: '../views/partials/footer',
+                scripts: '../views/partials/scripts'
+            }
+        })
+    }
+});
+router.get('/a/:states/cooperation', function(req, res, next) {
+        var states = req.params.states;
+    if (allStates.indexOf(states) === -1) {
+        res.render('error');
+    } else {
+        res.render('cooperation', {
+            title: '华人生活网',
+            link: states,
+            isLoggedIn: req.isAuthenticated(),
+            partials: {
+                head: '../views/partials/head',
+                header: '../views/partials/header',
+                navbar: '../views/partials/navbar',
+                states: '../views/partials/states',
+                footer: '../views/partials/footer',
+                scripts: '../views/partials/scripts'
+            }
+        })
+    }
+});
+/*End of footer LINKS*/
+
 /*Get more news page*/
 router.get('/a/:states/:type/news', function(req, res, next) {
         var states = req.params.states;
@@ -258,5 +361,11 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
     }
 })
 
-
+// router.post('/a/:states/:category/:id/delete', function(req, res, next) {
+//     listingsCollection.find({refId: id}), function(err, post){
+//         listingsCollection.remove(), function(removed){
+//             res.json(removed)
+//         }
+//     }
+// })
 module.exports = router;

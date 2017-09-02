@@ -6,11 +6,11 @@
 						<img class="footerLogoImg" src="/images/hrshLogo.png">
 					</div>
 					<div class="col-md-8 col-sm-7 footerElements">
-						<a href="/"><p class="footerP">关于我们</p></a>
-						<a href="/"><p class="footerP">免责声明</p></a>
-						<a href="/"><p class="footerP">联系我们</p></a>
-						<a href="/"><p class="footerP">刊登广告</p></a>
-						<a href="/"><p class="footerP">招商合作</p></a>
+						<a href="/a/{{link}}/aboutUs"><p class="footerP">关于我们</p></a>
+						<a href="/a/{{link}}/disclaimer"><p class="footerP">免责声明</p></a>
+						<a href="/a/{{link}}/contactUs"><p class="footerP">联系我们</p></a>
+						<a href="/a/{{link}}/advertisement"><p class="footerP">刊登广告</p></a>
+						<a href="/a/{{link}}/cooperation"><p class="footerP">招商合作</p></a>
 					</div>
 				</div>
 			</div>
