@@ -1,4 +1,5 @@
 	   		{{> head}}
+	   			<link rel="stylesheet" type="text/css" href="/stylesheets/viewList.css">
 	   		{{> header}}
 	  		{{> states}}
 	      	<div class="container-fluid mb10">
@@ -64,49 +65,41 @@
 	  						 
 	  					</div>
 	  				</div>
-	  				<div class="col-md-8 col-sm-8">
-	  					<div id="test-list">
-	  						<div class="sbarDiv">
-	  							<input type="text" class="search sbar" placeholder="搜索关键字" />
+	  					<div class="col-md-8 col-sm-8 mb50">
+	  						<div class="locationDiv">
+    						
+    						</div>
+    						<div class="commercialBlock">
+    							<div class="blizzardAd"></div>
+    						</div>  					
+    			
+	  					<div class="navbarUl mt5">
+	  						<h5 class="viewTitle">联系我们</h5>
+	  					</div>
+	  					
+	  					<div class="rowDiv">
+	  						<div class="userNameDiv">
+	  							<div>
+	  								<img src="/images/man-user.png">
 	  							</div>
-	  						<nav class="divNav">
-    							<ul class="navbarUl">
-    								<li class="titleLi">
-    									<h5>标题</h5>
-    								</li>
-    								<li class="userLi">
-    									<h5>作者</h5>
-    								</li>
-    								<li class="userLi">
-    									<h5>阅读</h5>
-    								</li>
-    								<li class="readLi">
-    									<h5>操作</h5>
-    								</li>
-    							</ul>
-    						</nav>
-	    				<ul class="list mg0">
-							{{#listings}}
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="/a/{{data.state}}/{{data.category}}/{{refId}}">{{data.title}}</a>
-									</div>
-									<div class="userLi">
-										<div><p class="fs12">{{author}}</p></div>
-										<div><p class="fs10">{{created_at}}</p></div>
-									</div>
-									<div class="userLi" style="line-height: 40px;padding-left: 10px">
-										{{views}}
-									</div>
-									<div class="readLi" style="line-height: 40px">
-										<a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
-									</div>
-								</li>
-								{{/listings}}
-						</ul>
-					    	<ul class="pagination"></ul>
-						</div>
-	  				</div>
+	  							<h6>Admin</h6>
+	  						</div>
+	  						<div class="postContentDiv">
+	  							<div class="loadContent">
+ 									<h5>
+	 								公司和地址：USA NETWORK GROUP INC.<br>
+									41-25 Kissena Blvd FLR1 #110<br>
+									Flushing, NY 11355 U S A<br>
+									联系电话：（001美国区号）718-559-9905<br>
+									联系电邮：<br>
+									联系微信:
+ 
+	  								</h5>
+	  							</div>
+	  						</div>
+	  					</div>
+	  						
+					</div>
 	  				<div class="col-md-2 col-sm-2">
 	  					<div class="bg-temp">
 	  						 
@@ -116,21 +109,5 @@
 	  		</div>
 
 	  	</div>
-        <script>
-            function deletePost(id, el) {
-                $.ajax({
-                    method: 'post',
-                    url: '/userpage/delete',
-                    data: {refId: id},
-                    success: function (data) {
-                        alert(`新闻已删除`);
-                        $(el).parents('li').remove();
-                    },
-                    error: function (data) {
-                        alert('删除失败')
-                    }
-                })
-            }
-        </script>
 	    	{{> footer}}
 	    	{{> scripts}}

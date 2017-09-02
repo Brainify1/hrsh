@@ -7,11 +7,6 @@
                   <img src="/images/hrshLogo.png">
                 </div>
                 <div class="searchBar hide-on-small">
-                    <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-                        <input name="sitesearch" type="hidden">
-                        <input autocomplete="on" class="form-controls search" name="q" placeholder="Google 搜索" required="required"  type="text">
-                        <button class="button" type="submit">搜索</button>
-                    </form>
                     <ul class="emailLinks">
           						<li>
           							<a href="https://gmail.com">Gmail</a>
@@ -56,6 +51,33 @@
                     <p>在线翻译</p>
                   </div>
                 </a>
+              </div>
+              <div class="searchBar row">
+                <div class="searchbarElement col-md-3 pd0">
+                  <form action="http://www.google.com/search" method="get" name="searchform" target="_blank">
+                    <input name="sitesearch" type="hidden">
+                    <input autocomplete="on" class="form-controls search" name="q" placeholder="Google 搜索" required="required"  type="text">
+                    <button class="searchButton1" type="submit">搜索</button>
+                  </form>
+                </div>
+                <div class="searchbarElement col-md-3 pd0">
+                  <form action="https://finance.yahoo.com/quote/" method="get" target="_blank">
+                    <input type="text" aria-label="Search" autocomplete="off" autocorrect="off" autocapitalize="off" name="p" placeholder="美国股市 Yahoo! Finance">
+                    <button type="submit" class="searchButton2">查询</button>
+                  </form>
+                </div>
+                <div class="searchbarElement col-md-3 pd0">
+                  <form name="f" action="http://www.baidu.com/s" method="get" target="_blank">
+                    <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off" placeholder="百度搜索">
+                    <button type="submit" class="searchButton3">搜索</button>
+                  </form>
+                </div>
+                <div class="searchbarElement col-md-3 pd0">
+                  <form action="https://weather.com/weather/today" method="get" target="_blank">
+                    <input type="text" name="why" placeholder="天气预报 查询zip code">
+                    <button type="submit" class="searchButton4">查询</button>
+                  </form>
+                </div>
               </div>
             </div>
         </div>

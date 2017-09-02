@@ -1,3 +1,19 @@
+// module.exports = [
+// 	'fun-news',
+// 	'society-science',
+// 	'arm-electronic',
+// 	'entertainment-music',
+// 	'media-video',
+// 	'spa-beauty',
+// 	'painting',
+// 	'medicine',
+// 	'art-sports',
+// 	'marriage-relationship',
+// 	'education-child',
+// 	'men-women'
+// ]
+
+
 module.exports = [	'news', 
 					'videos', 
 					'rent', 

@@ -180,5 +180,11 @@ router.get('/news/fetch/ratio', (req, res) => {
     
 })
 
-
+// router.post('/userpage/delete', function(req, res, next) {
+//         var newsId = req.body.id
+//         listingsCollection.remove({ _id: mongojs.ObjectId(newsId) }, function(err, removedNews) {
+//             res.json(removedNews)
+//             console.log(removedNews)
+//         })
+//     })
 module.exports = router;
