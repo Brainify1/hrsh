@@ -24,6 +24,9 @@ body {
 
 @media only screen and (max-width: 850px) {
 }
+.pd0 {
+	padding: 0;
+}
 
 .pd5 {
 	padding: 0 5px;
@@ -264,32 +267,43 @@ div.navbarA a {
     height: 50%;
 }
 .pageContent {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .searchBar {
 	margin-top: 10px;
+	display: block;
 }
-.searchBar button {
-	background-color: #4A90E2;
-	color:white;
-	border: none;
-	padding: 7px 20px; 			
-	box-sizing: border-box;	
-	width: 20%;
-	vertical-align: top;
-	direction: inline-block;
-	outline: none;
+.searchbarElement {
+	display: inline;
 }
-.searchBar input {
+.searchbarElement input {
 	padding: 5px;
 	text-align: center;	
 	box-sizing: border-box;
-	width: 78%;
+	width: 65%;
 	vertical-align: top;
 	direction: inline-block;
 	outline: none;
 }
 
+.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+	padding: 6px;
+	background-color: #4a90e2;
+	color: white;
+	width: 80px;
+}
+
+.searchButton2 {
+	background-color: #d0021b;
+}
+
+.searchButton3 {
+	background-color: #4a90e2;
+}
+
+.searchButton4 {
+	background-color: #417505;
+}
 /*logo end*/
 
 
