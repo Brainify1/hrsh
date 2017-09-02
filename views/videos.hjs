@@ -71,5 +71,6 @@
 	  			</div>
 	  		</div>
 	  	</div>
-	    {{> footer}}
-	    {{> scripts}}
+	</div>
+	{{> footer}}
+	{{> scripts}}
