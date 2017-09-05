@@ -31,6 +31,10 @@ body {
 .pd5 {
 	padding: 0 5px;
 }
+
+.pd30 {
+	padding: 0 30px;
+}
 /*end of main container*/
 
 /*navbar CSS*/
@@ -175,6 +179,10 @@ body {
 	margin-top: 20px;
 }
 
+.mg20 {
+	margin: 0 20px;
+}
+
 a.loginMargin, a.loginMargin2 {
 	padding: 0;
 	margin: 0 15px;
@@ -208,7 +216,7 @@ a.loginMargin, a.loginMargin2 {
 /*new nav*/
 .navMainDiv {
 	padding: 0 6px 3px;
-	height: 80px;
+	height: 120px;
 }
 .navbarA {
 	border-top: 3px solid #d0021b;
@@ -218,13 +226,13 @@ a.loginMargin, a.loginMargin2 {
 .navFirstDiv {
 	background-color: #d0021b;
     color: white;
-    height: 120px;
+    height: 100%;
 }
 
 .navP {
 	font-size: 20px;
 	text-align: center;
-	padding: 23px;
+	padding: 40px;
 	letter-spacing: 1.5px;
 	font-weight: 900;
 }
@@ -927,7 +935,24 @@ li.focus {
 	box-sizing: border-box
 }
 /*end of ads*/
+.lastLinkBox {
+	padding: 30px 10px;
+}
 
+.textCenter {
+	text-align: center;
+	font-size: 18px;
+	color: #337ab7;
+}
+.airport {
+	height: 60px;
+}
+
+.blkText {
+	color: black;
+	font-size: 14px;
+	text-decoration: underline;
+}
 
 .grey-ads {
 	padding: 20px 20px;
