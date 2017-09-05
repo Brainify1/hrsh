@@ -195,6 +195,9 @@
 								<a href="https://www.dnvod.tv/">多瑙影院</a>
 								<a href="https://www.bilibili.com/">BiliBili</a>
 							</div>
+								<div class="sbarDiv2">
+	  								<input type="text" class="search sbar" placeholder="搜索关键字" style="margin:auto" />
+	  							</div>
 							<div class="titleBlock">
 								<div class="hotVid">
 									<span class="moreVid1">热门影片 | </span>
