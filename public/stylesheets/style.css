@@ -637,8 +637,14 @@ li.focus {
     border: 1px solid rgb(240,240,240);
     float: right;
 }
-}
 
+
+.sbarDiv2{
+	display: block;
+	background-color: white;
+    height: 30px;
+    border: 1px solid rgb(240,240,240);
+}
 .sbar {
 	display: block;
 }
