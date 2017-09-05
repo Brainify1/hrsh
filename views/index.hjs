@@ -1009,28 +1009,40 @@
 					<div class="textCenter row">
 						<div class="col-md-12 col-sm-12 col-xs-12">中国各个领事馆连结</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://newyork.china-consulate.org/chn/" class="blkText">驻纽约总领事馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://www.chinaconsulatechicago.org/chn/" class="blkText">驻芝加哥总领事馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://www.chinaconsulatesf.org/chn/" class="blkText">驻旧金山总领馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://losangeles.china-consulate.org/chn/" class="blkText">驻洛杉矶总领事馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://houston.china-consulate.org/chn/" class="blkText">驻休斯敦总领事馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://vancouver.china-consulate.org/chn/" class="blkText">驻温哥华总领馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://toronto.china-consulate.org/chn/" class="blkText">驻多伦多总领馆</a>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-3 airport">
-							<a href="https://www.congress.gov/" class="blkText">美国领事馆</a>
+							<a href="http://www.chinese-embassy.org.uk/chn/" class="blkText">驻大不列颠及北爱尔兰<br>联合王国大使馆</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+							<a href="http://www.amb-chine.fr/chn/" class="blkText">驻法兰西共和国大使馆</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+							<a href="http://china.embassy.gov.au/bjngchinese/home.html" class="blkText">澳大利亚驻华大使馆</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+							<a href="http://mx.china-embassy.org/chn/" class="blkText">驻墨西哥大使馆</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+							<a href="http://ru.china-embassy.org/chn/" class="blkText">驻俄罗斯大使馆</a>
 						</div>
 					</div>
 					<div class="col-md-12 textCenter">美国各个华人媒体连结</div>
