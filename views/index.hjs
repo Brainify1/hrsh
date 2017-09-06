@@ -944,40 +944,40 @@
 				<div class="lastLinkBox">
 					<div class="textCenter row">
 						<div class="col-md-12 col-sm-12 col-xs-12">全美各大飞机场连结</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.atl.com/" class="blkText">亚特兰大国际机场(ATL)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.lawa.org" class="blkText">洛杉矶国际机场(LAX)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.flychicago.com/ohare" class="blkText">奥黑尔国际机场(芝加哥)(ORD))</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.dfwairport.com" class="blkText">达拉斯/沃思堡国际机场(DFW)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.panynj.gov/airports/jfk.html" class="blkText">约翰·肯尼迪国际机场(JFK)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.flydenver.com" class="blkText">丹佛国际机场(DEN)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.FlySFO.com" class="blkText">旧金山国际机场(SFO)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.mccarran.com" class="blkText">麦卡伦国际机场(LAS)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.portseattle.org/seatac" class="blkText">西雅图-塔科马国际机场(SEA)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.charlotteairport.com" class="blkText">夏洛特道格拉斯国际机场(CLT)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.skyharbor.com" class="blkText">菲尼克斯天港国际机场(PHX)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.iflymia.com" class="blkText">迈亚密国际机场(MIA)</a>
 						</div>
 
@@ -985,70 +985,96 @@
 					</div>
 					<div class="textCenter row">
 						<div class="col-md-12 col-sm-12 col-xs-12">美国各个联邦机构连结</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.congress.gov/" class="blkText">美国国会</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.fbi.gov/" class="blkText">美国联邦调查局(FBI)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.cia.gov/" class="blkText">美国中央情报局(CIA)</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.uscis.gov/" class="blkText">美国公民及移民服务局</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.state.gov/" class="blkText">美国国务院</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.dhs.gov/" class="blkText">美国国土安全部</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.dia.mil" class="blkText">美国国防情报局</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="https://www.sec.gov" class="blkText">美国证券交易委员会</a>
 						</div>
 					<div class="textCenter row">
 						<div class="col-md-12 col-sm-12 col-xs-12">中国各个领事馆连结</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://newyork.china-consulate.org/chn/" class="blkText">驻纽约总领事馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.chinaconsulatechicago.org/chn/" class="blkText">驻芝加哥总领事馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.chinaconsulatesf.org/chn/" class="blkText">驻旧金山总领馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://losangeles.china-consulate.org/chn/" class="blkText">驻洛杉矶总领事馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://houston.china-consulate.org/chn/" class="blkText">驻休斯敦总领事馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://vancouver.china-consulate.org/chn/" class="blkText">驻温哥华总领馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://toronto.china-consulate.org/chn/" class="blkText">驻多伦多总领馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.chinese-embassy.org.uk/chn/" class="blkText">驻大不列颠及北爱尔兰<br>联合王国大使馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://www.amb-chine.fr/chn/" class="blkText">驻法兰西共和国大使馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://china.embassy.gov.au/bjngchinese/home.html" class="blkText">澳大利亚驻华大使馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://mx.china-embassy.org/chn/" class="blkText">驻墨西哥大使馆</a>
 						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 airport">
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
 							<a href="http://ru.china-embassy.org/chn/" class="blkText">驻俄罗斯大使馆</a>
 						</div>
 					</div>
-					<div class="col-md-12 textCenter">美国各个华人媒体连结</div>
+					<div class="textCenter row">
+						<div class="col-md-12 col-sm-12 col-xs-12">美国各个华人媒体连结</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.worldjournal.com/category/%E7%BE%8E%E5%9C%8B/" class="blkText">世界日報</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="https://www.singtaousa.com/" class="blkText">星島日報</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.epochtimes.com/" class="blkText">大纪元</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.todaycommercialnews.com/us/" class="blkText">美洲商報</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.damai.tv/zh/" class="blkText">大麦中文电视</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://tv.cctv.com/live/cctvamerica/" class="blkText">CCTV-4 (美洲)</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.ccyp.com/" class="blkText">北美華人工商</a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 airport">
+							<a href="http://www.uschinapress.com/" class="blkText">侨报网</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

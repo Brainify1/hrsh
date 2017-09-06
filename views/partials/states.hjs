@@ -2,8 +2,8 @@
     <div>
         <div class="container-fluid ">
             <div class="row">
-              <div class="col-md-5 col-sm-6 col-xs-6 subHeight">
-                <div class="imgContainer">
+              <div class="col-md-5 col-sm-12 col-xs-12 subHeight">
+                <div class="topMainLogoContainer">
                   <img src="/images/hrshLogo.png">
                 </div>
                 <div class="searchBar hide-on-small">
