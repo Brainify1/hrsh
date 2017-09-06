@@ -633,7 +633,7 @@ li.focus {
 .sbarDiv {
 	display: block;
 	background-color: white;
-    height: 30px;
+    height: 300px;
     border: 1px solid rgb(240,240,240);
     float: right;
 }
