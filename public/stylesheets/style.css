@@ -784,10 +784,10 @@ li.focus {
     height: 30px;
     border: 1px solid rgb(240,240,240);
 }
-.sbar {
+/*.sbar {
 	display: block;
 }
-
+*/
 .postList {
 	padding: 5px;
 	background-color: rgb(51,122,183);

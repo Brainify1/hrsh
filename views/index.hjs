@@ -196,7 +196,7 @@
 								<a href="https://www.bilibili.com/">BiliBili</a>
 							</div>
 								<div class="sbarDiv2">
-	  								<input type="text" class="search sbar" placeholder="搜索关键字" style="margin:auto" />
+	  								<input type="text" class="search sbar" placeholder="搜索关键字" style="margin:auto;display: block" />
 	  							</div>
 							<div class="titleBlock">
 								<div class="hotVid">
