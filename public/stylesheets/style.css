@@ -12,8 +12,22 @@ body {
 	margin-top: 50px;
 	background-color: #fff;
 }
+@media only screen and (min-width: 993px) {
+	.emailLinks {
+		display: block;
+	}
 
-@media only screen and (max-width: 1030px) {
+}
+
+@media only screen and (max-width: 992px) {
+	.topMainLogoContainer {
+		margin-top: 40px;
+	}
+
+	.emailLinks {
+		display: none;
+	}
+
 	.adsContent.hide-on-small {
 		display: none;
 	}
@@ -277,40 +291,165 @@ div.navbarA a {
 .pageContent {
 	margin-top: 10px;
 }
-.searchBar {
-	margin-top: 10px;
-	display: block;
-}
-.searchbarElement {
-	display: inline;
-}
-.searchbarElement input {
-	padding: 5px;
-	text-align: center;	
-	box-sizing: border-box;
-	width: 65%;
-	vertical-align: top;
-	direction: inline-block;
-	outline: none;
+
+@media screen and (min-width: 960px) {
+	.searchBar {
+		margin-top: 10px;
+		display: block;
+	}
+	.searchbarElement {
+		display: inline;
+	}
+	.searchbarElement input {
+		padding: 5px;
+		text-align: center;	
+		box-sizing: border-box;
+		width: 65%;
+		vertical-align: top;
+		direction: inline-block;
+		outline: none;
+	}
+
+
+	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+		padding: 6px;
+		background-color: #4a90e2;
+		color: white;
+		width: 80px;
+	}
+
+	.searchButton2 {
+		background-color: #d0021b;
+	}
+
+	.searchButton3 {
+		background-color: #4a90e2;
+	}
+
+	.searchButton4 {
+		background-color: #417505;
+	}
 }
 
-.searchButton1, .searchButton2, .searchButton3, .searchButton4{
-	padding: 6px;
-	background-color: #4a90e2;
-	color: white;
-	width: 80px;
+@media screen and (min-width: 768px) {
+	.searchBar {
+		margin-top: 10px;
+		display: block;
+	}
+	.searchbarElement {
+		display: inline;
+	}
+	.searchbarElement input {
+		padding: 5px;
+		text-align: center;	
+		box-sizing: border-box;
+		width: 50%;
+		vertical-align: top;
+		direction: inline-block;
+		outline: none;
+	}
+	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+		padding: 6px;
+		background-color: #4a90e2;
+		color: white;
+		width: 80px;
+	}
+
+	.searchButton2 {
+		background-color: #d0021b;
+	}
+
+	.searchButton3 {
+		background-color: #4a90e2;
+	}
+
+	.searchButton4 {
+		background-color: #417505;
+	}
 }
 
-.searchButton2 {
-	background-color: #d0021b;
+@media screen and (min-width: 606px) and (max-width: 767px) {
+	.emailLinks {
+		margin: 0 auto;
+	}
+
+	.searchBar {
+		margin-top: 10px;
+		display: block;
+	}
+	.searchbarElement {
+		display: inline;
+	}
+	.searchbarElement input {
+		padding: 5px;
+	    text-align: center;
+	    box-sizing: border-box;
+	    margin-left: 15vw;
+	    width: 60%;
+	    vertical-align: top;
+	    direction: inline-block;
+	    outline: none;
+	}
+	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+		padding: 6px;
+		background-color: #4a90e2;
+		color: white;
+		width: 80px;
+	}
+
+	.searchButton2 {
+		background-color: #d0021b;
+	}
+
+	.searchButton3 {
+		background-color: #4a90e2;
+	}
+
+	.searchButton4 {
+		background-color: #417505;
+	}
 }
 
-.searchButton3 {
-	background-color: #4a90e2;
-}
+@media screen and (min-width: 50px) and (max-width: 605px) {
+	.emailLinks {
+		display: none;
+	}
 
-.searchButton4 {
-	background-color: #417505;
+	.searchBar {
+		margin-top: 10px;
+		display: block;
+	}
+	.searchbarElement {
+		display: inline;
+	}
+	.searchbarElement input {
+		padding: 5px;
+	    text-align: center;
+	    box-sizing: border-box;
+	    margin-left: 10vw;
+	    width: 60%;
+	    vertical-align: top;
+	    direction: inline-block;
+	    outline: none;
+	}
+	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+		padding: 6px;
+		background-color: #4a90e2;
+		color: white;
+		width: 80px;
+	}
+
+	.searchButton2 {
+		background-color: #d0021b;
+	}
+
+	.searchButton3 {
+		background-color: #4a90e2;
+	}
+
+	.searchButton4 {
+		background-color: #417505;
+	}
 }
 /*logo end*/
 
@@ -920,7 +1059,17 @@ li.focus {
 /*End of Login/Signup Form*/
 
 /*ads*/
+.topMainLogoContainer {
+	width: 100%;
+}
 
+.topMainLogoContainer img{
+	display: block;
+	margin: 0 auto;
+	height: 80px;
+	max-width: 100%;
+	max-height: 120px;
+}
 
 .imgContainer img {
 	width: 100%;
