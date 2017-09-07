@@ -1,14 +1,15 @@
 <div class="container-fluid mb10">
 	<div class="row">
 		<div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
-			<a href="/">
+				<div class="sbarDiv2">
+					<input type="text" class="search sbar" placeholder="搜索关键字" />
+					<button class="searchButton2" type="submit">搜寻</button> 
+				</div>
 				<div class="navFirstDiv">
 					<p class="navP">
 						免费分类广告
 					</p>
 				</div>
-			</a>
-
 		</div>
 		<div class="col-md-9 col-sm-9 col-xs-12 navbarA">	  
 			<a href="/a/{{link}}/rent" style="COLOR: red">租房:</a>

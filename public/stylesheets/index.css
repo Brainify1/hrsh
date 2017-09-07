@@ -52,16 +52,23 @@
     overflow: hidden;
     color: #444;
 }
+.popularLinks strong {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    display: block;
+}
 .popularLinks {
     background-color: #fff;
     min-height: 100px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
 }
 .popularLinks a {
     display: inline-block;
     margin: 10px 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .popularLinks .linksHeader {
     width: 100%;
