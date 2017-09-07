@@ -240,13 +240,13 @@ a.loginMargin, a.loginMargin2 {
 .navFirstDiv {
 	background-color: #d0021b;
     color: white;
-    height: 100%;
+    height: 70%;
 }
 
 .navP {
 	font-size: 20px;
 	text-align: center;
-	padding: 40px;
+	padding: 25px;
 	letter-spacing: 1.5px;
 	font-weight: 900;
 }
@@ -781,10 +781,18 @@ li.focus {
 .sbarDiv2{
 	display: block;
 	background-color: white;
-    height: 30px;
+    height: 30%;
     border: 1px solid rgb(240,240,240);
 }
-/*.sbar {
+.sbarDiv2 input {
+	width: 70%;
+	padding: 5px;
+}
+.sbarDiv2 button {
+	width: 25%;
+	border: none;
+}
+/*.sbar { 
 	display: block;
 }
 */
@@ -1098,9 +1106,6 @@ li.focus {
 	text-align: center;
 	font-size: 18px;
 	color: #337ab7;
-}
-.airport {
-	height: 60px;
 }
 
 .blkText {
