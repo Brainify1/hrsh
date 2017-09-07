@@ -7,7 +7,7 @@ var videosCollection = db.collection('videos');
 var imagesCollection = db.collection('image');
 var newsCollection = db.collection('news');
 var randomstring = require("randomstring");
-var newsType = require('../newsType');
+var newsType = require('../newsTypes');
 
 
 /*Redirect*/
@@ -194,11 +194,8 @@ router.get('/a/:states/:type/news/:id', function(req, res, next) {
         if (allStates.indexOf(states) === -1) {
             res.render('error');
         } else {
-            newsCollection.find({ _id: id }).sort({ _id: -1 }, function(err, news) {
-                console.log(news)
-                console.log(newsCollection.find({ _id : id }))
-                console.log(id)
-                res.render('viewList', {
+            newsCollection.findOne({ _id: id }, function(err, news) {
+                res.render('content', {
                     title: '华人生活网',
                     link: states,
                     news,
@@ -337,7 +334,6 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
                     for(var x = 0; x < Object.keys(doc[0].data).length; x++){
                         docs[x] = doc[0].data[x].filename
                 }
-                console.log(docs)
                 res.render('content', {
                     title: '华人生活网',
                     link: states,
