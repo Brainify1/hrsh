@@ -188,7 +188,6 @@
 								<a href="http://www.pptv.com/">PPTV</a>
 								<a href="http://youtube.com/">Youtube</a>
 								<a href="www.sinovision.net/live.php">美国中文电视</a>
-								<a href="www.ntdtv.com/">新唐人电视台</a>
 								<a href="www.skylinktv.us/">天下卫视</a>
 								<a href="www.iqiyi.com/">爱奇艺</a>
 								<a href="https://v.qq.com/">腾讯视频</a>
@@ -230,9 +229,9 @@
 						<div class="newsListings">
 							<div class="row">
 								<div class="col-md-6">
-									<div class="kejiNews newsBlock">
+									<div class="qwNews newsBlock">
 										<div class="newsTitle">
-											<p>政治｜军事</p>
+											<p>趣闻 | 佚事</p>
 											<a href='/a/{{link}}/kj/news'>更多>></a>
 										</div>
 										<div class="newsList">
@@ -240,17 +239,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="shehuiNews newsBlock">
-										<div class="newsTitle">
-											<p>艺术｜体育</p>
-											<a href="/a/{{link}}/sh/news">更多>></a>
-										</div>		
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="yuleNews newsBlock">
+									<div class="shNews newsBlock">
 										<div class="newsTitle">
 											<p>社会｜娱乐</p>
 											<a href="/a/{{link}}/yl/news">更多>></a>
@@ -260,9 +249,49 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="zhengzhiNews newsBlock">
+									<div class="zzNews newsBlock">
 										<div class="newsTitle">
-											<p>科技｜电子</p>
+											<p>政治｜军事</p>
+											<a href='/a/{{link}}/kj/news'>更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="ysNews newsBlock">
+										<div class="newsTitle">
+											<p>艺术 | 体育</p>
+											<a href="/a/{{link}}/sh/news">更多>></a>
+										</div>		
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="hyNews newsBlock">
+										<div class="newsTitle">
+											<p>婚姻 | 情感</p>
+											<a href="/a/{{link}}/yl/news">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="jyNews newsBlock">
+										<div class="newsTitle">
+											<p>教育 | 儿童</p>
+											<a href="/a/{{link}}/yl/news">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="kjNews newsBlock">
+										<div class="newsTitle">
+											<p>科技 | 电子</p>
 											<a href="/a/{{link}}/zz/news">更多>></a>
 										</div>
 										<div class="newsList">
@@ -270,9 +299,9 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="tiyuNews newsBlock">
+									<div class="syNews newsBlock">
 										<div class="newsTitle">
-											<p>摄影｜绘画</p>
+											<p>摄影 | 绘画</p>
 											<a href="/a/{{link}}/ty/news">更多>></a>
 										</div>
 										<div class="newsList">
@@ -280,10 +309,20 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="yangshengNews newsBlock">
+									<div class="yxNews newsBlock">
 										<div class="newsTitle">
-											<p>养生｜音乐</p>
+											<p>养生 | 医学</p>
 											<a href="/a/{{link}}/ys/news">更多>></a>
+										</div>
+										<div class="newsList">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sgNews newsBlock">
+										<div class="newsTitle">
+											<p>帅哥 | 美女</p>
+											<a href="/a/{{link}}/yl/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
@@ -293,7 +332,7 @@
 						</div>
 						<!-- //fetch news api -->
 						<script>
-							$.get('/api/fetchNews/kj', function(data) {
+							$.get('/api/fetchNews/qw', function(data) {
 								var loopNum
 								if (data.length >= 6) {
 									loopNum = 6
@@ -301,7 +340,7 @@
 									loopNum = data.length
 								}
 								for (var i = 0; i < loopNum; i ++) {
-									$('.kejiNews .newsList').append(`
+									$('.qwNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
@@ -315,21 +354,7 @@
 									loopNum = data.length
 								}
 								for (var i = 0; i < loopNum; i ++) {
-									$('.shehuiNews .newsList').append(`
-										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
-									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/yl', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.yuleNews .newsList').append(`
+									$('.shNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
@@ -343,21 +368,7 @@
 									loopNum = data.length
 								}
 								for (var i = 0; i < loopNum; i ++) {
-									$('.zhengzhiNews .newsList').append(`
-										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
-									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/ty', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.tiyuNews .newsList').append(`
+									$('.zzNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
@@ -371,11 +382,91 @@
 									loopNum = data.length
 								}
 								for (var i = 0; i < loopNum; i ++) {
-									$('.yangshengNews .newsList').append(`
+									$('.ysNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
 								}
 								
+							})
+							$.get('/api/fetchNews/hy', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.hyNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/jy', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.jyNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+								
+							})
+							$.get('/api/fetchNews/kj', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.kjNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+							})
+							$.get('/api/fetchNews/sy', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.syNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+							})
+							$.get('/api/fetchNews/yx', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.yxNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
+							})
+							$.get('/api/fetchNews/sg', function(data) {
+								var loopNum
+								if (data.length >= 6) {
+									loopNum = 6
+								} else {
+									loopNum = data.length
+								}
+								for (var i = 0; i < loopNum; i ++) {
+									$('.sgNews .newsList').append(`
+										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
+									`)
+								}
 							})
 						</script>
 						

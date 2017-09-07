@@ -1,9 +1,12 @@
 module.exports = [
-    'kj',
+    'qw',
     'sh',
-    'yl',
     'zz',
-    'ty',
     'ys',
-    'sy'
+    'hy',
+    'jy',
+    'kj',
+    'sy',
+    'yx',
+    'sg'
 ]

@@ -482,13 +482,16 @@
                                                     <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
                                                     <select class="news-type" name="type">
                                                         <option selected value="xw">新闻分类</option>
-                                                        <option value="kj">科技分类</option>
-                                                        <option value="sh">社会分类</option>
-                                                        <option value="yl">娱乐分类</option>
-                                                        <option value="zz">政治分类</option>
-                                                        <option value="ty">体育分类</option>
-                                                        <option value="ys">养身分类</option>
-                                                        <option value="sy">实用链接</option>
+                                                        <option value="qw">趣闻轶事</option>
+                                                        <option value="sh">社会娱乐</option>
+                                                        <option value="zz">政治军事</option>
+                                                        <option value="ys">艺术体育</option>
+                                                        <option value="hy">婚姻情感</option>
+                                                        <option value="jy">教育儿童</option>
+                                                        <option value="kj">科技电子</option>
+                                                        <option value="sy">摄影绘画</option>
+                                                        <option value="yx">医学养生</option>
+                                                        <option value="sg">帅哥美女</option>
                                                     </select>
                                                     <textarea name="content" id="news-content"></textarea>
                                                     <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
