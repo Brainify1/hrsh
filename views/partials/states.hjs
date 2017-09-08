@@ -60,13 +60,13 @@
                     <button class="searchButton1" type="submit">搜索</button>
                   </form>
                 </div>
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 pd0 stockSearch">
                   <form action="https://finance.yahoo.com/quote/" method="get" target="_blank">
                     <input type="text" aria-label="Search" autocomplete="off" autocorrect="off" autocapitalize="off" name="p" placeholder="美国股市 Yahoo! Finance">
                     <button type="submit" class="searchButton2">查询</button>
                   </form>
                 </div>
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 pd0 baiduSearch">
                   <form name="f" action="http://www.baidu.com/s" method="get" target="_blank">
                     <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off" placeholder="百度搜索">
                     <button type="submit" class="searchButton3">搜索</button>

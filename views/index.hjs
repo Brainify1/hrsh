@@ -34,8 +34,8 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
+			</div>
+            <div class="row secondSection">
 
                 <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
                     <a href="https://www.amazon.com/">
@@ -50,7 +50,6 @@
                                 <br> 宜兴均陶
                                 <br> 工艺品系列
 
-<<<<<<< HEAD
 	  							</div>
 	  							
 	  						</div>			
@@ -96,216 +95,7 @@
 	  					</a>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-    					
-						<!-- End Carousel -->
-						<!-- youtube videos -->
-						<div class="youtubeDiv">
-							<div class="otherCh">
-								<a href="http://abcnews.go.com/">ABC</a>
-								<a href="http://www.espn.com/">ESPN</a>
-								<a href="http://www.cnn.com/">CNN</a>
-								<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
-								<a href="http://www.pptv.com/">PPTV</a>
-								<a href="http://youtube.com/">Youtube</a>
-								<a href="www.sinovision.net/live.php">美国中文电视</a>
-								<a href="www.skylinktv.us/">天下卫视</a>
-								<a href="www.iqiyi.com/">爱奇艺</a>
-								<a href="https://v.qq.com/">腾讯视频</a>
-								<a href="https://www.dnvod.tv/">多瑙影院</a>
-								<a href="https://www.bilibili.com/">BiliBili</a>
-							</div>
-							<div class="titleBlock">
-								<div class="hotVid">
-									<span class="moreVid1">热门影片 | </span>
-									<a class="whiteText" href="/a/{{link}}/videos">更多>></a>
-								</div>
-							</div>
-							<div class="titleBlock">
-								<div class="container-fluid bg-white">
-									<div class="row">
-										<div class="col-md-4 col-sm-4">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-											<div>
-												<p>Game of Thrones Spoilers</p>
-											</div>
-										</div>
-										<div class="col-md-4 col-sm-4">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-											<div>
-												<p>Game of Thrones Spoilers</p>
-											</div>
-										</div>
-										<div class="col-md-4 col-sm-4">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-											<div>
-												<p>Game of Thrones Spoilers</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- youtube videos end -->
-						<div class="newsListings">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="qwNews newsBlock">
-										<div class="newsTitle">
-											<p>趣闻 | 佚事</p>
-											<a href='/a/{{link}}/kj/news'>更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="shNews newsBlock">
-										<div class="newsTitle">
-											<p>社会｜娱乐</p>
-											<a href="/a/{{link}}/yl/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="zzNews newsBlock">
-										<div class="newsTitle">
-											<p>政治｜军事</p>
-											<a href='/a/{{link}}/kj/news'>更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="ysNews newsBlock">
-										<div class="newsTitle">
-											<p>艺术 | 体育</p>
-											<a href="/a/{{link}}/sh/news">更多>></a>
-										</div>		
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="hyNews newsBlock">
-										<div class="newsTitle">
-											<p>婚姻 | 情感</p>
-											<a href="/a/{{link}}/yl/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="jyNews newsBlock">
-										<div class="newsTitle">
-											<p>教育 | 儿童</p>
-											<a href="/a/{{link}}/yl/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="kjNews newsBlock">
-										<div class="newsTitle">
-											<p>科技 | 电子</p>
-											<a href="/a/{{link}}/zz/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="syNews newsBlock">
-										<div class="newsTitle">
-											<p>摄影 | 绘画</p>
-											<a href="/a/{{link}}/ty/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="yxNews newsBlock">
-										<div class="newsTitle">
-											<p>养生 | 医学</p>
-											<a href="/a/{{link}}/ys/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="sgNews newsBlock">
-										<div class="newsTitle">
-											<p>帅哥 | 美女</p>
-											<a href="/a/{{link}}/sg/news">更多>></a>
-										</div>
-										<div class="newsList">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //fetch news api -->
-						<script>
-							$.get('/api/fetchNews/qw', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.qwNews .newsList').append(`
-=======
-                            </div>
-
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <div class="grey-ads">
-                                中国茶叶<br> Zhongguochaye.com
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://ebay.com">
-                        <div class="imgContainer">
-                            <img src="/images/ebay.jpg">
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <div class="grey-ads">
-                                数码电子产品<br> 家用电器
-                                <br> 水杯，电饭锅
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <div class="grey-ads">
-                                翻译机
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 pd5">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    					 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Wrapper for slides -->
                         <div class="container-fluid">
                             <div class="row">
@@ -361,12 +151,10 @@
                                 </div>
                                 <div class="col-md-5">
                                     <ul class="list-group carouselRightUl">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active carouselRightLi">
-                                            <a href="#">
-                                                <h4 class="newsTitle">纽约检察官吁移民局停止法院抓人</h4>
-                                            </a>
+                                        <li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
+                                                <h4 class="newsTitle">新闻摘要</h4>
                                         </li>
-                                        <li data-target="#myCarousel" data-slide-to="1" class="list-group-item carouselRightLi">
+                                        <li data-target="#myCarousel" data-slide-to="1" class="list-group-item active carouselRightLi">
                                             <a href="#">
                                                 <h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
                                             </a>
@@ -399,24 +187,22 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Carousel -->
-                    <!-- youtube videos -->
-                    <div class="youtubeDiv">
-                        <div class="otherCh">
-                            <a href="http://abcnews.go.com/">ABC</a>
-                            <a href="http://www.espn.com/">ESPN</a>
-                            <a href="http://www.cnn.com/">CNN</a>
-                            <a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
-                            <a href="http://www.pptv.com/">PPTV</a>
-                            <a href="http://youtube.com/">Youtube</a>
-                            <a href="www.sinovision.net/live.php">美国中文电视</a>
-                            <a href="www.skylinktv.us/">天下卫视</a>
-                            <a href="www.iqiyi.com/">爱奇艺</a>
-                            <a href="https://v.qq.com/">腾讯视频</a>
-                            <a href="https://www.dnvod.tv/">多瑙影院</a>
-                            <a href="https://www.bilibili.com/">BiliBili</a>
-                        </div>
+						<div class="youtubeDiv">
+							<div class="otherCh">
+								<a href="http://abcnews.go.com/">ABC</a>
+								<a href="http://abcnews.go.com/">Disney</a>
+								<a href="http://www.espn.com/">ESPN</a>
+								<a href="http://www.cnn.com/">CNN</a>
+								<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
+								<a href="http://www.pptv.com/">PPTV</a>
+								<a href="http://youtube.com/">Youtube</a>
+								<a href="https://www.sinovision.net/live.php">美国中文电视</a>
+								<a href="https://www.skylinktv.us/">天下卫视</a>
+								<a href="https://www.iqiyi.com/">早安美国</a>
+								<a href="https://v.qq.com/">腾讯视频</a>
+								<a href="https://www.dnvod.tv/">多瑙影院</a>
+								<a href="https://www.bilibili.com/">BiliBili</a>
+							</div>
                         <div class="titleBlock">
                             <div class="hotVid">
                                 <span class="moreVid1">热门影片 | </span>
@@ -447,7 +233,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+					</div>
+					<div class="davidAds">
+						<img src="/images/david.png" alt="" height="100">
+					</div>
                     <!-- youtube videos end -->
                     <div class="newsListings">
                         <div class="row">
@@ -564,7 +353,6 @@
                             }
                             for (var i = 0; i < loopNum; i++) {
                                 $('.qwNews .newsList').append(`
->>>>>>> 7ca996cf0d872427a8e2ef74ca50ca6611363980
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
                             }
