@@ -1,58 +1,56 @@
-	   	{{> head}}
-	   	<link rel="stylesheet" href="/stylesheets/index.css">
-	   	<link rel="stylesheet" type="text/css" href="/stylesheets/carousel.css">
-		{{> header}}
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-	  			{{> states}}
-				{{> navbar}}
-	  			<div class="container-fluid">
-	  				<div class="row  adsContent hide-on-small">
-						<div class="col-md-3 col-sm-3 col-xs-3 pd5">
-							<a href="/ny">
-								<div class="imgContainer">
-									<img src="/images/ex_ads.gif">
-								</div>			
-							</a>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 pd5">
-							<a href="/ny">
-								<div class="imgContainer">
-									<img src="/images/ex_ads.gif">
-								</div>			
-							</a>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 pd5">
-							<a href="/ny">
-								<div class="imgContainer">
-									<img src="/images/ex_ads.gif">
-								</div>			
-							</a>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-3 pd5">
-							<a href="/ny">
-								<div class="imgContainer">
-									<img src="/images/ex_ads.gif">
-								</div>			
-							</a>
-						</div>
-					</div>
-				<div class="row">
+ {{> head}}
+<link rel="stylesheet" href="/stylesheets/index.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/carousel.css"> {{> header}}
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        {{> states}} {{> navbar}}
+        <div class="container-fluid">
+            <div class="row  adsContent hide-on-small">
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
 
-	  				<div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
-	  					<a href="https://www.amazon.com/">
-	  						<div class="imgContainer">
-	  							<img src="/images/amazon.png">
-	  						</div>
-	  					</a>	
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<div class="grey-ads">
-	  								宜兴紫砂壶<br>
-	  								天下第一壶<br>
-	  								宜兴均陶<br>
-	  								工艺品系列
+                <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
+                    <a href="https://www.amazon.com/">
+                        <div class="imgContainer">
+                            <img src="/images/amazon.png">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                宜兴紫砂壶<br> 天下第一壶
+                                <br> 宜兴均陶
+                                <br> 工艺品系列
 
+<<<<<<< HEAD
 	  							</div>
 	  							
 	  						</div>			
@@ -263,756 +261,1057 @@
 								}
 								for (var i = 0; i < loopNum; i ++) {
 									$('.qwNews .newsList').append(`
+=======
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                中国茶叶<br> Zhongguochaye.com
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://ebay.com">
+                        <div class="imgContainer">
+                            <img src="/images/ebay.jpg">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                数码电子产品<br> 家用电器
+                                <br> 水杯，电饭锅
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                翻译机
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 pd5">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7 carouselPicDiv">
+                                    <div class="carousel-inner">
+                                        <div class="item newsPicBox active">
+                                            <div class="childImg1"></div>
+                                            <div class="carousel-caption captionBox">
+                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
+                                                    <p>纽约检察官吁移民局停止法院抓人</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Item -->
+                                        <div class="item newsPicBox">
+                                            <div class="childImg2"></div>
+                                            <div class="carousel-caption captionBox">
+                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
+                                                    <p>地铁男子赤裸上身拍女子屁股遭通缉</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Item -->
+                                        <div class="item newsPicBox">
+                                            <div class="childImg3"></div>
+                                            <div class="carousel-caption captionBox">
+                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
+                                                    <p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Item -->
+                                        <div class="item newsPicBox">
+                                            <div class="childImg4"></div>
+                                            <div class="carousel-caption captionBox">
+                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
+                                                    <p>大解放？全球首个女性自慰店登录纽约</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Item -->
+                                        <div class="item newsPicBox">
+                                            <div class="childImg5"></div>
+                                            <div class="carousel-caption captionBox">
+                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
+                                                    <p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- End Item -->
+                                    </div>
+                                    <!-- End Carousel Inner -->
+                                </div>
+                                <div class="col-md-5">
+                                    <ul class="list-group carouselRightUl">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active carouselRightLi">
+                                            <a href="#">
+                                                <h4 class="newsTitle">纽约检察官吁移民局停止法院抓人</h4>
+                                            </a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="1" class="list-group-item carouselRightLi">
+                                            <a href="#">
+                                                <h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
+                                            </a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="2" class="list-group-item carouselRightLi">
+                                            <a href="#">
+                                                <h4 class="newsTitle">美国过半三文鱼标签上做过手脚！这么多年吃的都是?</h4>
+                                            </a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="3" class="list-group-item carouselRightLi">
+                                            <a href="#">
+                                                <h4 class="newsTitle">大解放？全球首个女性自慰店登录纽约</h4>
+                                            </a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="4" class="list-group-item carouselRightLi">
+                                            <a href="#">
+                                                <h4 class="newsTitle">地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="carousel-controls">
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Carousel -->
+                    <!-- youtube videos -->
+                    <div class="youtubeDiv">
+                        <div class="otherCh">
+                            <a href="http://abcnews.go.com/">ABC</a>
+                            <a href="http://www.espn.com/">ESPN</a>
+                            <a href="http://www.cnn.com/">CNN</a>
+                            <a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
+                            <a href="http://www.pptv.com/">PPTV</a>
+                            <a href="http://youtube.com/">Youtube</a>
+                            <a href="www.sinovision.net/live.php">美国中文电视</a>
+                            <a href="www.skylinktv.us/">天下卫视</a>
+                            <a href="www.iqiyi.com/">爱奇艺</a>
+                            <a href="https://v.qq.com/">腾讯视频</a>
+                            <a href="https://www.dnvod.tv/">多瑙影院</a>
+                            <a href="https://www.bilibili.com/">BiliBili</a>
+                        </div>
+                        <div class="titleBlock">
+                            <div class="hotVid">
+                                <span class="moreVid1">热门影片 | </span>
+                                <a class="whiteText" href="/a/{{link}}/videos">更多>></a>
+                            </div>
+                        </div>
+                        <div class="titleBlock">
+                            <div class="container-fluid bg-white">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                                        <div>
+                                            <p>Game of Thrones Spoilers</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                                        <div>
+                                            <p>Game of Thrones Spoilers</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                                        <div>
+                                            <p>Game of Thrones Spoilers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- youtube videos end -->
+                    <div class="newsListings">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="qwNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>趣闻 | 佚事</p>
+                                        <a href='/a/{{link}}/kj/news'>更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="shNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>社会｜娱乐</p>
+                                        <a href="/a/{{link}}/yl/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="zzNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>政治｜军事</p>
+                                        <a href='/a/{{link}}/kj/news'>更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ysNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>艺术 | 体育</p>
+                                        <a href="/a/{{link}}/sh/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="hyNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>婚姻 | 情感</p>
+                                        <a href="/a/{{link}}/yl/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="jyNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>教育 | 儿童</p>
+                                        <a href="/a/{{link}}/yl/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="kjNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>科技 | 电子</p>
+                                        <a href="/a/{{link}}/zz/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="syNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>摄影 | 绘画</p>
+                                        <a href="/a/{{link}}/ty/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="yxNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>养生 | 医学</p>
+                                        <a href="/a/{{link}}/ys/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sgNews newsBlock">
+                                    <div class="newsTitle">
+                                        <p>帅哥 | 美女</p>
+                                        <a href="/a/{{link}}/yl/news">更多>></a>
+                                    </div>
+                                    <div class="newsList">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //fetch news api -->
+                    <script>
+                        $.get('/api/fetchNews/qw', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.qwNews .newsList').append(`
+>>>>>>> 7ca996cf0d872427a8e2ef74ca50ca6611363980
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/sh', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.shNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/sh', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.shNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/zz', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.zzNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/zz', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.zzNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/ys', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.ysNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/ys', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.ysNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/hy', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.hyNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/hy', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.hyNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/jy', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.jyNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/jy', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.jyNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-								
-							})
-							$.get('/api/fetchNews/kj', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.kjNews .newsList').append(`
+                            }
+
+                        })
+                        $.get('/api/fetchNews/kj', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.kjNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-							})
-							$.get('/api/fetchNews/sy', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.syNews .newsList').append(`
+                            }
+                        })
+                        $.get('/api/fetchNews/sy', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.syNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-							})
-							$.get('/api/fetchNews/yx', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.yxNews .newsList').append(`
+                            }
+                        })
+                        $.get('/api/fetchNews/yx', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.yxNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-							})
-							$.get('/api/fetchNews/sg', function(data) {
-								var loopNum
-								if (data.length >= 6) {
-									loopNum = 6
-								} else {
-									loopNum = data.length
-								}
-								for (var i = 0; i < loopNum; i ++) {
-									$('.sgNews .newsList').append(`
+                            }
+                        })
+                        $.get('/api/fetchNews/sg', function(data) {
+                            var loopNum
+                            if (data.length >= 6) {
+                                loopNum = 6
+                            } else {
+                                loopNum = data.length
+                            }
+                            for (var i = 0; i < loopNum; i++) {
+                                $('.sgNews .newsList').append(`
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
-								}
-							})
-						</script>
-						
-						<div class="popularLinks">
-							<div class="linksHeader">
-								<p>房地产公司 经纪人</p>
-							</div>
-							<div class="">
-								<div class="carousel-reviews broun-block">
-								        <div class="row">
-								            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
-								            
-								                <div class="carousel-inner">
-								                    <div class="item active">
-								                	    <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-								        				    	<div class="carouselTitleBlock">
-								        				    		<a title="" href="www.remax.com">RE/MAX</a>
-								        				    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a title="" href="www.remax.com">
-																		<img src="/images/remaxLogo.jpg">
-																	</a>
-																	
-																</div>
-													        </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.century21.com/">Century 21</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.century21.com/">
-																		<img src="/images/century21.jpeg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.coldwellbanker.com/">Coldwell Banker</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.coldwellbanker.com/">
-																		<img src="/images/coldwell.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>
-								                    <div class="item">
-								                        <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">Shirley Yang</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">
-																		<img src="/images/broker-shirley.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/">周台黄</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/1">
-																		<img src="/images/broker2.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4">
-															<div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://ashleechen920.kwrealty.com/about/">陈欣妤</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://ashleechen920.kwrealty.com/about/">
-																		<img src="/images/broker3.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>                   
-								                </div>
-								                <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
-								                    <span class="glyphicon glyphicon-chevron-left"></span>
-								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
-								                    <span class="glyphicon glyphicon-chevron-right"></span>
-								                </a>
-								            </div>
-								        </div>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>旅遊</p>
-							</div>
-							<div class="">
-								<div class="carousel-reviews broun-block">
-								        <div class="row">
-								            <div id="carousel-reviews2" class="carousel slide" data-ride="carousel">
-								            
-								                <div class="carousel-inner">
-								                    <div class="item active">
-								                	    <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-								        				    	<div class="carouselTitleBlock">
-								        				    		<a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">尼亚加拉瀑布</a>
-								        				    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">
-																		<img src="/images/niagara.jpg">
-																	</a>
-																	
-																</div>
-													        </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">黄石公园</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">
-																		<img src="/images/yellowStone.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.lltours.com/washington-dc-departure-vacation-package.html">华盛顿</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.lltours.com/washington-dc-departure-vacation-package.html">
-																		<img src="/images/washington.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>
-								                    <div class="item">
-								                        <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.lltours.com/">纵横旅游</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.lltours.com/">
-																		<img src="/images/travel-agency1.gif">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.eworldtours.com/zh-hant/">天馬旅遊</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.eworldtours.com/zh-hant/">
-																		<img src="/images/travel-agency2.png">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 ">
-															<div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="http://www.americaasia.com/Default.aspx?locale=zh-TW">美国亚洲旅行社</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="http://www.americaasia.com/Default.aspx?locale=zh-TW">
-																		<img src="/images/travel-agency3.png">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>                   
-								                </div>
-								                <a class="left carousel-control" href="#carousel-reviews2" role="button" data-slide="prev">
-								                    <span class="glyphicon glyphicon-chevron-left"></span>
-								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews2" role="button" data-slide="next">
-								                    <span class="glyphicon glyphicon-chevron-right"></span>
-								                </a>
-								            </div>
-								        </div>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>旅館 酒店</p>
-							</div>
-							<div class="">
-								<div class="carousel-reviews broun-block">
-								        <div class="row">
-								            <div id="carousel-reviews3" class="carousel slide" data-ride="carousel">
-								            
-								                <div class="carousel-inner">
-								                    <div class="item active">
-								                	    <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-								        				    	<div class="carouselTitleBlock">
-								        				    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">皮埃尔酒店</a>
-								        				    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">
-																		<img src="/images/pierreHotel.jpg">
-																	</a>
-																	
-																</div>
-													        </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">白金汉酒店</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">
-																		<img src="/images/bkHotel.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">纽约中央公园总督酒店</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">
-																		<img src="/images/viceroyHotel.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>
-								                    <div class="item">
-								                        <div class="col-md-4 col-sm-4 col-xs-4">
-								        				    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">纽约第五大道朗豪酒店</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">
-																		<img src="/images/4thHotel.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								            			<div class="col-md-4 col-sm-4 col-xs-4 ">
-														    <div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">纽约圣瑞吉斯酒店</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">
-																		<img src="/images/stRegis.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-														<div class="col-md-4 col-sm-4 col-xs-4 ">
-															<div class="block-text rel zmin">
-														    	<div class="carouselTitleBlock">
-														    		<a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">纽约文华东方酒店</a>
-														    	</div>
-														        
-																<div class="carouselImgContainer">
-																	<a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">
-																		<img src="/images/6thHotel.jpg">
-																	</a>
-																	
-																</div>
-												            </div>
-														</div>
-								                    </div>                   
-								                </div>
-								                <a class="left carousel-control" href="#carousel-reviews3" role="button" data-slide="prev">
-								                    <span class="glyphicon glyphicon-chevron-left"></span>
-								                </a>
-								                <a class="right carousel-control" href="#carousel-reviews3" role="button" data-slide="next">
-								                    <span class="glyphicon glyphicon-chevron-right"></span>
-								                </a>
-								            </div>
-								        </div>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>律师</p>
-							</div>
-							<div class="row hospitalsBox">
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="http://law-gz.com/lawgz_c/?page_id=45">耿婷律师</a>
-									<div class="carouselImgContainer">
-										<a href="http://law-gz.com/lawgz_c/?page_id=45">
-											<img src="/images/lawyer1.jpg">
-										</a>						
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="https://www.cimwong.com/mww">黄唯律师</a>
-									<div class="carouselImgContainer">
-										<a href="https://www.cimwong.com/mww">
-											<img src="/images/lawyer2.jpg">
-										</a>						
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="https://gaolawyers.com/intro.php">高术仁律师</a>
-									<div class="carouselImgContainer">
-										<a href="https://gaolawyers.com/intro.php">
-											<img src="/images/lawyer3.jpg">
-										</a>						
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="http://www.changliulaw.com/">刘畅律师事务所</a>
-									<div class="carouselImgContainer">
-										<a href="http://www.changliulaw.com/">
-											<img src="/images/lawyer4.jpg">
-										</a>						
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="http://www.cmalawgroup.com/cn/attorneys.html">齐柯∙马莉琳律师</a>
-									<div class="carouselImgContainer">
-										<a href="http://www.cmalawgroup.com/cn/attorneys.html">
-											<img src="/images/lawyer5.jpg">
-										</a>						
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-4">
-									<a href="http://www.samuelandstein.com/michael-samuel/">麦克山缪</a>
-									<div class="carouselImgContainer">
-										<a href="http://www.samuelandstein.com/michael-samuel/">
-											<img src="/images/lawyer6.jpg">
-										</a>						
-									</div>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>常用链接</p>
-							</div>
-							<div class="row hospitalsBox">
-								<div class="col-md-4">
-									<a href="/">公民入籍模拟试题</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/">公民入籍視頻</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/">驾照考试模拟试题</a>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>各地医院集合</p>
-							</div>
-							<div class="row hospitalsBox">
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">纽约医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">西雅图医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>各地大学集合</p>
-							</div>
-							<div class="row schoolBox">
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">纽约医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">洛杉矶医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">西雅图医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">华盛顿医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">佛罗里达医院集合</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">芝加哥医院集合</a>
-								</div>
-							</div>
-							<div class="linksHeader">
-								<p>婚恋交友</p>
-							</div>
-							<div class="row matchBox">
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">世纪佳缘</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">珍爱网</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">未名交友</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">一颗红豆</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">中外交友网</a>
-								</div>
-								<div class="col-md-4">
-									<a href="/news/${data[i]._id}">东西交友</a>
-								</div>
-							</div>
-							<div class="ads">
-								<div class="row">
-									<div class="col-md-4 adsBox1-4"></div>
-									<div class="col-md-4 adsBox1-4"></div>
-									<div class="col-md-4 adsBox1-4"></div>
-									<div class="col-md-4 adsBox1-4"></div>
-								</div>
-							</div>
-						</div>
-					  </div>
-					  <script>
-						  $.get('/api/fetchNews/sy', (data) => {
-							  for(var i = 0; i < data.length ; i++) {
-								  $('.linkBox').append(`
+                            }
+                        })
+                    </script>
+
+                    <div class="popularLinks">
+                        <div class="linksHeader">
+                            <p>房地产公司 经纪人</p>
+                        </div>
+                        <div class="">
+                            <div class="carousel-reviews broun-block">
+                                <div class="row">
+                                    <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="www.remax.com">RE/MAX</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a title="" href="www.remax.com">
+                                                                <img src="/images/remaxLogo.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.century21.com/">Century 21</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.century21.com/">
+                                                                <img src="/images/century21.jpeg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.coldwellbanker.com/">Coldwell Banker</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.coldwellbanker.com/">
+                                                                <img src="/images/coldwell.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">Shirley Yang</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.168usa.com/default.asp.f-meetouragents_view_profile.agentid-27721">
+                                                                <img src="/images/broker-shirley.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/">周台黄</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.nybesthomes.com/NYBestHomes/%E5%85%AC%E5%8F%B8%E4%BB%8B%E7%BB%8D/%E5%9C%B0%E4%BA%A7%E4%BB%A3%E7%90%86/1">
+                                                                <img src="/images/broker2.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://ashleechen920.kwrealty.com/about/">陈欣妤</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://ashleechen920.kwrealty.com/about/">
+                                                                <img src="/images/broker3.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>旅遊</p>
+                        </div>
+                        <div class="">
+                            <div class="carousel-reviews broun-block">
+                                <div class="row">
+                                    <div id="carousel-reviews2" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">尼亚加拉瀑布</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a title="" href="https://www.eworldtours.com/zh-hant/c1-75/%E7%BE%8E%E5%8A%A0%E6%9D%B1%E9%83%A8/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%A2%83%E5%B0%BC%E4%BA%9E%E5%8A%A0%E6%8B%89%E7%80%91%E5%B8%83/">
+                                                                <img src="/images/niagara.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">黄石公园</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://americaasia.com/tour.aspx?locale=zh-TW&tourid=97">
+                                                                <img src="/images/yellowStone.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.lltours.com/washington-dc-departure-vacation-package.html">华盛顿</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.lltours.com/washington-dc-departure-vacation-package.html">
+                                                                <img src="/images/washington.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.lltours.com/">纵横旅游</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.lltours.com/">
+                                                                <img src="/images/travel-agency1.gif">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.eworldtours.com/zh-hant/">天馬旅遊</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.eworldtours.com/zh-hant/">
+                                                                <img src="/images/travel-agency2.png">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="http://www.americaasia.com/Default.aspx?locale=zh-TW">美国亚洲旅行社</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="http://www.americaasia.com/Default.aspx?locale=zh-TW">
+                                                                <img src="/images/travel-agency3.png">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-reviews2" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-reviews2" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>旅館 酒店</p>
+                        </div>
+                        <div class="">
+                            <div class="carousel-reviews broun-block">
+                                <div class="row">
+                                    <div id="carousel-reviews3" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">皮埃尔酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93603-Reviews-The_Pierre_A_Taj_Hotel_New_York-New_York_City_New_York.html">
+                                                                <img src="/images/pierreHotel.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">白金汉酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d234762-Reviews-The_Quin-New_York_City_New_York.html">
+                                                                <img src="/images/bkHotel.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">纽约中央公园总督酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d4232686-Reviews-Viceroy_Central_Park_New_York-New_York_City_New_York.html">
+                                                                <img src="/images/viceroyHotel.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">纽约第五大道朗豪酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d1776857-Reviews-Langham_Place_New_York_Fifth_Avenue-New_York_City_New_York.html">
+                                                                <img src="/images/4thHotel.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">纽约圣瑞吉斯酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d93614-Reviews-The_St_Regis_New_York-New_York_City_New_York.html">
+                                                                <img src="/images/stRegis.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                                                    <div class="block-text rel zmin">
+                                                        <div class="carouselTitleBlock">
+                                                            <a title="" href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">纽约文华东方酒店</a>
+                                                        </div>
+
+                                                        <div class="carouselImgContainer">
+                                                            <a href="https://www.tripadvisor.com.tw/Hotel_Review-g60763-d281071-Reviews-Mandarin_Oriental_New_York-New_York_City_New_York.html">
+                                                                <img src="/images/6thHotel.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-reviews3" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-reviews3" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>律师</p>
+                        </div>
+                        <div class="row hospitalsBox">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="http://law-gz.com/lawgz_c/?page_id=45">耿婷律师</a>
+                                <div class="carouselImgContainer">
+                                    <a href="http://law-gz.com/lawgz_c/?page_id=45">
+                                        <img src="/images/lawyer1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="https://www.cimwong.com/mww">黄唯律师</a>
+                                <div class="carouselImgContainer">
+                                    <a href="https://www.cimwong.com/mww">
+                                        <img src="/images/lawyer2.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="https://gaolawyers.com/intro.php">高术仁律师</a>
+                                <div class="carouselImgContainer">
+                                    <a href="https://gaolawyers.com/intro.php">
+                                        <img src="/images/lawyer3.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="http://www.changliulaw.com/">刘畅律师事务所</a>
+                                <div class="carouselImgContainer">
+                                    <a href="http://www.changliulaw.com/">
+                                        <img src="/images/lawyer4.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="http://www.cmalawgroup.com/cn/attorneys.html">齐柯∙马莉琳律师</a>
+                                <div class="carouselImgContainer">
+                                    <a href="http://www.cmalawgroup.com/cn/attorneys.html">
+                                        <img src="/images/lawyer5.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="http://www.samuelandstein.com/michael-samuel/">麦克山缪</a>
+                                <div class="carouselImgContainer">
+                                    <a href="http://www.samuelandstein.com/michael-samuel/">
+                                        <img src="/images/lawyer6.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>常用链接</p>
+                        </div>
+                        <div class="row hospitalsBox">
+                            <div class="col-md-4">
+                                <a href="/">公民入籍模拟试题</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/">公民入籍視頻</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/">驾照考试模拟试题</a>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>各地医院集合</p>
+                        </div>
+                        <div class="row hospitalsBox">
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">纽约医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">西雅图医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">华盛顿医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">芝加哥医院集合</a>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>各地大学集合</p>
+                        </div>
+                        <div class="row schoolBox">
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">纽约医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">洛杉矶医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">西雅图医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">华盛顿医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">佛罗里达医院集合</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">芝加哥医院集合</a>
+                            </div>
+                        </div>
+                        <div class="linksHeader">
+                            <p>婚恋交友</p>
+                        </div>
+                        <div class="row matchBox">
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">世纪佳缘</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">珍爱网</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">未名交友</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">一颗红豆</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">中外交友网</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/news/${data[i]._id}">东西交友</a>
+                            </div>
+                        </div>
+                        <div class="ads">
+                            <div class="row">
+                                <div class="col-md-4 adsBox1-4"></div>
+                                <div class="col-md-4 adsBox1-4"></div>
+                                <div class="col-md-4 adsBox1-4"></div>
+                                <div class="col-md-4 adsBox1-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $.get('/api/fetchNews/sy', (data) => {
+                        for (var i = 0; i < data.length; i++) {
+                            $('.linkBox').append(`
 								  	<div class="col-md-4">
 										<a href="/news/${data[i]._id}">${data[i].title}</a>
 									</div>
 								  `)
-							  }
-						  })
-					  </script>
-	  				<div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<img src="/images/ex_ads.gif">
-	  						</div>			
-	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<div class="grey-ads">
-	  								俏佳人<br>
-	  								阿胶糕
-	  							</div>
-	  						</div>			
-	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<img src="/images/ex_ads.gif">
-	  						</div>			
-	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<div class="grey-ads">
-	  								成人情趣用品
-	  							</div>
-	  						</div>			
-	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<img src="/images/ex_ads.gif">
-	  						</div>			
-	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							<div class="grey-ads">
-	  								高跟鞋<br>
-	  								Pierre Silber
-	  							</div>
-	  						</div>			
-	  					</a>
-	  				</div>
-	  				</div>
-			  	</div>
-			</div>
-			<div class="row pd30">
-				<div class="col-md-3 hide-on-small pd5">
-					<a href="/ny">
-		  				<div class="imgContainer">
-		  					<img src="/images/ex_ads.gif">
-		  				</div>			
-		  			</a>
-				</div>
-				<div class="col-md-3 hide-on-small pd5">
-					<a href="/ny">
-		  				<div class="imgContainer">
-		  					<img src="/images/ex_ads.gif">
-		  				</div>			
-		  			</a>
-				</div>
-				<div class="col-md-3 hide-on-small pd5">
-					<a href="/ny">
-		  				<div class="imgContainer">
-		  					<img src="/images/ex_ads.gif">
-		  				</div>			
-		  			</a>
-				</div>
-				<div class="col-md-3 hide-on-small pd5">
-					<a href="/ny">
-		  				<div class="imgContainer">
-		  					<img src="/images/ex_ads.gif">
-		  				</div>			
-		  			</a>
-				</div>
-			</div>
-			<div class="popularLinks mg20">
-				<div class="linksHeader">
-					<p>公共链接</p>
-				</div>
-				<div class="lastLinkBox">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-12">
-									<strong>全美各大飞机场连结</strong>
-									<a href="http://www.atl.com/" class="blkText">亚特兰大国际机场(ATL)</a>
-									<a href="http://www.lawa.org" class="blkText">洛杉矶国际机场(LAX)</a>
-									<a href="http://www.flychicago.com/ohare" class="blkText">奥黑尔国际机场(芝加哥)(ORD))</a>
-									<a href="http://www.dfwairport.com" class="blkText">达拉斯/沃思堡国际机场(DFW)</a>
-									<a href="http://www.panynj.gov/airports/jfk.html" class="blkText">约翰·肯尼迪国际机场(JFK)</a>
-									<a href="http://www.flydenver.com" class="blkText">丹佛国际机场(DEN)</a>
-									<a href="http://www.FlySFO.com" class="blkText">旧金山国际机场(SFO)</a>
-									<a href="http://www.mccarran.com" class="blkText">麦卡伦国际机场(LAS)</a>
-									<a href="http://www.portseattle.org/seatac" class="blkText">西雅图-塔科马国际机场(SEA)</a>
-									<a href="http://www.charlotteairport.com" class="blkText">夏洛特道格拉斯国际机场(CLT)</a>
-									<a href="http://www.skyharbor.com" class="blkText">菲尼克斯天港国际机场(PHX)</a>
-									<a href="http://www.iflymia.com" class="blkText">迈亚密国际机场(MIA)</a>
-								
-						</div>
-						<div class="col-md-3 col-sm-6 col-12">
-								<strong>美国各个联邦机构连结</strong>
-								<a href="https://www.congress.gov/" class="blkText">美国国会</a>
-								<a href="https://www.fbi.gov/" class="blkText">美国联邦调查局(FBI)</a>
-								<a href="https://www.cia.gov/" class="blkText">美国中央情报局(CIA)</a>
-								<a href="https://www.uscis.gov/" class="blkText">美国公民及移民服务局</a>
-								<a href="https://www.state.gov/" class="blkText">美国国务院</a>
-								<a href="https://www.dhs.gov/" class="blkText">美国国土安全部</a>
-								<a href="https://www.dia.mil" class="blkText">美国国防情报局</a>
-								<a href="https://www.sec.gov" class="blkText">美国证券交易委员会</a>
-						</div>
-						<div class="col-md-3 col-sm-6 col-12">
-							<strong>中国各个领事馆连结</strong>
-								<a href="http://newyork.china-consulate.org/chn/" class="blkText">驻纽约总领事馆</a>
-								<a href="http://www.chinaconsulatechicago.org/chn/" class="blkText">驻芝加哥总领事馆</a>
-								<a href="http://www.chinaconsulatesf.org/chn/" class="blkText">驻旧金山总领馆</a>
-								<a href="http://losangeles.china-consulate.org/chn/" class="blkText">驻洛杉矶总领事馆</a>
-								<a href="http://houston.china-consulate.org/chn/" class="blkText">驻休斯敦总领事馆</a>
-								<a href="http://vancouver.china-consulate.org/chn/" class="blkText">驻温哥华总领馆</a>
-								<a href="http://toronto.china-consulate.org/chn/" class="blkText">驻多伦多总领馆</a>
-								<a href="http://www.chinese-embassy.org.uk/chn/" class="blkText">驻大不列颠及北爱尔兰<br>联合王国大使馆</a>
-								<a href="http://www.amb-chine.fr/chn/" class="blkText">驻法兰西共和国大使馆</a>
-								<a href="http://china.embassy.gov.au/bjngchinese/home.html" class="blkText">澳大利亚驻华大使馆</a>
-								<a href="http://mx.china-embassy.org/chn/" class="blkText">驻墨西哥大使馆</a>
-								<a href="http://ru.china-embassy.org/chn/" class="blkText">驻俄罗斯大使馆</a>
-						</div>
-						<div class="col-md-3 col-sm-6 col-12">
-							<strong>美国各个华人媒体连结</strong>
-								<a href="http://www.worldjournal.com/category/%E7%BE%8E%E5%9C%8B/" class="blkText">世界日報</a>
-								<a href="https://www.singtaousa.com/" class="blkText">星島日報</a>
-								<a href="http://www.epochtimes.com/" class="blkText">大纪元</a>
-								<a href="http://www.todaycommercialnews.com/us/" class="blkText">美洲商報</a>
-								<a href="http://www.damai.tv/zh/" class="blkText">大麦中文电视</a>
-								<a href="http://tv.cctv.com/live/cctvamerica/" class="blkText">CCTV-4 (美洲)</a>
-								<a href="http://www.ccyp.com/" class="blkText">北美華人工商</a>
-								<a href="http://www.uschinapress.com/" class="blkText">侨报网</a>
-						</div>
-					</div>
-				</div>
-					
-					
-					</div>
-				</div>
-			</div>
-		</div>
-		{{> footer}}
-	    {{> scripts}}
+                        }
+                    })
+                </script>
+                <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                俏佳人<br> 阿胶糕
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                成人情趣用品
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+                    <a href="/ny">
+                        <div class="imgContainer">
+                            <div class="grey-ads">
+                                高跟鞋<br> Pierre Silber
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pd30">
+        <div class="col-md-3 hide-on-small pd5">
+            <a href="/ny">
+                <div class="imgContainer">
+                    <img src="/images/ex_ads.gif">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 hide-on-small pd5">
+            <a href="/ny">
+                <div class="imgContainer">
+                    <img src="/images/ex_ads.gif">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 hide-on-small pd5">
+            <a href="/ny">
+                <div class="imgContainer">
+                    <img src="/images/ex_ads.gif">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 hide-on-small pd5">
+            <a href="/ny">
+                <div class="imgContainer">
+                    <img src="/images/ex_ads.gif">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="popularLinks mg20">
+        <div class="linksHeader">
+            <p>公共链接</p>
+        </div>
+        <div class="lastLinkBox">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <strong>全美各大飞机场连结</strong>
+                    <a href="http://www.atl.com/" class="blkText">亚特兰大国际机场(ATL)</a>
+                    <a href="http://www.lawa.org" class="blkText">洛杉矶国际机场(LAX)</a>
+                    <a href="http://www.flychicago.com/ohare" class="blkText">奥黑尔国际机场(芝加哥)(ORD))</a>
+                    <a href="http://www.dfwairport.com" class="blkText">达拉斯/沃思堡国际机场(DFW)</a>
+                    <a href="http://www.panynj.gov/airports/jfk.html" class="blkText">约翰·肯尼迪国际机场(JFK)</a>
+                    <a href="http://www.flydenver.com" class="blkText">丹佛国际机场(DEN)</a>
+                    <a href="http://www.FlySFO.com" class="blkText">旧金山国际机场(SFO)</a>
+                    <a href="http://www.mccarran.com" class="blkText">麦卡伦国际机场(LAS)</a>
+                    <a href="http://www.portseattle.org/seatac" class="blkText">西雅图-塔科马国际机场(SEA)</a>
+                    <a href="http://www.charlotteairport.com" class="blkText">夏洛特道格拉斯国际机场(CLT)</a>
+                    <a href="http://www.skyharbor.com" class="blkText">菲尼克斯天港国际机场(PHX)</a>
+                    <a href="http://www.iflymia.com" class="blkText">迈亚密国际机场(MIA)</a>
+
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <strong>美国各个联邦机构连结</strong>
+                    <a href="https://www.congress.gov/" class="blkText">美国国会</a>
+                    <a href="https://www.fbi.gov/" class="blkText">美国联邦调查局(FBI)</a>
+                    <a href="https://www.cia.gov/" class="blkText">美国中央情报局(CIA)</a>
+                    <a href="https://www.uscis.gov/" class="blkText">美国公民及移民服务局</a>
+                    <a href="https://www.state.gov/" class="blkText">美国国务院</a>
+                    <a href="https://www.dhs.gov/" class="blkText">美国国土安全部</a>
+                    <a href="https://www.dia.mil" class="blkText">美国国防情报局</a>
+                    <a href="https://www.sec.gov" class="blkText">美国证券交易委员会</a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <strong>中国各个领事馆连结</strong>
+                    <a href="http://newyork.china-consulate.org/chn/" class="blkText">驻纽约总领事馆</a>
+                    <a href="http://www.chinaconsulatechicago.org/chn/" class="blkText">驻芝加哥总领事馆</a>
+                    <a href="http://www.chinaconsulatesf.org/chn/" class="blkText">驻旧金山总领馆</a>
+                    <a href="http://losangeles.china-consulate.org/chn/" class="blkText">驻洛杉矶总领事馆</a>
+                    <a href="http://houston.china-consulate.org/chn/" class="blkText">驻休斯敦总领事馆</a>
+                    <a href="http://vancouver.china-consulate.org/chn/" class="blkText">驻温哥华总领馆</a>
+                    <a href="http://toronto.china-consulate.org/chn/" class="blkText">驻多伦多总领馆</a>
+                    <a href="http://www.chinese-embassy.org.uk/chn/" class="blkText">驻大不列颠及北爱尔兰<br>联合王国大使馆</a>
+                    <a href="http://www.amb-chine.fr/chn/" class="blkText">驻法兰西共和国大使馆</a>
+                    <a href="http://china.embassy.gov.au/bjngchinese/home.html" class="blkText">澳大利亚驻华大使馆</a>
+                    <a href="http://mx.china-embassy.org/chn/" class="blkText">驻墨西哥大使馆</a>
+                    <a href="http://ru.china-embassy.org/chn/" class="blkText">驻俄罗斯大使馆</a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <strong>美国各个华人媒体连结</strong>
+                    <a href="http://www.worldjournal.com/category/%E7%BE%8E%E5%9C%8B/" class="blkText">世界日報</a>
+                    <a href="https://www.singtaousa.com/" class="blkText">星島日報</a>
+                    <a href="http://www.epochtimes.com/" class="blkText">大纪元</a>
+                    <a href="http://www.todaycommercialnews.com/us/" class="blkText">美洲商報</a>
+                    <a href="http://www.damai.tv/zh/" class="blkText">大麦中文电视</a>
+                    <a href="http://tv.cctv.com/live/cctvamerica/" class="blkText">CCTV-4 (美洲)</a>
+                    <a href="http://www.ccyp.com/" class="blkText">北美華人工商</a>
+                    <a href="http://www.uschinapress.com/" class="blkText">侨报网</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+</div>
+{{> footer}} {{> scripts}}
