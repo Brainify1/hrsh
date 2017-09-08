@@ -721,14 +721,15 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>公司: </label>
-                                                        <input style="width: 70%" type="text" name="company1" >
+                                                        <input style="width: 70%" type="text" name="company1" required="required">
                                                     </div>
-                                                    <!-- <div class="col-md-3">
-                                                        <input type="file" name="adImg1" >
-                                                    </div> -->
                                                     <div class="col-md-4">
                                                         <label style="color: black; font-size: 13px">连结点</label>
-                                                        <input type="text" style="width: 70%" name="url1">
+                                                        <input type="text" style="width: 70%" name="url1" required="required">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label style="color: black; font-size: 13px">广告图片</label>
+                                                        <input type="file" name="adImg1" required="required">
                                                     </div>
                                                     <div class="col-md-2">
                                                         <button id="adSubmit1" type="submit">添加</button>
@@ -745,7 +746,7 @@
                                                     data: $('#ad_form1').serialize(),
                                                     success: function(data){
                                                         alert('success!')
-                                                    }
+                                                    },
                                                     error : function(){
                                                         alert('fail')
                                                     }
