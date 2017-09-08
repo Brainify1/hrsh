@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Animation library for notifications   -->
-    <link href="/stylesheets/animate.min.css" rel="stylesheet"/>
+    <link href="../../stylesheets/animate.min.css" rel="stylesheet"/>
 
     <!--  Light Bootstrap Table core CSS    -->
-    <link href="/stylesheets/light-bootstrap-dashboard.css" rel="stylesheet"/>
-    <link href="/stylesheets/admin.css" rel="stylesheet" />
+    <link href="../../stylesheets/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="../../stylesheets/admin.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="/stylesheets/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="../../stylesheets/pe-icon-7-stroke.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -713,7 +713,7 @@
                                             <h4 class="title">添加广告</h4>
                                             <p class="category">添加新的广告</p>    
                                         </div>
-                                        <form id="ad_form1" enctype="multipart/form-data"> 
+                                        <form id="ad_form1">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                    <div class="col-md-12" style="font-size: 18px; padding: 0">
@@ -721,41 +721,23 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label>公司: </label>
-                                                        <input style="width: 70%" type="text" name="company1" required="required">
+                                                        <input style="width: 70%" type="text" name="company" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <label style="color: black; font-size: 13px">连结点</label>
-                                                        <input type="text" style="width: 70%" name="url1" required="required">
+                                                        <input type="text" style="width: 70%" name="url" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label style="color: black; font-size: 13px">广告图片</label>
-                                                        <input type="file" name="ad1" required="required">
+                                                        <input type="file" name="ad" required="required">
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <button id="adSubmit1" type="submit">添加</button>
+                                                        <button id="adSubmit1">添加广告</button>
                                                     </div>
                                                 </div>    
                                             </div>
                                         </form>
-                                        <script type="text/javascript">
-                                            $('#ad_form1').submit(function(e) {
-                                                var formData = new FormData(this);
-                                                $.ajax({
-                                                    url: '/api/ads/postAd1',
-                                                    type: 'POST',
-                                                    data: formData,
-                                                    async:false,
-                                                    success: function(data){
-                                                        alert('success!')
-                                                    },
-                                                    error : function(){
-                                                        alert('fail')
-                                                    }
-                                                });
-                                                return false;
-                                            })
-                                        </script>
-                                        <!-- <form id="ad_form2">
+                                        <form id="ad_form2">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-md-12" style="font-size: 18px; padding: 0">
@@ -763,21 +745,73 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <span>公司: </span>
-                                                        <input style="width: 70%" type="text" name="company2">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <input type="file" name="adImg2" >
+                                                        <input style="width: 70%" type="text" name="company">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <label style="color: black; font-size: 13px">连结点: </label>
-                                                        <input  style="width: 70%" type="text" name="adUrl2">
+                                                        <input  style="width: 70%" type="text" name="adUrl">
                                                     </div>
+                                                    <div class="col-md-3">
+                                                        <label style="color: black; font-size: 13px">广告图片</label>
+                                                        <input type="file" name="ad" >
+                                                    </div>
+                                                    
                                                     <div class="col-md-2">
-                                                        <button id="adSubmit2" type="submit">添加</button>
+                                                        <button id="adSubmit2" type="button">添加广告</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </form> -->
+                                        </form>
+                                        <form id="ad_form3">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                            形式3/xx广告
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <span>公司: </span>
+                                                            <input style="width: 70%" type="text" name="company">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label style="color: black; font-size: 13px">连结点: </label>
+                                                            <input  style="width: 70%" type="text" name="adUrl">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <label style="color: black; font-size: 13px">广告图片</label>
+                                                            <input type="file" name="ad" >
+                                                        </div>
+                                                        
+                                                        <div class="col-md-2">
+                                                            <button id="adSubmit3" type="submit">添加广告</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <form id="ad_form4">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                                形式4/xx广告
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <span>公司: </span>
+                                                                <input style="width: 70%" type="text" name="company">
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <label style="color: black; font-size: 13px">连结点: </label>
+                                                                <input  style="width: 70%" type="text" name="adUrl">
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label style="color: black; font-size: 13px">广告图片</label>
+                                                                <input type="file" name="ad" >
+                                                            </div>
+                                                            
+                                                            <div class="col-md-2">
+                                                                <button id="adSubmit4" type="button">添加广告</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                     </div>
                                     <div class="card">
                                         <div class="header">
@@ -1052,26 +1086,27 @@
     <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
     <script src="/javascripts/manager.js"></script>
     <!--   Core JS Files   -->
-    <script src="../../javascripts/admin.js"></script>
+    <script src="/javascripts/admin.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="../../javascripts/bootstrap-checkbox-radio-switch.js"></script>
+	<script src="/javascripts/bootstrap-checkbox-radio-switch.js"></script>
 
 	<!--  Charts Plugin -->
-	<script src="../../javascripts/chartist.min.js"></script>
+	<script src="/javascripts/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
-    <script src="../../javascripts/bootstrap-notify.js"></script>
+    <script src="/javascripts/bootstrap-notify.js"></script>
 
     <!--  Google Maps Plugin    -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="../../javascripts/light-bootstrap-dashboard.js"></script>
+	<script src="/javascripts/light-bootstrap-dashboard.js"></script>
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="../../javascripts/demo.js"></script>
+    <script src="/javascripts/demo.js"></script>
+    <script src="/admin/ads.js"></script>
 
 	<script type="text/javascript">
     	$(document).ready(function(){
