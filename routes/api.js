@@ -12,7 +12,16 @@ var statesCN = require('../statesCN');
 var categoryEN = require('../categoryEN');
 var categoryCN = require('../categoryCN');
 var newsTypes = require('../newsTypes');
-
+var multer  = require('multer')
+var adstorage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, '../public/upload/ads/')
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.fieldname + '-' + Date.now())
+    }
+  })
+  var adUpload = multer({ storage: adstorage })  
 router.post('/news/post', function(req, res, next) {
     const news = {
         title: req.body.title,
@@ -120,27 +129,75 @@ router.get('/listing/fetchOne/:id', (req, res) => {
 
 // *********************** ADS ****************************//
 
-router.post('/ads/postAd1', function(req, res, next) {
-        console.log(req.body)
-        var ads1 = {
-            comapany1: req.body.company1,
-            url1: req.body.url1,
+router.post('/ads/postAd1',adUpload.single('ad'), function(req, res, next) {
+        var ad = {
+            type:1,
+            comapany: req.body.company,
+            url: req.body.url,
+            image : req.file,
             created_at: new Date()
         }
-
-        adsCollection.save(ads1, function(err, adsDoc) {
+        adsCollection.save(ad, function(err, adsDoc) {
             if (err) {
                 return err
+            }else{
+                res.sendStatus(200)
+                
             }
         })
     })
-    // router.get('/ads/postAd1', function(req, res, next) {
-    //     adsCollection.find(function(err, adsList) {
-    //         res.json(adsList)
-    //     })
-    // })
-
-router.post('/ads/delete1', function(req, res, next) {
+router.post('/ads/postAd2',adUpload.single('ad'), function(req, res, next) {
+    var ad = {
+        type:2,
+        comapany: req.body.company,
+        url: req.body.url,
+        image : req.file,
+        created_at: new Date()
+    }
+    adsCollection.save(ad, function(err, adsDoc) {
+        if (err) {
+            return err
+        }else{
+            res.sendStatus(200)
+            
+        }
+    })
+})
+router.post('/ads/postAd3',adUpload.single('ad'), function(req, res, next) {
+    var ad = {
+        type:3,
+        comapany: req.body.company,
+        url: req.body.url,
+        image : req.file,
+        created_at: new Date()
+    }
+    adsCollection.save(ad, function(err, adsDoc) {
+        if (err) {
+            return err
+        }else{
+            res.sendStatus(200)
+            
+        }
+    })
+})
+router.post('/ads/postAd4',adUpload.single('ad'), function(req, res, next) {
+    var ad = {
+        type:4,
+        comapany: req.body.company,
+        url: req.body.url,
+        image : req.file.ad,
+        created_at: new Date()
+    }
+    adsCollection.save(ad, function(err, adsDoc) {
+        if (err) {
+            return err
+        }else{
+            res.sendStatus(200)
+            
+        }
+    })
+})
+router.post('/ads/delete', function(req, res, next) {
     var adsId = req.body.id
     adsCollection.remove({ _id: mongojs.ObjectId(adsId) }, function(err, removedAds) {
         res.json(removedAds)
