@@ -12,7 +12,8 @@ var statesCN = require('../statesCN');
 var categoryEN = require('../categoryEN');
 var categoryCN = require('../categoryCN');
 var newsTypes = require('../newsTypes');
-
+var multer  = require('multer')
+var adUpload = multer({ dest: '../public/upload/ads/' })
 router.post('/news/post', function(req, res, next) {
     const news = {
         title: req.body.title,
@@ -120,17 +121,20 @@ router.get('/listing/fetchOne/:id', (req, res) => {
 
 // *********************** ADS ****************************//
 
-router.post('/ads/postAd1', function(req, res, next) {
+router.post('/ads/postAd1',adUpload.single('ad1'), function(req, res, next) {
         console.log(req.body)
         var ads1 = {
             comapany1: req.body.company1,
             url1: req.body.url1,
+            image : req.file,
             created_at: new Date()
         }
-
         adsCollection.save(ads1, function(err, adsDoc) {
             if (err) {
                 return err
+            }else{
+                res.sendStatus(200)
+                
             }
         })
     })

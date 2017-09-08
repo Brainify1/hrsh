@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Animation library for notifications   -->
-    <link href="../../stylesheets/animate.min.css" rel="stylesheet"/>
+    <link href="/stylesheets/animate.min.css" rel="stylesheet"/>
 
     <!--  Light Bootstrap Table core CSS    -->
-    <link href="../../stylesheets/light-bootstrap-dashboard.css" rel="stylesheet"/>
-    <link href="../../stylesheets/admin.css" rel="stylesheet" />
+    <link href="/stylesheets/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="/stylesheets/admin.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="../../stylesheets/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="/stylesheets/pe-icon-7-stroke.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -713,7 +713,7 @@
                                             <h4 class="title">添加广告</h4>
                                             <p class="category">添加新的广告</p>    
                                         </div>
-                                        <form id="ad_form1">
+                                        <form id="ad_form1" enctype="multipart/form-data"> 
                                             <div class="container-fluid">
                                                 <div class="row">
                                                    <div class="col-md-12" style="font-size: 18px; padding: 0">
@@ -729,7 +729,7 @@
                                                     </div>
                                                     <div class="col-md-3">
                                                         <label style="color: black; font-size: 13px">广告图片</label>
-                                                        <input type="file" name="adImg1" required="required">
+                                                        <input type="file" name="ad1" required="required">
                                                     </div>
                                                     <div class="col-md-2">
                                                         <button id="adSubmit1" type="submit">添加</button>
@@ -739,18 +739,20 @@
                                         </form>
                                         <script type="text/javascript">
                                             $('#ad_form1').submit(function(e) {
-                                                e.preventDefault();
+                                                var formData = new FormData(this);
                                                 $.ajax({
                                                     url: '/api/ads/postAd1',
                                                     type: 'POST',
-                                                    data: $('#ad_form1').serialize(),
+                                                    data: formData,
+                                                    async:false,
                                                     success: function(data){
                                                         alert('success!')
                                                     },
                                                     error : function(){
                                                         alert('fail')
                                                     }
-                                                })
+                                                });
+                                                return false;
                                             })
                                         </script>
                                         <!-- <form id="ad_form2">
