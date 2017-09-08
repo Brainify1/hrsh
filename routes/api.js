@@ -89,30 +89,30 @@ router.get('/listing/delete/:id', (req, res) => {
     })
 })
 router.get('/users/delete/:id', (req, res) => {
-    var { id } = req.params;
-    usersCollection.remove({ _id: mongojs.ObjectId(id) }, (err, doc) => {
-        res.json(doc)
+        var { id } = req.params;
+        usersCollection.remove({ _id: mongojs.ObjectId(id) }, (err, doc) => {
+            res.json(doc)
+        })
     })
-})
-////fetch all new listings sorted by date
+    ////fetch all new listings sorted by date
 router.get('/listings/new/fetch', (req, res) => {
-    listingCollection.find().limit(10).sort({_id: -1}, (err, doc) => {
-        res.json(doc)
+        listingCollection.find().limit(10).sort({ _id: -1 }, (err, doc) => {
+            res.json(doc)
+        })
     })
-})
-//fetch all hot listings sorted by view count
+    //fetch all hot listings sorted by view count
 router.get('/listings/hot/fetch', (req, res) => {
-    listingCollection.find().limit(10).sort({views: -1}, (err, doc) => {
+    listingCollection.find().limit(10).sort({ views: -1 }, (err, doc) => {
         res.json(doc)
     })
 })
 router.get('/listing/fetchOne/:id', (req, res) => {
     var { id } = req.params;
     var stringId = id.toString()
-    listingCollection.findOne({ refId: id}, function(err, listing) {
+    listingCollection.findOne({ refId: id }, function(err, listing) {
         if (err) {
             console.log(err)
-        } 
+        }
         res.json(listing)
     })
 })
@@ -121,32 +121,32 @@ router.get('/listing/fetchOne/:id', (req, res) => {
 // *********************** ADS ****************************//
 
 router.post('/ads/postAd1', function(req, res, next) {
-    console.log(req.body)
-    var ads1 = {
-        comapany1: req.body.company1,
-        url1: req.body.url1,
-        created_at: new Date()
-    }
-    
-    adsCollection.save(ads1, function(err, adsDoc) {
-        if(err) {
-            return err
+        console.log(req.body)
+        var ads1 = {
+            comapany1: req.body.company1,
+            url1: req.body.url1,
+            created_at: new Date()
         }
-    })
-})
-// router.get('/ads/postAd1', function(req, res, next) {
-//     adsCollection.find(function(err, adsList) {
-//         res.json(adsList)
-//     })
-// })
 
-router.post('/ads/delete1', function(req, res, next) {
-        var adsId = req.body.id
-        adsCollection.remove({ _id: mongojs.ObjectId(adsId) }, function(err, removedAds) {
-            res.json(removedAds)
-            console.log(removedAds)
+        adsCollection.save(ads1, function(err, adsDoc) {
+            if (err) {
+                return err
+            }
         })
     })
+    // router.get('/ads/postAd1', function(req, res, next) {
+    //     adsCollection.find(function(err, adsList) {
+    //         res.json(adsList)
+    //     })
+    // })
+
+router.post('/ads/delete1', function(req, res, next) {
+    var adsId = req.body.id
+    adsCollection.remove({ _id: mongojs.ObjectId(adsId) }, function(err, removedAds) {
+        res.json(removedAds)
+        console.log(removedAds)
+    })
+})
 router.get('/news/fetch/types/en', (req, res) => {
     res.json(newsTypes)
 })
@@ -154,19 +154,19 @@ router.get('/news/fetch/ratio', (req, res) => {
     var ratio = []
     newsCollection.find((err, allNews) => {
         var allNewsRatio = allNews.length
-        newsCollection.find({type: 'kj'}, (err, kjNews) => {
+        newsCollection.find({ type: 'kj' }, (err, kjNews) => {
             ratio.push(Math.floor(kjNews.length / allNewsRatio * 100))
-            newsCollection.find({type: 'sh'}, (err, shNews) => {
+            newsCollection.find({ type: 'sh' }, (err, shNews) => {
                 ratio.push(Math.floor(shNews.length / allNewsRatio * 100))
-                newsCollection.find({type: 'yl'}, (err, ylNews) => {
+                newsCollection.find({ type: 'yl' }, (err, ylNews) => {
                     ratio.push(Math.floor(ylNews.length / allNewsRatio * 100))
-                    newsCollection.find({type: 'yl'}, (err, zz) => {
+                    newsCollection.find({ type: 'yl' }, (err, zz) => {
                         ratio.push(Math.floor(zz.length / allNewsRatio * 100))
-                        newsCollection.find({type: 'yl'}, (err, ty) => {
+                        newsCollection.find({ type: 'yl' }, (err, ty) => {
                             ratio.push(Math.floor(ty.length / allNewsRatio * 100))
-                            newsCollection.find({type: 'yl'}, (err, ys) => {
+                            newsCollection.find({ type: 'yl' }, (err, ys) => {
                                 ratio.push(Math.floor(ys.length / allNewsRatio * 100))
-                                newsCollection.find({type: 'yl'}, (err, sy) => {
+                                newsCollection.find({ type: 'yl' }, (err, sy) => {
                                     ratio.push(Math.floor(sy.length / allNewsRatio * 100))
                                     res.send(ratio)
                                 })
@@ -177,7 +177,7 @@ router.get('/news/fetch/ratio', (req, res) => {
             })
         })
     })
-    
+
 })
 
 // router.post('/userpage/delete', function(req, res, next) {
