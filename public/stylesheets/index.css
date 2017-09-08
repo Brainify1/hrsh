@@ -66,7 +66,7 @@
 }
 .popularLinks a {
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
     text-align: left;
 }
@@ -89,6 +89,18 @@
     border: 1px solid #dbdbdb;
     margin: 10px 0;
 }
-
-
+.popularLinks .lvshiBox a {
+    margin-bottom: 0;
+}
+.matchBox {
+    padding: 10px 24px;
+}
+.matchBox a {
+    display: inline;
+    margin: 0 7px;
+    text-align: justify
+}
+.matchHeader {
+    letter-spacing: 5px;
+}
 
