@@ -3,7 +3,7 @@
 		<div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
 				<div class="sbarDiv2">
 					<input type="text" class="search sbar" placeholder="搜索关键字" />
-					<button class="searchButton2" type="submit">搜寻</button> 
+					<button class="searchButton2" type="submit">本站搜索</button> 
 				</div>
 				<div class="navFirstDiv">
 					<p class="navP">

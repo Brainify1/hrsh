@@ -62,7 +62,7 @@
     background-color: #fff;
     min-height: 100px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0 15px;
+    padding: 0px;
 }
 .popularLinks a {
     display: inline-block;

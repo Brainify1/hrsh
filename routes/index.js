@@ -194,7 +194,7 @@ router.get('/a/:states/:type/news/:id', function(req, res, next) {
         if (allStates.indexOf(states) === -1) {
             res.render('error');
         } else {
-            newsCollection.findOne({ _id: id }, function(err, news) {
+            newsCollection.findOne({ _id: id },  function(err, news) {
                 res.render('content', {
                     title: '华人生活网',
                     link: states,

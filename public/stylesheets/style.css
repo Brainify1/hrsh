@@ -206,13 +206,9 @@ a.loginMargin, a.loginMargin2 {
 /*End of login{header} css*/
 
 /*states*/
-.firstState {
-	display: inline-block;
-	margin: 0;
-}
 
 .orange {
-	background-color: #f5a623;
+	background-color: #F47F20;
 }
 
 .pd20 {
@@ -222,14 +218,19 @@ a.loginMargin, a.loginMargin2 {
 .statesText {
 	font-size: 20px;
 	padding: 10px 10px 0;
-	color: white;
+	color: #fff;
 }
-
+span.statesText {
+	padding: 0;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 900;
+}
 /*end of states*/
 
 /*new nav*/
 .navMainDiv {
-	padding: 0 6px 3px;
+	padding: 0 0px 3px;
 	height: 120px;
 }
 .navbarA {
@@ -240,7 +241,8 @@ a.loginMargin, a.loginMargin2 {
 .navFirstDiv {
 	background-color: #d0021b;
     color: white;
-    height: 70%;
+	height: 70%;
+	margin-right: 5px;
 }
 
 .navP {
@@ -272,7 +274,9 @@ div.navbarA a {
 
 .bg-yellow p, .bg-red p{
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 25px;
+	padding-left: 15px;
+	letter-spacing: 15px;
 }
 
 .bg-yellow p {
@@ -291,7 +295,13 @@ div.navbarA a {
 .pageContent {
 	margin-top: 10px;
 }
-
+div.subHeight.topHeaderAds {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.qrCode {
+	position: relative;
+}
 @media screen and (min-width: 960px) {
 	.searchBar {
 		margin-top: 10px;
@@ -299,6 +309,7 @@ div.navbarA a {
 	}
 	.searchbarElement {
 		display: inline;
+		margin-top: 15px;
 	}
 	.searchbarElement input {
 		padding: 5px;
@@ -584,10 +595,19 @@ div.navbarA a {
 	margin: 0;
 	line-height: 23px;
 }
+.searchBar {
+	width: 100%;
+}
 
 @media (min-width: 992px) { 
 /*	#myCarousel {padding-right:33.3333%;}*/
 	#myCarousel .carousel-controls {display:none;} 	
+	.googleSearch {
+		padding-left: 30px;
+	}
+	.searchbarElement.forecastSearch input {
+		width: 65%
+	}
 }
 
 @media (max-width: 991px) { 
@@ -785,12 +805,14 @@ li.focus {
     border: 1px solid rgb(240,240,240);
 }
 .sbarDiv2 input {
-	width: 70%;
+	width: 60%;
 	padding: 5px;
+	text-align: center;
 }
 .sbarDiv2 button {
-	width: 25%;
+	width: 37%;
 	border: none;
+	background-color: #0F8F9B;
 }
 /*.sbar { 
 	display: block;
@@ -1090,11 +1112,11 @@ li.focus {
 	width: 100%;
 }
 .topAdsContainer img {
-	height: 150px;
+	height: 160px;
 	width: 100%;
 }
 .subHeight {
-	height: 150px;
+	height: 160px;
 	box-sizing: border-box
 }
 /*end of ads*/
@@ -1125,16 +1147,17 @@ li.focus {
 }
 .emailLinks li {
 	display: inline;
-	margin: 0 5px;
+	margin: 0 4px;
 }
 .emailLinks li a {
 	color: purple;
+	font-weight: 900;
 }
 .emailLinks li:first-of-type {
 	margin-left: 0;
 }
 .states.orange.pd20 {
-	padding: 5px 20px;
+	padding: 5px 10px;
 	
 }
 .states a {

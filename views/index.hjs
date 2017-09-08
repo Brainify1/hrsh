@@ -98,85 +98,7 @@
 	  					</a>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-    					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							<!-- Wrapper for slides -->
-							<div class="container-fluid">
-								<div class="row">
-									<div class= "col-md-7 carouselPicDiv">
-										<div class="carousel-inner">
-								        	<div class="item newsPicBox active">
-								          		<div class="childImg1"></div>
-									           	<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>纽约检察官吁移民局停止法院抓人</p></a>
-									       		</div>
-									        </div><!-- End Item -->
-									       	<div class="item newsPicBox">
-									      		<div class="childImg2"></div>
-									           	<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>地铁男子赤裸上身拍女子屁股遭通缉</p></a>
-									       		</div>
-									        </div><!-- End Item -->
-									        <div class="item newsPicBox">
-									      		<div class="childImg3"></div>
-									       		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p></a>
-									       		</div>
-								        	</div><!-- End Item -->
-								        	<div class="item newsPicBox">
-								          		<div class="childImg4"></div>
-								           		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>大解放？全球首个女性自慰店登录纽约</p></a>
-									       		</div>
-								        	</div><!-- End Item -->
-								        	<div class="item newsPicBox">
-								          		<div class="childImg5"></div>
-								           		<div class="carousel-caption captionBox">
-									           		 <a href="http://sevenx.de/demo/bootstrap-carousel/"><p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p></a>
-									       		</div>
-									       	</div><!-- End Item -->
-										</div><!-- End Carousel Inner -->
-									</div>
-									<div class="col-md-5">
-								    	<ul class="list-group carouselRightUl">
-								      		<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active carouselRightLi">
-								      			<a href="#">
-								      				<h4 class="newsTitle">纽约检察官吁移民局停止法院抓人</h4>
-								      			</a>
-								      		</li>
-								      		<li data-target="#myCarousel" data-slide-to="1" class="list-group-item carouselRightLi">
-								      			<a href="#">
-								      				<h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
-								      			</a>
-								      		</li>
-								      		<li data-target="#myCarousel" data-slide-to="2" class="list-group-item carouselRightLi">
-								      			<a href="#">
-								      				<h4 class="newsTitle">美国过半三文鱼标签上做过手脚！这么多年吃的都是?</h4>
-								      			</a>
-								      		</li>
-								      		<li data-target="#myCarousel" data-slide-to="3" class="list-group-item carouselRightLi">
-								      			<a href="#">
-								      				<h4 class="newsTitle">大解放？全球首个女性自慰店登录纽约</h4>
-								      			</a>
-								      		</li>
-								      		<li data-target="#myCarousel" data-slide-to="4" class="list-group-item carouselRightLi">
-								      			<a href="#">
-								      				<h4 class="newsTitle">地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</h4>
-								      			</a>
-								      		</li>
-								    	</ul>
-
-									</div>
-									<div class="carousel-controls">
-												<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						            				<span class="glyphicon glyphicon-chevron-left"></span>
-						          				</a>
-						          				<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						            				<span class="glyphicon glyphicon-chevron-right"></span>
-						          				</a>
-						      				</div>
-								</div>
-							</div>  	
-						</div>
+    					
 						<!-- End Carousel -->
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
@@ -322,7 +244,7 @@
 									<div class="sgNews newsBlock">
 										<div class="newsTitle">
 											<p>帅哥 | 美女</p>
-											<a href="/a/{{link}}/yl/news">更多>></a>
+											<a href="/a/{{link}}/sg/news">更多>></a>
 										</div>
 										<div class="newsList">
 										</div>
