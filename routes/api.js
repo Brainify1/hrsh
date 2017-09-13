@@ -216,6 +216,19 @@ router.get('/ads/list',(req,res,next)=>{
         }
     })
 })
+router.get('/ads/fetch/:id',(req,res,next)=>{
+    var { id } = req.params 
+    var aid = parseInt(id)
+    adsCollection.find({
+        type:aid
+    },(err,docs)=>{
+        if(err){
+            console.log(err)
+        }else{
+            res.send(docs)
+        }
+    })
+})
 
 ////////////////////////////////NEWS SECTION////////////////////////////////////////
 router.get('/news/fetch/types/en', (req, res) => {
