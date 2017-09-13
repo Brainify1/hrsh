@@ -98,9 +98,14 @@
 .matchBox a {
     display: inline;
     margin: 0 7px;
-    text-align: justify
+    text-align: justify;
+    color: #FF007F;
+    font-weight: 900;
 }
 .matchHeader {
     letter-spacing: 5px;
+}
+.syLinkHeader {
+    letter-spacing: 10px;
 }
 

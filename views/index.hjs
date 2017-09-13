@@ -835,6 +835,7 @@
   </div>
 </div>
 </div>
+<br>
 <div class="row pd30">
 <div class="col-md-3 hide-on-small pd5">
 <a href="/ny">
@@ -865,9 +866,10 @@
   </a>
 </div>
 </div>
+<br>
 <div class="popularLinks mg20">
 <div class="linksHeader">
-<p>公共链接</p>
+<p class="syLinkHeader">实用链接</p>
 </div>
 <div class="lastLinkBox">
 <div class="row">
@@ -925,7 +927,8 @@
 		<strong>美国各个华人媒体连结</strong>
 			<a href="http://www.worldjournal.com/category/%E7%BE%8E%E5%9C%8B/" class="blkText">世界日報</a>
 			<a href="https://www.singtaousa.com/" class="blkText">星島日報</a>
-			<a href="http://www.epochtimes.com/" class="blkText">大纪元</a>
+			<a href="http://www.epochtimes.com/" class="blkText">侨报</a>
+			<a href="https://www.sec.gov" class="blkText">明报</a>
 			<a href="http://www.todaycommercialnews.com/us/" class="blkText">美洲商報</a>
 			<a href="http://www.damai.tv/zh/" class="blkText">大麦中文电视</a>
 			<a href="http://tv.cctv.com/live/cctvamerica/" class="blkText">CCTV-4 (美洲)</a>

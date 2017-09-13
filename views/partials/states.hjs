@@ -4,7 +4,9 @@
             <div class="row">
               <div class="col-md-5 col-sm-12 col-xs-12 subHeight">
                 <div class="topMainLogoContainer">
-                  <img src="/images/hrshLogo.png">
+                  <a href="/">
+                      <img src="/images/hrshLogo.png">
+                  </a>
                 </div>
                 <div class="searchBar hide-on-small">
                     <ul class="emailLinks">
