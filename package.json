@@ -5,7 +5,7 @@
     "scripts": {
         "server": "nodemon ./bin/www",
         "client": "sleep 3 && browser-sync start --proxy 'localhost:3000' --files '**/*'",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
+        "start": "concurrently \"npm run server\" \"npm run client\""
     },
     "dependencies": {
         "bcrypt-nodejs": "^0.0.3",
