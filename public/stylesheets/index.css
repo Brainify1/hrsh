@@ -2,7 +2,7 @@
     display: block;
     padding: 5px;
     margin: 0 0 5px 0;
-    background-color: #f5a623;
+    background-color: #F47F20;
     align-items: center;
 }
 .otherCh a {
@@ -12,7 +12,7 @@
 }
 .newsListings {
     min-height: 500px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .newsListings .newsBlock {
     min-height: 250px;
@@ -62,11 +62,11 @@
     background-color: #fff;
     min-height: 100px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0 15px;
+    padding: 0px;
 }
 .popularLinks a {
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
     text-align: left;
 }
@@ -82,8 +82,30 @@
     margin: 0;
     text-align: center;
 }
-
-
-
-
+.secondSection {
+    margin-top: 10px;
+}
+.davidAds {
+    border: 1px solid #dbdbdb;
+    margin: 10px 0;
+}
+.popularLinks .lvshiBox a {
+    margin-bottom: 0;
+}
+.matchBox {
+    padding: 10px 24px;
+}
+.matchBox a {
+    display: inline;
+    margin: 0 7px;
+    text-align: justify;
+    color: #FF007F;
+    font-weight: 900;
+}
+.matchHeader {
+    letter-spacing: 5px;
+}
+.syLinkHeader {
+    letter-spacing: 10px;
+}
 

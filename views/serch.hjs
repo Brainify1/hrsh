@@ -1,0 +1,81 @@
+ {{> head}} {{> header}} {{> states}} {{> navbar}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-2">
+            <div class="bg-temp">
+
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <div class="locationDiv">
+                <h6><a href="/a/{{link}}">首页</a> > <a href="#">搜索结果页面</a></h6>
+                <br />
+                <p>为您搜索到与 "{{keyword}}" 相符的 {{searchCount}} 条结果</p>
+                <br />
+            </div>
+            <div class="commercialBlock">
+                <div class="pizzaAd">
+
+                </div>
+            </div>
+            <div id="test-list">
+                <nav class="divNav">
+                    <ul class="navbarUl">
+                        <li class="titleLi">
+                            <h5>标题</h5>
+                        </li>
+                        <li class="userLi">
+                            <h5>作者</h5>
+                        </li>
+                        <li class="readLi">
+                            <h5>回复/阅读</h5>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list mg0">
+                    {{#listings}}
+                    <li class="bigListing">
+                        <div class="titleLi">
+                            <a href="/a/{{link}}/{{categ}}/{{refId}}">{{data.title}}</a>
+                        </div>
+                        <div class="userLi">
+                            <div>
+                                <p class="fs12">{{author}}</p>
+                            </div>
+                            <div>
+                                <p class="fs10">{{created_at}}</p>
+                            </div>
+                        </div>
+                        <div class="readLi">
+                            <div>
+                                <p class="fs12">{{commentNum}}</p>
+                            </div>
+                            <div>
+                                <p class="fs10">{{views}}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {{/listings}}
+                </ul>
+                <ul class="pagination"></ul>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <div class="bg-temp">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- <script type="text/javascript">
+            $('#postBtn').click(function() {
+                if ($('#authStatus').val() == 'false') {
+                     $('#myModal').modal('show');
+                } else {
+                    location.href = "/postList"
+                }
+            })
+        </script> -->
+{{> footer}} {{> scripts}}

@@ -3,27 +3,41 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "nodemon ./bin/www",
-        "dev": "nodemon ./bin/www"
+        "server": "nodemon ./bin/www",
+        "client": "sleep 3 && browser-sync start --proxy 'localhost:3000' --files '**/*'",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "dependencies": {
+        "bcrypt-nodejs": "^0.0.3",
         "body-parser": "~1.16.0",
-        "express-session": "^1.15.0",
         "connect-flash": "^0.1.1",
         "connect-redis": "^3.3.0",
-        "passport": "^0.4.0",
-        "mongodb": "^2.2.30",
         "cookie-parser": "~1.4.3",
         "debug": "~2.6.0",
+        "ejs-loader": "^0.3.0",
         "express": "~4.14.1",
+        "express-session": "^1.15.0",
         "hjs": "~0.0.6",
+        "mongodb": "^2.2.30",
+        "mongojs": "^2.4.0",
         "morgan": "~1.7.0",
         "multer": "^1.3.0",
         "nodemon": "^1.11.0",
-        "serve-favicon": "~2.3.2",
-        "mongojs": "^2.4.0",
-        "bcrypt-nodejs": "^0.0.3",
+        "passport": "^0.4.0",
         "passport-local": "1.0.0",
-        "randomstring": "~1.1.5"
+        "randomstring": "~1.1.5",
+        "serve-favicon": "~2.3.2"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.13",
+        "browser-sync-webpack-plugin": "^1.2.0",
+        "concurrently": "^3.5.0",
+        "connect-browser-sync": "^2.1.0",
+        "file-loader": "^0.11.2",
+        "html-webpack-exclude-assets-plugin": "0.0.5",
+        "html-webpack-plugin": "^2.30.1",
+        "path": "^0.12.7",
+        "webpack": "^3.5.6",
+        "webpack-dev-server": "^2.7.1"
     }
 }

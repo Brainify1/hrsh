@@ -12,12 +12,6 @@ body {
 	margin-top: 50px;
 	background-color: #fff;
 }
-@media only screen and (min-width: 993px) {
-	.emailLinks {
-		display: block;
-	}
-
-}
 
 @media only screen and (max-width: 992px) {
 	.topMainLogoContainer {
@@ -206,13 +200,9 @@ a.loginMargin, a.loginMargin2 {
 /*End of login{header} css*/
 
 /*states*/
-.firstState {
-	display: inline-block;
-	margin: 0;
-}
 
 .orange {
-	background-color: #f5a623;
+	background-color: #F47F20;
 }
 
 .pd20 {
@@ -222,14 +212,19 @@ a.loginMargin, a.loginMargin2 {
 .statesText {
 	font-size: 20px;
 	padding: 10px 10px 0;
-	color: white;
+	color: #fff;
 }
-
+span.statesText {
+	padding: 0;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 900;
+}
 /*end of states*/
 
 /*new nav*/
 .navMainDiv {
-	padding: 0 6px 3px;
+	padding: 0 0px 3px;
 	height: 120px;
 }
 .navbarA {
@@ -240,14 +235,16 @@ a.loginMargin, a.loginMargin2 {
 .navFirstDiv {
 	background-color: #d0021b;
     color: white;
-    height: 70%;
+	height: 70%;
+	margin-right: 5px;
 }
 
 .navP {
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
-	padding: 25px;
-	letter-spacing: 1.5px;
+	padding: 5px;
+	padding-top: 20px;
+	letter-spacing: 5px;
 	font-weight: 900;
 }
 
@@ -272,7 +269,9 @@ div.navbarA a {
 
 .bg-yellow p, .bg-red p{
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 25px;
+	padding-left: 15px;
+	letter-spacing: 15px;
 }
 
 .bg-yellow p {
@@ -291,46 +290,25 @@ div.navbarA a {
 .pageContent {
 	margin-top: 10px;
 }
-
-@media screen and (min-width: 960px) {
-	.searchBar {
-		margin-top: 10px;
-		display: block;
-	}
-	.searchbarElement {
-		display: inline;
-	}
-	.searchbarElement input {
-		padding: 5px;
-		text-align: center;	
-		box-sizing: border-box;
-		width: 65%;
-		vertical-align: top;
-		direction: inline-block;
-		outline: none;
-	}
-
-
-	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
-		padding: 6px;
-		background-color: #4a90e2;
-		color: white;
-		width: 80px;
-	}
-
-	.searchButton2 {
-		background-color: #d0021b;
-	}
-
-	.searchButton3 {
-		background-color: #4a90e2;
-	}
-
-	.searchButton4 {
-		background-color: #417505;
-	}
+div.subHeight.topHeaderAds {
+	padding-right: 0px;
+	padding-left: 0px;
 }
-
+.qrCode {
+	position: relative;
+}
+.carouselTitle {
+	background-color: #0076ff;
+}
+#myCarousel .list-group-item .carouselTitle.active#carouselItemTitle {
+	background-color: #0076ff;
+}
+.carouselTitle h4 {
+	text-align: center;
+	padding-top: 10px;
+	letter-spacing: 4px;
+	color: white;
+}
 @media screen and (min-width: 768px) {
 	.searchBar {
 		margin-top: 10px;
@@ -422,6 +400,9 @@ div.navbarA a {
 	.searchbarElement {
 		display: inline;
 	}
+	.searchbarElement button {
+		border: none;
+	}
 	.searchbarElement input {
 		padding: 5px;
 	    text-align: center;
@@ -437,6 +418,7 @@ div.navbarA a {
 		background-color: #4a90e2;
 		color: white;
 		width: 80px;
+		border: none;
 	}
 
 	.searchButton2 {
@@ -516,10 +498,12 @@ div.navbarA a {
 	cursor:pointer;
 }
 
-#myCarousel .list-group .active {
+.carousel.slide .list-group .active {
 	background-color:#eee;	
 }
-
+.carousel.slide .list-group .active#carouselItemTitle {
+	background-color:#0076ff;	
+}
 .newsPicBox {
 	height: 300px;
 }
@@ -584,10 +568,73 @@ div.navbarA a {
 	margin: 0;
 	line-height: 23px;
 }
+.searchBar {
+	width: 100%;
+}
 
 @media (min-width: 992px) { 
 /*	#myCarousel {padding-right:33.3333%;}*/
-	#myCarousel .carousel-controls {display:none;} 	
+	#myCarousel .carousel-controls {
+		display:none;
+	} 	
+	.googleSearch {
+		padding-left: 30px;
+		padding-right: 0;
+	}
+	.searchbarElement.forecastSearch input {
+		width: 65%
+	}
+	.searchBar {
+		margin-top: 10px;
+		display: block;
+	}
+	.emailLinks {
+		display: block;
+	}
+
+	.searchbarElement.baiduSearch input{
+		width: 60%;
+	}
+	.searchbarElement.stockSearch input{
+		width: 60%;
+	}
+	.searchbarElement {
+		display: inline;
+		margin-top: 15px;
+	}
+	.searchbarElement input {
+		padding: 5px;
+		text-align: center;	
+		box-sizing: border-box;
+		width: 65%;
+		vertical-align: top;
+		direction: inline-block;
+		outline: none;
+	}
+	.googleSearch input {
+		width: 53%;
+	}
+
+
+	.searchButton1, .searchButton2, .searchButton3, .searchButton4{
+		padding: 6px;
+		background-color: #4a90e2;
+		color: white;
+		width: 80px;
+		border: none;
+	}
+
+	.searchButton2 {
+		background-color: #d0021b;
+	}
+
+	.searchButton3 {
+		background-color: #4a90e2;
+	}
+
+	.searchButton4 {
+		background-color: #417505;
+	}
 }
 
 @media (max-width: 991px) { 
@@ -781,16 +828,17 @@ li.focus {
 .sbarDiv2{
 	display: block;
 	background-color: white;
-    height: 30%;
-    border: 1px solid rgb(240,240,240);
+    height: 35%;
 }
 .sbarDiv2 input {
-	width: 70%;
+	width: 60%;
 	padding: 5px;
+	text-align: center;
 }
 .sbarDiv2 button {
-	width: 25%;
+	width: 36%;
 	border: none;
+	background-color: #0F8F9B;
 }
 /*.sbar { 
 	display: block;
@@ -1090,11 +1138,11 @@ li.focus {
 	width: 100%;
 }
 .topAdsContainer img {
-	height: 150px;
+	height: 160px;
 	width: 100%;
 }
 .subHeight {
-	height: 150px;
+	height: 160px;
 	box-sizing: border-box
 }
 /*end of ads*/
@@ -1125,16 +1173,17 @@ li.focus {
 }
 .emailLinks li {
 	display: inline;
-	margin: 0 5px;
+	margin: 0 4px;
 }
 .emailLinks li a {
 	color: purple;
+	font-weight: 900;
 }
 .emailLinks li:first-of-type {
 	margin-left: 0;
 }
 .states.orange.pd20 {
-	padding: 5px 20px;
+	padding: 5px 10px;
 	
 }
 .states a {

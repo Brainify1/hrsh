@@ -4,7 +4,9 @@
             <div class="row">
               <div class="col-md-5 col-sm-12 col-xs-12 subHeight">
                 <div class="topMainLogoContainer">
-                  <img src="/images/hrshLogo.png">
+                  <a href="/">
+                      <img src="/images/hrshLogo.png">
+                  </a>
                 </div>
                 <div class="searchBar hide-on-small">
                     <ul class="emailLinks">
@@ -25,13 +27,13 @@
           						</li>
           						<li>
           							<a href="#">
-          								<img src="/images/qrCode.png" alt="">
+          								<img src="/images/qr.jpeg" alt="" height="70" class="qrCode">
           							</a>
           						</li>
                     </ul>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-4 subHeight hide-on-small">
+              <div class="col-md-4 col-sm-4 col-xs-4 subHeight hide-on-small topHeaderAds">
                 <div>
                 <a href="/ny">
                   <div class="topAdsContainer">
@@ -43,7 +45,7 @@
               <div class="col-md-3 col-sm-2 col-xs-2 subHeight hide-on-small">
                 <a href="/">
                   <div class="bg-yellow">
-                    <p>黄页</p>
+                    <p>美国黄页</p>
                   </div>
                 </a>
                 <a href="/">
@@ -53,26 +55,26 @@
                 </a>
               </div>
               <div class="searchBar row">
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 googleSearch">
                   <form action="http://www.google.com/search" method="get" name="searchform" target="_blank">
                     <input name="sitesearch" type="hidden">
                     <input autocomplete="on" class="form-controls search" name="q" placeholder="Google 搜索" required="required"  type="text">
                     <button class="searchButton1" type="submit">搜索</button>
                   </form>
                 </div>
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 pd0 stockSearch">
                   <form action="https://finance.yahoo.com/quote/" method="get" target="_blank">
                     <input type="text" aria-label="Search" autocomplete="off" autocorrect="off" autocapitalize="off" name="p" placeholder="美国股市 Yahoo! Finance">
                     <button type="submit" class="searchButton2">查询</button>
                   </form>
                 </div>
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 pd0 baiduSearch">
                   <form name="f" action="http://www.baidu.com/s" method="get" target="_blank">
                     <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off" placeholder="百度搜索">
                     <button type="submit" class="searchButton3">搜索</button>
                   </form>
                 </div>
-                <div class="searchbarElement col-md-3 col-sm-3 pd0">
+                <div class="searchbarElement col-md-3 col-sm-3 pd0 forecastSearch">
                   <form action="https://weather.com/weather/today" method="get" target="_blank">
                     <input type="text" name="why" placeholder="天气预报 查询zip code">
                     <button type="submit" class="searchButton4">查询</button>
@@ -84,30 +86,32 @@
     </div> 	
     <div class="container-fluid bodyDiv pageContent">
       <div class="mb10 orange pd20 states">
+        <span class="statesText" href="#">地区：</span>
         <a class="statesText" href="/a/ny">紐約</a>
+        <a class="statesText" href="/a/phi">费城</a>
+        <a class="statesText" href="/a/phi">马里兰</a>
+        <a class="statesText" href="/a/phi">迈阿密</a>
+        <a class="statesText" href="/a/sfr">新泽西</a>
+        <a class="statesText" href="/a/sfr">康州</a>
+        <a class="statesText" href="/a/phi">费城</a>
+        <a class="statesText" href="/a/sfr">奥兰多</a>
+        <a class="statesText" href="/a/sfr">多伦多</a>
+        <a class="statesText" href="/a/sfr">南卡</a>
+        <a class="statesText" href="/a/sfr">北卡</a>
+        <a class="statesText" href="/a/bos">波士顿</a>
         <a class="statesText" href="/a/la">洛杉矶</a>
+        <a class="statesText" href="/a/sfr">旧金山</a>
         <a class="statesText" href="/a/van">温哥华</a>  
         <a class="statesText" href="/a/sea">西雅图</a>
         <a class="statesText" href="/a/chi">芝加哥</a>
-        <a class="statesText" href="/a/lv">拉斯維加斯</a>
+        <a class="statesText" href="/a/dal">达拉斯</a>
         <a class="statesText" href="/a/hou">休斯敦</a>
-        <a class="statesText" href="/a/bos">波士顿</a>
-        <a class="statesText" href="/a/sfr">旧金山</a>
         <a class="statesText" href="/a/was">华盛顿</a>
-        <a class="statesText" href="/a/sdi">圣地亚哥</a>
-        <a class="statesText" href="/a/syd">悉尼</a>
-        <a class="statesText" href="/a/phi">费城</a>
         <a class="statesText" href="/a/hwi">夏威夷</a>
         <a class="statesText" href="/a/atl">亚特兰大</a>
-        <a class="statesText" href="/a/dal">达拉斯</a>
         <a class="statesText" href="/a/flo">佛罗里达</a>
+        <a class="statesText" href="/a/lv">拉斯維加斯</a>
         <a class="statesText" href="/a/sdi">圣地亚哥</a>
-        <a class="statesText" href="/a/syd">悉尼</a>
-        <a class="statesText" href="/a/phi">费城</a>
-        <a class="statesText" href="/a/hwi">夏威夷</a>
-        <a class="statesText" href="/a/atl">亚特兰大</a>
-        <a class="statesText" href="/a/dal">达拉斯</a>
-        <a class="statesText" href="/a/flo">佛罗里达</a>
-        <a class="statesText" href="/a/dal">达拉斯</a>
+        <a class="statesText" href="/a/sdi">全美各州</a>
     </div>
 
