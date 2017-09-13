@@ -6,7 +6,8 @@
         {{> states}} {{> navbar}}
         <div class="container-fluid">
             <div class="row  adsContent hide-on-small">
-                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5" id="ad_type_2">
+					
                     <a href="/ny">
                         <div class="imgContainer">
                             <img src="/images/ex_ads.gif">

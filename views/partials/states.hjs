@@ -36,7 +36,7 @@
               <div class="col-md-4 col-sm-4 col-xs-4 subHeight hide-on-small topHeaderAds">
                 <div>
                 <a href="/ny">
-                  <div class="topAdsContainer">
+                  <div class="topAdsContainer" id="ad_type_1">
                     <img src="/images/ex_ads.gif">
                   </div>
                 </a>	
