@@ -23,29 +23,29 @@
 		  						<a id="postBtn" href="/a/{{link}}/{{categ}}/postList">免费发帖</a>
 		  					</div>
     					{{#listings}}
-	  					<div class="navbarUl mt5">
-	  						<h5 class="viewTitle"> {{data.title}} </h5>
-	  					</div>
-	  					
-	  					<div class="rowDiv">
-	  						<div class="userNameDiv">
-	  							<div>
-	  								<img src="/images/man-user.png">
-	  							</div>
-	  							<h6>{{author}}</h6>
-	  							<h6 style="text-align: center">{{created_at}}</h6>
-	  						</div>
-	  						<div class="postContentDiv">
-	  							<div class="loadContent">
- 									<h5>
-	 									{{data.content}}<p></p>
-	 									<p id = "imgss"></p>
-	 									<input type="text" hidden value="{{docs}}" id="imgDisplay">
-	 									<input type="number" hidden value="{{docs.length}}" id="imgsLength">	
-	  								</h5>
-	  							</div>
-	  						</div>
-	  					</div>
+							<div class="navbarUl mt5">
+								<h5 class="viewTitle"> {{data.title}} </h5>
+							</div>
+							
+							<div class="rowDiv">
+								<div class="userNameDiv">
+									<div>
+										<img src="/images/man-user.png">
+									</div>
+									<h6>{{author}}</h6>
+									<h6 style="text-align: center">{{created_at}}</h6>
+								</div>
+								<div class="postContentDiv">
+									<div class="loadContent">
+										<h5>
+											{{data.content}}<p></p>
+											<p id = "imgss"></p>
+											<input type="text" hidden value="{{docs}}" id="imgDisplay">
+											<input type="number" hidden value="{{docs.length}}" id="imgsLength">	
+										</h5>
+									</div>
+								</div>
+							</div>
 	  					{{/listings}}
 						<script>
 							var individualImage = ($('#imgDisplay').val()).split(",");

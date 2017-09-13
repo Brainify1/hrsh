@@ -194,11 +194,13 @@ router.get('/a/:states/:type/news/:id', function(req, res, next) {
         if (allStates.indexOf(states) === -1) {
             res.render('error');
         } else {
-            newsCollection.findOne({ _id: id },  function(err, news) {
-                res.render('content', {
+            newsCollection.findOne({ _id: mongojs.ObjectId(id)},  function(err, news) {
+                console.log(news)
+                res.render('newsContent', {
                     title: '华人生活网',
                     link: states,
                     news,
+                    test: '123',
                     type,
                     statesCn: statesCN,
                     isLoggedIn: req.isAuthenticated(),
