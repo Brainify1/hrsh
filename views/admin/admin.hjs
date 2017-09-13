@@ -1,13 +1,14 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="../../images/favicon.ico">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>华人生活网 - 管理平台</title>
+    <title>华人生活网 - 管理平台</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -15,10 +16,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Animation library for notifications   -->
-    <link href="../../stylesheets/animate.min.css" rel="stylesheet"/>
+    <link href="../../stylesheets/animate.min.css" rel="stylesheet" />
 
     <!--  Light Bootstrap Table core CSS    -->
-    <link href="../../stylesheets/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="../../stylesheets/light-bootstrap-dashboard.css" rel="stylesheet" />
     <link href="../../stylesheets/admin.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
@@ -27,87 +28,88 @@
     <link href="../../stylesheets/pe-icon-7-stroke.css" rel="stylesheet" />
 
 </head>
+
 <body>
 
-<div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="../../images/sidebar-5.jpg">
+    <div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="../../images/sidebar-5.jpg">
 
-    <!--
+            <!--
 
         Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
         Tip 2: you can also add an image using data-image tag
 
     -->
 
-    	<div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="http://www.creative-tim.com" class="simple-text">
                     华人生活网
                 </a>
+                </div>
+
+                <ul class="nav">
+                    <li class="active" id="dash-anchor">
+                        <a>
+                            <i class="pe-7s-graph"></i>
+                            <p>控制台</p>
+                        </a>
+                    </li>
+                    <li id="acc-anchor">
+                        <a>
+                            <i class="pe-7s-user"></i>
+                            <p>账号信息</p>
+                        </a>
+                    </li>
+                    <li id="news-anchor">
+                        <a>
+                            <i class="pe-7s-note2"></i>
+                            <p>新闻管理</p>
+                        </a>
+                    </li>
+                    <li id="listing-anchor">
+                        <a>
+                            <i class="pe-7s-science"></i>
+                            <p>分类信息</p>
+                        </a>
+                    </li>
+                    <li id="ads-anchor">
+                        <a>
+                            <i class="pe-7s-map-marker"></i>
+                            <p>广告管理</p>
+                        </a>
+                    </li>
+                    <li id="users-anchor">
+                        <a>
+                            <i class="pe-7s-bell"></i>
+                            <p>用户管理</p>
+                        </a>
+                    </li>
+                    <li class="active-pro" id="video-anchor">
+                        <a>
+                            <i class="pe-7s-rocket"></i>
+                            <p>视频管理</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <ul class="nav">
-                <li class="active" id="dash-anchor">
-                    <a>
-                        <i class="pe-7s-graph"></i>
-                        <p>控制台</p>
-                    </a>
-                </li>
-                <li id="acc-anchor">
-                    <a>
-                        <i class="pe-7s-user"></i>
-                        <p>账号信息</p>
-                    </a>
-                </li>
-                <li id="news-anchor">
-                    <a>
-                        <i class="pe-7s-note2"></i>
-                        <p>新闻管理</p>
-                    </a>
-                </li>
-                <li id="listing-anchor">
-                    <a>
-                        <i class="pe-7s-science"></i>
-                        <p>分类信息</p>
-                    </a>
-                </li>
-                <li id="ads-anchor">
-                    <a>
-                        <i class="pe-7s-map-marker"></i>
-                        <p>广告管理</p>
-                    </a>
-                </li>
-                <li id="users-anchor">
-                    <a>
-                        <i class="pe-7s-bell"></i>
-                        <p>用户管理</p>
-                    </a>
-                </li>
-				<li class="active-pro" id="video-anchor">
-                    <a>
-                        <i class="pe-7s-rocket"></i>
-                        <p>视频管理</p>
-                    </a>
-                </li>
-            </ul>
-    	</div>
-    </div>
-
-    <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" id="dash-title">控制台 <i class="fa fa-dashboard"></i></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <!-- <li class="dropdown">
+                        <a class="navbar-brand" href="#" id="dash-title">控制台 <i class="fa fa-dashboard"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <!-- <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-globe"></i>
                                     <b class="caret"></b>
@@ -126,25 +128,25 @@
                                 <i class="fa fa-search"></i>
                             </a>
                         </li> -->
-                    </ul>
+                        </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                           <a href="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="">
                                用户名
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </li>
+                            <li>
+                                <a href="#">
                                 注销
                             </a>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <div class="tabs">
+            <div class="tabs">
                 <div class="content dash-tab">
                     <div class="container-fluid">
                         <div class="row">
@@ -156,7 +158,7 @@
                                     </div>
                                     <div class="content">
                                         <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-        
+
                                         <div class="footer">
                                             <div class="legend">
                                                 <i class="fa fa-circle text-info"></i> Tech News
@@ -175,7 +177,7 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                             <!-- <div class="col-md-8">
                                 <div class="card">
                                     <div class="header">
@@ -271,72 +273,71 @@
                                                             </label>
                                                         </td>
                                                         <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
-                                                            <td class="td-actions text-right">
-                                                                <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
                                                                     <i class="fa fa-edit"></i>
                                                                 </button>
-                                                                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                                     <i class="fa fa-times"></i>
                                                                 </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <label class="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="checkbox">
                                                                     <input type="checkbox" value="" data-toggle="checkbox">
                                                                 </label>
-                                                            </td>
-                                                            <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                            <td class="td-actions text-right">
-                                                                <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        </td>
+                                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
                                                                     <i class="fa fa-edit"></i>
                                                                 </button>
-                                                                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                                     <i class="fa fa-times"></i>
                                                                 </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <label class="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="checkbox">
                                                                     <input type="checkbox" value="" data-toggle="checkbox">
                                                                 </label>
-                                                            </td>
-                                                            <td>Read "Following makes Medium better"</td>
-                                                            <td class="td-actions text-right">
-                                                                <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        </td>
+                                                        <td>Read "Following makes Medium better"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
                                                                     <i class="fa fa-edit"></i>
                                                                 </button>
-                                                                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                                     <i class="fa fa-times"></i>
                                                                 </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <label class="checkbox">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label class="checkbox">
                                                                     <input type="checkbox" value="" data-toggle="checkbox">
                                                                 </label>
-                                                            </td>
-                                                            <td>Unfollow 5 enemies from twitter</td>
-                                                            <td class="td-actions text-right">
-                                                                <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        </td>
+                                                        <td>Unfollow 5 enemies from twitter</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
                                                                     <i class="fa fa-edit"></i>
                                                                 </button>
-                                                                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                                     <i class="fa fa-times"></i>
                                                                 </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-            
-                                            <div class="footer">
-                                                <hr>
-                                                <div class="stats">
-                                                    <i class="fa fa-history"></i> Updated 3 minutes ago
-                                                </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="footer">
+                                            <hr>
+                                            <div class="stats">
+                                                <i class="fa fa-history"></i> Updated 3 minutes ago
                                             </div>
                                         </div>
                                     </div>
@@ -344,143 +345,142 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content acc-tab">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">Edit Profile</h4>
-                                        </div>
-                                        <div class="content">
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <div class="form-group">
-                                                            <label>Company (disabled)</label>
-                                                            <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <label>Username</label>
-                                                            <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label for="exampleInputEmail1">Email address</label>
-                                                            <input type="email" class="form-control" placeholder="Email">
-                                                        </div>
+                </div>
+                <div class="content acc-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">Edit Profile</h4>
+                                    </div>
+                                    <div class="content">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label>Company (disabled)</label>
+                                                        <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
                                                     </div>
                                                 </div>
-            
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label>First Name</label>
-                                                            <input type="text" class="form-control" placeholder="Company" value="Mike">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label>Last Name</label>
-                                                            <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                                                        </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label>Username</label>
+                                                        <input type="text" class="form-control" placeholder="Username" value="michael23">
                                                     </div>
                                                 </div>
-            
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>Address</label>
-                                                            <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                                                        </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email address</label>
+                                                        <input type="email" class="form-control" placeholder="Email">
                                                     </div>
                                                 </div>
-            
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label>City</label>
-                                                            <input type="text" class="form-control" placeholder="City" value="Mike">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label>Country</label>
-                                                            <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="form-group">
-                                                            <label>Postal Code</label>
-                                                            <input type="number" class="form-control" placeholder="ZIP Code">
-                                                        </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>First Name</label>
+                                                        <input type="text" class="form-control" placeholder="Company" value="Mike">
                                                     </div>
                                                 </div>
-            
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="form-group">
-                                                            <label>About Me</label>
-                                                            <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
-                                                        </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Last Name</label>
+                                                        <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
                                                     </div>
                                                 </div>
-            
-                                                <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
-                                                <div class="clearfix"></div>
-                                            </form>
-                                        </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>City</label>
+                                                        <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Country</label>
+                                                        <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Postal Code</label>
+                                                        <input type="number" class="form-control" placeholder="ZIP Code">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>About Me</label>
+                                                        <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                            <div class="clearfix"></div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="card card-user">
-                                        <div class="image">
-                                            <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-user">
+                                    <div class="image">
+                                        <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..." />
+                                    </div>
+                                    <div class="content">
+                                        <div class="author">
+                                            <a href="#">
+                                                <img class="avatar border-gray" src="../../images/faces/face-3.jpg" alt="..." />
+
+                                                <h4 class="title">Mike Andrew<br />
+                                                    <small>michael24</small>
+                                                </h4>
+                                            </a>
                                         </div>
-                                        <div class="content">
-                                            <div class="author">
-                                                    <a href="#">
-                                                <img class="avatar border-gray" src="../../images/faces/face-3.jpg" alt="..."/>
-            
-                                                    <h4 class="title">Mike Andrew<br />
-                                                        <small>michael24</small>
-                                                    </h4>
-                                                </a>
-                                            </div>
-                                            <p class="description text-center"> "Lamborghini Mercy <br>
-                                                                Your chick she so thirsty <br>
-                                                                I'm in that two seat Lambo"
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div class="text-center">
-                                            <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
-                                            <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
-                                            <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
-            
-                                        </div>
+                                        <p class="description text-center"> "Lamborghini Mercy <br> Your chick she so thirsty <br> I'm in that two seat Lambo"
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="text-center">
+                                        <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                        <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
+                                        <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content news-tab">
-                        <div class="container-fluid createNews">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">添加新闻</h4>
-                                            <p class="category">添加新的新闻</p>
-                                        </div>
-                                        <div class="content">
-                                            <form id="createNewsForm">
-                                                <div class="row form-group">
-                                                    <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
-                                                    <select class="news-type" name="type">
+                </div>
+                <div class="content news-tab">
+                    <div class="container-fluid createNews">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">添加新闻</h4>
+                                        <p class="category">添加新的新闻</p>
+                                    </div>
+                                    <div class="content">
+                                        <form id="createNewsForm">
+                                            <div class="row form-group">
+                                                <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
+                                                <select class="news-type" name="type">
                                                         <option selected value="xw">新闻分类</option>
                                                         <option value="qw">趣闻轶事</option>
                                                         <option value="sh">社会娱乐</option>
@@ -493,21 +493,21 @@
                                                         <option value="yx">医学养生</option>
                                                         <option value="sg">帅哥美女</option>
                                                     </select>
-                                                    <textarea name="content" id="news-content"></textarea>
-                                                    <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                                <textarea name="content" id="news-content"></textarea>
+                                                <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            function CKupdate(){
-                                for ( instance in CKEDITOR.instances )
-                                    CKEDITOR.instances[instance].updateElement();
-                            }
-                            $('#createNewsForm').submit(function(e) {
+                    </div>
+                    <script>
+                        function CKupdate() {
+                            for (instance in CKEDITOR.instances)
+                                CKEDITOR.instances[instance].updateElement();
+                        }
+                        $('#createNewsForm').submit(function(e) {
                                 e.preventDefault();
                                 CKupdate()
                                 var self = $(this)
@@ -535,7 +535,7 @@
                                 })
                             })
                             //get news list for management
-                            $.get({
+                        $.get({
                                 url: '/api/news/fetch',
                                 success: function(data) {
                                     for (var i = 0; i < data.length; i++) {
@@ -554,106 +554,108 @@
                                 }
                             })
                             //delete news button
-                            function deleteNews(id, el) {
-                                $.ajax({
-                                    method: 'post',
-                                    url: '/api/news/delete',
-                                    data: { id: id},
-                                    success: function (data) {
-                                        alert(`新闻已删除`);
-                                        $(el).parents('tr').remove();
-                                    },
-                                    error: function (data) {
-                                        alert('删除失败')
-                                    }
-                                })
-                            }
-                        </script>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">新闻管理</h4>
-                                            <p class="category">修改，查询或删除相关新闻。</p>
-                                        </div>
-                                        <div class="content table-responsive table-full-width">
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>标题</th>
-                                                    <th>发布日期</th>
-                                                    <th>点击量</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody class="newsBody">
-                                                </tbody>
-                                            </table>
-            
-                                        </div>
+                        function deleteNews(id, el) {
+                            $.ajax({
+                                method: 'post',
+                                url: '/api/news/delete',
+                                data: {
+                                    id: id
+                                },
+                                success: function(data) {
+                                    alert(`新闻已删除`);
+                                    $(el).parents('tr').remove();
+                                },
+                                error: function(data) {
+                                    alert('删除失败')
+                                }
+                            })
+                        }
+                    </script>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">新闻管理</h4>
+                                        <p class="category">修改，查询或删除相关新闻。</p>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>标题</th>
+                                                <th>发布日期</th>
+                                                <th>点击量</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody class="newsBody">
+                                            </tbody>
+                                        </table>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="content listing-tab">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">分类广告管理</h4>
-                                            <p class="category">查询或删除分类广告</p>
-                                        </div>
-                                        <div class="filterBlock">
-                                            <select class="listing-state">
+                </div>
+                <div class="content listing-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">分类广告管理</h4>
+                                        <p class="category">查询或删除分类广告</p>
+                                    </div>
+                                    <div class="filterBlock">
+                                        <select class="listing-state">
                                                 <option selected value="xw">地区</option>
                                             </select>
-                                            <select class="listing-category">
+                                        <select class="listing-category">
                                                 <option selected value="xw">分类</option>
                                             </select>
-                                            <button class="btn btn-large btn-info" id="searchListing">搜索</button>
-                                        </div>
-                                        <div class="content table-responsive table-full-width">
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>标题</th>
-                                                    <th>发布日期</th>
-                                                    <th>点击量</th>
-                                                    <th>类型</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody class="listingBody">
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                         <!-- //显示所有分类 -->
-                                        <script>
-                                            $.get('/api/states/en/fetch', function(statesEN) {
-                                                $.get('/api/states/cn/fetch', function(statesCN) {
-                                                    for(var i = 0; i < statesEN.length; i ++) {
-                                                        $('.listing-state').append(`
+                                        <button class="btn btn-large btn-info" id="searchListing">搜索</button>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>标题</th>
+                                                <th>发布日期</th>
+                                                <th>点击量</th>
+                                                <th>类型</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody class="listingBody">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //显示所有分类 -->
+                                    <script>
+                                        $.get('/api/states/en/fetch', function(statesEN) {
+                                            $.get('/api/states/cn/fetch', function(statesCN) {
+                                                for (var i = 0; i < statesEN.length; i++) {
+                                                    $('.listing-state').append(`
                                                             <option value="${statesEN[i]}">${statesCN[i]}</option>
                                                         `)
-                                                    }
-                                                })
+                                                }
                                             })
-                                            $.get('/api/category/en/fetch', function(en) {
-                                                $.get('/api/category/cn/fetch', function(cn) {
-                                                    for(var i = 0; i < en.length; i ++) {
-                                                        $('.listing-category').append(`
+                                        })
+                                        $.get('/api/category/en/fetch', function(en) {
+                                            $.get('/api/category/cn/fetch', function(cn) {
+                                                for (var i = 0; i < en.length; i++) {
+                                                    $('.listing-category').append(`
                                                             <option value="${en[i]}">${cn[i]}</option>
                                                         `)
-                                                    }
-                                                })
+                                                }
                                             })
-                                            $('#searchListing').click(function() {
+                                        })
+                                        $('#searchListing').click(function() {
                                                 var state = $('.listing-state').val()
                                                 var category = $('.listing-category').val()
                                                 $('.listingBody').empty();
                                                 $.get(`/api/listings/fetchAll/${state}/${category}`, (data) => {
-                                                    for (var i = 0; i < data.length; i ++) {
+                                                    for (var i = 0; i < data.length; i++) {
                                                         $('.listingBody').append(`
                                                             <tr>
                                                                 <td>${data[i]._id}</td>
@@ -668,9 +670,9 @@
                                                 })
                                             })
                                             //get all listing
-                                            $.get(`/api/listings/fetch`, (data) => {
-                                                    for (var i = 0; i < data.length; i ++) {
-                                                        $('.listingBody').append(`
+                                        $.get(`/api/listings/fetch`, (data) => {
+                                            for (var i = 0; i < data.length; i++) {
+                                                $('.listingBody').append(`
                                                             <tr>
                                                                 <td>${data[i]._id}</td>
                                                                 <td>${data[i].data.title}</td>
@@ -680,20 +682,360 @@
                                                                 <td><a onclick="deleteListing('${data[i]._id}', this)" href="#">删除</a></td>
                                                             </tr>
                                                         `)
+                                            }
+                                        })
+
+                                        //delete listing button
+                                        function deleteListing(id, el) {
+                                            $.ajax({
+                                                method: 'get',
+                                                url: '/api/listing/delete/' + id,
+                                                success: function(data) {
+                                                    console.log($(el))
+                                                    $(el).parent().parent().remove();
+                                                    alert(`信息已删除`);
+                                                },
+                                                error: function(data) {
+                                                    alert('删除失败')
+                                                }
+                                            })
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//
+                    This Is Ad Area
+                    \\-->
+                <div class="content ads-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card" style="padding: 30px;">
+                                    <div class="header">
+                                        <h4 class="title">添加广告</h4>
+                                        <p class="category">添加新的广告</p>
+                                    </div>
+                                    <form id="ad_form1" method="post" action="/api/ads/postAd1" enctype="multipart/form-data">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                    形式1/两侧广告
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>公司: </label>
+                                                    <input style="width: 70%" type="text" name="company" required="required">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label style="color: black; font-size: 13px">连结点</label>
+                                                    <input type="text" style="width: 70%" name="url" required="required">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label style="color: black; font-size: 13px">广告图片</label>
+                                                    <input type="file" name="ad1" required="required">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button id="adSubmit1">添加广告</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="ad_form2" method="post" action="/api/ads/postAd2" enctype="multipart/form-data">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                    形式2/大形广告
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <span>公司: </span>
+                                                    <input style="width: 70%" type="text" name="company"required="required" >
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label style="color: black; font-size: 13px">连结点: </label>
+                                                    <input style="width: 70%" type="text" name="url" required="required">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label style="color: black; font-size: 13px">广告图片</label>
+                                                    <input type="file" name="ad2" required="required">
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <button id="adSubmit2">添加广告</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="ad_form3" method="post" action="/api/ads/postAd3" enctype="multipart/form-data">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                    形式3/xx广告
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <span>公司: </span>
+                                                    <input style="width: 70%" type="text" name="company" required="required">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label style="color: black; font-size: 13px">连结点: </label>
+                                                    <input style="width: 70%" type="text" name="url" required="required">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label style="color: black; font-size: 13px">广告图片</label>
+                                                    <input type="file" name="ad3" required="required">
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <button id="adSubmit3" type="submit">添加广告</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="ad_form4" method="post" action="/api/ads/postAd4" enctype="multipart/form-data">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12" style="font-size: 18px; padding: 0">
+                                                    形式4/xx广告
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <span>公司: </span>
+                                                    <input style="width: 70%" type="text" name="company" required="required">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label style="color: black; font-size: 13px">连结点: </label>
+                                                    <input style="width: 70%" type="text" name="url" required="required">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label style="color: black; font-size: 13px">广告图片</label>
+                                                    <input type="file" name="ad4" required="required">
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <button id="adSubmit4">添加广告</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">广告管理</h4>
+                                        <p class="category">各个广告牌图片管理</p>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        形式1/两侧广告
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>公司</th>
+                                                <th>连结点</th>
+                                                <th>发布日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody id="adTbody1">
+                                                <!-- <tr>
+                                                        <td>1</td>
+                                                        <td>Dakota Rice</td>
+                                                        <td>$36,738</td>
+                                                        <td>Niger</td>
+                                                        <td>Oud-Turnhout</td>
+                                                    </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        形式2/xx广告
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>公司</th>
+                                                <th>连结点</th>
+                                                <th>发布日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody id="adTbody2">
+                                                <!-- <tr>
+                                                        <td>1</td>
+                                                        <td>Dakota Rice</td>
+                                                        <td>$36,738</td>
+                                                        <td>Niger</td>
+                                                        <td>Oud-Turnhout</td>
+                                                    </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        形式3/xx广告
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>公司</th>
+                                                <th>连结点</th>
+                                                <th>发布日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody id="adTbody3">
+                                                <!-- <tr>
+                                                        <td>1</td>
+                                                        <td>Dakota Rice</td>
+                                                        <td>$36,738</td>
+                                                        <td>Niger</td>
+                                                        <td>Oud-Turnhout</td>
+                                                    </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        形式4/xx广告
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>公司</th>
+                                                <th>连结点</th>
+                                                <th>发布日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody id="adTbody4">
+                                                <!-- <tr>
+                                                        <td>1</td>
+                                                        <td>Dakota Rice</td>
+                                                        <td>$36,738</td>
+                                                        <td>Niger</td>
+                                                        <td>Oud-Turnhout</td>
+                                                    </tr> -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $.get({
+                                            url: "/api/ads/list",
+                                            success: function(data) {
+                                                for (var i = 0; i < data.length; i++) {
+                                                    if(data[i].type == 1){
+                                                        $('#adTbody1').append(`
+                                                        <tr>
+                                                            <td>${data[i]._id}</td>
+                                                            <td>${data[i].company}</td>
+                                                            <td>${data[i].url}</td>
+                                                            <td>${data[i].created_at}</td>
+                                                            <td>
+                                                                <a href="#" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}', this)">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    `)
+                                                    }else if(data[i].type == 2){
+                                                        $('#adTbody2').append(`
+                                                        <tr>
+                                                            <td>${data[i]._id}</td>
+                                                            <td>${data[i].company}</td>
+                                                            <td>${data[i].url}</td>
+                                                            <td>${data[i].created_at}</td>
+                                                            <td>
+                                                                <a href="#" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}', this)">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    `)
+                                                    }else if(data[i].type == 3){
+                                                        $('#adTbody3').append(`
+                                                        <tr>
+                                                            <td>${data[i]._id}</td>
+                                                            <td>${data[i].company}</td>
+                                                            <td>${data[i].url}</td>
+                                                            <td>${data[i].created_at}</td>
+                                                            <td>
+                                                                <a href="#" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}', this)">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    `)
+                                                    }else if(data[i].type == 4){
+                                                        $('#adTbody4').append(`
+                                                        <tr>
+                                                            <td>${data[i]._id}</td>
+                                                            <td>${data[i].company}</td>
+                                                            <td>${data[i].url}</td>
+                                                            <td>${data[i].created_at}</td>
+                                                            <td>
+                                                                <a href="#" data-id="${data[i]._id}" class="deleteNews" onclick="deleteNews('${data[i]._id}', this)">删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    `)
+                                                    }
+                                                }
+                                            }
+                                        })
+                                        //delete ads button
+                                        function deleteNews(id, el) {
+                                            $.ajax({
+                                                method: 'post',
+                                                url: '/api/ads/delete',
+                                                data: { id: id},
+                                                success: function (data) {
+                                                    alert(`广告已删除`);
+                                                    $(el).parents('tr').remove();
+                                                },
+                                                error: function (data) {
+                                                    alert('删除失败')
+                                                }
+                                            })
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content users-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">用户管理</h4>
+                                        <p class="category">管理，查询，或关闭用户账号</p>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>用户名</th>
+                                                <th>创建日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody class="usersBody">
+                                            </tbody>
+                                        </table>
+                                        <script>
+                                            $.ajax({
+                                                    method: 'get',
+                                                    url: '/api/allUsers',
+                                                    success: function(data) {
+                                                        for (var i = 0; i < data.length; i++) {
+                                                            $('.usersBody').append(`
+                                                                    <tr>
+                                                                        <td>${data[i]._id}</td>
+                                                                        <td>${data[i].username}</td>
+                                                                        <td>${data[i].created_at}</td>
+                                                                        <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
+                                                                    </tr>
+                                                                `)
+                                                        }
+                                                    },
+                                                    error: function(error) {
+                                                        console.log(error)
                                                     }
                                                 })
-                                            
-                                            //delete listing button
-                                            function deleteListing(id, el) {
+                                                //delete listing button
+                                            function deleteUser(id, el) {
                                                 $.ajax({
                                                     method: 'get',
-                                                    url: '/api/listing/delete/' + id,
-                                                    success: function (data) {
-                                                        console.log($(el))
+                                                    url: '/api/users/delete/' + id,
+                                                    success: function(data) {
                                                         $(el).parent().parent().remove();
-                                                        alert(`信息已删除`);
+                                                        alert(`用户已删除`);
                                                     },
-                                                    error: function (data) {
+                                                    error: function(data) {
                                                         alert('删除失败')
                                                     }
                                                 })
@@ -704,425 +1046,140 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content ads-tab">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card" style="padding: 30px;">
-                                        <div class="header">
-                                            <h4 class="title">添加广告</h4>
-                                            <p class="category">添加新的广告</p>    
-                                        </div>
-                                        <form id="ad_form1">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                   <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                        形式1/两侧广告
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label>公司: </label>
-                                                        <input style="width: 70%" type="text" name="company" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label style="color: black; font-size: 13px">连结点</label>
-                                                        <input type="text" style="width: 70%" name="url" required="required">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label style="color: black; font-size: 13px">广告图片</label>
-                                                        <input type="file" name="ad" required="required">
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <button id="adSubmit1">添加广告</button>
-                                                    </div>
-                                                </div>    
-                                            </div>
+                </div>
+                <div class="content video-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h4 class="title">视频管理</h4>
+                                        <p class="category">添加，删除或管理网站视频区内容</p>
+                                    </div>
+                                    <div>
+                                        <form id="videoUpload" action="/" method="post">
+                                            <label>视频名</label>
+                                            <input type="text" name="videoName">
+                                            <label>URL</label>
+                                            <input type="text" name="Url連結">
+                                            <button type="submit" id="videoSubmit">發布</button>
                                         </form>
-                                        <form id="ad_form2">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                        形式2/大形广告
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <span>公司: </span>
-                                                        <input style="width: 70%" type="text" name="company">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label style="color: black; font-size: 13px">连结点: </label>
-                                                        <input  style="width: 70%" type="text" name="adUrl">
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label style="color: black; font-size: 13px">广告图片</label>
-                                                        <input type="file" name="ad" >
-                                                    </div>
-                                                    
-                                                    <div class="col-md-2">
-                                                        <button id="adSubmit2" type="button">添加广告</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <form id="ad_form3">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                            形式3/xx广告
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <span>公司: </span>
-                                                            <input style="width: 70%" type="text" name="company">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label style="color: black; font-size: 13px">连结点: </label>
-                                                            <input  style="width: 70%" type="text" name="adUrl">
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <label style="color: black; font-size: 13px">广告图片</label>
-                                                            <input type="file" name="ad" >
-                                                        </div>
-                                                        
-                                                        <div class="col-md-2">
-                                                            <button id="adSubmit3" type="submit">添加广告</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <form id="ad_form4">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                                形式4/xx广告
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <span>公司: </span>
-                                                                <input style="width: 70%" type="text" name="company">
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <label style="color: black; font-size: 13px">连结点: </label>
-                                                                <input  style="width: 70%" type="text" name="adUrl">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <label style="color: black; font-size: 13px">广告图片</label>
-                                                                <input type="file" name="ad" >
-                                                            </div>
-                                                            
-                                                            <div class="col-md-2">
-                                                                <button id="adSubmit4" type="button">添加广告</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
                                     </div>
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">广告管理</h4>
-                                            <p class="category">各个广告牌图片管理</p>
-                                        </div>
-                                        <div class="content table-responsive table-full-width">
-                                            形式1/两侧广告
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>公司</th>
-                                                    <th>连结点</th>
-                                                    <th>发布日期</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody class="adTbody1">
-                                                    <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="content table-responsive table-full-width">
-                                            形式2/大形广告
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>公司</th>
-                                                    <th>连结点</th>
-                                                    <th>发布日期</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody class="adTbody2">
-                                                    <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <script type="text/javascript">
-                                            // $('#adSubmit1').click(function(e) {
-                                            //     e.preventDefault();
-                                                // $.ajax({
-                                                //     url: '/api/ads/postAd1',
-                                                //     data: $('#ad_form1').serialize(),
-                                                //     method: 'POST',
-                                                //     success: function() {
-                                                //         // return(data);
-                                                //         // alert('success')
-                                                //         // $('.adTbody1').append(`
-                                                //         //     <tr>
-                                                //         //         <td>${data._id}</td>
-                                                //         //         <td>${data.company1}</td>
-                                                //         //         <td>${data.adUrl1}</td>
-                                                //         //         <td>${data.created_at}</td>
-                                                //         //         <td>
-                                                //         //             <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
-                                                //         //         </td>
-                                                //         //     </tr>
-                                                //         // `)
-                                                //         alert('广告发布成功！')
-                                                //     },
-                                                //     error: function(err) {
-                                                //         alert('发布失败')
-                                                //     }
-                                                // })
-                                            // })
+                                    <script type="text/javascript">
+                                        $('#videoUpload').submit(function(e) {
+                                            e.preventDefault();
 
-                                            // $.get({
-                                            //     url: '/../api/postAd1/post1',
-                                            //     success: function(data) {
-                                            //         for (var i = 0; i < data.length; i++) {
-                                            //             $('.adTbody1').append(`
-                                            //                 <tr>
-                                            //                     <td>${data._id}</td>
-                                            //                     <td>${data.company1}</td>
-                                            //                     <td>${data.adUrl1}</td>
-                                            //                     <td>${data.created_at}</td>
-                                            //                     <td>
-                                            //                         <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
-                                            //                     </td>
-                                            //                 </tr>
-                                            //             `)
-                                            //         }
-                                            //     }
-                                            // })
-                                            //delete ads button
-                                            // function deleteNews(id, el) {
-                                            //     $.ajax({
-                                            //         method: 'post',
-                                            //         url: '/api/ads/delete1',
-                                            //         data: { id: id},
-                                            //         success: function (data) {
-                                            //             alert(`广告已删除`);
-                                            //             $(el).parents('tr').remove();
-                                            //         },
-                                            //         error: function (data) {
-                                            //             alert('删除失败')
-                                            //         }
-                                            //     })
-                                            // }
-                                        </script>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content users-tab">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">用户管理</h4>
-                                            <p class="category">管理，查询，或关闭用户账号</p>
-                                        </div>
-                                        <div class="content table-responsive table-full-width">
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>用户名</th>
-                                                    <th>创建日期</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody class="usersBody">
-                                                </tbody>
-                                            </table>
-                                            <script>
-                                                    $.ajax({
-                                                        method: 'get',
-                                                        url: '/api/allUsers',
-                                                        success: function(data) {
-                                                            for(var i = 0; i < data.length; i++) {
-                                                                $('.usersBody').append(`
-                                                                    <tr>
-                                                                        <td>${data[i]._id}</td>
-                                                                        <td>${data[i].username}</td>
-                                                                        <td>${data[i].created_at}</td>
-                                                                        <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
-                                                                    </tr>
-                                                                `)
-                                                            }
-                                                        },
-                                                        error: function(error) {
-                                                            console.log(error)
-                                                        }
-                                                    })
-                                                    //delete listing button
-                                                    function deleteUser(id, el) {
-                                                        $.ajax({
-                                                            method: 'get',
-                                                            url: '/api/users/delete/' + id,
-                                                            success: function (data) {
-                                                                $(el).parent().parent().remove();
-                                                                alert(`用户已删除`);
-                                                            },
-                                                            error: function (data) {
-                                                                alert('删除失败')
-                                                            }
-                                                        })
-                                                    }
-                                            </script>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content video-tab">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="header">
-                                            <h4 class="title">视频管理</h4>
-                                            <p class="category">添加，删除或管理网站视频区内容</p>
-                                        </div>
-                                        <div>
-                                            <form id="videoUpload" action="/" method="post">
-                                                <label>视频名</label>
-                                                <input type="text" name="videoName">
-                                                <label>URL</label>
-                                                <input type="text" name="Url連結">
-                                                <button type="submit" id="videoSubmit">發布</button>
-                                            </form>
-                                        </div>
-                                        <script type="text/javascript">
-                                            $('#videoUpload').submit(function(e){
-                                                    e.preventDefault();
-                                                    
+                                        })
+                                    </script>
+                                    <div class="content table-responsive table-full-width">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                                <th>ID</th>
+                                                <th>视频名</th>
+                                                <th>URL</th>
+                                                <th>發布日期</th>
+                                                <th>操作</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Dakota Rice</td>
+                                                    <td>$36,738</td>
+                                                    <td>Niger</td>
+                                                    <td>Oud-Turnhout</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-                                                })
-                                        </script>
-                                        <div class="content table-responsive table-full-width">
-                                            <table class="table table-hover table-striped">
-                                                <thead>
-                                                    <th>ID</th>
-                                                    <th>视频名</th>
-                                                    <th>URL</th>
-                                                    <th>發布日期</th>
-                                                    <th>操作</th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-            
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
                                 Home
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </li>
+                            <li>
+                                <a href="#">
                                 Company
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </li>
+                            <li>
+                                <a href="#">
                                 Portfolio
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </li>
+                            <li>
+                                <a href="#">
                                Blog
                             </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
-            </div>
-        </footer>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
 
+        </div>
     </div>
-</div>
 
 
 
 </body>
-    <script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
-    <script src="/javascripts/manager.js"></script>
-    <!--   Core JS Files   -->
-    <script src="/javascripts/admin.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="//cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
+<script src="/javascripts/manager.js"></script>
+<!--   Core JS Files   -->
+<script src="/javascripts/admin.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="/javascripts/bootstrap-checkbox-radio-switch.js"></script>
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="/javascripts/bootstrap-checkbox-radio-switch.js"></script>
 
-	<!--  Charts Plugin -->
-	<script src="/javascripts/chartist.min.js"></script>
+<!--  Charts Plugin -->
+<script src="/javascripts/chartist.min.js"></script>
 
-    <!--  Notifications Plugin    -->
-    <script src="/javascripts/bootstrap-notify.js"></script>
+<!--  Notifications Plugin    -->
+<script src="/javascripts/bootstrap-notify.js"></script>
 
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="/javascripts/light-bootstrap-dashboard.js"></script>
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="/javascripts/light-bootstrap-dashboard.js"></script>
 
-	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-    <script src="/javascripts/demo.js"></script>
-    <script src="/admin/ads.js"></script>
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+<script src="/javascripts/demo.js"></script>
+<script src="/admin/ads.js"></script>
 
-	<script type="text/javascript">
-    	$(document).ready(function(){
+<script type="text/javascript">
+    $(document).ready(function() {
 
-        	demo.initChartist();
+        demo.initChartist();
 
-        	$.notify({
-            	icon: 'pe-7s-gift',
-            	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+        $.notify({
+            icon: 'pe-7s-gift',
+            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
 
-            },{
-                type: 'info',
-                timer: 4000
-            });
+        }, {
+            type: 'info',
+            timer: 4000
+        });
 
-    	});
-	</script>
+    });
+</script>
 
 </html>
