@@ -1014,7 +1014,7 @@
                                                         for (var i = 0; i < data.length; i++) {
                                                             $('.usersBody').append(`
                                                                     <tr>
-                                                                        <td>${data[i]._id}</td>
+                                                                        <td>${i+1}</td>
                                                                         <td>${data[i].username}</td>
                                                                         <td>${data[i].created_at}</td>
                                                                         <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
