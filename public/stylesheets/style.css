@@ -312,7 +312,7 @@ div.subHeight.topHeaderAds {
 }
 .carouselTitle h4 {
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 5px;
 	letter-spacing: 4px;
 	color: white;
 }
@@ -478,7 +478,12 @@ div.subHeight.topHeaderAds {
 	margin-bottom: 10px;
 }
 
-
+.videosContent p {
+	text-align: center;
+	font-weight: 900;
+	font-size: 18px;
+	margin: 5px 0;
+}
 .bg-temp {
 	height: 800px;
 	width: 100%;
@@ -512,13 +517,10 @@ div.subHeight.topHeaderAds {
 	background:rgba(0,0,0,0.6);
 	text-shadow:none;
 }
- 
-#myCarousel .list-group {
-	position:absolute;
-	top:0;
-	right:0;
-}
 
+.newsBlock {
+	padding: 0;
+}
 #myCarousel .list-group-item {
 	width: 100%;
 	border-radius:0px;
@@ -526,6 +528,9 @@ div.subHeight.topHeaderAds {
 }
 
 .carousel.slide .list-group .active {
+	background-color:#fff;	
+}
+.carousel.slide .list-group .active:hover {
 	background-color:#eee;	
 }
 .carousel.slide .list-group .active#carouselItemTitle {
@@ -584,6 +589,7 @@ div.subHeight.topHeaderAds {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 10px;
 }
 
 .carouselRightLi {
@@ -594,6 +600,12 @@ div.subHeight.topHeaderAds {
 .carouselRightLi h4 {
 	margin: 0;
 	line-height: 23px;
+	max-width: 100%;
+	max-height: 22px;
+	height: 25px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-top: 2px;
 }
 .searchBar {
 	width: 100%;

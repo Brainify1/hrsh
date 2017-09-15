@@ -236,6 +236,7 @@ router.get('/news/fetch/types/en', (req, res) => {
 ////////////////////////////////videos SECTION////////////////////////////////////////
 router.post('/videos/new', (req, res) => {
     var video = req.body
+    video.created_at = Date.now()
     videosCollection.save(video, (err, newVideo) => {
         res.json(newVideo)
     })
