@@ -6,9 +6,10 @@
   {{> navbar}}
   <div class="container-fluid">
       <div class="row">
-          <div class="col-md-2 col-sm-2">
-              <div class="bg-temp">		 
-          </div>
+          <div class="col-md-2 col-sm-2 noPaddingLeft">
+                <div class="bg-temp">		
+                 
+                </div>
           </div>
           <div class="col-md-8 col-sm-8 mb50">
               <div class="locationDiv">
@@ -49,7 +50,7 @@
                   }
               </script>
         </div>
-          <div class="col-md-2 col-sm-2 ">
+          <div class="col-md-2 col-sm-2 noPaddingRight">
               <div class="bg-temp">
                    
               </div>
@@ -58,6 +59,31 @@
   </div>
 </div>
 {{> footer}}
+<script>
+        $.get('/api/ads/fetch/4', (data) => {
+            console.log(data)
+            $('.bg-temp')[0].innerHTML = `
+                <a href="${data[0].url}">
+                    <img src="/ads/${data[0].imageName}">
+                </a>
+            `
+            $('.bg-temp')[1].innerHTML = `
+                <a href="${data[1].url}">
+                    <img src="/ads/${data[1].imageName}">
+                </a>
+            `
+        })	
+        $('#qw').text('趣闻轶事')
+        $('#kj').text('科技电子')
+        $('#sh').text('社会娱乐')
+        $('#zz').text('政治军事')
+        $('#ys').text('艺术体育')
+        $('#hy').text('婚姻情感')
+        $('#jy').text('教育儿童')
+        $('#sy').text('摄影绘画')
+        $('#yx').text('养生医学')
+        $('#sg').text('帅哥美女')
+    </script>
 <script src="/javascripts/ckeditor_config.js"></script>
 {{> scripts}}
 

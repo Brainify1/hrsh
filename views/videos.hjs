@@ -4,14 +4,14 @@
 	      	{{> navbar}}
 	  		<div class="container-fluid">
 	  			<div class="row">
-	  				<div class="col-md-2 col-sm-2">
+	  				<div class="col-md-2 col-sm-2 noPaddingLeft">
 	  					<div class="bg-temp">
 	  						 
 	  					</div>
 	  				</div>
 	  				<div class="col-md-8 col-sm-8">
 	  					<div class="locationDiv">
-    						<h6><a href="/a/{{link}}">首页</a> > <a href="/a/{{link}}">{{statesCn}}</a> > <a href="/a/{{link}}/{{categ}}">{{categCn}}</a></h6>
+    						<h6><a href="/a/{{link}}">首页</a> > <a href="/a/{{link}}/{{categ}}">{{categCn}}</a></h6>
     					</div>
 						<!-- youtube videos -->
 						<div class="youtubeDiv">
@@ -63,7 +63,7 @@
 						</div>
 						<!-- youtube videos end -->
 	  				</div>
-	  				<div class="col-md-2 col-sm-2">
+	  				<div class="col-md-2 col-sm-2 noPaddingRight">
 	  					<div class="bg-temp">
 	  						 
 	  					</div>
@@ -72,5 +72,20 @@
 	  		</div>
 	  	</div>
 	</div>
+	<script>
+		 $.get('/api/ads/fetch/4', (data) => {
+            console.log(data)
+            $('.bg-temp')[0].innerHTML = `
+                <a href="${data[0].url}">
+                    <img src="/ads/${data[0].imageName}">
+                </a>
+            `
+            $('.bg-temp')[1].innerHTML = `
+                <a href="${data[1].url}">
+                    <img src="/ads/${data[1].imageName}">
+                </a>
+            `
+        })
+	</script>
 	{{> footer}}
 	{{> scripts}}

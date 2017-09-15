@@ -480,9 +480,20 @@ div.subHeight.topHeaderAds {
 
 
 .bg-temp {
-	height: 1500px;
+	height: 800px;
 	width: 100%;
-	background-image: url('https://s-media-cache-ak0.pinimg.com/736x/49/6b/65/496b65edfa8065b1e938dcf25287d9d0--pastel-goth-background-pastel-background-wallpapers.jpg');
+	max-height: 800px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.bg-temp {
+	height: 800px;
+}
+.noPaddingLeft {
+	padding-left: 0;
+}
+.noPaddingRight {
+	padding-right: 0;
 }
 /*main page end*/
 
@@ -937,8 +948,22 @@ li.focus {
 .commercialBlock {
 	width: 100%;
 	height: 130px;
+	overflow: hidden;
 }
-
+.commercialBlock img {
+	width: 100%;
+	max-width: 600px;
+	height: 130px;
+	overflow: hidden;
+}
+.imgContent { 
+	max-width: 400px;
+	width: 100%;
+	overflow: hidden;
+}
+.imgContent img {
+	height: 100px;
+}
 .pizzaAd {
 	height: 130px;
 	background-image: url(http://nickvanceart.com/wp-content/uploads/2009/02/eazypizza.jpg);

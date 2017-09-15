@@ -9,21 +9,14 @@ var ObjectId = mongojs.ObjectID;
 var multer = require('multer');
 var storage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, './public/upload/listings/')
+        cb(null, './public/listings/')
     },
     filename: function(req, file, cb) {
-        cb(null, file.fieldname + '-' + Date.now() + '.jpg')
+        cb(null, Date.now() + '.jpg')
     }
 })
-// function makeid() {
-//   var text = "";
-//   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-//   for (var i = 0; i < 5; i++)
-//     text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-//   return text;
-// }
 var refString;
 var upload = multer({ storage });
 
