@@ -33,7 +33,6 @@
 				</div>
 				<script>
 					$.get('/api/ads/fetch/1', function(data) {
-						console.log($('.imgContainer'))
 						for (var i = 0; i < data.length; i++) {
 							$('.imgContainer')[i].innerHTML = `
 								<a href="http://${data[i].url}">
@@ -106,98 +105,89 @@
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
     					 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-7 carouselPicDiv">
-                                    <div class="carousel-inner">
-                                        <div class="item newsPicBox active">
-                                            <div class="childImg1"></div>
-                                            <div class="carousel-caption captionBox">
-                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
-                                                    <p>纽约检察官吁移民局停止法院抓人</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item newsPicBox">
-                                            <div class="childImg2"></div>
-                                            <div class="carousel-caption captionBox">
-                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
-                                                    <p>地铁男子赤裸上身拍女子屁股遭通缉</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item newsPicBox">
-                                            <div class="childImg3"></div>
-                                            <div class="carousel-caption captionBox">
-                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
-                                                    <p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item newsPicBox">
-                                            <div class="childImg4"></div>
-                                            <div class="carousel-caption captionBox">
-                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
-                                                    <p>大解放？全球首个女性自慰店登录纽约</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- End Item -->
-                                        <div class="item newsPicBox">
-                                            <div class="childImg5"></div>
-                                            <div class="carousel-caption captionBox">
-                                                <a href="http://sevenx.de/demo/bootstrap-carousel/">
-                                                    <p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- End Item -->
-                                    </div>
-                                    <!-- End Carousel Inner -->
-                                </div>
-                                <div class="col-md-5">
-                                    <ul class="list-group carouselRightUl">
-                                        <li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
-                                                <h4 class="newsTitle">新闻摘要</h4>
-                                        </li>
-                                        <li data-target="#myCarousel" data-slide-to="1" class="list-group-item active carouselRightLi">
-                                            <a href="#">
-                                                <h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
-                                            </a>
-                                        </li>
-                                        <li data-target="#myCarousel" data-slide-to="2" class="list-group-item carouselRightLi">
-                                            <a href="#">
-                                                <h4 class="newsTitle">美国过半三文鱼标签上做过手脚！这么多年吃的都是?</h4>
-                                            </a>
-                                        </li>
-                                        <li data-target="#myCarousel" data-slide-to="3" class="list-group-item carouselRightLi">
-                                            <a href="#">
-                                                <h4 class="newsTitle">大解放？全球首个女性自慰店登录纽约</h4>
-                                            </a>
-                                        </li>
-                                        <li data-target="#myCarousel" data-slide-to="4" class="list-group-item carouselRightLi">
-                                            <a href="#">
-                                                <h4 class="newsTitle">地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</h4>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <div class="carousel-controls">
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-                            </div>
+							<!-- Wrapper for slides -->
+							<div class="container-fluid">
+								<div class="row">
+									<!-- <div class="col-md-7 carouselPicDiv">
+										<div class="carousel-inner">
+											<div class="item newsPicBox active">
+												<div class="childImg1"></div>
+												<div class="carousel-caption captionBox">
+													<a href="http://sevenx.de/demo/bootstrap-carousel/">
+														<p>纽约检察官吁移民局停止法院抓人</p>
+													</a>
+												</div>
+											</div>
+											<div class="item newsPicBox">
+												<div class="childImg2"></div>
+												<div class="carousel-caption captionBox">
+													<a href="http://sevenx.de/demo/bootstrap-carousel/">
+														<p>地铁男子赤裸上身拍女子屁股遭通缉</p>
+													</a>
+												</div>
+											</div>
+											<div class="item newsPicBox">
+												<div class="childImg3"></div>
+												<div class="carousel-caption captionBox">
+													<a href="http://sevenx.de/demo/bootstrap-carousel/">
+														<p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p>
+													</a>
+												</div>
+											</div>
+											<div class="item newsPicBox">
+												<div class="childImg4"></div>
+												<div class="carousel-caption captionBox">
+													<a href="http://sevenx.de/demo/bootstrap-carousel/">
+														<p>大解放？全球首个女性自慰店登录纽约</p>
+													</a>
+												</div>
+											</div>
+											<div class="item newsPicBox">
+												<div class="childImg5"></div>
+												<div class="carousel-caption captionBox">
+													<a href="http://sevenx.de/demo/bootstrap-carousel/">
+														<p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div> -->
+									<div class="col-md-12 newsBlock">
+										<ul class="list-group carouselRightUl">
+											<li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
+												<h4 class="newsTitle">新闻摘要</h4>
+											</li>
+											<li data-target="#myCarousel" data-slide-to="1" class="list-group-item active carouselRightLi">
+												<a href="#">
+													<h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
+												</a>
+											</li>
+										</ul>
+										<script>
+											$.get('/api/news/fetch', (data) => {
+												for (var i = 0; i < 4; i++) {
+													$('.carouselRightUl').append(`
+													<li data-target="#myCarousel" data-slide-to="${i+1}" class="list-group-item active carouselRightLi">
+														<a href="#">
+															<h4 class="newsTitle">${data[i].title}</h4>
+														</a>
+													</li>
+													`)
+												}
+											})
+										</script>
+									</div>
+									<div class="carousel-controls">
+										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
 						<div class="youtubeDiv">
 							<div class="otherCh">
 								<a href="http://abcnews.go.com/">ABC</a>
@@ -222,28 +212,25 @@
                         </div>
                         <div class="titleBlock">
                             <div class="container-fluid bg-white">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-                                        <div>
-                                            <p>Game of Thrones Spoilers</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-                                        <div>
-                                            <p>Game of Thrones Spoilers</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7RbwV1qelO4?ecver=1" frameborder="0" allowfullscreen></iframe>
-                                        <div>
-                                            <p>Game of Thrones Spoilers</p>
-                                        </div>
-                                    </div>
+                                <div class="row videosContent">
+                                    
                                 </div>
                             </div>
-                        </div>
+						</div>
+						<script>
+							$.get('/api/videos/fetch/list', (data) => {
+								for (var i = 0; i < 2; i ++) {
+									$('.videosContent').append(`
+										<div class="col-md-4 col-sm-4">
+											<iframe width="560" height="315" src="${data[i].videoUrl}" frameborder="0" allowfullscreen></iframe>
+											<div>
+												<p>${data[i].videoName}</p>
+											</div>
+										</div>
+									`)
+								}
+							})
+						</script>
 					</div>
 					<div class="davidAds">
 						<img src="/images/david.png" alt="" height="100">

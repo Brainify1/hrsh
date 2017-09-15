@@ -49,7 +49,7 @@
                 </div>
 
                 <ul class="nav">
-                    <li class="active" id="dash-anchor">
+                    <!-- <li class="active" id="dash-anchor">
                         <a>
                             <i class="pe-7s-graph"></i>
                             <p>控制台</p>
@@ -60,7 +60,7 @@
                             <i class="pe-7s-user"></i>
                             <p>账号信息</p>
                         </a>
-                    </li>
+                    </li> -->
                     <li id="news-anchor">
                         <a>
                             <i class="pe-7s-note2"></i>
@@ -109,25 +109,6 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-left">
-                            <!-- <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
-                                    <b class="caret"></b>
-                                    <span class="notification">5</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                           <a href="">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li> -->
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
@@ -147,7 +128,7 @@
             </nav>
 
             <div class="tabs">
-                <div class="content dash-tab">
+                <!-- <div class="content dash-tab">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
@@ -178,28 +159,6 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="col-md-8">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">Users Behavior</h4>
-                                        <p class="category">24 Hours performance</p>
-                                    </div>
-                                    <div class="content">
-                                        <div id="chartHours" class="ct-chart"></div>
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Open
-                                                <i class="fa fa-circle text-danger"></i> Click
-                                                <i class="fa fa-circle text-warning"></i> Click Second Time
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -208,7 +167,7 @@
                                         <h4 class="title">2017 Sales</h4>
                                         <p class="category">Coming soon</p>
                                     </div>
-                                    <!-- <div class="content">
+                                     <div class="content">
                                         <div id="chartActivity" class="ct-chart"></div>
         
                                         <div class="footer">
@@ -221,7 +180,7 @@
                                                 <i class="fa fa-check"></i> Data information certified
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div> 
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -466,7 +425,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="content news-tab">
                     <div class="container-fluid createNews">
                         <div class="row">
@@ -834,13 +793,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody1">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -855,13 +807,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody2">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -876,13 +821,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody3">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -897,13 +835,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody4">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -1057,15 +988,25 @@
                                         <p class="category">添加，删除或管理网站视频区内容</p>
                                     </div>
                                     <div>
-                                        <form id="videoUpload" action="/" method="post">
-                                            <label>Youtube 视频名</label>
-                                            <input type="text" name="videoName" id="videoName">
-                                            <label>URL</label>
-                                            <input type="text" name="Url連結" id="videoUrl">
-                                            <button id="videoSubmit">發布</button>
-                                        </form>
+                                        <label>Youtube 视频名</label>
+                                        <input type="text" name="videoName" id="videoName">
+                                        <label>URL</label>
+                                        <input type="text" name="Url連結" id="videoUrl">
+                                        <button id="videoSubmit">發布</button>
                                     </div>
                                     <script type="text/javascript">
+                                        $.get('/api/videos/fetch/list', (data) => {
+                                            for (var i = 0; i < data.length; i++) {
+                                                $('#videoList').append(`
+                                                    <tr>
+                                                        <td>${data[i].videoName}</td>
+                                                        <td>${data[i].videoUrl}</td>
+                                                        <td>${data[i].created_at}</td>
+                                                        <td><a href="#" onclick="deleteVideo('${data[i]._id}', this)">删除</a></td>
+                                                    </tr>
+                                                `)
+                                            }
+                                        })
                                         $('#videoSubmit').click(() => {
                                             var videoName = $('#videoName').val()
                                             var videoUrl = $('#videoUrl').val()
@@ -1078,30 +1019,36 @@
                                                 },
                                                 success: function(data) {
                                                     alert('上传成功！')
+                                                    $('#videoList').append(`
+                                                        <tr>
+                                                            <td>${data.videoName}</td>
+                                                            <td>${data.videoUrl}</td>
+                                                            <td>${data.created_at}</td>
+                                                            <td><a href="#" onclick="deleteVideo('${data._id}', this)">删除</a></td>
+                                                        </tr>
+                                                    `)
                                                 },
                                                 error: function(err) {
                                                     alert('上传失败！')
                                                 }
                                             })
                                         })
+                                        function deleteVideo(id, el) {
+                                            $.get(`/api/videos/delete/${id}`, (data) => {
+                                                alert('删除成功');
+                                                $(el).parent().parent().remove();
+                                            })
+                                        }
                                     </script>
                                     <div class="content table-responsive table-full-width">
                                         <table class="table table-hover table-striped">
                                             <thead>
-                                                <th>ID</th>
                                                 <th>视频名</th>
                                                 <th>URL</th>
                                                 <th>發布日期</th>
                                                 <th>操作</th>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Dakota Rice</td>
-                                                    <td>$36,738</td>
-                                                    <td>Niger</td>
-                                                    <td>Oud-Turnhout</td>
-                                                </tr>
+                                            <tbody id="videoList">
                                             </tbody>
                                         </table>
 
