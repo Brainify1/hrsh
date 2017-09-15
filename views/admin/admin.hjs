@@ -722,7 +722,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式1/两侧广告
+                                                    形式1/首页扁条广告 (225*80)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>公司: </label>
@@ -746,7 +746,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式2/大形广告
+                                                    形式2/首页头条广告 (320*160)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
@@ -771,7 +771,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式3/xx广告
+                                                    形式3/分类广告页面顶板广告 (600*130)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
@@ -796,7 +796,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式4/xx广告
+                                                    形式4/分类广告页面侧面广告 (140*800)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
@@ -1014,7 +1014,7 @@
                                                         for (var i = 0; i < data.length; i++) {
                                                             $('.usersBody').append(`
                                                                     <tr>
-                                                                        <td>${data[i]._id}</td>
+                                                                        <td>${i+1}</td>
                                                                         <td>${data[i].username}</td>
                                                                         <td>${data[i].created_at}</td>
                                                                         <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
@@ -1058,18 +1058,31 @@
                                     </div>
                                     <div>
                                         <form id="videoUpload" action="/" method="post">
-                                            <label>视频名</label>
-                                            <input type="text" name="videoName">
+                                            <label>Youtube 视频名</label>
+                                            <input type="text" name="videoName" id="videoName">
                                             <label>URL</label>
-                                            <input type="text" name="Url連結">
-                                            <button type="submit" id="videoSubmit">發布</button>
+                                            <input type="text" name="Url連結" id="videoUrl">
+                                            <button id="videoSubmit">發布</button>
                                         </form>
                                     </div>
                                     <script type="text/javascript">
-                                        $('#videoUpload').submit(function(e) {
-                                            e.preventDefault();
-
-
+                                        $('#videoSubmit').click(() => {
+                                            var videoName = $('#videoName').val()
+                                            var videoUrl = $('#videoUrl').val()
+                                            $.ajax({
+                                                method: 'post',
+                                                url: '/api/videos/new',
+                                                data: {
+                                                    videoName,
+                                                    videoUrl,
+                                                },
+                                                success: function(data) {
+                                                    alert('上传成功！')
+                                                },
+                                                error: function(err) {
+                                                    alert('上传失败！')
+                                                }
+                                            })
                                         })
                                     </script>
                                     <div class="content table-responsive table-full-width">

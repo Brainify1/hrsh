@@ -15,10 +15,10 @@ var newsTypes = require('../newsTypes');
 var multer = require('multer')
 var adstorage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, './public/upload/ads/')
+        cb(null, './public/ads/')
     },
     filename: function(req, file, cb) {
-        cb(null, file.fieldname + '-' + Date.now())
+        cb(null, file.fieldname + '-' + Date.now() + '.png')
     }
 })
 var adUpload = multer({ storage: adstorage })
@@ -143,7 +143,7 @@ router.post('/ads/postAd1', adUpload.single('ad1'), function(req, res, next) {
         if (err) {
             return err
         } else {
-            res.sendStatus(200)
+            res.redirect('/admin')
         }
     })
 })
@@ -160,8 +160,7 @@ router.post('/ads/postAd2', adUpload.single('ad2'), function(req, res, next) {
         if (err) {
             return err
         } else {
-            res.sendStatus(200)
-
+            res.redirect('/admin')
         }
     })
 })
@@ -178,8 +177,7 @@ router.post('/ads/postAd3', adUpload.single('ad3'), function(req, res, next) {
         if (err) {
             return err
         } else {
-            res.sendStatus(200)
-
+            res.redirect('/admin')
         }
     })
 })
@@ -196,7 +194,7 @@ router.post('/ads/postAd4', adUpload.single('ad4'), function(req, res, next) {
         if (err) {
             return err
         } else {
-            res.sendStatus(200)
+            res.redirect('/admin')
         }
     })
 })
@@ -234,41 +232,23 @@ router.get('/ads/fetch/:id',(req,res,next)=>{
 router.get('/news/fetch/types/en', (req, res) => {
     res.json(newsTypes)
 })
-router.get('/news/fetch/ratio', (req, res) => {
-    var ratio = []
-    newsCollection.find((err, allNews) => {
-        var allNewsRatio = allNews.length
-        newsCollection.find({ type: 'kj' }, (err, kjNews) => {
-            ratio.push(Math.floor(kjNews.length / allNewsRatio * 100))
-            newsCollection.find({ type: 'sh' }, (err, shNews) => {
-                ratio.push(Math.floor(shNews.length / allNewsRatio * 100))
-                newsCollection.find({ type: 'yl' }, (err, ylNews) => {
-                    ratio.push(Math.floor(ylNews.length / allNewsRatio * 100))
-                    newsCollection.find({ type: 'yl' }, (err, zz) => {
-                        ratio.push(Math.floor(zz.length / allNewsRatio * 100))
-                        newsCollection.find({ type: 'yl' }, (err, ty) => {
-                            ratio.push(Math.floor(ty.length / allNewsRatio * 100))
-                            newsCollection.find({ type: 'yl' }, (err, ys) => {
-                                ratio.push(Math.floor(ys.length / allNewsRatio * 100))
-                                newsCollection.find({ type: 'yl' }, (err, sy) => {
-                                    ratio.push(Math.floor(sy.length / allNewsRatio * 100))
-                                    res.send(ratio)
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        })
+
+////////////////////////////////videos SECTION////////////////////////////////////////
+router.post('/videos/new', (req, res) => {
+    var video = req.body
+    videosCollection.save(video, (err, newVideo) => {
+        res.json(newVideo)
     })
-
 })
-
-// router.post('/userpage/delete', function(req, res, next) {
-//         var newsId = req.body.id
-//         listingsCollection.remove({ _id: mongojs.ObjectId(newsId) }, function(err, removedNews) {
-//             res.json(removedNews)
-//             console.log(removedNews)
-//         })
-//     })
+router.get('/videos/fetch/list', (req, res) => {
+    videosCollection.find({}, (err, videos) => {
+        res.json(videos)
+    })
+})
+router.get('/videos/delete/:id', (req, res) => {
+    const { id } = req.params;
+    videosCollection.remove({_id: mongojs.ObjectId(id)}, (err, video) => {
+        res.json(video)
+    })
+})
 module.exports = router;

@@ -6,11 +6,10 @@
       </div>
       <div class="floatRight">
           <a href="/">首页</a>
-        <a href="#" class="loginMargin">个人主页</a>
-        <a class='loginText modal-backdrop.in whiteText loginMargin' id="loginStatus" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 登录</a> 
-        <a class='loginText whiteText loginMargin2' id="loginStatus2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 注册</a>
-        <a href = "/userpage" id="loginStatus4" class="whiteText loginMargin"><i class="fa fa-file-text-o" aria-hidden="true"></i> Your Posts</a>
-        <a href = "/logout" id="loginStatus3" class="whiteText loginMargin"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+        <a class='loginText modal-backdrop.in whiteText loginMargin' id="loginStatus" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> 我要登录</a> 
+        <a class='loginText whiteText loginMargin2' id="loginStatus2" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i> 我要注册</a>
+        <a href = "/userpage" id="loginStatus4" class="whiteText loginMargin"><i class="fa fa-file-text-o" aria-hidden="true"></i> 我要管理</a>
+        <a href = "/logout" id="loginStatus3" class="whiteText loginMargin"><i class="fa fa-sign-out" aria-hidden="true"></i> 退出登录</a>
       </div>
         <input type="text" value="{{isLoggedIn}}" hidden id="authStatus">
           <div>

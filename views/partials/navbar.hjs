@@ -11,6 +11,9 @@
                 <p class="navP">
                     免费分类广告
                 </p>
+                <p class="navPSmall">
+                    分类广告 无需登录 直接上传
+                </p>
             </div>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-12 navbarA">
@@ -38,7 +41,7 @@
             <a href="/a/{{link}}/spa">美容•Spa</a>
             <a href="/a/{{link}}/massage">推拿按摩理疗</a>
             <a href="/a/{{link}}/network" style="COLOR: magenta">交友征婚</a>
-            <a href="/a/{{link}}/network" style="COLOR: magenta">寻人寻友</a>
+            <a href="/a/{{link}}/find" style="COLOR: magenta">寻人寻友</a>
             <a href="/a/{{link}}/translation">翻译服务</a>
             <a href="/a/{{link}}/training">招生培训</a>
             <a href="/a/{{link}}/academy" style="COLOR:red">课后补习</a>
@@ -56,7 +59,25 @@
             <a href="/a/{{link}}/print">印刷·招牌</a>
             <a href="/a/{{link}}/decoration" style="COLOR: red">装修服务</a>
             <a href="/a/{{link}}/utility">冷暖水电</a>
-            <a href="/a/{{link}}/utility">建筑</a>
+            <a href="/a/{{link}}/construction">建筑</a>
         </div>
-	</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 subBar">
+            <a href="/">返回首页</a>
+            <a href="/a/ny/rent">租房</a>
+            <a href="/a/ny/apply">求职</a>
+            <a href="/a/ny/network">寻人寻友</a>
+            <a href="/a/ny/qw/news">趣闻轶事</a>
+            <a href="/a/ny/sh/news">社会娱乐</a>
+            <a href="/a/ny/zz/news">政治军事</a>
+            <a href="/a/ny/ys/news">艺术体育</a>
+            <a href="/a/ny/hy/news">婚姻情感</a>
+            <a href="/a/ny/jy/news">教育儿童</a>
+            <a href="/a/ny/kj/news">科技电子</a>
+            <a href="/a/ny/sy/news">摄影绘画</a>
+            <a href="/a/ny/ys/news">养生医学</a>
+            <a href="/a/ny/sg/news">帅哥美女</a>
+        </div>
+    </div>
 </div>

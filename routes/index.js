@@ -194,11 +194,13 @@ router.get('/a/:states/:type/news/:id', function(req, res, next) {
         if (allStates.indexOf(states) === -1) {
             res.render('error');
         } else {
-            newsCollection.findOne({ _id: id },  function(err, news) {
-                res.render('content', {
+            newsCollection.findOne({ _id: mongojs.ObjectId(id)},  function(err, news) {
+                console.log(news)
+                res.render('newsContent', {
                     title: '华人生活网',
                     link: states,
                     news,
+                    test: '123',
                     type,
                     statesCn: statesCN,
                     isLoggedIn: req.isAuthenticated(),
@@ -328,19 +330,16 @@ router.get('/a/:states/:category/:id', function(req, res, next) {
         res.render('error');
     } else {
          
-        imagesCollection.find({ refId: id},(function(err, doc){
-            listingsCollection.find({ refId: id }).sort({ _id: -1 }, function(err, listings) {
-                var docs=[];
-                    for(var x = 0; x < Object.keys(doc[0].data).length; x++){
-                        docs[x] = doc[0].data[x].filename
-                }
+        imagesCollection.findOne({ refId: id},(function(err, image){
+            listingsCollection.findOne({ refId: id }, function(err, listing) {
+                console.log(image.data, 'img')
                 res.render('content', {
                     title: '华人生活网',
                     link: states,
                     categ: category,
                     categCN: categoryCN,
-                    listings,
-                    docs,
+                    listing,
+                    image: image.data,
                     isLoggedIn: req.isAuthenticated(),
                     partials: {
                         head: '../views/partials/head',

@@ -6,36 +6,45 @@
         {{> states}} {{> navbar}}
         <div class="container-fluid">
             <div class="row  adsContent hide-on-small">
-                <div class="col-md-3 col-sm-3 col-xs-3 pd5" id="ad_type_2">
-					
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
                     <a href="/ny">
                         <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
+                        </div>
+                    </a>
+				</div>
+				
+                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
+                    <a href="/ny">
+                        <div class="imgContainer">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
                     <a href="/ny">
                         <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
                     <a href="/ny">
                         <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
                         </div>
                     </a>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                            <img src="/images/ex_ads.gif">
-                        </div>
-                    </a>
-                </div>
+				</div>
+				<script>
+					$.get('/api/ads/fetch/1', function(data) {
+						console.log($('.imgContainer'))
+						for (var i = 0; i < data.length; i++) {
+							$('.imgContainer')[i].innerHTML = `
+								<a href="http://${data[i].url}">
+									<img src="/ads/${data[i].imageName}">
+								</a>
+							`
+						}
+					})
+				</script>
 			</div>
+			<!-- <img src="/ads/${data[i].imageName}.png"> -->
             <div class="row secondSection">
 
                 <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
@@ -45,7 +54,7 @@
                         </div>
                     </a>
                     <a href="/ny">
-                        <div class="imgContainer">
+                        <div class="staticImgContainer">
                             <div class="grey-ads">
                                 宜兴紫砂壶<br> 天下第一壶
                                 <br> 宜兴均陶
@@ -57,11 +66,11 @@
 	  					</a>
 	  					<a href="/ny">
 	  						<div class="imgContainer">
-	  							<img src="/images/ex_ads.gif">
+	  							
 	  						</div>			
 	  					</a>
 	  					<a href="/ny">
-	  						<div class="imgContainer">
+	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
 	  								中国茶叶<br>
 	  								Zhongguochaye.com
@@ -74,7 +83,7 @@
 	  						</div>			
 	  					</a>
 	  					<a href="/ny">
-	  						<div class="imgContainer">
+	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
 	  								数码电子产品<br>
 	  								家用电器<br> 
@@ -84,11 +93,11 @@
 	  					</a>
 	  					<a href="/ny">
 	  						<div class="imgContainer">
-	  							<img src="/images/ex_ads.gif">
+	  							
 	  						</div>			
 	  					</a>
 	  					<a href="/ny">
-	  						<div class="imgContainer">
+	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
 	  								翻译机
 	  							</div>
@@ -358,7 +367,6 @@
 										<a href="/a/{{link}}/${data[i].type}/news/${data[i]._id}">${data[i].title}</a>
 									`)
                             }
-
                         })
                         $.get('/api/fetchNews/sh', function(data) {
                             var loopNum
@@ -795,12 +803,14 @@
   </script>
   <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
 	  <a href="/ny">
-		  <div class="imgContainer">
-			  <img src="/images/ex_ads.gif">
+		  <div class="staticImgContainer">
+				<div class="grey-ads">
+						Google地图
+					</div>
 		  </div>			
 	  </a>
 	  <a href="/ny">
-		  <div class="imgContainer">
+		  <div class="staticImgContainer">
 			  <div class="grey-ads">
 				  俏佳人<br>
 				  阿胶糕
@@ -809,11 +819,11 @@
 	  </a>
 	  <a href="/ny">
 		  <div class="imgContainer">
-			  <img src="/images/ex_ads.gif">
+			  
 		  </div>			
 	  </a>
 	  <a href="/ny">
-		  <div class="imgContainer">
+		  <div class="staticImgContainer">
 			  <div class="grey-ads">
 				  成人情趣用品
 			  </div>
@@ -821,11 +831,11 @@
 	  </a>
 	  <a href="/ny">
 		  <div class="imgContainer">
-			  <img src="/images/ex_ads.gif">
+			  
 		  </div>			
 	  </a>
 	  <a href="/ny">
-		  <div class="imgContainer">
+		  <div class="staticImgContainer">
 			  <div class="grey-ads">
 				  高跟鞋<br>
 				  Pierre Silber
@@ -841,28 +851,24 @@
 <div class="col-md-3 hide-on-small pd5">
 <a href="/ny">
 	  <div class="imgContainer">
-		  <img src="/images/ex_ads.gif">
 	  </div>			
   </a>
 </div>
 <div class="col-md-3 hide-on-small pd5">
 <a href="/ny">
 	  <div class="imgContainer">
-		  <img src="/images/ex_ads.gif">
 	  </div>			
   </a>
 </div>
 <div class="col-md-3 hide-on-small pd5">
 <a href="/ny">
 	  <div class="imgContainer">
-		  <img src="/images/ex_ads.gif">
 	  </div>			
   </a>
 </div>
 <div class="col-md-3 hide-on-small pd5">
 <a href="/ny">
 	  <div class="imgContainer">
-		  <img src="/images/ex_ads.gif">
 	  </div>			
   </a>
 </div>
@@ -925,7 +931,7 @@
 			<a href="http://ru.china-embassy.org/chn/" class="blkText">驻俄罗斯大使馆</a>
 	</div>
 	<div class="col-md-3 col-sm-6 col-12">
-		<strong>美国各个华人媒体连结</strong>
+		<strong>美国媒体链接</strong>
 			<a href="http://www.worldjournal.com/category/%E7%BE%8E%E5%9C%8B/" class="blkText">世界日報</a>
 			<a href="https://www.singtaousa.com/" class="blkText">星島日報</a>
 			<a href="http://www.epochtimes.com/" class="blkText">侨报</a>
@@ -935,6 +941,12 @@
 			<a href="http://tv.cctv.com/live/cctvamerica/" class="blkText">CCTV-4 (美洲)</a>
 			<a href="http://www.ccyp.com/" class="blkText">北美華人工商</a>
 			<a href="http://www.uschinapress.com/" class="blkText">侨报网</a>
+			<a href="http://www.metmuseum.org/" class="blkText">大都会博物馆</a>
+		<a href="http://www.qidian.com/" class="blkText">起点中文网</a>
+		<a href="http://www.tieba.baidu.com/" class="blkText">Baidu贴吧</a>
+		<a href="http://www.book.qq.com/" class="blkText">QQ阅读</a>
+		<a href="http://www.zongheng.com/" class="blkText">纵横小说网</a>
+		
 	</div>
 </div>
 </div>
