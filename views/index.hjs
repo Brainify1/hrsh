@@ -46,23 +46,23 @@
 			<!-- <img src="/ads/${data[i].imageName}.png"> -->
             <div class="row secondSection">
 
-                <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
-                    <a href="https://www.amazon.com/">
-                        <div class="imgContainer">
-                            <img src="/images/amazon.png">
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="staticImgContainer">
-                            <div class="grey-ads">
-                                宜兴紫砂壶<br> 天下第一壶
-                                <br> 宜兴均陶
-                                <br> 工艺品系列
+                	<div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
+						<a href="https://www.amazon.com/">
+							<div class="imgContainer">
+								<img src="/images/amazon.png">
+							</div>
+						</a>
+						<a href="/ny">
+							<div class="staticImgContainer">
+								<div class="grey-ads">
+									宜兴紫砂壶<br> 天下第一壶
+									<br> 宜兴均陶
+									<br> 工艺品系列
 
-	  							</div>
-	  							
-	  						</div>			
-	  					</a>
+								</div>
+									
+							</div>			
+						</a>
 	  					<a href="/ny">
 	  						<div class="imgContainer">
 	  							
@@ -108,8 +108,8 @@
 							<!-- Wrapper for slides -->
 							<div class="container-fluid">
 								<div class="row">
-									<!-- <div class="col-md-7 carouselPicDiv">
-										<div class="carousel-inner">
+									<div class="col-md-7 carouselPicDiv">
+										<div class="carousel-inner" id="news-carousel">
 											<div class="item newsPicBox active">
 												<div class="childImg1"></div>
 												<div class="carousel-caption captionBox">
@@ -118,108 +118,81 @@
 													</a>
 												</div>
 											</div>
-											<div class="item newsPicBox">
-												<div class="childImg2"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>地铁男子赤裸上身拍女子屁股遭通缉</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg3"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg4"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>大解放？全球首个女性自慰店登录纽约</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg5"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p>
-													</a>
-												</div>
-											</div>
 										</div>
-									</div> -->
-									<div class="col-md-12 newsBlock">
-										<ul class="list-group carouselRightUl">
+										<!-- End Carousel Inner -->
+									</div>
+									<div class="col-md-5">
+										<ul class="list-group carouselRightUl" id="carouselText">
 											<li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
-												<h4 class="newsTitle">新闻摘要</h4>
-											</li>
-											<li data-target="#myCarousel" data-slide-to="1" class="list-group-item active carouselRightLi">
-												<a href="#">
-													<h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
-												</a>
+													<h4 class="newsTitle">新闻摘要</h4>
 											</li>
 										</ul>
-										<script>
-											$.get('/api/news/fetch', (data) => {
-												for (var i = 0; i < 4; i++) {
-													$('.carouselRightUl').append(`
-													<li data-target="#myCarousel" data-slide-to="${i+1}" class="list-group-item active carouselRightLi">
-														<a href="#">
-															<h4 class="newsTitle">${data[i].title}</h4>
-														</a>
-													</li>
-													`)
-												}
-											})
-										</script>
-									</div>
-									<div class="carousel-controls">
-										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-											<span class="glyphicon glyphicon-chevron-left"></span>
-										</a>
-										<a class="right carousel-control" href="#myCarousel" data-slide="next">
-											<span class="glyphicon glyphicon-chevron-right"></span>
-										</a>
+	
 									</div>
 								</div>
 							</div>
+
 						</div>
-						<div class="youtubeDiv">
-							<div class="otherCh">
-								<a href="http://abcnews.go.com/">ABC</a>
-								<a href="http://abcnews.go.com/">Disney</a>
-								<a href="http://www.espn.com/">ESPN</a>
-								<a href="http://www.cnn.com/">CNN</a>
-								<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
-								<a href="http://www.pptv.com/">PPTV</a>
-								<a href="http://youtube.com/">Youtube</a>
-								<a href="https://www.sinovision.net/live.php">美国中文电视</a>
-								<a href="https://www.skylinktv.us/">天下卫视</a>
-								<a href="https://www.iqiyi.com/">早安美国</a>
-								<a href="https://v.qq.com/">腾讯视频</a>
-								<a href="https://www.dnvod.tv/">多瑙影院</a>
-								<a href="https://www.bilibili.com/">BiliBili</a>
+						<script>
+							$.get('/api/news/fetch', (data) => {
+								for (var i = 0; i < 4; i++) {
+									console.log(data[i])
+									if(data[i].file) {
+										$('#carouselText').append(`
+										<li data-target="#myCarousel" data-slide-to="${i+1}" class="list-group-item active carouselRightLi">
+											<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
+												<h4 class="newsTitle">${data[i].title}</h4>
+											</a>
+										</li>
+										`)
+										$('#news-carousel').append(`
+											<div class="item newsPicBox active">
+												<div class="newsImage" style="background-image:url(/news/${data[i].file.filename})"></div>
+												<div class="carousel-caption captionBox">
+													<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
+														<p>${data[i].title}</p>
+													</a>
+												</div>
+											</div>
+										`)
+									}
+								}
+							})
+						</script>
+						
+					<div class="youtubeDiv">
+						<div class="otherCh">
+							<a href="http://abcnews.go.com/">ABC</a>
+							<a href="http://abcnews.go.com/">Disney</a>
+							<a href="http://www.espn.com/">ESPN</a>
+							<a href="http://www.cnn.com/">CNN</a>
+							<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
+							<a href="http://www.pptv.com/">PPTV</a>
+							<a href="http://youtube.com/">Youtube</a>
+							<a href="https://www.sinovision.net/live.php">美国中文电视</a>
+							<a href="https://www.skylinktv.us/">天下卫视</a>
+							<a href="https://www.iqiyi.com/">早安美国</a>
+							<a href="https://v.qq.com/">腾讯视频</a>
+							<a href="https://www.dnvod.tv/">多瑙影院</a>
+							<a href="https://www.bilibili.com/">BiliBili</a>
+						</div>
+						<div class="titleBlock">
+							<div class="hotVid">
+								<span class="moreVid1">热门影片 | </span>
+								<a class="whiteText" href="/a/{{link}}/videos">更多>></a>
 							</div>
-                        <div class="titleBlock">
-                            <div class="hotVid">
-                                <span class="moreVid1">热门影片 | </span>
-                                <a class="whiteText" href="/a/{{link}}/videos">更多>></a>
-                            </div>
-                        </div>
-                        <div class="titleBlock">
-                            <div class="container-fluid bg-white">
-                                <div class="row videosContent">
-                                    
-                                </div>
-                            </div>
+						</div>
+						<div class="titleBlock">
+							<div class="container-fluid bg-white">
+								<div class="row videosContent">
+									
+								</div>
+							</div>
 						</div>
 						<script>
 							$.get('/api/videos/fetch/list', (data) => {
-								for (var i = 0; i < 2; i ++) {
+
+								for (var i = 0; i < data.length; i ++) {
 									$('.videosContent').append(`
 										<div class="col-md-4 col-sm-4">
 											<iframe width="560" height="315" src="${data[i].videoUrl}" frameborder="0" allowfullscreen></iframe>

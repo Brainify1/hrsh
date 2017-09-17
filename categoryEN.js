@@ -58,5 +58,6 @@ module.exports = [	'news',
 					'print',
 					'decoration',
 					'utility',
-					'construction'
+					'construction',
+					'blog'
 				]

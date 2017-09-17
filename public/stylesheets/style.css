@@ -538,13 +538,11 @@ div.subHeight.topHeaderAds {
 }
 .newsPicBox {
 	height: 300px;
+	width: 100%;
 }
 
-.caroselImgDiv {
-	height: 300px;
-}
 
-.childImg1, .childImg2, .childImg3, .childImg4, .childImg5 {
+.newsImage {
 	position: absolute;
     top: 0;
     left: 0;
@@ -554,25 +552,7 @@ div.subHeight.topHeaderAds {
     background-size: cover;
 }
 
-.childImg1 {
-	background-image: url("https://www.what-dog.net/Images/faces2/scroll000.jpg");
-}
 
-.childImg2 {
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNhxIS87bhGe5_neXTpZZq-_OVYU6sTgHTitExrOCKA-JrGDX");
-}
-
-.childImg3 {
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7AMyhvDshnqj1lVSF3lsUVBkxiIjZZqfW2dNHeHF-PDERNV8kA");
-}
-
-.childImg4 {
-	background-image: url("https://www.what-dog.net/Images/faces2/scroll000.jpg");
-}
-
-.childImg5 {
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7AMyhvDshnqj1lVSF3lsUVBkxiIjZZqfW2dNHeHF-PDERNV8kA");
-}
 
 .captionBox {
 	max-height: 55px;
