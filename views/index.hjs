@@ -7,39 +7,41 @@
         <div class="container-fluid">
             <div class="row  adsContent hide-on-small">
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
 				</div>
 				
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
 				</div>
 				<script>
-					$.get('/api/ads/fetch/1', function(data) {
-						for (var i = 0; i < data.length; i++) {
-							$('.imgContainer')[i].innerHTML = `
-								<a href="http://${data[i].url}">
-									<img src="/ads/${data[i].imageName}">
-								</a>
-							`
-						}
+					$(document).ready(()=> {
+						$.get('/api/ads/fetch/1', function(data) {
+							var numberOfContainers = $('.imgContainer').length
+							for (var i = 0; i < numberOfContainers; i++) {
+								if (data[i]) {
+									$('.imgContainer')[i].innerHTML = `
+									<a href="http://${data[i].url}">
+										<img src="/ads/${data[i].imageName}">
+									</a>
+								`} else {
+									$('.imgContainer')[i].innerHTML = `
+										<a href="#">
+											<img src="/ads/default.png">
+										</a>
+									`
+								}
+							}
+						})
 					})
 				</script>
 			</div>
@@ -90,69 +92,141 @@
 	  							</div>
 	  						</div>			
 	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							
-	  						</div>			
-	  					</a>
+						<div class="imgContainer">
+							
+						</div>	
 	  					<a href="/ny">
 	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
 	  								翻译机
 	  							</div>
 	  						</div>			
-	  					</a>
+						</a>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-    					 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-							<!-- Wrapper for slides -->
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-7 carouselPicDiv">
-										<div class="carousel-inner" id="news-carousel">
-											<div class="item newsPicBox active">
-												<div class="childImg1"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>纽约检察官吁移民局停止法院抓人</p>
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- End Carousel Inner -->
-									</div>
-									<div class="col-md-5">
-										<ul class="list-group carouselRightUl" id="carouselText">
-											<li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
-													<h4 class="newsTitle">新闻摘要</h4>
-											</li>
-										</ul>
-	
-									</div>
-								</div>
+							<div class="your-class">
 							</div>
-
-						</div>
 						<script>
 							$.get('/api/news/fetch', (data) => {
-								for (var i = 0; i < 4; i++) {
+								for (var i = 0; i < 10; i++) {
 									console.log(data[i])
 									if(data[i].file) {
-										$('#carouselText').append(`
-										<li data-target="#myCarousel" data-slide-to="${i+1}" class="list-group-item active carouselRightLi">
-											<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
-												<h4 class="newsTitle">${data[i].title}</h4>
-											</a>
-										</li>
-										`)
-										$('#news-carousel').append(`
-											<div class="item newsPicBox active">
-												<div class="newsImage" style="background-image:url(/news/${data[i].file.filename})"></div>
-												<div class="carousel-caption captionBox">
-													<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
-														<p>${data[i].title}</p>
-													</a>
-												</div>
+										$('.your-class').append(`
+											<div class="carousel-item" style=background-image:url(/news/${data[i].file.filename})>
+												<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
+													<h4 class="newsTitle">${data[i].title}</h4>
+												</a>
 											</div>
 										`)
 									}
@@ -454,7 +528,6 @@
 
 <div class="popularLinks">
 		<img src="/images/n400.png" alt="" height="50">
-		<img src="/images/dmv.png" alt="" height="50">
 		<div class="linksHeader">
 			<p>房地产公司 &nbsp; | &nbsp; 房地产经纪人</p>
 		</div>
@@ -561,10 +634,7 @@
 						</div>
 					</div>
 			</div>
-		<div class="linksHeader">
-			<p></p>
-		</div>
-
+		<img src="/images/dmv.png" alt="" height="50">
 		<div class="linksHeader">
 			<p>旅館 &nbsp; | &nbsp; 酒店 &nbsp; | &nbsp; 旅遊</p>
 		</div>
@@ -673,6 +743,7 @@
 					</div>
 			</div>
 		</div>
+		<img src="/images/hospitals.png" height="60" alt="">
 		<div class="linksHeader">
 			<p>律师 &nbsp; | &nbsp;  法律 &nbsp; | &nbsp; 移民</p>
 		</div>
@@ -726,8 +797,6 @@
 				</div>
 			</div>
 		</div>
-		<img src="/images/hospitals.png" height="60" alt="">
-		<br>
 		<img src="/images/college.png" height="60" alt="">
 		<div class="linksHeader">
 			<p class="matchHeader">中外婚恋交友</p>
@@ -764,9 +833,7 @@
   <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
 	  <a href="/ny">
 		  <div class="staticImgContainer">
-				<div class="grey-ads">
-						Google地图
-					</div>
+				<img src="/images/maps.jpg" alt="" width="225">
 		  </div>			
 	  </a>
 	  <a href="/ny">
@@ -802,35 +869,143 @@
 			  </div>
 		  </div>			
 	  </a>
+	  <div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
   </div>
   </div>
 </div>
 </div>
-<br>
 <div class="row pd30">
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
 	  <div class="imgContainer">
-	  </div>			
-  </a>
+	  </div>	
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
 	  <div class="imgContainer">
-	  </div>			
-  </a>
+	  </div>	
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
-	  <div class="imgContainer">
-	  </div>			
-  </a>
+	<div class="imgContainer">
+	</div>			
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
-	  <div class="imgContainer">
-	  </div>			
-  </a>
+	<div class="imgContainer">
+	</div>			
 </div>
 </div>
 <br>
@@ -872,6 +1047,9 @@
 			<a href="https://www.sec.gov" class="blkText">美国劳工部</a>
 			<a href="https://www.sec.gov" class="blkText">美国税务局</a>
 			<a href="https://www.sec.gov" class="blkText">美国邮政局</a>
+			<a href="https://www.dhs.gov/" class="blkText">美国国土安全部</a>
+			<a href="https://www.dia.mil" class="blkText">美国国防情报局</a>
+			<a href="https://www.sec.gov" class="blkText">美国证券交易委员会</a>
 	</div>
 	<div class="col-md-3 col-sm-6 col-12">
 		<strong>中国各个领事馆连结</strong>
