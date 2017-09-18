@@ -128,304 +128,6 @@
             </nav>
 
             <div class="tabs">
-                <!-- <div class="content dash-tab">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">News Distribution Statistics</h4>
-                                        <p class="category">Ratio Pie chart</p>
-                                    </div>
-                                    <div class="content">
-                                        <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Tech News
-                                                <i class="fa fa-circle text-danger"></i> Social News
-                                                <i class="fa fa-circle text-warning"></i> Entertainment News
-                                                <i class="fa fa-circle text-primary"></i> Political News
-                                                <i class="fa fa-circle text-success"></i> Sports News
-                                                <i class="fa fa-circle text-blue"></i> Sports News
-                                                <i class="fa fa-circle text-gray"></i> Utility News
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-clock-o"></i> Updated 1 days ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card ">
-                                    <div class="header">
-                                        <h4 class="title">2017 Sales</h4>
-                                        <p class="category">Coming soon</p>
-                                    </div>
-                                     <div class="content">
-                                        <div id="chartActivity" class="ct-chart"></div>
-        
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Tesla Model S
-                                                <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-check"></i> Data information certified
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card ">
-                                    <div class="header">
-                                        <h4 class="title">Listings trend</h4>
-                                        <p class="category">Coming soon</p>
-                                    </div>
-                                    <div class="content">
-                                        <div class="table-full-width">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                                            </label>
-                                                        </td>
-                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                            </label>
-                                                        </td>
-                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                            </label>
-                                                        </td>
-                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Read "Following makes Medium better"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Unfollow 5 enemies from twitter</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="footer">
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content acc-tab">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">Edit Profile</h4>
-                                    </div>
-                                    <div class="content">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-5">
-                                                    <div class="form-group">
-                                                        <label>Company (disabled)</label>
-                                                        <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label>Username</label>
-                                                        <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Email address</label>
-                                                        <input type="email" class="form-control" placeholder="Email">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>First Name</label>
-                                                        <input type="text" class="form-control" placeholder="Company" value="Mike">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Last Name</label>
-                                                        <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Address</label>
-                                                        <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>City</label>
-                                                        <input type="text" class="form-control" placeholder="City" value="Mike">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>Postal Code</label>
-                                                        <input type="number" class="form-control" placeholder="ZIP Code">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>About Me</label>
-                                                        <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
-                                            <div class="clearfix"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-user">
-                                    <div class="image">
-                                        <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..." />
-                                    </div>
-                                    <div class="content">
-                                        <div class="author">
-                                            <a href="#">
-                                                <img class="avatar border-gray" src="../../images/faces/face-3.jpg" alt="..." />
-
-                                                <h4 class="title">Mike Andrew<br />
-                                                    <small>michael24</small>
-                                                </h4>
-                                            </a>
-                                        </div>
-                                        <p class="description text-center"> "Lamborghini Mercy <br> Your chick she so thirsty <br> I'm in that two seat Lambo"
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="text-center">
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="content news-tab">
                     <div class="container-fluid createNews">
                         <div class="row">
@@ -436,22 +138,23 @@
                                         <p class="category">添加新的新闻</p>
                                     </div>
                                     <div class="content">
-                                        <form id="createNewsForm">
+                                        <form id="createNewsForm" enctype="multipart/form-data" name="newsForm" method="post" action="/api/news/post/server">
                                             <div class="row form-group">
                                                 <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
                                                 <select class="news-type" name="type">
-                                                        <option selected value="xw">新闻分类</option>
-                                                        <option value="qw">趣闻轶事</option>
-                                                        <option value="sh">社会娱乐</option>
-                                                        <option value="zz">政治军事</option>
-                                                        <option value="ys">艺术体育</option>
-                                                        <option value="hy">婚姻情感</option>
-                                                        <option value="jy">教育儿童</option>
-                                                        <option value="kj">科技电子</option>
-                                                        <option value="sy">摄影绘画</option>
-                                                        <option value="yx">医学养生</option>
-                                                        <option value="sg">帅哥美女</option>
-                                                    </select>
+                                                    <option selected value="xw">新闻分类</option>
+                                                    <option value="qw">趣闻轶事</option>
+                                                    <option value="sh">社会娱乐</option>
+                                                    <option value="zz">政治军事</option>
+                                                    <option value="ys">艺术体育</option>
+                                                    <option value="hy">婚姻情感</option>
+                                                    <option value="jy">教育儿童</option>
+                                                    <option value="kj">科技电子</option>
+                                                    <option value="sy">摄影绘画</option>
+                                                    <option value="yx">医学养生</option>
+                                                    <option value="sg">帅哥美女</option>
+                                                </select>
+                                                <input type="file" id="fileUpload" name="newsPic">
                                                 <textarea name="content" id="news-content"></textarea>
                                                 <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
                                             </div>
@@ -466,33 +169,33 @@
                             for (instance in CKEDITOR.instances)
                                 CKEDITOR.instances[instance].updateElement();
                         }
-                        $('#createNewsForm').submit(function(e) {
-                                e.preventDefault();
-                                CKupdate()
-                                var self = $(this)
-                                $.ajax({
-                                    url: '/api/news/post',
-                                    data: self.serialize(),
-                                    method: 'post',
-                                    success: function(data) {
-                                        $('.newsBody').append(`
-                                            <tr>
-                                                <td>${data._id}</td>
-                                                <td>${data.title}</td>
-                                                <td>${data.created_at}</td>
-                                                <td>${data.views}</td>
-                                                <td>
-                                                    <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
-                                                </td>
-                                            </tr>
-                                        `)
-                                        alert(`新闻 ${data.title} 发布成功！`)
-                                    },
-                                    error: function(err) {
-                                        alert('发布失败')
-                                    }
-                                })
-                            })
+                        // $('#createNewsForm').submit(function(e) {
+                        //         e.preventDefault();
+                        //         CKupdate()
+                        //         var self = $(this)
+                        //         $.ajax({
+                        //             url: '/api/news/post',
+                        //             data: self.serialize(),
+                        //             method: 'post',
+                        //             success: function(data) {
+                        //                 $('.newsBody').append(`
+                        //                     <tr>
+                        //                         <td>${data._id}</td>
+                        //                         <td>${data.title}</td>
+                        //                         <td>${data.created_at}</td>
+                        //                         <td>${data.views}</td>
+                        //                         <td>
+                        //                             <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
+                        //                         </td>
+                        //                     </tr>
+                        //                 `)
+                        //                 alert(`新闻 ${data.title} 发布成功！`)
+                        //             },
+                        //             error: function(err) {
+                        //                 alert('发布失败')
+                        //             }
+                        //         })
+                        //     })
                             //get news list for management
                         $.get({
                                 url: '/api/news/fetch',

@@ -7,62 +7,64 @@
         <div class="container-fluid">
             <div class="row  adsContent hide-on-small">
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
 				</div>
 				
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-3 pd5">
-                    <a href="/ny">
-                        <div class="imgContainer">
-                        </div>
-                    </a>
+					<div class="imgContainer">
+					</div>
 				</div>
 				<script>
-					$.get('/api/ads/fetch/1', function(data) {
-						for (var i = 0; i < data.length; i++) {
-							$('.imgContainer')[i].innerHTML = `
-								<a href="http://${data[i].url}">
-									<img src="/ads/${data[i].imageName}">
-								</a>
-							`
-						}
+					$(document).ready(()=> {
+						$.get('/api/ads/fetch/1', function(data) {
+							var numberOfContainers = $('.imgContainer').length
+							for (var i = 0; i < numberOfContainers; i++) {
+								if (data[i]) {
+									$('.imgContainer')[i].innerHTML = `
+									<a href="http://${data[i].url}">
+										<img src="/ads/${data[i].imageName}">
+									</a>
+								`} else {
+									$('.imgContainer')[i].innerHTML = `
+										<a href="#">
+											<img src="/ads/default.png">
+										</a>
+									`
+								}
+							}
+						})
 					})
 				</script>
 			</div>
 			<!-- <img src="/ads/${data[i].imageName}.png"> -->
             <div class="row secondSection">
 
-                <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
-                    <a href="https://www.amazon.com/">
-                        <div class="imgContainer">
-                            <img src="/images/amazon.png">
-                        </div>
-                    </a>
-                    <a href="/ny">
-                        <div class="staticImgContainer">
-                            <div class="grey-ads">
-                                宜兴紫砂壶<br> 天下第一壶
-                                <br> 宜兴均陶
-                                <br> 工艺品系列
+                	<div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
+						<a href="https://www.amazon.com/">
+							<div class="imgContainer">
+								<img src="/images/amazon.png">
+							</div>
+						</a>
+						<a href="/ny">
+							<div class="staticImgContainer">
+								<div class="grey-ads">
+									宜兴紫砂壶<br> 天下第一壶
+									<br> 宜兴均陶
+									<br> 工艺品系列
 
-	  							</div>
-	  							
-	  						</div>			
-	  					</a>
+								</div>
+									
+							</div>			
+						</a>
 	  					<a href="/ny">
 	  						<div class="imgContainer">
 	  							
@@ -90,136 +92,181 @@
 	  							</div>
 	  						</div>			
 	  					</a>
-	  					<a href="/ny">
-	  						<div class="imgContainer">
-	  							
-	  						</div>			
-	  					</a>
+						<div class="imgContainer">
+							
+						</div>	
 	  					<a href="/ny">
 	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
 	  								翻译机
 	  							</div>
 	  						</div>			
-	  					</a>
+						</a>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
+						<div class="imgContainer">
+							
+						</div>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-    					 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-							<!-- Wrapper for slides -->
-							<div class="container-fluid">
-								<div class="row">
-									<!-- <div class="col-md-7 carouselPicDiv">
-										<div class="carousel-inner">
-											<div class="item newsPicBox active">
-												<div class="childImg1"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>纽约检察官吁移民局停止法院抓人</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg2"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>地铁男子赤裸上身拍女子屁股遭通缉</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg3"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>美国过半三文鱼标签上做过手脚！这么多年吃的都是?</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg4"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>大解放？全球首个女性自慰店登录纽约</p>
-													</a>
-												</div>
-											</div>
-											<div class="item newsPicBox">
-												<div class="childImg5"></div>
-												<div class="carousel-caption captionBox">
-													<a href="http://sevenx.de/demo/bootstrap-carousel/">
-														<p>地铁7号线内骚扰女警员 印裔男嫌落荒而逃(图)</p>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div> -->
-									<div class="col-md-12 newsBlock">
-										<ul class="list-group carouselRightUl">
-											<li class="list-group-item carouselRightLi carouselTitle" id="carouselItemTitle">
-												<h4 class="newsTitle">新闻摘要</h4>
-											</li>
-											<li data-target="#myCarousel" data-slide-to="1" class="list-group-item active carouselRightLi">
-												<a href="#">
-													<h4 class="newsTitle">地铁男子赤裸上身拍女子屁股遭通缉</h4>
+							<div class="your-class">
+							</div>
+						<script>
+							$.get('/api/news/fetch', (data) => {
+								for (var i = 0; i < 10; i++) {
+									console.log(data[i])
+									if(data[i].file) {
+										$('.your-class').append(`
+											<div class="carousel-item" style=background-image:url(/news/${data[i].file.filename})>
+												<a href="/a/ny/${data[i].type}/news/${data[i]._id}">
+													<h4 class="newsTitle">${data[i].title}</h4>
 												</a>
-											</li>
-										</ul>
-										<script>
-											$.get('/api/news/fetch', (data) => {
-												for (var i = 0; i < 4; i++) {
-													$('.carouselRightUl').append(`
-													<li data-target="#myCarousel" data-slide-to="${i+1}" class="list-group-item active carouselRightLi">
-														<a href="#">
-															<h4 class="newsTitle">${data[i].title}</h4>
-														</a>
-													</li>
-													`)
-												}
-											})
-										</script>
-									</div>
-									<div class="carousel-controls">
-										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-											<span class="glyphicon glyphicon-chevron-left"></span>
-										</a>
-										<a class="right carousel-control" href="#myCarousel" data-slide="next">
-											<span class="glyphicon glyphicon-chevron-right"></span>
-										</a>
-									</div>
+											</div>
+										`)
+									}
+								}
+							})
+						</script>
+						
+					<div class="youtubeDiv">
+						<div class="otherCh">
+							<a href="http://abcnews.go.com/">ABC</a>
+							<a href="http://abcnews.go.com/">Disney</a>
+							<a href="http://www.espn.com/">ESPN</a>
+							<a href="http://www.cnn.com/">CNN</a>
+							<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
+							<a href="http://www.pptv.com/">PPTV</a>
+							<a href="http://youtube.com/">Youtube</a>
+							<a href="https://www.sinovision.net/live.php">美国中文电视</a>
+							<a href="https://www.skylinktv.us/">天下卫视</a>
+							<a href="https://www.iqiyi.com/">早安美国</a>
+							<a href="https://v.qq.com/">腾讯视频</a>
+							<a href="https://www.dnvod.tv/">多瑙影院</a>
+							<a href="https://www.bilibili.com/">BiliBili</a>
+						</div>
+						<div class="titleBlock">
+							<div class="hotVid">
+								<span class="moreVid1">热门影片 | </span>
+								<a class="whiteText" href="/a/{{link}}/videos">更多>></a>
+							</div>
+						</div>
+						<div class="titleBlock">
+							<div class="container-fluid bg-white">
+								<div class="row videosContent">
+									
 								</div>
 							</div>
 						</div>
-						<div class="youtubeDiv">
-							<div class="otherCh">
-								<a href="http://abcnews.go.com/">ABC</a>
-								<a href="http://abcnews.go.com/">Disney</a>
-								<a href="http://www.espn.com/">ESPN</a>
-								<a href="http://www.cnn.com/">CNN</a>
-								<a href="http://tv.cctv.com/live/cctv4/">CCTV4</a>
-								<a href="http://www.pptv.com/">PPTV</a>
-								<a href="http://youtube.com/">Youtube</a>
-								<a href="https://www.sinovision.net/live.php">美国中文电视</a>
-								<a href="https://www.skylinktv.us/">天下卫视</a>
-								<a href="https://www.iqiyi.com/">早安美国</a>
-								<a href="https://v.qq.com/">腾讯视频</a>
-								<a href="https://www.dnvod.tv/">多瑙影院</a>
-								<a href="https://www.bilibili.com/">BiliBili</a>
-							</div>
-                        <div class="titleBlock">
-                            <div class="hotVid">
-                                <span class="moreVid1">热门影片 | </span>
-                                <a class="whiteText" href="/a/{{link}}/videos">更多>></a>
-                            </div>
-                        </div>
-                        <div class="titleBlock">
-                            <div class="container-fluid bg-white">
-                                <div class="row videosContent">
-                                    
-                                </div>
-                            </div>
-						</div>
 						<script>
 							$.get('/api/videos/fetch/list', (data) => {
-								for (var i = 0; i < 2; i ++) {
+
+								for (var i = 0; i < data.length; i ++) {
 									$('.videosContent').append(`
 										<div class="col-md-4 col-sm-4">
 											<iframe width="560" height="315" src="${data[i].videoUrl}" frameborder="0" allowfullscreen></iframe>
@@ -481,7 +528,6 @@
 
 <div class="popularLinks">
 		<img src="/images/n400.png" alt="" height="50">
-		<img src="/images/dmv.png" alt="" height="50">
 		<div class="linksHeader">
 			<p>房地产公司 &nbsp; | &nbsp; 房地产经纪人</p>
 		</div>
@@ -588,10 +634,7 @@
 						</div>
 					</div>
 			</div>
-		<div class="linksHeader">
-			<p></p>
-		</div>
-
+		<img src="/images/dmv.png" alt="" height="50">
 		<div class="linksHeader">
 			<p>旅館 &nbsp; | &nbsp; 酒店 &nbsp; | &nbsp; 旅遊</p>
 		</div>
@@ -700,6 +743,7 @@
 					</div>
 			</div>
 		</div>
+		<img src="/images/hospitals.png" height="60" alt="">
 		<div class="linksHeader">
 			<p>律师 &nbsp; | &nbsp;  法律 &nbsp; | &nbsp; 移民</p>
 		</div>
@@ -753,8 +797,6 @@
 				</div>
 			</div>
 		</div>
-		<img src="/images/hospitals.png" height="60" alt="">
-		<br>
 		<img src="/images/college.png" height="60" alt="">
 		<div class="linksHeader">
 			<p class="matchHeader">中外婚恋交友</p>
@@ -791,9 +833,7 @@
   <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
 	  <a href="/ny">
 		  <div class="staticImgContainer">
-				<div class="grey-ads">
-						Google地图
-					</div>
+				<img src="/images/maps.jpg" alt="" width="225">
 		  </div>			
 	  </a>
 	  <a href="/ny">
@@ -829,35 +869,143 @@
 			  </div>
 		  </div>			
 	  </a>
+	  <div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
+		<div class="imgContainer">
+			
+		</div>
   </div>
   </div>
 </div>
 </div>
-<br>
 <div class="row pd30">
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
 	  <div class="imgContainer">
-	  </div>			
-  </a>
+	  </div>	
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
 	  <div class="imgContainer">
-	  </div>			
-  </a>
+	  </div>	
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
-	  <div class="imgContainer">
-	  </div>			
-  </a>
+	<div class="imgContainer">
+	</div>			
 </div>
 <div class="col-md-3 hide-on-small pd5">
-<a href="/ny">
-	  <div class="imgContainer">
-	  </div>			
-  </a>
+	<div class="imgContainer">
+	</div>			
 </div>
 </div>
 <br>
@@ -899,6 +1047,9 @@
 			<a href="https://www.sec.gov" class="blkText">美国劳工部</a>
 			<a href="https://www.sec.gov" class="blkText">美国税务局</a>
 			<a href="https://www.sec.gov" class="blkText">美国邮政局</a>
+			<a href="https://www.dhs.gov/" class="blkText">美国国土安全部</a>
+			<a href="https://www.dia.mil" class="blkText">美国国防情报局</a>
+			<a href="https://www.sec.gov" class="blkText">美国证券交易委员会</a>
 	</div>
 	<div class="col-md-3 col-sm-6 col-12">
 		<strong>中国各个领事馆连结</strong>

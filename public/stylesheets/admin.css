@@ -6,7 +6,7 @@
 }
 .news-title {
     margin-bottom: 20px;
-    width: 50%;
+    width: 30%;
     display: inline;
 }
 
@@ -22,9 +22,13 @@
 .news-type {
     padding: 20px;
     background-color: #fff;
-    width: 45%;
+    width: 30%;
     display: inline-block;
     height: 40px;
+}
+#fileUpload {
+    width: 30%;
+    display: inline-block;
 }
 .filterBlock select {
     padding: 20px;

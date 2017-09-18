@@ -50,7 +50,6 @@
             <a href="/a/{{link}}/cab">电招车</a>
             <a href="/a/{{link}}/driving-school">考牌练车</a>
             <a href="/a/{{link}}/hotel">家庭旅馆.旅行社</a>
-            <a href="/a/{{link}}/others" style="COLOR: red"><span id="clmenutoggle">其他各类&gt;&gt;</span></a>
             <a href="/a/{{link}}/insurance">各类保险</a>
             <a href="/a/{{link}}/abroad">留学•签证</a>
             <a href="/a/{{link}}/citizenship">入籍·福利</a>
@@ -60,6 +59,8 @@
             <a href="/a/{{link}}/decoration" style="COLOR: red">装修服务</a>
             <a href="/a/{{link}}/utility">冷暖水电</a>
             <a href="/a/{{link}}/construction">建筑</a>
+            <a href="/a/{{link}}/blog">博客</a>
+            <a href="/a/{{link}}/others" style="COLOR: red"><span id="clmenutoggle">其他&gt;&gt;</span></a>
         </div>
     </div>
     <div class="row">
