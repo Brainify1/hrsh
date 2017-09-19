@@ -108,3 +108,13 @@
 .syLinkHeader {
     letter-spacing: 10px;
 }
+.linksHeader {
+    background-color: #0076ff;
+    text-align: center;
+    padding: 5px 0;
+}
+.linksHeader p {
+    text-align: center;
+    margin: 0;
+    color: white;
+}

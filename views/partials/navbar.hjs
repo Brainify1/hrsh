@@ -12,7 +12,7 @@
                     免费分类广告
                 </p>
                 <p class="navPSmall">
-                    分类广告 无需登录 直接上传
+                    分类广告 无需注册 直接上传
                 </p>
             </div>
         </div>
@@ -59,7 +59,7 @@
             <a href="/a/{{link}}/decoration" style="COLOR: red">装修服务</a>
             <a href="/a/{{link}}/utility">冷暖水电</a>
             <a href="/a/{{link}}/construction">建筑</a>
-            <a href="/a/{{link}}/blog">博客</a>
+            <a href="/a/{{link}}/blog" style="color:blueviolet">博客</a>
             <a href="/a/{{link}}/others" style="COLOR: red"><span id="clmenutoggle">其他&gt;&gt;</span></a>
         </div>
     </div>
@@ -71,7 +71,7 @@
             <a href="/a/ny/network">寻人寻友</a>
             <a href="/a/ny/qw/news">趣闻轶事</a>
             <a href="/a/ny/sh/news">社会娱乐</a>
-            <a href="/a/ny/zz/news">政治军事</a>
+            <a href="/a/ny/zz/news">时事军事</a>
             <a href="/a/ny/ys/news">艺术体育</a>
             <a href="/a/ny/hy/news">婚姻情感</a>
             <a href="/a/ny/jy/news">教育儿童</a>

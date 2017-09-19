@@ -192,31 +192,13 @@
 						<div class="imgContainer">
 							
 						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-							<div class="your-class">
-							</div>
+						<div class="linksHeader">
+							<p>新闻摘要</p>
+						</div>	
+						<div class="your-class">
+						</div>
 						<script>
 							$.get('/api/news/fetch', (data) => {
 								for (var i = 0; i < 10; i++) {
@@ -231,6 +213,15 @@
 										`)
 									}
 								}
+								$('.your-class').slick({
+									dots: true,
+									infinite: true,
+									speed: 500,
+									fade: true,
+									cssEase: 'linear',
+									autoplay: true,
+									autoplaySpeed: 2000,
+								})
 							})
 						</script>
 						
@@ -870,27 +861,6 @@
 		  </div>			
 	  </a>
 	  <div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
 			
 		</div>
 		<div class="imgContainer">
