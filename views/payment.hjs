@@ -1,0 +1,124 @@
+ {{> head}} {{> header}} {{> states}}
+<link rel="stylesheet" type="text/css" href="/css/payment.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<style>
+    .field {
+        background: white;
+        font-weight: 300;
+        border: 0;
+        color: #31325F;
+        outline: none;
+        padding-right: 20px;
+        padding-left: 10px;
+        cursor: text;
+        margin-left: -15px;
+        box-sizing: border-box;
+        margin-right: 25px;
+        border-radius: 5px;
+    }
+</style>
+<div class="container">
+    <div class="icing">
+        <h2 class="paymentTitle">您的账单</h2>
+        <ul class="order">
+            <li><span class="item-count">置顶</span><span class="item-name">{{month}}月</span><span class="item-price">${{display_amount}}</span></li>
+        </ul>
+        <div class="total">${{display_amount}}</div>
+    </div>
+    <div class="dough">
+        <h2>支付</h2>
+        <form class="form" id="pay">
+            <div class="inputs">
+                <div class="row">
+                    <div class="column card-group">
+                        <label class="label" for="name">持卡人姓名</label>
+                        <input class="text-input name-input" id="name" name="cardholder-name" required="required" />
+                    </div>
+                    <p class="label" for="name">信用卡详细信息</p>
+                </div>
+                <div>
+                    <div id="card-element" class="field"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="order-button">付款</button>
+            </div>
+        </form>
+        <script type="text/javascript">
+            window.onload = () => {
+                var stripe = Stripe('pk_test_ioWVtzLyAwamatNWzOpMFoRi');
+                var elements = stripe.elements();
+
+                var card = elements.create('card', {
+                    hidePostalCode: true,
+                    iconStyle: 'solid',
+                    style: {
+                        base: {
+                            iconColor: '#F99A52',
+                            color: '#32315E',
+                            lineHeight: '48px',
+                            fontWeight: 400,
+                            fontFamily: '"Helvetica Neue", "Helvetica", sans-serif',
+                            fontSize: '15px',
+                            backgroundColor: '#FFF',
+                            background: '#FFF',
+                            '::placeholder': {
+                                color: '#CFD7DF',
+                            }
+                        }
+                    }
+                });
+                card.mount('#card-element');
+
+                function setOutcome(result) {
+
+                    if (result.token) {
+                        swal({
+                            title: "正在处理您的信息....",
+                            imageUrl: "/img/5-0.gif",
+                            timer: 5000,
+                            showConfirmButton: false,
+                        });
+                        $.post("/userpage/payment/", {
+                            token: result.token.id,
+                            postID: '{{docs._id}}',
+                            uid: '{{uid}}',
+                            amount: '{{amount}}'
+                        }, (data, status) => {
+                            console.log(data)
+                            if (data == 'OK') {
+                                swal({
+                                    title: "支付成功！",
+                                    text: "您的信息已经分类置顶",
+                                    showConfirmButton: false
+                                })
+                                setTimeout(function() {
+                                    window.location.replace('/')
+                                }, 2000)
+                            }
+                        })
+                    } else if (result.error) {
+                        console.log(result.error)
+                    }
+                }
+
+                card.on('change', function(event) {
+                    setOutcome(event);
+                });
+
+                document.getElementById('pay').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var form = document.getElementById('id');
+                    var extraDetails = {
+                        name: document.getElementById('name').value
+                            //address_zip: form.querySelector('input[name=address-zip]').value
+                    };
+                    stripe.createToken(card, extraDetails).then(setOutcome);
+                });
+            }
+        </script>
+    </div>
+</div>
+{{> scripts}}

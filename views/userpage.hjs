@@ -1,151 +1,171 @@
-	   		{{> head}}
-	   		{{> header}}
-	  		{{> states}}
-	      	<div class="container-fluid mb10">
-				<div class="row">
-					<div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
-						<a href="/">
-							<div class="navFirstDiv">
-								<p class="navP">
-									免费分类广告
-								</p>
-							</div>
-						</a>
+ {{> head}} {{> header}} {{> states}}
+<div class="container-fluid mb10">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12 navMainDiv">
+            <a href="/">
+                <div class="navFirstDiv">
+                    <p class="navP">
+                        免费分类广告
+                    </p>
+                </div>
+            </a>
 
-					</div>
-					<div class="col-md-9 col-sm-9 col-xs-12 navbarA">	  
-						<a href="/a/ny/rent" style="COLOR: red">租房:</a>
-						<a href="/a/ny/agent-rent">中介·经纪·出租</a>
-						<a href="/a/ny/house" style="COLOR: red">房屋买卖</a>
-						<a href="/a/ny/hire">招聘</a>
-						<a href="/a/ny/sales-hire" style="COLOR: red">销售招聘</a>
-						<a href="/a/ny/restaurant-hire">餐馆请人</a>
-						<a href="/a/ny/salon-hire">甲店发廊请人</a>
-						<a href="/a/ny/massage-hire">按摩请人</a>
-						<a href="/a/ny/apply" style="COLOR: red">求职</a>
-						<a href="/a/ny/commercial-rent" >商用租让</a>
-						<a href="/a/ny/business" >生意转让</a>
-						<a href="/a/ny/delivery" >快递·货运</a>
-						<a href="/a/ny/mortgage" style="COLOR: red">贷款经纪</a>
-						<a href="/a/ny/second-hand" style="COLOR: green">二手买卖</a>
-						<a href="/a/ny/cars" style="COLOR: red">汽车买卖</a>
-						<a href="/a/ny/phones">手机买卖</a>
-						<a href="/a/ny/computers">电脑买卖</a>
-						<a href="/a/ny/products">货品买卖</a>
-						<a href="/a/ny/internet" style="COLOR: red">电脑·网络</a>
-						<a href="/a/ny/security">防盗报警</a>
-						<a href="/a/ny/spa">美容•Spa</a>
-						<a href="/a/ny/massage">推拿按摩理疗</a>
-						<a href="/a/ny/network">交友征婚</a>
-						<a href="/a/ny/translation">翻译服务</a>
-						<a href="/a/ny/training">招生培训</a>
-						<a href="/a/ny/academy" style="COLOR:red">课后补习</a>
-						<a href="/a/ny/preschool">幼儿园·托儿</a>
-						<a href="/a/ny/moving" style="COLOR:red">大小搬家</a>
-						<a href="/a/ny/cab">电招车</a>
-						<a href="/a/ny/driving-school">考牌练车</a>
-						<a href="/a/ny/hotel">家庭旅馆.旅行社</a>
-						<a href="/a/ny/others" style="COLOR: red"><span id="clmenutoggle">其他各类&gt;&gt;</span></a>
-						<a href="/a/ny/insurance">各类保险</a>
-						<a href="/a/ny/abroad">留学•签证</a>
-						<a href="/a/ny/citizenship">入籍·福利</a>
-						<a href="/a/ny/law">各类律师</a>
-						<a href="/a/ny/accounting">会计·报税</a>
-						<a href="/a/ny/print">印刷·招牌</a>
-						<a href="/a/ny/decoration" style="COLOR: red">装修服务</a>
-						<a href="/a/ny/utility">冷暖水电</a>
-					</div>		
-				</div>
-			</div>
-	  		<div class="container-fluid">
-	  			<div class="row">
-	  				<div class="col-md-2 col-sm-2">
-	  					<div class="bg-temp">
-	  						 
-	  					</div>
-	  				</div>
-	  				<div class="col-md-8 col-sm-8">
-	  					<div id="test-list">
-	  						<div class="sbarDiv">
-	  							<input type="text" class="search sbar" placeholder="搜索关键字" />
-	  							</div>
-	  						<nav class="divNav">
-    							<ul class="navbarUl">
-    								<li class="titleLi">
-    									<h5>标题</h5>
-    								</li>
-    								<li class="userLi">
-    									<h5>作者</h5>
-    								</li>
-    								<li class="userLi">
-    									<h5>阅读</h5>
-    								</li>
-    								<li class="readLi">
-    									<h5>操作</h5>
-    								</li>
-    							</ul>
-    						</nav>
-	    				<ul class="list mg0">
-							{{#listings}}
-								<li class="bigListing">
-									<div class="titleLi">
-										<a href="/a/{{data.state}}/{{data.category}}/{{refId}}">{{data.title}}</a>
-									</div>
-									<div class="userLi">
-										<div><p class="fs12">{{author}}</p></div>
-										<div><p class="fs10">{{created_at}}</p></div>
-									</div>
-									<div class="userLi" style="line-height: 40px;padding-left: 10px">
-										{{views}}
-									</div>
-									<div class="readLi" style="line-height: 40px">
-										<a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
-									</div>
-								</li>
-								{{/listings}}
-						</ul>
-					    	<ul class="pagination"></ul>
-						</div>
-	  				</div>
-	  				<div class="col-md-2 col-sm-2">
-	  					<div class="bg-temp">
-	  						 
-	  					</div>
-	  				</div>
-	  			</div>
-	  		</div>
+        </div>
+        <div class="col-md-9 col-sm-9 col-xs-12 navbarA">
+            <a href="/a/ny/rent" style="COLOR: red">租房:</a>
+            <a href="/a/ny/agent-rent">中介·经纪·出租</a>
+            <a href="/a/ny/house" style="COLOR: red">房屋买卖</a>
+            <a href="/a/ny/hire">招聘</a>
+            <a href="/a/ny/sales-hire" style="COLOR: red">销售招聘</a>
+            <a href="/a/ny/restaurant-hire">餐馆请人</a>
+            <a href="/a/ny/salon-hire">甲店发廊请人</a>
+            <a href="/a/ny/massage-hire">按摩请人</a>
+            <a href="/a/ny/apply" style="COLOR: red">求职</a>
+            <a href="/a/ny/commercial-rent">商用租让</a>
+            <a href="/a/ny/business">生意转让</a>
+            <a href="/a/ny/delivery">快递·货运</a>
+            <a href="/a/ny/mortgage" style="COLOR: red">贷款经纪</a>
+            <a href="/a/ny/second-hand" style="COLOR: green">二手买卖</a>
+            <a href="/a/ny/cars" style="COLOR: red">汽车买卖</a>
+            <a href="/a/ny/phones">手机买卖</a>
+            <a href="/a/ny/computers">电脑买卖</a>
+            <a href="/a/ny/products">货品买卖</a>
+            <a href="/a/ny/internet" style="COLOR: red">电脑·网络</a>
+            <a href="/a/ny/security">防盗报警</a>
+            <a href="/a/ny/spa">美容•Spa</a>
+            <a href="/a/ny/massage">推拿按摩理疗</a>
+            <a href="/a/ny/network">交友征婚</a>
+            <a href="/a/ny/translation">翻译服务</a>
+            <a href="/a/ny/training">招生培训</a>
+            <a href="/a/ny/academy" style="COLOR:red">课后补习</a>
+            <a href="/a/ny/preschool">幼儿园·托儿</a>
+            <a href="/a/ny/moving" style="COLOR:red">大小搬家</a>
+            <a href="/a/ny/cab">电招车</a>
+            <a href="/a/ny/driving-school">考牌练车</a>
+            <a href="/a/ny/hotel">家庭旅馆.旅行社</a>
+            <a href="/a/ny/others" style="COLOR: red"><span id="clmenutoggle">其他各类&gt;&gt;</span></a>
+            <a href="/a/ny/insurance">各类保险</a>
+            <a href="/a/ny/abroad">留学•签证</a>
+            <a href="/a/ny/citizenship">入籍·福利</a>
+            <a href="/a/ny/law">各类律师</a>
+            <a href="/a/ny/accounting">会计·报税</a>
+            <a href="/a/ny/print">印刷·招牌</a>
+            <a href="/a/ny/decoration" style="COLOR: red">装修服务</a>
+            <a href="/a/ny/utility">冷暖水电</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-2">
+            <div class="bg-temp">
 
-	  	</div>
-        <script>
-            function deletePost(id, el) {
-                $.ajax({
-                    method: 'post',
-                    url: '/userpage/delete',
-                    data: {refId: id},
-                    success: function (data) {
-                        alert(`新闻已删除`);
-                        $(el).parents('li').remove();
-                    },
-                    error: function (data) {
-                        alert('删除失败')
-                    }
-                })
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <div id="test-list">
+                <div class="sbarDiv">
+                    <input type="text" class="search sbar" placeholder="搜索关键字" />
+                </div>
+                <nav class="divNav">
+                    <ul class="navbarUl">
+                        <li class="titleLi">
+                            <h5>标题</h5>
+                        </li>
+                        <li class="userLi">
+                            <h5>作者</h5>
+                        </li>
+                        <li class="userLi">
+                            <h5>阅读</h5>
+                        </li>
+                        <li class="readLi">
+                            <h5>操作</h5>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list mg0">
+                    {{#listings}}
+                    <li class="bigListing">
+                        <div class="titleLi">
+                            <a href="/a/{{data.state}}/{{data.category}}/{{refId}}">{{data.title}}</a>
+                        </div>
+                        <div class="userLi">
+                            <div>
+                                <p class="fs12">{{author}}</p>
+                            </div>
+                            <div>
+                                <p class="fs10">{{created_at}}</p>
+                            </div>
+                        </div>
+                        <div class="userLi" style="line-height: 40px;padding-left: 10px">
+                            {{views}}
+                        </div>
+                        <div class="readLi" style="line-height: 40px">
+                            <a href="#" data-api="/api/deletePost" data-id="{{refId}}" class="deleteNews" onclick="deletePost('{{refId}}', this)">删除</a>
+                            <ul>
+                                <li><a href="/userpage/payment/{{_id}}/1" data-api="/userpage/payement" data-id "{{_id}}">置顶1月</a></li>
+                                <li><a href="/userpage/payment/{{_id}}/3" data-api="/userpage/payement" data-id "{{_id}}">置顶3月</a></li>
+                                <li><a href="/userpage/payment/{{_id}}/6" data-api="/userpage/payement" data-id "{{_id}}">置顶6月</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    {{/listings}}
+                </ul>
+                <ul class="pagination"></ul>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <div class="bg-temp">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+    function deletePost(id, el) {
+        $.ajax({
+            method: 'post',
+            url: '/userpage/delete',
+            data: {
+                refId: id
+            },
+            success: function(data) {
+                alert(`已删除`);
+                $(el).parents('li').remove();
+            },
+            error: function(data) {
+                alert('删除失败')
             }
-        </script>
-	    <footer>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4 col-sm-5">
-						<img class="footerLogoImg" src="/images/hrshLogo.png">
-					</div>
-					<div class="col-md-8 col-sm-7 footerElements">
-						<a href="/a/ny/aboutUs"><p class="footerP">关于我们</p></a>
-						<a href="/a/ny/disclaimer"><p class="footerP">免责声明</p></a>
-						<a href="/a/ny/contactUs"><p class="footerP">联系我们</p></a>
-						<a href="/a/ny/advertisement"><p class="footerP">刊登广告</p></a>
-						<a href="/a/ny/cooperation"><p class="footerP">招商合作</p></a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	    	{{> scripts}}
+        })
+    }
+</script>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-5">
+                <img class="footerLogoImg" src="/images/hrshLogo.png">
+            </div>
+            <div class="col-md-8 col-sm-7 footerElements">
+                <a href="/a/ny/aboutUs">
+                    <p class="footerP">关于我们</p>
+                </a>
+                <a href="/a/ny/disclaimer">
+                    <p class="footerP">免责声明</p>
+                </a>
+                <a href="/a/ny/contactUs">
+                    <p class="footerP">联系我们</p>
+                </a>
+                <a href="/a/ny/advertisement">
+                    <p class="footerP">刊登广告</p>
+                </a>
+                <a href="/a/ny/cooperation">
+                    <p class="footerP">招商合作</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+{{> scripts}}
