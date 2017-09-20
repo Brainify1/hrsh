@@ -895,7 +895,7 @@ li.focus {
 	padding-left: 30px;
 	align-items: center;
   	justify-content: center;
-	flex-basis: 76%;
+	flex-basis: 60%;
 }
 
 .titleLi a {
@@ -917,7 +917,7 @@ li.focus {
 .readLi {
 	align-items: center;
   	justify-content: center;
-	flex-basis: 12%;
+	flex-basis: 20%;
 }
 .fs10 {
 	font-size: 10px;
