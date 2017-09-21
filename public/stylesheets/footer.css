@@ -1,6 +1,6 @@
 footer {
 	background-color: rgba(255,255,190, 1);
-	padding: 1% 10%;
+	margin-top: 20px;
 }
 
 .footerLogoImg {
@@ -8,22 +8,18 @@ footer {
 	height: 80px;
 	width: auto;
 }
-
 .footerElements {
 	display: block;
-    margin: 0 auto;
-    height: 80px;
-    padding: 30px;
-
+    margin: 40px auto;
 }
 
 .footerElements p {
 	display: inline;
 	color: #0076ff;
-	margin: 2%;
+	margin: 1%;
 	font-size: 20px;
 }
-.footerContainer {
+.footer-container {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;

@@ -18,14 +18,44 @@
         margin-right: 25px;
         border-radius: 5px;
     }
+    .icing {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .icing * {
+        text-align: center;
+    }
+    .dough {
+        margin: 20px auto;
+        width: 50%;
+        background-color: orangered;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .dough button {
+        padding: 7px 15px;
+        color: white;
+        background-color: green;
+        display: block;
+        margin: 20px auto;
+        border: none;
+        border-radius: 5px;
+    }
+    .dough label {
+        margin: 15px 0px;
+        display: block;
+        text-align: left;
+    }
+    .dough h2 {
+        color: white;
+        font-weight: 900;
+    }
 </style>
 <div class="container">
     <div class="icing">
         <h2 class="paymentTitle">您的账单</h2>
-        <ul class="order">
-            <li><span class="item-count">置顶</span><span class="item-name">{{month}}月</span><span class="item-price">${{display_amount}}</span></li>
-        </ul>
-        <div class="total">${{display_amount}}</div>
+        <div class="item-count">置顶</span><span class="item-name">{{month}}月</span><span class="item-price">${{display_amount}}</div>
+        <div class="total">总计：<strong>${{display_amount}}</strong></div>
     </div>
     <div class="dough">
         <h2>支付</h2>
@@ -36,7 +66,7 @@
                         <label class="label" for="name">持卡人姓名</label>
                         <input class="text-input name-input" id="name" name="cardholder-name" required="required" />
                     </div>
-                    <p class="label" for="name">信用卡详细信息</p>
+                    <label class="label" for="name">信用卡详细信息</label>
                 </div>
                 <div>
                     <div id="card-element" class="field"></div>
@@ -121,4 +151,5 @@
         </script>
     </div>
 </div>
+{{> footer}}
 {{> scripts}}
