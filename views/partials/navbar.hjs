@@ -59,7 +59,11 @@
             <a href="/a/{{link}}/decoration" style="COLOR: red">装修服务</a>
             <a href="/a/{{link}}/utility">冷暖水电</a>
             <a href="/a/{{link}}/construction">建筑</a>
+<<<<<<< HEAD
             <a href="/a/{{link}}/blog" style="color:#3cba54">博客</a>
+=======
+            <a href="/a/{{link}}/blog" style="color:darkgreen">博客</a>
+>>>>>>> f8b9a3332592e4100a8cdbf434225b1cd0e6fe06
             <a href="/a/{{link}}/others" style="COLOR: red"><span id="clmenutoggle">其他&gt;&gt;</span></a>
         </div>
     </div>

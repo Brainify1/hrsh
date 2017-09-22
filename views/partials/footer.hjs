@@ -2,10 +2,10 @@
 		<footer>
 			<div class="container-fluid footer-container">
 				<div class="row">
-					<div class="col-md-4 col-md-offset-1 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<img class="footerLogoImg" src="/images/hrshLogo.png">
 					</div>
-					<div class="col-md-7 col-sm-6 footerElements">
+					<div class="col-md-8 col-sm-6 footerElements">
 						<a href="/a/{{link}}/aboutUs"><p class="footerP">关于我们</p></a>
 						<a href="/a/{{link}}/disclaimer"><p class="footerP">免责声明</p></a>
 						<a href="/a/{{link}}/contactUs"><p class="footerP">联系我们</p></a>

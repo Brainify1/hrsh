@@ -1,7 +1,11 @@
 footer {
 	background-color: rgba(255,255,190, 1);
+<<<<<<< HEAD
 	padding: 1% 10%;
 	min-height: 100px;
+=======
+	margin-top: 20px;
+>>>>>>> f8b9a3332592e4100a8cdbf434225b1cd0e6fe06
 }
 
 .footerLogoImg {
@@ -12,23 +16,26 @@ footer {
 	left: 0;
 	top: 0;
 }
-
 .footerElements {
 	display: block;
+<<<<<<< HEAD
     margin: 0 auto;
     height: 80px;
     padding: 30px;
 	position: absolute;
 	right: 0;
+=======
+    margin: 40px auto;
+>>>>>>> f8b9a3332592e4100a8cdbf434225b1cd0e6fe06
 }
 
 .footerElements p {
 	display: inline;
 	color: #0076ff;
-	margin: 2%;
+	margin: 1%;
 	font-size: 20px;
 }
-.footerContainer {
+.footer-container {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;

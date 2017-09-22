@@ -27,7 +27,7 @@
           						</li>
           						<li>
           							<a href="#">
-          								<img src="/images/qr.jpeg" alt="" height="70" class="qrCode">
+          								<img src="/images/qr.jpeg" alt="" height="50" class="qrCode">
           							</a>
           						</li>
                     </ul>
