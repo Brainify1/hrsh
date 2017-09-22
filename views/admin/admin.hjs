@@ -49,7 +49,7 @@
                 </div>
 
                 <ul class="nav">
-                    <li class="active" id="dash-anchor">
+                    <!-- <li class="active" id="dash-anchor">
                         <a>
                             <i class="pe-7s-graph"></i>
                             <p>控制台</p>
@@ -60,7 +60,7 @@
                             <i class="pe-7s-user"></i>
                             <p>账号信息</p>
                         </a>
-                    </li>
+                    </li> -->
                     <li id="news-anchor">
                         <a>
                             <i class="pe-7s-note2"></i>
@@ -109,25 +109,6 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-left">
-                            <!-- <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
-                                    <b class="caret"></b>
-                                    <span class="notification">5</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                           <a href="">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li> -->
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
@@ -147,326 +128,6 @@
             </nav>
 
             <div class="tabs">
-                <div class="content dash-tab">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">News Distribution Statistics</h4>
-                                        <p class="category">Ratio Pie chart</p>
-                                    </div>
-                                    <div class="content">
-                                        <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
-
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Tech News
-                                                <i class="fa fa-circle text-danger"></i> Social News
-                                                <i class="fa fa-circle text-warning"></i> Entertainment News
-                                                <i class="fa fa-circle text-primary"></i> Political News
-                                                <i class="fa fa-circle text-success"></i> Sports News
-                                                <i class="fa fa-circle text-blue"></i> Sports News
-                                                <i class="fa fa-circle text-gray"></i> Utility News
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-clock-o"></i> Updated 1 days ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- <div class="col-md-8">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">Users Behavior</h4>
-                                        <p class="category">24 Hours performance</p>
-                                    </div>
-                                    <div class="content">
-                                        <div id="chartHours" class="ct-chart"></div>
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Open
-                                                <i class="fa fa-circle text-danger"></i> Click
-                                                <i class="fa fa-circle text-warning"></i> Click Second Time
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="card ">
-                                    <div class="header">
-                                        <h4 class="title">2017 Sales</h4>
-                                        <p class="category">Coming soon</p>
-                                    </div>
-                                    <!-- <div class="content">
-                                        <div id="chartActivity" class="ct-chart"></div>
-        
-                                        <div class="footer">
-                                            <div class="legend">
-                                                <i class="fa fa-circle text-info"></i> Tesla Model S
-                                                <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                                            </div>
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-check"></i> Data information certified
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card ">
-                                    <div class="header">
-                                        <h4 class="title">Listings trend</h4>
-                                        <p class="category">Coming soon</p>
-                                    </div>
-                                    <div class="content">
-                                        <div class="table-full-width">
-                                            <table class="table">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox">
-                                                            </label>
-                                                        </td>
-                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                            </label>
-                                                        </td>
-                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" value="" data-toggle="checkbox" checked="">
-                                                            </label>
-                                                        </td>
-                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Read "Following makes Medium better"</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <label class="checkbox">
-                                                                    <input type="checkbox" value="" data-toggle="checkbox">
-                                                                </label>
-                                                        </td>
-                                                        <td>Unfollow 5 enemies from twitter</td>
-                                                        <td class="td-actions text-right">
-                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="footer">
-                                            <hr>
-                                            <div class="stats">
-                                                <i class="fa fa-history"></i> Updated 3 minutes ago
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content acc-tab">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="card">
-                                    <div class="header">
-                                        <h4 class="title">Edit Profile</h4>
-                                    </div>
-                                    <div class="content">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-5">
-                                                    <div class="form-group">
-                                                        <label>Company (disabled)</label>
-                                                        <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label>Username</label>
-                                                        <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Email address</label>
-                                                        <input type="email" class="form-control" placeholder="Email">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>First Name</label>
-                                                        <input type="text" class="form-control" placeholder="Company" value="Mike">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Last Name</label>
-                                                        <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Address</label>
-                                                        <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>City</label>
-                                                        <input type="text" class="form-control" placeholder="City" value="Mike">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>Country</label>
-                                                        <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label>Postal Code</label>
-                                                        <input type="number" class="form-control" placeholder="ZIP Code">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>About Me</label>
-                                                        <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
-                                            <div class="clearfix"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-user">
-                                    <div class="image">
-                                        <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..." />
-                                    </div>
-                                    <div class="content">
-                                        <div class="author">
-                                            <a href="#">
-                                                <img class="avatar border-gray" src="../../images/faces/face-3.jpg" alt="..." />
-
-                                                <h4 class="title">Mike Andrew<br />
-                                                    <small>michael24</small>
-                                                </h4>
-                                            </a>
-                                        </div>
-                                        <p class="description text-center"> "Lamborghini Mercy <br> Your chick she so thirsty <br> I'm in that two seat Lambo"
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="text-center">
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-twitter"></i></button>
-                                        <button href="#" class="btn btn-simple"><i class="fa fa-google-plus-square"></i></button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="content news-tab">
                     <div class="container-fluid createNews">
                         <div class="row">
@@ -477,22 +138,23 @@
                                         <p class="category">添加新的新闻</p>
                                     </div>
                                     <div class="content">
-                                        <form id="createNewsForm">
+                                        <form id="createNewsForm" enctype="multipart/form-data" name="newsForm" method="post" action="/api/news/post/server">
                                             <div class="row form-group">
                                                 <input type="text" class="form-control news-title" placeholder="新闻标题" name="title">
                                                 <select class="news-type" name="type">
-                                                        <option selected value="xw">新闻分类</option>
-                                                        <option value="qw">趣闻轶事</option>
-                                                        <option value="sh">社会娱乐</option>
-                                                        <option value="zz">政治军事</option>
-                                                        <option value="ys">艺术体育</option>
-                                                        <option value="hy">婚姻情感</option>
-                                                        <option value="jy">教育儿童</option>
-                                                        <option value="kj">科技电子</option>
-                                                        <option value="sy">摄影绘画</option>
-                                                        <option value="yx">医学养生</option>
-                                                        <option value="sg">帅哥美女</option>
-                                                    </select>
+                                                    <option selected value="xw">新闻分类</option>
+                                                    <option value="qw">趣闻轶事</option>
+                                                    <option value="sh">社会娱乐</option>
+                                                    <option value="zz">政治军事</option>
+                                                    <option value="ys">艺术体育</option>
+                                                    <option value="hy">婚姻情感</option>
+                                                    <option value="jy">教育儿童</option>
+                                                    <option value="kj">科技电子</option>
+                                                    <option value="sy">摄影绘画</option>
+                                                    <option value="yx">医学养生</option>
+                                                    <option value="sg">帅哥美女</option>
+                                                </select>
+                                                <input type="file" id="fileUpload" name="newsPic">
                                                 <textarea name="content" id="news-content"></textarea>
                                                 <button type="submit" class="btn btn-large btn-success btn-fill pull-right">发布新闻</button>
                                             </div>
@@ -507,34 +169,34 @@
                             for (instance in CKEDITOR.instances)
                                 CKEDITOR.instances[instance].updateElement();
                         }
-                        $('#createNewsForm').submit(function(e) {
-                                e.preventDefault();
-                                CKupdate()
-                                var self = $(this)
-                                $.ajax({
-                                    url: '/api/news/post',
-                                    data: self.serialize(),
-                                    method: 'post',
-                                    success: function(data) {
-                                        $('.newsBody').append(`
-                                            <tr>
-                                                <td>${data._id}</td>
-                                                <td>${data.title}</td>
-                                                <td>${data.created_at}</td>
-                                                <td>${data.views}</td>
-                                                <td>
-                                                    <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
-                                                </td>
-                                            </tr>
-                                        `)
-                                        alert(`新闻 ${data.title} 发布成功！`)
-                                    },
-                                    error: function(err) {
-                                        alert('发布失败')
-                                    }
-                                })
-                            })
-                            //get news list for management
+                        // $('#createNewsForm').submit(function(e) {
+                        //         e.preventDefault();
+                        //         CKupdate()
+                        //         var self = $(this)
+                        //         $.ajax({
+                        //             url: '/api/news/post',
+                        //             data: self.serialize(),
+                        //             method: 'post',
+                        //             success: function(data) {
+                        //                 $('.newsBody').append(`
+                        //                     <tr>
+                        //                         <td>${data._id}</td>
+                        //                         <td>${data.title}</td>
+                        //                         <td>${data.created_at}</td>
+                        //                         <td>${data.views}</td>
+                        //                         <td>
+                        //                             <a href="#" data-id="${data._id}" class="deleteNews" onclick="deleteNews('${data._id}', this)">删除</a>
+                        //                         </td>
+                        //                     </tr>
+                        //                 `)
+                        //                 alert(`新闻 ${data.title} 发布成功！`)
+                        //             },
+                        //             error: function(err) {
+                        //                 alert('发布失败')
+                        //             }
+                        //         })
+                        //     })
+                        //get news list for management
                         $.get({
                                 url: '/api/news/fetch',
                                 success: function(data) {
@@ -722,7 +384,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式1/两侧广告
+                                                    形式1/首页扁条广告 (225*80)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>公司: </label>
@@ -746,11 +408,11 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式2/大形广告
+                                                    形式2/首页头条广告 (320*160)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
-                                                    <input style="width: 70%" type="text" name="company"required="required" >
+                                                    <input style="width: 70%" type="text" name="company" required="required">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label style="color: black; font-size: 13px">连结点: </label>
@@ -771,7 +433,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式3/xx广告
+                                                    形式3/分类广告页面顶板广告 (600*130)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
@@ -796,7 +458,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式4/xx广告
+                                                    形式4/分类广告页面侧面广告 (140*800)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
@@ -834,13 +496,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody1">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -855,13 +510,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody2">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -876,13 +524,6 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody3">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -897,23 +538,16 @@
                                                 <th>操作</th>
                                             </thead>
                                             <tbody id="adTbody4">
-                                                <!-- <tr>
-                                                        <td>1</td>
-                                                        <td>Dakota Rice</td>
-                                                        <td>$36,738</td>
-                                                        <td>Niger</td>
-                                                        <td>Oud-Turnhout</td>
-                                                    </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
                                     <script type="text/javascript">
                                         $.get({
-                                            url: "/api/ads/list",
-                                            success: function(data) {
-                                                for (var i = 0; i < data.length; i++) {
-                                                    if(data[i].type == 1){
-                                                        $('#adTbody1').append(`
+                                                url: "/api/ads/list",
+                                                success: function(data) {
+                                                    for (var i = 0; i < data.length; i++) {
+                                                        if (data[i].type == 1) {
+                                                            $('#adTbody1').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -924,8 +558,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 2){
-                                                        $('#adTbody2').append(`
+                                                        } else if (data[i].type == 2) {
+                                                            $('#adTbody2').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -936,8 +570,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 3){
-                                                        $('#adTbody3').append(`
+                                                        } else if (data[i].type == 3) {
+                                                            $('#adTbody3').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -948,8 +582,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 4){
-                                                        $('#adTbody4').append(`
+                                                        } else if (data[i].type == 4) {
+                                                            $('#adTbody4').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -960,21 +594,23 @@
                                                             </td>
                                                         </tr>
                                                     `)
+                                                        }
                                                     }
                                                 }
-                                            }
-                                        })
-                                        //delete ads button
+                                            })
+                                            //delete ads button
                                         function deleteNews(id, el) {
                                             $.ajax({
                                                 method: 'post',
                                                 url: '/api/ads/delete',
-                                                data: { id: id},
-                                                success: function (data) {
+                                                data: {
+                                                    id: id
+                                                },
+                                                success: function(data) {
                                                     alert(`广告已删除`);
                                                     $(el).parents('tr').remove();
                                                 },
-                                                error: function (data) {
+                                                error: function(data) {
                                                     alert('删除失败')
                                                 }
                                             })
@@ -1014,7 +650,7 @@
                                                         for (var i = 0; i < data.length; i++) {
                                                             $('.usersBody').append(`
                                                                     <tr>
-                                                                        <td>${data[i]._id}</td>
+                                                                        <td>${i+1}</td>
                                                                         <td>${data[i].username}</td>
                                                                         <td>${data[i].created_at}</td>
                                                                         <td><a onclick="deleteUser('${data[i]._id}', this)" href="#">删除</a></td>
@@ -1057,38 +693,68 @@
                                         <p class="category">添加，删除或管理网站视频区内容</p>
                                     </div>
                                     <div>
-                                        <form id="videoUpload" action="/" method="post">
-                                            <label>视频名</label>
-                                            <input type="text" name="videoName">
-                                            <label>URL</label>
-                                            <input type="text" name="Url連結">
-                                            <button type="submit" id="videoSubmit">發布</button>
-                                        </form>
+                                        <label>Youtube 视频名</label>
+                                        <input type="text" name="videoName" id="videoName">
+                                        <label>URL</label>
+                                        <input type="text" name="Url連結" id="videoUrl">
+                                        <button id="videoSubmit">發布</button>
                                     </div>
                                     <script type="text/javascript">
-                                        $('#videoUpload').submit(function(e) {
-                                            e.preventDefault();
-
-
+                                        $.get('/api/videos/fetch/list', (data) => {
+                                            for (var i = 0; i < data.length; i++) {
+                                                $('#videoList').append(`
+                                                    <tr>
+                                                        <td>${data[i].videoName}</td>
+                                                        <td>${data[i].videoUrl}</td>
+                                                        <td>${data[i].created_at}</td>
+                                                        <td><a href="#" onclick="deleteVideo('${data[i]._id}', this)">删除</a></td>
+                                                    </tr>
+                                                `)
+                                            }
                                         })
+                                        $('#videoSubmit').click(() => {
+                                            var videoName = $('#videoName').val()
+                                            var videoUrl = $('#videoUrl').val()
+                                            $.ajax({
+                                                method: 'post',
+                                                url: '/api/videos/new',
+                                                data: {
+                                                    videoName,
+                                                    videoUrl,
+                                                },
+                                                success: function(data) {
+                                                    alert('上传成功！')
+                                                    $('#videoList').append(`
+                                                        <tr>
+                                                            <td>${data.videoName}</td>
+                                                            <td>${data.videoUrl}</td>
+                                                            <td>${data.created_at}</td>
+                                                            <td><a href="#" onclick="deleteVideo('${data._id}', this)">删除</a></td>
+                                                        </tr>
+                                                    `)
+                                                },
+                                                error: function(err) {
+                                                    alert('上传失败！')
+                                                }
+                                            })
+                                        })
+
+                                        function deleteVideo(id, el) {
+                                            $.get(`/api/videos/delete/${id}`, (data) => {
+                                                alert('删除成功');
+                                                $(el).parent().parent().remove();
+                                            })
+                                        }
                                     </script>
                                     <div class="content table-responsive table-full-width">
                                         <table class="table table-hover table-striped">
                                             <thead>
-                                                <th>ID</th>
                                                 <th>视频名</th>
                                                 <th>URL</th>
                                                 <th>發布日期</th>
                                                 <th>操作</th>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Dakota Rice</td>
-                                                    <td>$36,738</td>
-                                                    <td>Niger</td>
-                                                    <td>Oud-Turnhout</td>
-                                                </tr>
+                                            <tbody id="videoList">
                                             </tbody>
                                         </table>
 

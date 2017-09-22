@@ -17,8 +17,15 @@
     						</h6>
     					</div>
     					<div class="commercialBlock">
-    						<div class="blizzardAd">
-    						</div>
+    						<script>
+								$.get('/api/ads/fetch/3', (data) => {
+									$('.commercialBlock').append(`
+										<a href="${data[0].url}">
+											<img src="/ads/${data[0].imageName}">
+										</a>
+									`)
+								})	
+							</script>
     					</div>
 <!-- 		  					<div class="viewListPost2 postList">
 		  						<a id="postBtn" href="/a/postList">免费发帖</a>

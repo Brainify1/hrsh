@@ -7,8 +7,7 @@
 	  		<div class="container-fluid">
 	  			<div class="row">
 	  				<div class="col-md-2 col-sm-2">
-	  					<div class="bg-temp">		 
-	  				</div>
+	  					<div class="bg-temp"></div>		 
 	  				</div>
 	  				<div class="col-md-8 col-sm-8 mb50">
 	  					<div class="locationDiv">
@@ -16,52 +15,44 @@
     						</h6>
     					</div>
     					<div class="commercialBlock">
-    						<div class="blizzardAd">
-    						</div>
+							<script>
+								$.get('/api/ads/fetch/3', (data) => {
+									$('.commercialBlock').append(`
+										<a href="${data[0].url}">
+											<img src="/ads/${data[0].imageName}">
+										</a>
+									`)
+								})	
+							</script>
     					</div>
 		  					<div class="viewListPost2 postList">
 		  						<a id="postBtn" href="/a/{{link}}/{{categ}}/postList">免费发帖</a>
 		  					</div>
-    					{{#listings}}
-	  					<div class="navbarUl mt5">
-	  						<h5 class="viewTitle"> {{data.title}} </h5>
-	  					</div>
-	  					
-	  					<div class="rowDiv">
-	  						<div class="userNameDiv">
-	  							<div>
-	  								<img src="/images/man-user.png">
-	  							</div>
-	  							<h6>{{author}}</h6>
-	  							<h6 style="text-align: center">{{created_at}}</h6>
-	  						</div>
-	  						<div class="postContentDiv">
-	  							<div class="loadContent">
- 									<h5>
-	 									{{data.content}}<p></p>
-	 									<p id = "imgss"></p>
-	 									<input type="text" hidden value="{{docs}}" id="imgDisplay">
-	 									<input type="number" hidden value="{{docs.length}}" id="imgsLength">	
-	  								</h5>
-	  							</div>
-	  						</div>
-	  					</div>
-	  					{{/listings}}
-						<script>
-							var individualImage = ($('#imgDisplay').val()).split(",");
-	  						for(var x=0; x < $('#imgsLength').val(); x++){
-	  							document.getElementById('imgss').insertAdjacentHTML('beforeend','<img src="/upload/listings/'+individualImage[x]+'" style="height:300px; width:85%">')
-	  						}
-	  					</script>  
-	  				<!-- 	<div class="navbarUl mt5">
-	  						<h5 class="viewTitle">回复文章</h5>
-	  					</div>
-	  					<div class="replyBox">
-			  				<textarea name="content" id="editor"></textarea>
-	  					</div>
-	  					<div class="viewListPost2 postList">
-	  						<button type="submit" class="replyButton">确定回复</button>
-	  					</div> -->
+							<div class="navbarUl mt5">
+								<h5 class="viewTitle"> {{listing.data.title}} </h5>
+							</div>
+							
+							<div class="rowDiv">
+								<div class="userNameDiv">
+									<div>
+										<img src="/images/man-user.png">
+									</div>
+									<h6>{{listing.author}}</h6>
+									<h6 style="text-align: center">{{listing.created_at}}</h6>
+								</div>
+								<div class="postContentDiv">
+									<div class="loadContent">
+										<h5>
+											{{listing.data.content}}<p></p>
+										</h5>
+										<div class="imgContent">
+											{{#image}}
+												<img src="/listings/{{filename}}" alt="">
+											{{/image}}
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 	  				<div class="col-md-2 col-sm-2 ">
 	  					<div class="bg-temp">
@@ -70,7 +61,21 @@
 	  				</div>
 	  			</div>
 	  		</div>
-	  	</div>
+		  </div>
+		  <script>
+				$.get('/api/ads/fetch/4', (data) => {
+					$('.bg-temp')[0].innerHTML = `
+						<a href="${data[0].url}">
+							<img src="/ads/${data[0].imageName}">
+						</a>
+					`
+					$('.bg-temp')[1].innerHTML = `
+						<a href="${data[1].url}">
+							<img src="/ads/${data[1].imageName}">
+						</a>
+					`
+				})	
+			</script>
 	    {{> footer}}
 	    <script src="/javascripts/ckeditor_config.js"></script>
 	    {{> scripts}}

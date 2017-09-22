@@ -27,7 +27,7 @@
           						</li>
           						<li>
           							<a href="#">
-          								<img src="/images/qr.jpeg" alt="" height="70" class="qrCode">
+          								<img src="/images/qr.jpeg" alt="" height="50" class="qrCode">
           							</a>
           						</li>
                     </ul>
@@ -37,8 +37,16 @@
                 <div>
                 <a href="/ny">
                   <div class="topAdsContainer" id="ad_type_1">
-                    <img src="/images/ex_ads.gif">
                   </div>
+                  <script>
+                    $.get('/api/ads/fetch/2', function(data) {
+                      $('.topAdsContainer').append(`
+                        <a href="${data[0].url}">
+                          <img src="/ads/${data[0].imageName}">
+                        </a>
+                      `)
+                    })
+                  </script>
                 </a>	
               </div>
               </div>
