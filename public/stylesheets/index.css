@@ -117,4 +117,8 @@
     text-align: center;
     margin: 0;
     color: white;
+    letter-spacing: 10px;
+}
+.imgContainer {
+    margin-bottom: 10px;
 }

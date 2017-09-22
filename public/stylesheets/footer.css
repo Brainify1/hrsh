@@ -1,12 +1,16 @@
 footer {
 	background-color: rgba(255,255,190, 1);
 	padding: 1% 10%;
+	min-height: 100px;
 }
 
 .footerLogoImg {
 	padding: 10px 0 10px 10px;
 	height: 80px;
 	width: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .footerElements {
@@ -14,7 +18,8 @@ footer {
     margin: 0 auto;
     height: 80px;
     padding: 30px;
-
+	position: absolute;
+	right: 0;
 }
 
 .footerElements p {
@@ -27,4 +32,6 @@ footer {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+	position: relative;
+	min-height: 200px;
 }
