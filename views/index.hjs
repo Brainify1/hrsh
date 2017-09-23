@@ -36,7 +36,7 @@
 								`} else {
 									$('.imgContainer')[i].innerHTML = `
 										<a href="#">
-											<img src="/ads/default.png">
+											<img src="/ads/default.gif">
 										</a>
 									`
 								}
@@ -49,10 +49,10 @@
             <div class="row secondSection">
 
                 	<div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
-						<a href="https://www.amazon.com/">
+						<a href="/ny">
 							<div class="imgContainer">
-								<img src="/images/amazon.png">
-							</div>
+								
+							</div>			
 						</a>
 						<a href="/ny">
 							<div class="staticImgContainer">
@@ -65,11 +65,17 @@
 									
 							</div>			
 						</a>
+						<a href="/a/ny/blog">
+							<div class="staticImgContainer">
+								<img src="/images/blog.png" alt="">
+							</div>			
+						</a>
 	  					<a href="/ny">
 	  						<div class="imgContainer">
 	  							
 	  						</div>			
-	  					</a>
+						  </a>
+						  
 	  					<a href="/ny">
 	  						<div class="staticImgContainer">
 	  							<div class="grey-ads">
@@ -192,31 +198,13 @@
 						<div class="imgContainer">
 							
 						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
-						<div class="imgContainer">
-							
-						</div>
 	  				</div>
 	  				<div class="col-md-6 col-sm-12 col-xs-12 pd5">
-							<div class="your-class">
-							</div>
+						<div class="linksHeader">
+							<p>新闻摘要</p>
+						</div>	
+						<div class="your-class">
+						</div>
 						<script>
 							$.get('/api/news/fetch', (data) => {
 								for (var i = 0; i < 10; i++) {
@@ -231,9 +219,23 @@
 										`)
 									}
 								}
+								$('.your-class').slick({
+									dots: true,
+									infinite: true,
+									speed: 500,
+									fade: true,
+									cssEase: 'linear',
+									autoplay: true,
+									autoplaySpeed: 2000,
+								})
 							})
 						</script>
-						
+						<div class="titleBlock">
+								<div class="hotVid">
+									<span class="moreVid1">视频连接</span>
+								</div>
+							</div>
+							<br>
 					<div class="youtubeDiv">
 						<div class="otherCh">
 							<a href="http://abcnews.go.com/">ABC</a>
@@ -308,7 +310,7 @@
                             <div class="col-md-6">
                                 <div class="zzNews newsBlock">
                                     <div class="newsTitle">
-                                        <p>政治&nbsp;｜&nbsp;军事</p>
+                                        <p>时事&nbsp;｜&nbsp;军事</p>
                                         <a href='/a/{{link}}/kj/news'>更多>></a>
                                     </div>
                                     <div class="newsList">
@@ -833,7 +835,7 @@
   <div class="col-md-3 col-sm-3 col-xs-2 pd5 adsContent hide-on-small">
 	  <a href="/ny">
 		  <div class="staticImgContainer">
-				<img src="/images/maps.jpg" alt="" width="225">
+				<img src="/images/maps.png" alt="" width="225">
 		  </div>			
 	  </a>
 	  <a href="/ny">
@@ -849,6 +851,11 @@
 			  
 		  </div>			
 	  </a>
+	  	<a href="/ny">
+			<div class="staticImgContainer">
+				<img src="/images/network.png" alt="">
+			</div>			
+		</a>
 	  <a href="/ny">
 		  <div class="staticImgContainer">
 			  <div class="grey-ads">
@@ -870,27 +877,6 @@
 		  </div>			
 	  </a>
 	  <div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
-			
-		</div>
-		<div class="imgContainer">
 			
 		</div>
 		<div class="imgContainer">

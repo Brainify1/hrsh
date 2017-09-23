@@ -49,3 +49,7 @@
 .text-custom-gray {
     color: #555
 }
+.sidebar .nav p {
+    font-weight: 900;
+    font-size: 28px;
+}

@@ -196,7 +196,7 @@
                         //             }
                         //         })
                         //     })
-                            //get news list for management
+                        //get news list for management
                         $.get({
                                 url: '/api/news/fetch',
                                 success: function(data) {
@@ -384,7 +384,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-12" style="font-size: 18px; padding: 0">
-                                                    形式1/首页扁条广告 (225*80)
+                                                    形式1/首页扁条广告 (225*120)
                                                 </div>
                                                 <div class="col-md-3">
                                                     <label>公司: </label>
@@ -412,7 +412,7 @@
                                                 </div>
                                                 <div class="col-md-3">
                                                     <span>公司: </span>
-                                                    <input style="width: 70%" type="text" name="company"required="required" >
+                                                    <input style="width: 70%" type="text" name="company" required="required">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label style="color: black; font-size: 13px">连结点: </label>
@@ -543,11 +543,11 @@
                                     </div>
                                     <script type="text/javascript">
                                         $.get({
-                                            url: "/api/ads/list",
-                                            success: function(data) {
-                                                for (var i = 0; i < data.length; i++) {
-                                                    if(data[i].type == 1){
-                                                        $('#adTbody1').append(`
+                                                url: "/api/ads/list",
+                                                success: function(data) {
+                                                    for (var i = 0; i < data.length; i++) {
+                                                        if (data[i].type == 1) {
+                                                            $('#adTbody1').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -558,8 +558,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 2){
-                                                        $('#adTbody2').append(`
+                                                        } else if (data[i].type == 2) {
+                                                            $('#adTbody2').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -570,8 +570,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 3){
-                                                        $('#adTbody3').append(`
+                                                        } else if (data[i].type == 3) {
+                                                            $('#adTbody3').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -582,8 +582,8 @@
                                                             </td>
                                                         </tr>
                                                     `)
-                                                    }else if(data[i].type == 4){
-                                                        $('#adTbody4').append(`
+                                                        } else if (data[i].type == 4) {
+                                                            $('#adTbody4').append(`
                                                         <tr>
                                                             <td>${data[i]._id}</td>
                                                             <td>${data[i].company}</td>
@@ -594,21 +594,23 @@
                                                             </td>
                                                         </tr>
                                                     `)
+                                                        }
                                                     }
                                                 }
-                                            }
-                                        })
-                                        //delete ads button
+                                            })
+                                            //delete ads button
                                         function deleteNews(id, el) {
                                             $.ajax({
                                                 method: 'post',
                                                 url: '/api/ads/delete',
-                                                data: { id: id},
-                                                success: function (data) {
+                                                data: {
+                                                    id: id
+                                                },
+                                                success: function(data) {
                                                     alert(`广告已删除`);
                                                     $(el).parents('tr').remove();
                                                 },
-                                                error: function (data) {
+                                                error: function(data) {
                                                     alert('删除失败')
                                                 }
                                             })
@@ -736,6 +738,7 @@
                                                 }
                                             })
                                         })
+
                                         function deleteVideo(id, el) {
                                             $.get(`/api/videos/delete/${id}`, (data) => {
                                                 alert('删除成功');
